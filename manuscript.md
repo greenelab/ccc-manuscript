@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-08-09'
+date-meta: '2021-11-11'
 author-meta:
 - John Doe
 - Jane Roe
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Manuscript Title" />
   <meta property="og:title" content="Manuscript Title" />
   <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2021-08-09" />
-  <meta name="citation_publication_date" content="2021-08-09" />
+  <meta name="dc.date" content="2021-11-11" />
+  <meta name="citation_publication_date" content="2021-11-11" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/defe787b0ad8a21a745cc82c3117770896caaf8b/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/defe787b0ad8a21a745cc82c3117770896caaf8b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/defe787b0ad8a21a745cc82c3117770896caaf8b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/0d7160e4215ff2115106493013a20d9b58e183c2/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/0d7160e4215ff2115106493013a20d9b58e183c2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/0d7160e4215ff2115106493013a20d9b58e183c2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/defe787b0ad8a21a745cc82c3117770896caaf8b/))
+([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/0d7160e4215ff2115106493013a20d9b58e183c2/))
 was automatically generated
-from [greenelab/clustermatch-gene-expr-manuscript@defe787](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/defe787b0ad8a21a745cc82c3117770896caaf8b)
-on August 9, 2021.
+from [greenelab/clustermatch-gene-expr-manuscript@0d7160e](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/0d7160e4215ff2115106493013a20d9b58e183c2)
+on November 11, 2021.
 </em></small>
 
 ## Authors
@@ -76,11 +76,11 @@ on August 9, 2021.
 
 
 + **John Doe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [johndoe](https://github.com/johndoe)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [johndoe](https://twitter.com/johndoe)<br>
   <small>
      Department of Something, University of Whatever
@@ -88,9 +88,9 @@ on August 9, 2021.
   </small>
 
 + **Jane Roe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [janeroe](https://github.com/janeroe)<br>
   <small>
      Department of Something, University of Whatever; Department of Whatever, University of Something
