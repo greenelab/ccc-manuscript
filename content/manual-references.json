@@ -29,5 +29,26 @@
         "page": "2837-2854",
         "title": "Information Theoretic Measures for Clusterings Comparison: Variants, Properties, Normalization and Correction for Chance",
         "URL": "http://www.jmlr.org/papers/v11/vinh10a.html"
+      },
+      {
+        "type": "article-journal",
+        "id": "Jenks1967",
+        "container-title": "International Yearbook of Cartography",
+        "author": [
+          {
+            "family": "Jenks",
+            "given": "George F"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              1967
+            ]
+          ]
+        },
+        "volume": "7",
+        "page": "186-190",
+        "title": "The Data Model Concept in Statistical mapping"
       }
 ]
