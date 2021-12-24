@@ -8,7 +8,7 @@
   <meta name="author" content="Marylyn D. Ritchie" />
   <meta name="author" content="Diego H. Milone" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2021-11-11" />
+  <meta name="dcterms.date" content="2021-12-24" />
   <meta name="keywords" content="correlation coefficient, nonlinear relationships, gene expression" />
   <title>A machine learning-based dependence coefficient for gene expression analysis</title>
   <style>
@@ -50,8 +50,8 @@
   <meta name="citation_title" content="A machine learning-based dependence coefficient for gene expression analysis" />
   <meta property="og:title" content="A machine learning-based dependence coefficient for gene expression analysis" />
   <meta property="twitter:title" content="A machine learning-based dependence coefficient for gene expression analysis" />
-  <meta name="dc.date" content="2021-11-11" />
-  <meta name="citation_publication_date" content="2021-11-11" />
+  <meta name="dc.date" content="2021-12-24" />
+  <meta name="citation_publication_date" content="2021-12-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -81,9 +81,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/32b1e2256c9c353b386f36fc463d51c1e3f303f0/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/32b1e2256c9c353b386f36fc463d51c1e3f303f0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/32b1e2256c9c353b386f36fc463d51c1e3f303f0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/fe500e3e5bb262f939c7fc30936c550c4a0d9df8/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/fe500e3e5bb262f939c7fc30936c550c4a0d9df8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/fe500e3e5bb262f939c7fc30936c550c4a0d9df8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -97,10 +97,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/32b1e2256c9c353b386f36fc463d51c1e3f303f0/">permalink</a>)
+(<a href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/fe500e3e5bb262f939c7fc30936c550c4a0d9df8/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/32b1e2256c9c353b386f36fc463d51c1e3f303f0">greenelab/clustermatch-gene-expr-manuscript@32b1e22</a>
-on November 11, 2021.
+from <a href="https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/fe500e3e5bb262f939c7fc30936c550c4a0d9df8">greenelab/clustermatch-gene-expr-manuscript@fe500e3</a>
+on December 24, 2021.
 </em></small></p>
 <p><span class="banner lightgrey"><i class="fas fa-scroll fa-lg"></i> <strong>Draft</strong><br>
 This manuscript version is work-in-progress</span></p>
@@ -150,12 +150,106 @@ Center for Health AI, University of Colorado School of Medicine, Aurora, CO 8004
 <h2 class="page_break_before" id="abstract">Abstract</h2>
 <h2 id="introduction">Introduction</h2>
 <h2 id="results">Results</h2>
+<h3 id="a-robust-and-efficient-not-only-linear-dependence-coefficient">A robust and efficient not-only-linear dependence coefficient</h3>
+<p>Clustermatch is a dependance coefficient that can compute a similarity measure between any pair of variables, either with numerical or categorical values <span class="citation" data-cites="VCRLONE">[<a href="#ref-VCRLONE" role="doc-biblioref">1</a>]</span>.
+The method assumes that if there is a relationship between two variables/features describing <span class="math inline">\(n\)</span> data points/objects, then the clusterings on those <span class="math inline">\(n\)</span> objects derived using each variable individually should match (see Methods).
+Although different clustering algorithms can be applied to one-dimensional data <span class="citation" data-cites="TnTsnQ9q">[<a href="#ref-TnTsnQ9q" role="doc-biblioref">2</a>]</span>, we used quantiles to efficiently separate data points into different clusters (i.e., the median separates numerical data into two clusters).
+Since in Clustermatch the data is categorized into clusters, numerical and categorical data can be naturally integrated since clusters do not need an order.
+Once all internal partitions from each variable are generated, the Clustermatch coefficient is defined as the maximum adjusted Rand index (ARI) <span class="citation" data-cites="e4AuoW8N">[<a href="#ref-e4AuoW8N" role="doc-biblioref">3</a>]</span> between them.
+We previously compared Clustermatch <span class="citation" data-cites="VCRLONE">[<a href="#ref-VCRLONE" role="doc-biblioref">1</a>]</span> with the Maximal Information Coefficient (MIC) <span class="citation" data-cites="yCHLC0oS">[<a href="#ref-yCHLC0oS" role="doc-biblioref">4</a>]</span> and Distance Correlation (DC) <span class="citation" data-cites="IvOGGmxI">[<a href="#ref-IvOGGmxI" role="doc-biblioref">5</a>]</span>, two popular nonlinear correlation coefficients.
+In addition to outperforming these two methods in a simulated scenario with different noise levels, Clustermatch was also significantly superior on computational complexity, making it the only practical not-only-linear coefficient for real and large datasets such as gene expression compendia.
+Therefore, in this study we will only focus on Clustermatch and two widely used ones: Pearson and Spearman.</p>
+<div id="fig:datasets_rel" class="fignos">
+<figure>
+<img src="images/intro/relationships.svg" style="width:100.0%" alt="Figure 1: Different types of relationships in data. Each panel contains a set of simulated data points described by two variables: x and y. The first row shows the Anscombe’s quartet with four different datasets (from Anscombe I to IV) with 11 data points each. The second row contains another set of general patterns with 100 data points each. Each panel shows the correlation value using the Pearson (r), Spearman (r_s) and Clustermatch (c) coefficients. Vertical and horizontal lines show how Clustermatch separated data points using x and y, respectively." /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Different types of relationships in data.</strong>
+Each panel contains a set of simulated data points described by two variables: <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.
+The first row shows the Anscombe’s quartet with four different datasets (from Anscombe I to IV) with 11 data points each.
+The second row contains another set of general patterns with 100 data points each.
+Each panel shows the correlation value using the Pearson (<span class="math inline">\(r\)</span>), Spearman (<span class="math inline">\(r_s\)</span>) and Clustermatch (<span class="math inline">\(c\)</span>) coefficients.
+Vertical and horizontal lines show how Clustermatch separated data points using <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, respectively.</figcaption>
+</figure>
+</div>
+<p>In Figure <a href="#fig:datasets_rel">1</a>, we show how Pearson (<span class="math inline">\(r\)</span>), Spearman (<span class="math inline">\(r_s\)</span>) and Clustermatch (<span class="math inline">\(c\)</span>) behave on different data patterns, where red lines indicate how Clustermatch clusters data points using each feature individually (either <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span>).
+In the first row of the figure, the Anscombe’s quartet <span class="citation" data-cites="WP7yhZGS">[<a href="#ref-WP7yhZGS" role="doc-biblioref">6</a>]</span> is shown, which comprises four synthetic datasets with completely different patterns but exactly the same data statistics (mean, standard deviation and Pearson’s correlation).
+This kind of simulated data, including also the “Datasaurus” <span class="citation" data-cites="LW7cVCGa dvyMwrz9 FhufXP6P">[<a href="#ref-LW7cVCGa" role="doc-biblioref">7</a>,<a href="#ref-dvyMwrz9" role="doc-biblioref">8</a>,<a href="#ref-FhufXP6P" role="doc-biblioref">9</a>]</span>, are frequently used as a reminder of the importance of going beyond simple statistics, where either undesirable patterns (such as outliers) or desirable ones (such as non-linear relationships reflecting real and complex biological relationships) can be masked by these numbers.
+For example, Anscomble I seems to show a noisy but clear linear pattern, similar to Anscombe III where the linearity is perfect besides one outlier.
+For these two patterns, Clustermatch separates these data points using two clusters (one red line for each variable <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>), yielding 1.0, the maximum value, correctly identying the relationship.
+Anscombe II seems to follow a quadratic distribution, and this is reflected in the Clustermatch with a lower yet non-zero value of 0.34.
+Anscombe IV shows a vertical line where <span class="math inline">\(x\)</span> values are almost contant except for one outlier.
+This outlier does not influece Clustermatch as it does for Pearson or Spearman, and thus <span class="math inline">\(c=0.00\)</span> (the minimim value) indicates no association for this variable pair because it does not fit the Clustermatch assumption: the two clusters formed with <span class="math inline">\(x\)</span> (approximately separated by <span class="math inline">\(x=13\)</span>) do not match well the three clusters formed with <span class="math inline">\(y\)</span>.
+The Pearson’s correlation coefficient is the same across all these Anscombe’s examples (<span class="math inline">\(r=0.82\)</span>) whereas Spearman is always above or equal to 0.50.
+The reason for this behavior is that these coefficients are based on data statistics such as the mean, standard deviation and, in the case of Spearman, data rankings, and this falls short in dealing with noisy data.</p>
+<p>The second row of Figure <a href="#fig:datasets_rel">1</a> shows other simulated relationships with general nonlinear patterns, some of which were previously observed in gene expression data <span class="citation" data-cites="yCHLC0oS 1AMcxTw9R 16ddFzCqe">[<a href="#ref-yCHLC0oS" role="doc-biblioref">4</a>,<a href="#ref-1AMcxTw9R" role="doc-biblioref">10</a>,<a href="#ref-16ddFzCqe" role="doc-biblioref">11</a>]</span>.
+For the random/independent pair of variables, all coefficients correctly agree with a value close to zero.
+In this case, Clustermatch separates data points into five clusters using <span class="math inline">\(x\)</span> and two using <span class="math inline">\(y\)</span>, which do not match thus yielding <span class="math inline">\(c=0.01\)</span>.
+For the other three examples (quadratic, noncoexistence and two-lines), Pearson and Spearman generally fail to capture a clear pattern between variables <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.
+These patterns also show how Clustermatch uses different degrees of complexity to capture the relationships.
+For the noncoexistence pattern, where for instance one gene (<span class="math inline">\(x\)</span>) might be expressed while the other one (<span class="math inline">\(y\)</span>) is inhibited, Clustermatch only needs two clusters for both variables, similarly to a linear relationship (Anscombe I and III).
+For the quadratic pattern, Clustermatch separates <span class="math inline">\(x\)</span> into more clusters (four in this case) to reach the maximum ARI.
+The two-lines example shows two embedded linear relationships, not detected by either Pearson or Spearman, and for which Clustermatch separates in eight clusters for <span class="math inline">\(x\)</span> and six for <span class="math inline">\(y\)</span>.</p>
+<p>Datasets such as Anscombe or “Datasaurus” highlight the need of visualization before drawing conclusions on summary statistics alone.
+Although extra steps such as visual analyses are always mandatory, larger datasets make it impossible to perform manual assessment on each, for example, gene pair.
+More advanced techniques, such as Clustermatch, could reduce the number of false positives/negatives to focus human validation on patterns that are more likely to be real.
+Clustermatch has only one parameter: <span class="math inline">\(k_{\mathrm{max}}\)</span>, which is 10 by default, is the maximum number of internal clusters that the algorithm will use when partitioning data points using each variable.
+As we showed in the examples above, this parameter can control the level of complexity the end-user desires to capture.
+A value of <span class="math inline">\(k_{\mathrm{max}}=2\)</span> makes the coefficient more leaned towards linear patterns, whereas higher values can detect other, more complex kinds of relationships.
+We found that <span class="math inline">\(k_{\mathrm{max}}=10\)</span> approximates well the coefficient values for different types of patterns <span class="citation" data-cites="VCRLONE">[<a href="#ref-VCRLONE" role="doc-biblioref">1</a>]</span> while balancing computing time and keeping a close-to-zero value for random data, which is guaranteed by the adjusted-for-chance property of ARI <span class="citation" data-cites="1HaffUr3r">[<a href="#ref-1HaffUr3r" role="doc-biblioref">12</a>]</span>.</p>
+<p>In the next sections we compare there coefficients on real gene expression data and highlight some complex and potentially interesting relationships.</p>
 <h2 id="discussion">Discussion</h2>
 <h2 id="methods">Methods</h2>
+<h3 id="clustermatch-algorithm">Clustermatch algorithm</h3>
+<!-- 
+Latex algorithm available in:
+https://www.overleaf.com/read/dsyjdrdjqjcp
+
+1. Download PDF from Overleaf
+2. pdfcrop clustermatch_algorithm.pdf clustermatch_algorithm.pdf
+3. pdf2svg clustermatch_algorithm.pdf clustermatch_algorithm.svg
+ -->
+<div id="fig:cm_algor" class="fignos">
+<figure>
+<img src="images/intro/clustermatch_algorithm.svg" style="width:75.0%" alt="Figure 2: " /><figcaption aria-hidden="true"><span>Figure 2:</span> </figcaption>
+</figure>
+</div>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
-<div id="refs" role="doc-bibliography">
-
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-VCRLONE" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Clustermatch: discovering hidden relations in highly diverse kinds of qualitative and quantitative data without standardization</strong> <div class="csl-block">Milton Pividori, Andres Cernadas, Luis A de Haro, Fernando Carrari, Georgina Stegmayer, Diego H Milone</div> <em>Bioinformatics</em> (2019-06-01) <a href="https://doi.org/gfg4bt">https://doi.org/gfg4bt</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/bty899">10.1093/bioinformatics/bty899</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30357313">30357313</a></div></div>
+</div>
+<div id="ref-TnTsnQ9q" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>The Data Model Concept in Statistical mapping</strong> <div class="csl-block">George F Jenks</div> <em>International Yearbook of Cartography</em> (1967)</div>
+</div>
+<div id="ref-e4AuoW8N" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Comparing partitions</strong> <div class="csl-block">Lawrence Hubert, Phipps Arabie</div> <em>Journal of Classification</em> (1985-12) <a href="https://doi.org/bphmzh">https://doi.org/bphmzh</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/bf01908075">10.1007/bf01908075</a></div></div>
+</div>
+<div id="ref-yCHLC0oS" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Detecting Novel Associations in Large Data Sets</strong> <div class="csl-block">David N Reshef, Yakir A Reshef, Hilary K Finucane, Sharon R Grossman, Gilean McVean, Peter J Turnbaugh, Eric S Lander, Michael Mitzenmacher, Pardis C Sabeti</div> <em>Science</em> (2011-12-16) <a href="https://doi.org/bzn5c3">https://doi.org/bzn5c3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1126/science.1205438">10.1126/science.1205438</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22174245">22174245</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3325791">PMC3325791</a></div></div>
+</div>
+<div id="ref-IvOGGmxI" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Measuring and testing dependence by correlation of distances</strong> <div class="csl-block">Gábor J Székely, Maria L Rizzo, Nail K Bakirov</div> <em>The Annals of Statistics</em> (2007-12-01) <a href="https://doi.org/dkgjb4">https://doi.org/dkgjb4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1214/009053607000000505">10.1214/009053607000000505</a></div></div>
+</div>
+<div id="ref-WP7yhZGS" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Graphs in Statistical Analysis</strong> <div class="csl-block">FJ Anscombe</div> <em>The American Statistician</em> (2012-03-12) <a href="https://doi.org/gfpn48">https://doi.org/gfpn48</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1080/00031305.1973.10478966">10.1080/00031305.1973.10478966</a></div></div>
+</div>
+<div id="ref-LW7cVCGa" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Download the Datasaurus: Never trust summary statistics alone; always visualize your data</strong> <div class="csl-block">Alberto Cairo</div> <a href="http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html">http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html</a></div>
+</div>
+<div id="ref-dvyMwrz9" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Same Stats, Different Graphs</strong> <div class="csl-block">Justin Matejka, George Fitzmaurice</div> <em>Association for Computing Machinery (ACM)</em> (2017-05-02) <a href="https://doi.org/gdtg2w">https://doi.org/gdtg2w</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/3025453.3025912">10.1145/3025453.3025912</a></div></div>
+</div>
+<div id="ref-FhufXP6P" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Generating data sets for teaching the importance of regression analysis</strong> <div class="csl-block">Lori L Murray, John G Wilson</div> <em>Decision Sciences Journal of Innovative Education</em> (2021-03-31) <a href="https://doi.org/gjmgqt">https://doi.org/gjmgqt</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1111/dsji.12233">10.1111/dsji.12233</a></div></div>
+</div>
+<div id="ref-1AMcxTw9R" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>A Novel Method to Efficiently Highlight Nonlinearly Expressed Genes</strong> <div class="csl-block">Qifei Wang, Haojian Zhang, Yuqing Liang, Heling Jiang, Siqiao Tan, Feng Luo, Zheming Yuan, Yuan Chen</div> <em>Frontiers in Genetics</em> (2020-01-31) <a href="https://doi.org/gnr5k7">https://doi.org/gnr5k7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3389/fgene.2019.01410">10.3389/fgene.2019.01410</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32082366">32082366</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7006292">PMC7006292</a></div></div>
+</div>
+<div id="ref-16ddFzCqe" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Comprehensive Identification of Cell Cycle–regulated Genes of the Yeast &lt;i&gt;Saccharomyces cerevisiae&lt;/i&gt; by Microarray Hybridization</strong> <div class="csl-block">Paul T Spellman, Gavin Sherlock, Michael Q Zhang, Vishwanath R Iyer, Kirk Anders, Michael B Eisen, Patrick O Brown, David Botstein, Bruce Futcher</div> <em>Molecular Biology of the Cell</em> (1998-12) <a href="https://doi.org/gnr5k5">https://doi.org/gnr5k5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1091/mbc.9.12.3273">10.1091/mbc.9.12.3273</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/9843569">9843569</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC25624">PMC25624</a></div></div>
+</div>
+<div id="ref-1HaffUr3r" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>Information Theoretic Measures for Clusterings Comparison: Variants, Properties, Normalization and Correction for Chance</strong> <div class="csl-block">Nguyen Xuan Vinh, Julien Epps, James Bailey</div> <em>Journal of Machine Learning Research</em> (2010) <a href="http://www.jmlr.org/papers/v11/vinh10a.html">http://www.jmlr.org/papers/v11/vinh10a.html</a></div>
+</div>
 </div>
 <h2 id="acknowledgements">Acknowledgements</h2>
 <h2 id="supplementary-material">Supplementary material</h2>
