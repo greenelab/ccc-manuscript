@@ -5,7 +5,7 @@ keywords:
 - nonlinear relationships
 - gene expression
 lang: en-US
-date-meta: '2021-12-24'
+date-meta: '2022-01-05'
 author-meta:
 - Milton Pividori
 - Marylyn D. Ritchie
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="A machine learning-based dependence coefficient for gene expression analysis" />
   <meta property="og:title" content="A machine learning-based dependence coefficient for gene expression analysis" />
   <meta property="twitter:title" content="A machine learning-based dependence coefficient for gene expression analysis" />
-  <meta name="dc.date" content="2021-12-24" />
-  <meta name="citation_publication_date" content="2021-12-24" />
+  <meta name="dc.date" content="2022-01-05" />
+  <meta name="citation_publication_date" content="2022-01-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -52,9 +52,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/fe500e3e5bb262f939c7fc30936c550c4a0d9df8/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/fe500e3e5bb262f939c7fc30936c550c4a0d9df8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/fe500e3e5bb262f939c7fc30936c550c4a0d9df8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/abe8f12222610137395e475c39405d569c88077e/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/abe8f12222610137395e475c39405d569c88077e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/abe8f12222610137395e475c39405d569c88077e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -76,10 +76,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/fe500e3e5bb262f939c7fc30936c550c4a0d9df8/))
+([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/abe8f12222610137395e475c39405d569c88077e/))
 was automatically generated
-from [greenelab/clustermatch-gene-expr-manuscript@fe500e3](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/fe500e3e5bb262f939c7fc30936c550c4a0d9df8)
-on December 24, 2021.
+from [greenelab/clustermatch-gene-expr-manuscript@abe8f12](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/abe8f12222610137395e475c39405d569c88077e)
+on January 5, 2022.
 </em></small>
 
 [
@@ -204,6 +204,80 @@ We found that $k_{\mathrm{max}}=10$ approximates well the coefficient values for
 In the next sections we compare there coefficients on real gene expression data and highlight some complex and potentially interesting relationships.
 
 
+### Clustermatch detects linear and nonlinear patterns in human transcriptomic data
+
+![
+**Distribution of coefficient values on gene expression (GTEx v8, whole blood).**
+**a)** Histogram of coefficient values.
+**b)** Corresponding cumulative histogram. The dotted line maps the coefficient value that accumulates 70% of gene pairs.
+**c)**/**d)** 2D histogram plot with hexagonal bins between all coefficients, where a logarithmic scale was used to color each hexagon.
+](images/coefs_comp/gtex_whole_blood/dist-main.svg "Distribution of coefficient values"){#fig:dist_coefs width="100%"}
+
+
+We used gene expression data from GTEx v8 and selected the top five tissues with more sample size: muscle (skeletal), whole blood, skin (sun exposed), adipose (subcutaneous) and artery (tibial).
+For each of these tissues, we selected the top 5,000 genes with largest variance, and then computed the pairwise correlation matrix using Pearson, Spearman and Clustermatch.
+In Figure @fig:dist_coefs a, we show how the pairwise correlation values distribute in whole blood, where Clustermatch (mean=0.14, median=0.08, sd=0.15) has a much more skewed distribution than Pearson (mean=0.31, median=0.24, sd=0.24) and especially Spearman (mean=0.39, median=0.37, sd=0.26).
+Each coefficient reaches 70% of gene pairs at $c=0.18$, $r=0.44$ and $r_s=0.56$ (Figure @fig:dist_coefs b, respectively.
+When we directly compare each coefficient with each other, the agreement between Clustermatch and Spearman is higher than any of these with Pearson (Figures @fig:dist_coefs c and d).
+
+
+![
+**Intersection of gene pairs with high and low coefficient values (GTEx v8, whole blood).**
+**a)** UpSet plot with six categories (rows) with the highest and lowest 30% correlation values.
+Columns show different intersections of categories grouped by agreements and disagreements.
+**b)** Hexagonal binning plots with examples of gene pairs where Clustermatch ($c$) disagrees with Pearson ($r$) and Spearman ($r_s$).
+A logarithmic scale was used to color each hexagon.
+](images/coefs_comp/gtex_whole_blood/upsetplot-main.svg "Intersection of gene pairs"){#fig:upsetplot_coefs width="100%"}
+
+
+A closer inspection of gene pairs detected and missed by these coefficients revealed the ability of Clustermatch to capture more complex yet biologically meaningful patterns.
+For this, we analyzed the agreements and disagreements by obtaining for each coefficient the top 30% of gene pairs with the largest correlation values (a "high" set) and the bottom 30% ("low"), resulting in six potentially overlapping categories.
+An UpSet plot [@doi:10.1109/TVCG.2014.2346248] is shown in Figure @fig:upsetplot_coefs a, where the intersections of these six categories allowed to precisely identify the gene expression patterns captured and missed by each coefficient.
+The three coefficients agree more on gene pairs with a high correlation value (42.1%) than on those with no relationship (34.3%).
+The figure also confirms that Clustermatch and Spearman agree more on highly correlated pairs (4.0% in "high", and 7.0% in "low") than any of these with Pearson (all between 0.3%-3.5% for "high", and 2.8%-5.5% for "low").
+Regarding disagreements, there are thousands of gene pairs with a high Clustermatch value that are not detected by the other coefficients.
+There are also gene pairs with a high Pearson value that have either low Clustermatch (1,075) or low Clustermatch and low Spearman values (531).
+However, these cases mostly seem to be driven by outliers (Figure @fig:upsetplot_coefs b).
+No gene pairs highly ranked by Spearman are missed by Clustermatch.
+
+
+In Figure @fig:upsetplot_coefs b, we show individual examples of gene pairs where Clustermatch disagrees with Pearson, Spearman or both.
+Genes *UTY* (chromosome Y) and *KDM6A* (chromosome X), which are paralogs, show a nonlinear relationship with a subset of samples (males) following a strong linear pattern, and another subset (females) having a constant expression of one gene (*UTY* is zero in this case, as expected).
+This combination of linear and constant patterns is captured by Clustermatch ($c=0.29$) but not by Pearson and Spearman ($r=0.24$, $r_s=0.10$).
+Clustermatch also correctly identifies this gene pair pattern in all other tissues in GTEx with the exception of female-specific organs (Supplementary Figures @fig:gtex_tissues:kdm6a_uty).
+Another composite relationship is present for genes *RASSF2* (20p13) and *CYTIP* (2q24.1) which show two clear linear patterns.
+These two genes are strongly expressed in white blood cells, both in myeloid and lymphoid lineages, and using tissue-specific gene networks from GIANT [@pmcid:PMC4828725] we found strong evidence of interactions in these cell types (Supplementary Figure @fig:inter:rassf2_cytip).
+
+<!--
+SDS / IFNG:
+    https://hb.flatironinstitute.org/gene/10993+3458
+    expressed in leukocyte, blood, lymphocyte, spleen
+    serine seems to be essential for T cell expansion: https://www.cell.com/cell-metabolism/pdfExtended/S1550-4131(16)30644-1
+
+JUN / APOC1:
+    https://hb.flatironinstitute.org/gene/3725+341
+    both expressed in blood, liver, leukocyte
+    both seem to be very related to the regulation of immune response
+
+BAG3 / NRADDP:
+    maybe remove this because NRADDP is pseudo gene
+        and it is not present in GIANT
+
+UTY / KDM6A:
+    these are from chr Y and X
+    easy explanation
+
+RASSF2 / CYTIP:
+    https://hb.flatironinstitute.org/gene/9770+9595
+    both expressed in peripheral blood (super strong), leukocyte (super strong), blood, etc etc (super strong)
+
+AC068... / KLHL21:
+    maybe remove? I can't fine AC068... gene
+
+the other two gene pairs detected by Pearson do not interact much in GIANT
+ -->
+
+
 ## Discussion
 
 
@@ -221,7 +295,7 @@ https://www.overleaf.com/read/dsyjdrdjqjcp
  -->
 
 ![
-](images/intro/clustermatch_algorithm.svg "Clustermatch algorithm"){#fig:cm_algor width="75%"}
+](images/intro/clustermatch_algorithm.svg "Clustermatch algorithm"){width="75%"}
 
 ## References {.page_break_before}
 
@@ -233,3 +307,14 @@ https://www.overleaf.com/read/dsyjdrdjqjcp
 
 
 ## Supplementary material
+
+![
+**Predicted interactions between *RASSF2* and *CYTIP* in white blood cells (leukocytes).**
+Nodes represent genes and edges are the probability that the gene pair is part of the same biological process in leukocytes.
+This analysis can be performed online using HumanBase [@url:https://hb.flatironinstitute.org/gene/9770+9595].
+](images/coefs_comp/gtex_whole_blood/GIANT-CYTIP_vs_RASSF2-leukocyte.png "Interaction between RASSF2 and CYTIP"){#fig:inter:rassf2_cytip width="60%"}
+
+
+![
+**Scatter plots of genes *KDM6A* and *UTY* across different GTEx tissues.**
+](images/coefs_comp/gtex-KDM6A_vs_UTY.svg "KDM6A and UTY across different GTEx tissues"){#fig:gtex_tissues:kdm6a_uty width="95%"}
