@@ -15,7 +15,7 @@ on:
         default: "true"
       BUILD_DOCX:
         description: generate DOCX output (true or false)
-        default: "false"
+        default: "true"
       BUILD_LATEX:
         description: generate LaTeX output (true or false)
         default: "false"
