@@ -81,9 +81,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/83e12ce9c09e4f99010a116aa61f4b0c0843f59f/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/83e12ce9c09e4f99010a116aa61f4b0c0843f59f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/83e12ce9c09e4f99010a116aa61f4b0c0843f59f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -97,9 +97,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/83e12ce9c09e4f99010a116aa61f4b0c0843f59f/">permalink</a>)
+(<a href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/83e12ce9c09e4f99010a116aa61f4b0c0843f59f">greenelab/clustermatch-gene-expr-manuscript@83e12ce</a>
+from <a href="https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/2d6b707b69e602f7c916fda1f3d71aa220421ec8">greenelab/clustermatch-gene-expr-manuscript@2d6b707</a>
 on February 7, 2022.
 </em></small></p>
 <p><span class="banner lightgrey"><i class="fas fa-scroll fa-lg"></i> <strong>Draft</strong><br>
@@ -287,6 +287,24 @@ JUN / APOC1:
     both expressed in blood, liver, leukocyte
     both seem to be very related to the regulation of immune response
  -->
+<h3 id="clustermatch-and-maximal-information-coefficient-strongly-agree-on-gene-pair-prioritization">Clustermatch and Maximal Information Coefficient strongly agree on gene pair prioritization</h3>
+<div id="fig:dist_coefs_mic" class="fignos">
+<figure>
+<img src="images/coefs_comp/gtex_whole_blood/mic/dist-main.svg" style="width:100.0%" alt="Figure 6: Distribution of Maximal Information Coefficient (MIC) and comparison with other methods. Given the high time complexity of MIC, approximately 1% of gene pairs were sampled from our previous set of 5,000 genes (GTEx v8, whole blood). a) Histogram of coefficient values. b) Corresponding cumulative histogram. The dotted line maps the coefficient value that accumulates 70% of gene pairs. c) 2D histogram plot with hexagonal bins between all coefficients, where a logarithmic scale was used to color each hexagon." /><figcaption aria-hidden="true"><span>Figure 6:</span> <strong>Distribution of Maximal Information Coefficient (MIC) and comparison with other methods.</strong>
+Given the high time complexity of MIC, approximately 1% of gene pairs were sampled from our previous set of 5,000 genes (GTEx v8, whole blood).
+<strong>a)</strong> Histogram of coefficient values.
+<strong>b)</strong> Corresponding cumulative histogram. The dotted line maps the coefficient value that accumulates 70% of gene pairs.
+<strong>c)</strong> 2D histogram plot with hexagonal bins between all coefficients, where a logarithmic scale was used to color each hexagon.</figcaption>
+</figure>
+</div>
+<p>Finally, we compared all the coefficients with the Maximal Information Coefficient (MIC <span class="citation" data-cites="tbcQL0eR">[<a href="#ref-tbcQL0eR" role="doc-biblioref">22</a>]</span>), a popular nonlinear method that can find complex relationships in data, although very expensive in computational terms.
+To circumvent this limitation of MIC, we took a small random sample of 100,000 gene pairs from all possible pairwise comparisons of our set with 5,000 highly variable genes from whole blood in GTEx v8.
+Then we performed the same analysis on the distribution of coefficients, shown in Figure <a href="#fig:dist_coefs_mic">6</a>.
+We verified that Clustermatch and MIC behave similarly in this dataset, with essentially the same distribution but only shifted.
+Figure <a href="#fig:dist_coefs_mic">6</a> c shows that these two coefficients relate almost linearly and compare very similarly with Pearson and Spearman.
+This result is important because MIC represented an important step in correlation analysis research, and it has been successfully used in various application domains <span class="citation" data-cites="NnsqWXcp g8HrFUfP iZjSr8s2">[<a href="#ref-NnsqWXcp" role="doc-biblioref">23</a>,<a href="#ref-g8HrFUfP" role="doc-biblioref">24</a>,<a href="#ref-iZjSr8s2" role="doc-biblioref">25</a>]</span>.
+However, the use of MIC in large datasets remained limited due to its very long computation time.
+Our work and analyses suggest that Clustermatch could be an equally effective but much more efficient next-generation correlation coefficient.</p>
 <h2 id="discussion">Discussion</h2>
 <h2 id="methods">Methods</h2>
 <h3 id="clustermatch-algorithm">Clustermatch algorithm</h3>
@@ -366,6 +384,18 @@ https://www.overleaf.com/read/dsyjdrdjqjcp
 </div>
 <div id="ref-irsTxKvs" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>PYGM, TPM2 - HumanBase</strong> <a href="https://hb.flatironinstitute.org/gene/5837+7169">https://hb.flatironinstitute.org/gene/5837+7169</a></div>
+</div>
+<div id="ref-tbcQL0eR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Detecting novel associations in large data sets.</strong> <div class="csl-block">David N Reshef, Yakir A Reshef, Hilary K Finucane, Sharon R Grossman, Gilean McVean, Peter J Turnbaugh, Eric S Lander, Michael Mitzenmacher, Pardis C Sabeti</div> <em>Science (New York, N.Y.)</em> (2011-12-16) <a href="https://www.ncbi.nlm.nih.gov/pubmed/22174245">https://www.ncbi.nlm.nih.gov/pubmed/22174245</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1126/science.1205438">10.1126/science.1205438</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22174245">22174245</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3325791">PMC3325791</a></div></div>
+</div>
+<div id="ref-NnsqWXcp" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>An improved algorithm for the maximal information coefficient and its application.</strong> <div class="csl-block">Dan Cao, Yuan Chen, Jin Chen, Hongyan Zhang, Zheming Yuan</div> <em>Royal Society open science</em> (2021-02-10) <a href="https://www.ncbi.nlm.nih.gov/pubmed/33972855">https://www.ncbi.nlm.nih.gov/pubmed/33972855</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rsos.201424">10.1098/rsos.201424</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33972855">33972855</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8074658">PMC8074658</a></div></div>
+</div>
+<div id="ref-g8HrFUfP" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>Time-Frequency Maximal Information Coefficient Method and its Application to Functional Corticomuscular Coupling.</strong> <div class="csl-block">Tie Liang, Qingyu Zhang, Xiaoguang Liu, Cunguang Lou, Xiuling Liu, Hongrui Wang</div> <em>IEEE transactions on neural systems and rehabilitation engineering : a publication of the IEEE Engineering in Medicine and Biology Society</em> (2020-11-06) <a href="https://www.ncbi.nlm.nih.gov/pubmed/33001806">https://www.ncbi.nlm.nih.gov/pubmed/33001806</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/tnsre.2020.3028199">10.1109/tnsre.2020.3028199</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33001806">33001806</a></div></div>
+</div>
+<div id="ref-iZjSr8s2" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>McTwo: a two-step feature selection algorithm based on maximal information coefficient.</strong> <div class="csl-block">Ruiquan Ge, Manli Zhou, Youxi Luo, Qinghan Meng, Guoqin Mai, Dongli Ma, Guoqing Wang, Fengfeng Zhou</div> <em>BMC bioinformatics</em> (2016-03-23) <a href="https://www.ncbi.nlm.nih.gov/pubmed/27006077">https://www.ncbi.nlm.nih.gov/pubmed/27006077</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s12859-016-0990-0">10.1186/s12859-016-0990-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27006077">27006077</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4804474">PMC4804474</a></div></div>
 </div>
 </div>
 <h2 id="acknowledgements">Acknowledgements</h2>
