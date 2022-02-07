@@ -123,6 +123,14 @@ content/04.10.results_comp.md:80:PYGM
 content/04.10.results_comp.md:84:CLUSTERMATCH
 content/04.10.results_comp.md:88:IFNG
 content/04.10.results_comp.md:88:SDS
+content/04.15.results_mic.md:1:Clustermatch
+content/04.15.results_mic.md:6:GTEx
+content/04.15.results_mic.md:14:GTEx
+content/04.15.results_mic.md:16:Clustermatch
+content/04.15.results_mic.md:16:dataset
+content/04.15.results_mic.md:17:Spearman
+content/04.15.results_mic.md:19:datasets
+content/04.15.results_mic.md:20:Clustermatch
 content/08.methods.md:3:Clustermatch
 content/08.methods.md:15:Clustermatch
 content/15.acknowledgements.md:1:Acknowledgements

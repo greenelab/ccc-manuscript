@@ -15,7 +15,8 @@ Consejo
 CP
 CYTIP
 Datasaurus
-Datasets
+dataset
+datasets
 dmilone
 GBMF
 GreeneScientist
@@ -23,7 +24,7 @@ gtex
 IFNG
 interpretable
 Investigaciones
-KDM
+kdm
 KLHL
 Litoral
 Marylyn

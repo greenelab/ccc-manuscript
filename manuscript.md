@@ -52,9 +52,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/83e12ce9c09e4f99010a116aa61f4b0c0843f59f/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/83e12ce9c09e4f99010a116aa61f4b0c0843f59f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/83e12ce9c09e4f99010a116aa61f4b0c0843f59f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -76,9 +76,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/83e12ce9c09e4f99010a116aa61f4b0c0843f59f/))
+([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/))
 was automatically generated
-from [greenelab/clustermatch-gene-expr-manuscript@83e12ce](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/83e12ce9c09e4f99010a116aa61f4b0c0843f59f)
+from [greenelab/clustermatch-gene-expr-manuscript@2d6b707](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/2d6b707b69e602f7c916fda1f3d71aa220421ec8)
 on February 7, 2022.
 </em></small>
 
@@ -305,6 +305,28 @@ JUN / APOC1:
     both expressed in blood, liver, leukocyte
     both seem to be very related to the regulation of immune response
  -->
+
+
+### Clustermatch and Maximal Information Coefficient strongly agree on gene pair prioritization
+
+
+![
+**Distribution of Maximal Information Coefficient (MIC) and comparison with other methods.**
+Given the high time complexity of MIC, approximately 1% of gene pairs were sampled from our previous set of 5,000 genes (GTEx v8, whole blood).
+**a)** Histogram of coefficient values.
+**b)** Corresponding cumulative histogram. The dotted line maps the coefficient value that accumulates 70% of gene pairs.
+**c)** 2D histogram plot with hexagonal bins between all coefficients, where a logarithmic scale was used to color each hexagon.
+](images/coefs_comp/gtex_whole_blood/mic/dist-main.svg "Distribution of MIC values"){#fig:dist_coefs_mic width="100%"}
+
+
+Finally, we compared all the coefficients with the Maximal Information Coefficient (MIC [@pmid:22174245]), a popular nonlinear method that can find complex relationships in data, although very expensive in computational terms.
+To circumvent this limitation of MIC, we took a small random sample of 100,000 gene pairs from all possible pairwise comparisons of our set with 5,000 highly variable genes from whole blood in GTEx v8.
+Then we performed the same analysis on the distribution of coefficients, shown in Figure @fig:dist_coefs_mic.
+We verified that Clustermatch and MIC behave similarly in this dataset, with essentially the same distribution but only shifted.
+Figure @fig:dist_coefs_mic c shows that these two coefficients relate almost linearly and compare very similarly with Pearson and Spearman.
+This result is important because MIC represented an important step in correlation analysis research, and it has been successfully used in various application domains [@pmid:33972855; @pmid:33001806; @pmid:27006077].
+However, the use of MIC in large datasets remained limited due to its very long computation time.
+Our work and analyses suggest that Clustermatch could be an equally effective but much more efficient next-generation correlation coefficient.
 
 
 ## Discussion
