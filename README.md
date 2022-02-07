@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://greenelab.github.io/clustermatch-gene-expr-manuscript/>.
-The permalink for this webpage version is <https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/abe8f12222610137395e475c39405d569c88077e/>.
+The permalink for this webpage version is <https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/83e12ce9c09e4f99010a116aa61f4b0c0843f59f/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`abe8f12222610137395e475c39405d569c88077e`](https://github.com/greenelab/clustermatch-gene-expr-manuscript/commit/abe8f12222610137395e475c39405d569c88077e).
+[`83e12ce9c09e4f99010a116aa61f4b0c0843f59f`](https://github.com/greenelab/clustermatch-gene-expr-manuscript/commit/83e12ce9c09e4f99010a116aa61f4b0c0843f59f).
