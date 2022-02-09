@@ -5,7 +5,7 @@
    version="1.1"
    id="svg252"
    sodipodi:docname="GIANT-RASSF2_vs_CYTIP-leukocyte.svg"
-   inkscape:version="1.1.1 (26b7af14f2, 2022-01-19)"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="1.4066667"
-     inkscape:cx="-27.014217"
+     inkscape:cx="184.12322"
      inkscape:cy="174.17061"
      inkscape:window-width="1714"
      inkscape:window-height="1371"
@@ -1218,4 +1218,14 @@
       </g>
     </g>
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="335.67114"
+     y="9.1171875"
+     id="text1801"><tspan
+       sodipodi:role="line"
+       id="tspan1799"
+       x="335.67114"
+       y="9.1171875">Leukocytes</tspan></text>
 </svg>
