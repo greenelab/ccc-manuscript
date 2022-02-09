@@ -52,9 +52,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/9b27eb0fa500f80205a062693c42d8bee40d67c2/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/9b27eb0fa500f80205a062693c42d8bee40d67c2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/9b27eb0fa500f80205a062693c42d8bee40d67c2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/bebaa897f7e9e9374d883fc68555445902002444/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/bebaa897f7e9e9374d883fc68555445902002444/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/bebaa897f7e9e9374d883fc68555445902002444/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -76,9 +76,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/9b27eb0fa500f80205a062693c42d8bee40d67c2/))
+([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/bebaa897f7e9e9374d883fc68555445902002444/))
 was automatically generated
-from [greenelab/clustermatch-gene-expr-manuscript@9b27eb0](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/9b27eb0fa500f80205a062693c42d8bee40d67c2)
+from [greenelab/clustermatch-gene-expr-manuscript@bebaa89](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/bebaa897f7e9e9374d883fc68555445902002444)
 on February 9, 2022.
 </em></small>
 
@@ -139,7 +139,15 @@ This manuscript version is work-in-progress
 
 ## Abstract {.page_break_before}
 
-
+Correlation coefficients are used across different research areas to answer critical scientific questions.
+Genes with correlated expression, for instance, can provide valuable insight to infer their function and detect disease-relevant tissue-specific patterns.
+Indeed, since the introduction of recent models of the genetic architecture of complex traits, gene regulatory networks are playing an increasingly important role in genetic studies and the field of precision medicine.
+However, "correlation" is widely understood as "linear correlation," and more complex yet potentially meaningful patterns are usually not considered.
+This work provides an efficient and easy-to-use implementation of Clustermatch, a not-only-linear correlation coefficient based on machine learning models.
+Clustermatch can derive a similarity value between highly-diverse data features, and it has a single parameter.
+Using human RNA-seq data, we provide examples showing that Clustermatch significantly improves the detection of strongly linear and biologically meaningful nonlinear gene-gene relationships.
+We also show that Clustermatch and the Maximal Information Coefficient strongly agree, although Clustermatch runs at a fraction of time.
+We anticipate that Clustermatch will dramatically improve the detection of crucial molecular patterns completely missed by standard coefficients.
 
 
 ## Introduction
@@ -150,14 +158,14 @@ This large amount of data provides new opportunities to address unanswered scien
 For this purpose, correlation analysis is an essential statistical technique to discover relationships between variables [@pmid:21310971].
 Correlation coefficients are used in fundamental exploratory data mining techniques, such as clustering or community detection algorithms, to compute a similarity value between a pair of objects of scientific interest such as genes [@pmid:27479844] or morpho-agronomic traits in crop plans [@doi:10.1093/bioinformatics/bty899].
 Correlation methods are also successfully used in supervised tasks for feature selection to improve prediction accuracy [@pmid:27006077; @pmid:33729976].
-Coefficients such as Pearson or Spearman are ubiquitous across application domains and diverse scientific areas.
+Standard coefficients such as Pearson are ubiquitous across application domains and diverse scientific areas.
 Even minor and significant improvements in these techniques could have enormous consequences in industry and research.
 
 
-In transcriptomics, almost every analysis starts with the correlation between a pair of genes.
+In transcriptomics, almost every analysis starts with the correlation between genes.
 More sophisticated approaches built on correlation analysis can suggest gene function [@pmid:21241896], aid in discovering common and cell lineage-specific regulatory networks [@pmid:25915600], and capture important interactions in a living organism that can uncover molecular mechanisms in other species [@pmid:21606319; @pmid:16968540].
 The analysis of large RNA-seq datasets [@pmid:32913098; @pmid:34844637] can also reveal complex transcriptional mechanisms underlying human diseases [@pmid:27479844; @pmid:31121115; @pmid:30668570; @pmid:32424349; @pmid:34475573].
-Since the introduction of the omnigenic model of complex traits [@pmid:28622505; @pmid:31051098], gene-gene relationships are playing an increasingly important role in genetic studies of human diseases [@pmid:34845454; @doi:10.1101/2021.07.05.450786; @doi:10.1101/2021.10.21.21265342].
+Since the introduction of the omnigenic model of complex traits [@pmid:28622505; @pmid:31051098], gene-gene relationships are playing an increasingly important role in genetic studies of human diseases [@pmid:34845454; @doi:10.1101/2021.07.05.450786; @doi:10.1101/2021.10.21.21265342], even in specific fields such as polygenic risk scores [@doi:10.1016/j.ajhg.2021.07.003].
 In this context, very recent approaches combine disease-associated genes from genome-wide association studies (GWAS) with gene co-expression networks to prioritize "core" genes directly driving diseases.
 These core genes are not captured by standard statistical methods but are part of disease-relevant and highly-interconnected regulatory networks.
 Therefore, more sophisticated correlation coefficients could dramatically improve the identification of more attractive candidate drug targets in the precision medicine field.
@@ -165,7 +173,7 @@ Therefore, more sophisticated correlation coefficients could dramatically improv
 
 Standard correlation methods such as Pearson and Spearman are the most popular approaches since they use simple statistics that can be computed quickly.
 However, they can only capture linear or monotonic patterns, which might certainly not be enough to detect more complex yet essential relationships.
-Novel approaches such as Maximal Information Coefficient (MIC) [@pmid:22174245] or Distance Correlation (DC) [@doi:10.1214/009053607000000505] can capture nonlinear patterns.
+Novel approaches such as the Maximal Information Coefficient (MIC) [@pmid:22174245] or Distance Correlation (DC) [@doi:10.1214/009053607000000505] can capture nonlinear patterns.
 However, they are impractical not only for big data but also for even moderately sized datasets.
 We previously showed that Clustermatch, a method for cluster analysis on highly diverse datasets, significantly outperformed Pearson, Spearman, MIC and DC in detecting simulated linear and nonlinear relationships with varying levels of noise [@doi:10.1093/bioinformatics/bty899].
 Here we present the Clustermatch's correlation coefficient, an efficient not-only-linear method that can handle quantitative and qualitative variables.
@@ -363,59 +371,53 @@ Our work and analyses suggest that Clustermatch could be an equally effective bu
 
 We previously showed that Clustermatch outperformed all other coefficients in a simulated cluster analysis scenario with linear and nonlinear patterns and varying noise levels.
 Here we introduced the Clustermatch correlation coefficient, an efficient machine learning-based method and an optimized Python implementation.
-We applied it to gene expression data from GTEx v8 and found that our coefficient is robust to outliers and does not miss important linear relationships in gene-gene patterns.
+We applied it to gene expression data from GTEx v8 and found that our coefficient is robust to outliers and does not miss strongly linear relationships in gene-gene patterns.
 Clustermatch also captured complex and biologically meaningful relationships completely missed by standard coefficients.
 <!-- TODO: something about GIANT results? -->
 We also showed that directly comparing Clustermatch with linear-only coefficients highlighted the most complex and potentially promising gene pairs.
 Finally, Clustermatch derives scores very well aligned with the Maximal Information Coefficient while being much more computationally efficient and thus practical for use in large modern datasets.
 
 
-Our analyses have some limitations.
-We worked on a sample with the top variable genes to keep computation time feasible for Clustermatch.
-Although Clustermatch is faster than MIC or DC, Pearson and Spearman are still the fastest since they only rely on simple data statistics.
-This smaller sample of genes might not show an accurate picture of all patterns in data.
-However, our results confirm that the advantages of using more sophisticated yet efficient methods like Clustermatch can help detect and study more intricate molecular mechanisms.
-Although we only used GTEx, with a relatively homogeneous set of samples, we could still find complex and meaningful patterns, suggesting that the application of Clustermatch on larger compendia, such as recount3 with thousands of samples across different conditions, can reveal other potentially important gene interactions.
-
-
 It is well-known that biomedical research is biased towards a small fraction of human genes [@pmid:17620606; @pmid:17472739].
 Researching genes with well-known functions is easier, although this observational bias seems anachronic with current high-throughput technologies.
-Although several factors explaining this behavior have been identified [@pmid:30226837], such as RNA and protein abundance or gene length, another potential explanation could also be a bias of current statistical methods towards linear-only patterns.
-It is well-known that deep learning approaches have revolutionazed several areas in research and industry, but interpretation is crucial in other fields such as biology and medicine.
-In these health-related fields, another breakthrough theoretical advance was the omnigenic model of complex traits, where gene regulatory networks are now first-class players in genetic studies.
-This model not only shifted our attention to other, potentially less studied genes that are part of disease-relevant networks, but can also explain why polygenic risk scores perform so poorly across different population ancestries.
+Several factors explaining this behavior have been identified [@pmid:30226837], such as RNA and protein abundance or gene length. Another potential explanation could also be a bias towards linear-only statistical methods.
+Recent computational approaches such as deep learning have revolutionized several areas in academia and industry.
+However, their interpretability, which is essential in biology and medicine, is still a significant limitation.
+In these health-related fields, another breakthrough theoretical advance was the omnigenic model of complex traits, where gene regulatory networks are becoming first-class players in genetic studies.
+This model shifted our attention to other, potentially less studied genes that are part of disease-relevant networks while also being helpful to explain why polygenic risk scores perform so poorly across different population ancestries [@doi:10.1016/j.ajhg.2021.07.003].
 The streetlight effect [@url:https://www.discovermagazine.com/the-sciences/why-scientific-studies-are-so-often-wrong-the-streetlight-effect], where we only search where it is easiest to look, is widespread in areas beyond biology.
-We anticipate that sophisticated and efficient approaches like Clustermatch will play a significant role in focusing on other less studied areas of the genome and other research fields and applications domains.
+We anticipate that advanced, efficient and interpretable approaches like Clustermatch will play a significant role in providing the computational tools to focus on less-studied yet potentially more promising genes.
+
+
+Our analyses have some limitations.
+We worked on a sample with the top variable genes to keep computation time feasible for Clustermatch.
+Although Clustermatch is much faster than MIC or DC, Pearson and Spearman are still the most efficient since they only rely on simple data statistics, which significantly limits their ability beyond linear patterns and are susceptible to outliers.
+Even with this small sample of genes, our results confirm that the advantages of using more sophisticated yet efficient methods like Clustermatch can help detect and study more intricate molecular mechanisms.
+Although we only used GTEx, with a relatively homogeneous set of samples, we could still find complex and meaningful patterns, suggesting that the application of Clustermatch on larger compendia, such as recount3 [@pmid:34844637] with thousands of samples across different conditions, can reveal other potentially meaningful gene interactions.
 
 
 Computing a correlation coefficient based on simple data summaries is tempting fast.
-However, this study shows that those methods can miss essential patterns to understand the big picture, such as a gene co-expression network representing robust, accurate and not-only-linear interactions.
-We provide an efficient method based on machine learning techniques that can process heterogeneous data types seamlessly, dramatically easing preprocessing steps for the end-user.
+However, this study shows that those methods can miss crucial, not-only-linear patterns to understand the big picture.
+We provide an efficient, next-generation correlation coefficient based on machine learning techniques that can process heterogeneous data types seamlessly, dramatically easing preprocessing steps for the end-user.
 
 
 ## Methods
 
 ### Clustermatch algorithm
 
-<!-- 
-Latex algorithm available in:
-https://www.overleaf.com/read/dsyjdrdjqjcp
-
-1. Download PDF from Overleaf
-2. pdfcrop clustermatch_algorithm.pdf clustermatch_algorithm.pdf
-3. pdf2svg clustermatch_algorithm.pdf clustermatch_algorithm.svg
- -->
-
 ![
 ](images/intro/clustermatch_algorithm.svg "Clustermatch algorithm"){width="75%"}
+
+An optimized Python implementation of Clustermatch can be found in our Github repository [@url:https://github.com/greenelab/clustermatch-gene-expr], as well as the code and data needed to reproduce all analyses.
 
 
 ### GTEx v8 data and sampling approach
 
-We downloaded GTEx v8 data for all tissues and focus our primary analysis on whole blood, which has good sample size (755) and has been normalized using TPM (transcripts per million).
-We selected the top 5,000 genes from whole blood with the largest variance after standardizing with pseudocounts $log(x + 1)$.
-We then computed Pearson, Spearman and Clustermatch on this 5,000 genes across all 755 samples, generating a pairwise similarity matrix of size 5,000 x 5,000.
+We downloaded GTEx v8 data for all tissues, normalized using TPM (transcripts per million), and focused our primary analysis on whole blood, which has a good sample size (755).
+We selected the top 5,000 genes from whole blood with the largest variance after standardizing with $log(x + 1)$ to avoid a bias towards highly-expressed genes.
+We then computed Pearson, Spearman and Clustermatch on these 5,000 genes across all 755 samples, generating a pairwise similarity matrix of size 5,000 x 5,000.
 To reduce the time to compute MIC and compare it with the other coefficients, we randomly sampled 100,000 gene pairs from all possible combinations in this set of 5,000 genes ($n * (n-1) / 2=12497500$).
+
 
 ## References {.page_break_before}
 

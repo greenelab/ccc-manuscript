@@ -29,6 +29,7 @@ GTEx
 GWAS
 hepatocellular
 IFNG
+interpretability
 interpretable
 Investigaciones
 kdm
@@ -49,11 +50,9 @@ paralogs
 Pividori
 polygenic
 preprocessing
-pseudocounts
 PYGM
 quantiles
 RASSF
-revolutionazed
 Ritchie
 SDS
 sinc
