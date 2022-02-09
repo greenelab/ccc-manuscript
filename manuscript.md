@@ -5,7 +5,7 @@ keywords:
 - nonlinear relationships
 - gene expression
 lang: en-US
-date-meta: '2022-02-07'
+date-meta: '2022-02-09'
 author-meta:
 - Milton Pividori
 - Marylyn D. Ritchie
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="An efficient not-only-linear dependence coefficient based on machine learning" />
   <meta property="og:title" content="An efficient not-only-linear dependence coefficient based on machine learning" />
   <meta property="twitter:title" content="An efficient not-only-linear dependence coefficient based on machine learning" />
-  <meta name="dc.date" content="2022-02-07" />
-  <meta name="citation_publication_date" content="2022-02-07" />
+  <meta name="dc.date" content="2022-02-09" />
+  <meta name="citation_publication_date" content="2022-02-09" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -52,9 +52,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/9b27eb0fa500f80205a062693c42d8bee40d67c2/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/9b27eb0fa500f80205a062693c42d8bee40d67c2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/9b27eb0fa500f80205a062693c42d8bee40d67c2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -76,10 +76,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/2d6b707b69e602f7c916fda1f3d71aa220421ec8/))
+([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/9b27eb0fa500f80205a062693c42d8bee40d67c2/))
 was automatically generated
-from [greenelab/clustermatch-gene-expr-manuscript@2d6b707](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/2d6b707b69e602f7c916fda1f3d71aa220421ec8)
-on February 7, 2022.
+from [greenelab/clustermatch-gene-expr-manuscript@9b27eb0](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/9b27eb0fa500f80205a062693c42d8bee40d67c2)
+on February 9, 2022.
 </em></small>
 
 [
@@ -145,17 +145,50 @@ This manuscript version is work-in-progress
 ## Introduction
 
 
+New technologies have vastly improved data collection, generating a deluge of information across different disciplines.
+This large amount of data provides new opportunities to address unanswered scientific questions, provided we have both efficient and complex enough tools for the analysis.
+For this purpose, correlation analysis is an essential statistical technique to discover relationships between variables [@pmid:21310971].
+Correlation coefficients are used in fundamental exploratory data mining techniques, such as clustering or community detection algorithms, to compute a similarity value between a pair of objects of scientific interest such as genes [@pmid:27479844] or morpho-agronomic traits in crop plans [@doi:10.1093/bioinformatics/bty899].
+Correlation methods are also successfully used in supervised tasks for feature selection to improve prediction accuracy [@pmid:27006077; @pmid:33729976].
+Coefficients such as Pearson or Spearman are ubiquitous across application domains and diverse scientific areas.
+Even minor and significant improvements in these techniques could have enormous consequences in industry and research.
+
+
+In transcriptomics, almost every analysis starts with the correlation between a pair of genes.
+More sophisticated approaches built on correlation analysis can suggest gene function [@pmid:21241896], aid in discovering common and cell lineage-specific regulatory networks [@pmid:25915600], and capture important interactions in a living organism that can uncover molecular mechanisms in other species [@pmid:21606319; @pmid:16968540].
+The analysis of large RNA-seq datasets [@pmid:32913098; @pmid:34844637] can also reveal complex transcriptional mechanisms underlying human diseases [@pmid:27479844; @pmid:31121115; @pmid:30668570; @pmid:32424349; @pmid:34475573].
+Since the introduction of the omnigenic model of complex traits [@pmid:28622505; @pmid:31051098], gene-gene relationships are playing an increasingly important role in genetic studies of human diseases [@pmid:34845454; @doi:10.1101/2021.07.05.450786; @doi:10.1101/2021.10.21.21265342].
+In this context, very recent approaches combine disease-associated genes from genome-wide association studies (GWAS) with gene co-expression networks to prioritize "core" genes directly driving diseases.
+These core genes are not captured by standard statistical methods but are part of disease-relevant and highly-interconnected regulatory networks.
+Therefore, more sophisticated correlation coefficients could dramatically improve the identification of more attractive candidate drug targets in the precision medicine field.
+
+
+Standard correlation methods such as Pearson and Spearman are the most popular approaches since they use simple statistics that can be computed quickly.
+However, they can only capture linear or monotonic patterns, which might certainly not be enough to detect more complex yet essential relationships.
+Novel approaches such as Maximal Information Coefficient (MIC) [@pmid:22174245] or Distance Correlation (DC) [@doi:10.1214/009053607000000505] can capture nonlinear patterns.
+However, they are impractical not only for big data but also for even moderately sized datasets.
+We previously showed that Clustermatch, a method for cluster analysis on highly diverse datasets, significantly outperformed Pearson, Spearman, MIC and DC in detecting simulated linear and nonlinear relationships with varying levels of noise [@doi:10.1093/bioinformatics/bty899].
+Here we present the Clustermatch's correlation coefficient, an efficient not-only-linear method that can handle quantitative and qualitative variables.
+To assess its performance in RNA-seq data, we applied our method to gene expression data from the Genotype-Tissue Expression (GTEx) project across different tissues.
+We show that Clustermatch captured both known linear relationships and novel nonlinear and biologically meaningful gene-gene patterns completely missed by standard coefficients.
+<!-- TODO: Add something about GIANT results? -->
+Clustermatch scores distribute very similarly to MIC, although it is much faster to compute and results are easy to interpret.
+It also has a single parameter that balances the complexity of relationships found and computation time.
+Our results show that Clutermatch is an attractive replacement for standard linear-only coefficients that can be readily used across different research areas.
+Its ability to efficiently handle diverse data types (including numerical and categorical features) reduces preprocessing steps and makes it appealing to analyze large and complex repositories.
+
+
 ## Results
 
 
 ### A robust and efficient not-only-linear dependence coefficient
 
 Clustermatch is a dependence coefficient that can compute a similarity measure between any pair of variables, either with numerical or categorical values [@doi:10.1093/bioinformatics/bty899].
-The method assumes that if there is a relationship between two variables/features describing $n$ data points/objects, then the clusterings on those $n$ objects derived using each variable individually should match (see Methods).
+The method assumes that if there is a relationship between two variables/features describing $n$ data points/objects, then the clusterings of those $n$ objects derived using each variable individually should match (see Methods).
 Although different clustering algorithms can be applied to one-dimensional data [@Jenks1967], we used quantiles to efficiently separate data points into different clusters (i.e., the median separates numerical data into two clusters).
-Since in Clustermatch the data is categorized into clusters, numerical and categorical data can be naturally integrated since clusters do not need an order.
+In Clustermatch, the data is internally categorized into clusters, therefore numerical and categorical variables can be naturally integrated since clusters do not need an order.
 Once all clusterings from each variable are generated, the Clustermatch coefficient is defined as the maximum adjusted Rand index (ARI) [@doi:10.1007/BF01908075] between them.
-We previously compared Clustermatch [@doi:10.1093/bioinformatics/bty899] with the Maximal Information Coefficient (MIC) [@doi:10.1126/science.1205438] and Distance Correlation (DC) [@doi:10.1214/009053607000000505], two popular nonlinear correlation coefficients.
+We previously compared Clustermatch [@doi:10.1093/bioinformatics/bty899] with Pearson, Spearman, and two nonlinear correlation coefficients: the Maximal Information Coefficient (MIC) [@doi:10.1126/science.1205438] and Distance Correlation (DC) [@doi:10.1214/009053607000000505].
 Clustermatch outperformed these two methods in a simulated scenario with several relationship types (linear and nonlinear) and noise levels.
 Clustermatch was also significantly superior in computational complexity, making it the only practical not-only-linear coefficient for real and large datasets such as gene expression compendia.
 This study focused on RNA-seq data from GTEx v8 and compared which patterns were detected or missed by these coefficients.
@@ -166,16 +199,16 @@ This study focused on RNA-seq data from GTEx v8 and compared which patterns were
 Each panel contains a set of simulated data points described by two variables: $x$ and $y$.
 The first row shows Anscombe's quartet with four different datasets (from Anscombe I to IV) and 11 data points each.
 The second row contains a set of general patterns with 100 data points each.
-Each panel shows the correlation value using the Pearson ($p$), Spearman ($s$) and Clustermatch ($c$) coefficients.
+Each panel shows the correlation value using Pearson ($p$), Spearman ($s$) and Clustermatch ($c$).
 Vertical and horizontal lines show how Clustermatch partitioned data points using $x$ and $y$, respectively.
 ](images/intro/relationships.svg "Different types of relationships in data"){#fig:datasets_rel width="100%"}
 
 
 In Figure @fig:datasets_rel, we show how Pearson ($p$), Spearman ($s$) and Clustermatch ($c$) behave on different data patterns, where red lines indicate how Clustermatch clusters data points using each feature individually (either $x$ or $y$).
 In the first row of the figure, the classic Anscombe's quartet [@doi:10.1080/00031305.1973.10478966] is shown, which comprises four synthetic datasets with entirely different patterns but the same data statistics (mean, standard deviation and Pearson's correlation).
-This kind of simulated data, recently revisited with the "Datasaurus" [@url:http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html; @doi:10.1145/3025453.3025912; @doi:10.1111/dsji.12233], are frequently used as a reminder of the importance of going beyond simple statistics, where either undesirable patterns (such as outliers) or desirable ones (such as nonlinear relationships reflecting real and complex biological relationships) can be masked by summary statistics.
+This kind of simulated data, recently revisited with the "Datasaurus" [@url:http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html; @doi:10.1145/3025453.3025912; @doi:10.1111/dsji.12233], are frequently used as a reminder of the importance of going beyond simple statistics, where either undesirable patterns (such as outliers) or desirable ones (such as biologically meaningfull nonlinear relationships) can be masked by summary statistics alone.
 For example, Anscombe I seems to show a noisy but clear linear pattern, similar to Anscombe III where the linearity is perfect besides one outlier.
-For these two patterns, Clustermatch separates data points using two clusters (one red line for each variable $x$ and $y$), yielding 1.0, the maximum value, correctly identifying the relationship.
+Here Clustermatch separates data points using two clusters (one red line for each variable $x$ and $y$), yielding 1.0, the maximum value, correctly identifying the relationship.
 Anscombe II seems to follow a quadratic relationship interpreted as a linear pattern by Pearson and Spearman, whereas Clustermatch yields a lower yet non-zero value of 0.34.
 Anscombe IV shows a vertical line where $x$ values are almost constant except for one outlier.
 This outlier does not influence Clustermatch as it does for Pearson or Spearman.
@@ -190,7 +223,7 @@ For the random/independent pair of variables, all coefficients correctly agree w
 In this case, Clustermatch separates data points into different numbers of clusters which, when compared to each other, all give an ARI very close to zero (in fact, the maximum value $c=0.01$, is reached with five clusters using $x$ and two using $y$).
 For the other three examples (quadratic, non-coexistence and two-lines), Pearson and Spearman generally fail to capture a clear pattern between variables $x$ and $y$.
 These patterns also show how Clustermatch uses different degrees of complexity to capture the relationships.
-For the non-coexistence pattern, where for instance one gene ($x$) might be expressed while the other one ($y$) is inhibited, Clustermatch only needs two clusters for both variables, similarly to a linear relationship (Anscombe I and III).
+For the non-coexistence pattern where, for instance, one gene ($x$) might be expressed while the other one ($y$) is inhibited, Clustermatch only needs two clusters for both variables, similarly to a linear relationship (Anscombe I and III).
 For the quadratic pattern, Clustermatch separates $x$ into more clusters (four in this case) to reach the maximum ARI.
 The two-lines example shows two embedded linear relationships with different slopes, which either Pearson or Spearman does not detect ($p=-0.12$ and $s=0.05$, respectively).
 Here, Clustermatch increases the complexity of the model by using eight clusters for $x$ and six for $y$, resulting in $c=0.31$.
@@ -205,10 +238,13 @@ A value of $k_{\mathrm{max}}=2$ makes the coefficient more leaned towards linear
 We found that $k_{\mathrm{max}}=10$ (the default value) approximates well the coefficient values for different types of patterns [@doi:10.1093/bioinformatics/bty899] while balancing computing time and always keeping a close-to-zero value for random data, which is guaranteed by the adjusted-for-chance property of ARI [@Vinh2010].
 
 
-The following sections compare the coefficients on real gene expression data and highlight some complex and potentially interesting relationships that only Clustermatch detects.
+The following sections compare the coefficients on real gene expression data and highlight some complex and biologically interesting relationships that only Clustermatch detects.
 
 
 ### Clustermatch detects linear and nonlinear patterns in human transcriptomic data
+
+We used gene expression data from GTEx v8 across different tissues.
+We selected the top 5,000 genes with the largest variance for our initial analyses on whole blood and then computed the pairwise correlation matrix using Pearson, Spearman and Clustermatch (see Methods).
 
 ![
 **Distribution of coefficient values on gene expression (GTEx v8, whole blood).**
@@ -218,19 +254,17 @@ The following sections compare the coefficients on real gene expression data and
 ](images/coefs_comp/gtex_whole_blood/dist-main.svg "Distribution of coefficient values"){#fig:dist_coefs width="100%"}
 
 
-We used gene expression data from GTEx v8 across different tissues.
-We selected the top 5,000 genes with the largest variance for our initial analyses on whole blood and then computed the pairwise correlation matrix using Pearson, Spearman and Clustermatch.
 In Figure @fig:dist_coefs a, we show how the pairwise correlation values distribute, where Clustermatch (mean=0.14, median=0.08, sd=0.15) has a much more skewed distribution than Pearson (mean=0.31, median=0.24, sd=0.24) and especially Spearman (mean=0.39, median=0.37, sd=0.26).
 Coefficients reach 70% of gene pairs at $c=0.18$, $p=0.44$ and $s=0.56$ (Figure @fig:dist_coefs b).
-Clustermatch and Spearman tend to agree more than any of these with Pearson, although many gene pairs seem to have a relatively higher value for Clustermatch (Figures @fig:dist_coefs c).
+Clustermatch and Spearman tend to agree more than any of these with Pearson, although many gene pairs seem to have a relatively higher correlation value only with Clustermatch (Figures @fig:dist_coefs c).
 
 
 ![
-**Intersection of gene pairs with high and low coefficient values (GTEx v8, whole blood).**
+**Intersection of gene pairs with high and low correlation coefficient values (GTEx v8, whole blood).**
 **a)** UpSet plot with six categories (rows) grouping the 30% of the highest (green triangle) and lowest (red triangle) correlation values for each method.
 Columns show different intersections of categories grouped by agreements and disagreements.
 **b)** Hexagonal binning plots with examples of gene pairs where Clustermatch ($c$) disagrees with Pearson ($p$) and Spearman ($s$).
-For each method, green and red triangles indicate if the gene pair obtained a correlation among the top (green) or bottom (red) 30% of correlation values.
+For each method, green and red triangles indicate if the gene pair is among the top (green) or bottom (red) 30% of correlation values.
 No triangle means that the correlation value for the gene pair is between the 30th and 70th percentiles (neither low nor high).
 A logarithmic scale was used to color each hexagon.
 ](images/coefs_comp/gtex_whole_blood/upsetplot-main.svg "Intersection of gene pairs"){#fig:upsetplot_coefs width="100%"}
@@ -239,10 +273,10 @@ A logarithmic scale was used to color each hexagon.
 A closer inspection of gene pairs detected and missed by these coefficients revealed the ability of Clustermatch to capture more complex yet biologically meaningful patterns.
 For this, we analyzed the agreements and disagreements by obtaining for each coefficient the top 30% of gene pairs with the largest correlation values ("high" set) and the bottom 30% ("low" set), resulting in six potentially overlapping categories.
 An UpSet plot [@doi:10.1109/TVCG.2014.2346248] is shown in Figure @fig:upsetplot_coefs a, where the intersections of these six categories allowed to precisely identify the gene expression patterns captured and missed by each coefficient.
-For most cases, the three coefficients agree on whether there is a strong linear correlation (42.1%) and whether there is no relationship (34.3%).
-This is crucial because it implies that the user will not miss important linear patterns in expression data when using Clustermatch.
+For most cases, the three coefficients agreed on whether there is a strong linear correlation (42.1%) and whether there is no relationship (34.3%).
+This result is crucial because it implies that the user will not miss important linear patterns in expression data when using Clustermatch.
 The figure also confirms that Clustermatch and Spearman agree more on highly correlated pairs (4.0% in "high", and 7.0% in "low") than any of these with Pearson (all between 0.3%-3.5% for "high", and 2.8%-5.5% for "low").
-Regarding disagreements, more than 20 thousand gene pairs (20,987) with a high Clustermatch value are not highly ranked by any other coefficients.
+Regarding disagreements (right part of the figure), more than 20 thousand gene pairs (20,987) with a high Clustermatch value are not highly ranked by any other coefficients.
 There are also gene pairs with a high Pearson value with either low Clustermatch (1,075) or low Clustermatch and low Spearman values (531).
 However, these cases mostly seem to be driven by outliers (Figure @fig:upsetplot_coefs b).
 Clustermatch does not miss gene pairs highly ranked by Spearman.
@@ -252,9 +286,9 @@ Figure @fig:upsetplot_coefs b shows individual gene pairs among the top five of 
 The first three gene pairs at the top (*IFNG* / *SDS*, *JUN* / *APOC1*, and *ZDHHC12* / *CCL18*), with a high Clustermatch and low Pearson coefficient, seem to follow a non-coexistence relationship: in samples where one of the genes is highly (slightly) expressed, the other is slightly (highly) activated, suggesting a potential inhibiting effect.
 The next three gene pairs (*UTY* / *KDM6A*, *RASSF2* / *CYTIP*, and *AC068580.6* / *KLHL21*) follow patterns combining either two linear or one linear and one constant relationships.
 In particular, genes *UTY* and *KDM6A*, paralogs, show a nonlinear relationship with a subset of samples following a robust linear pattern and another subset having a constant expression of one gene.
-This relationship is explained by the fact that *UTY* is in chromosome Y (Yq11) whereas *KDM6A* is in chromosome X (Xp11), and samples with a linear pattern are males, and those with no expression for *UTY* are females.
+This relationship is explained by the fact that *UTY* is in chromosome Y (Yq11) whereas *KDM6A* is in chromosome X (Xp11), and samples with a linear pattern are males, whereas those with no expression for *UTY* are females.
 This combination of linear and constant patterns is captured by Clustermatch ($c=0.29$, above the 80th percentile) but not by Pearson ($p=0.24$, below the 55th percentile) or Spearman ($s=0.10$, below the 15th percentile).
-Furthermore, the same gene pair pattern is highly ranked by Clustermatch in all other tissues in GTEx, except for female-specific organs (Figure @fig:gtex_tissues:kdm6a_uty).
+Furthermore, the same gene pair pattern is highly ranked by Clustermatch in all other tissues in GTEx, except for female-specific organs (Figure @fig:gtex_tissues:kdm6a_uty) as expected.
 
 
 ![
@@ -266,19 +300,20 @@ The last row shows three female-specific organs, where Clustermatch correctly fi
 
 To study the other gene pairs found by the correlation coefficients, we used tissue-specific gene networks from GIANT [@pmcid:PMC4828725], where nodes represent genes and each edge a functional relationship weighted with a probability of interaction between two genes.
 GIANT networks were built from 987 genome-scale data sets across approximately 38,000 conditions, including expression and different interaction measurements such as gene co-expression (using Pearson correlation), protein-interaction, transcription factor regulation, and chemical and genetic perturbations and microRNA target profiles from the Molecular Signatures Database (MSigDB [@pmid:16199517]).
-Figure @fig:giant_gene_pairs shows blood-specific networks for each gene pair (Figure @fig:upsetplot_coefs b) for which genes are present in GIANT models.
-Two large black nodes in the top-left and bottom-right corners represent our gene pairs.
+Figure @fig:giant_gene_pairs shows cell type-specific networks for each gene pair (Figure @fig:upsetplot_coefs b) for which genes are present in GIANT models.
+Two large black nodes in each network's top-left and bottom-right corners represent our gene pairs.
 A green edge means a close-to-zero probability of interaction, whereas a red edge represents a strong predicted relationship between two genes.
-Interestingly, gene pairs highly ranked by Clustermatch are part of very cohesive networks.
+The tissue was automatically selected in each network according to the predicted tissue expression of gene pairs.
+Interestingly, gene pairs highly ranked by Clustermatch are part of very cohesive networks and strongly related to blood.
 For example, the average probability of gene connections with *IFNG* / *SDS* is very high, at least 0.79 for all other genes shown.
 This minimum average with *JUN* / *APOC1* is 0.56, for *ZDHHC12* / *CCL18* is 0.34 (where *ZDHHC12* shows the weakest links although *CCL18* is strongly connected), and for *RASSF2* / *CYTIP* is 0.76.
-Predicted networks for the two gene pairs prioritized by Pearson are much less cohesive, suggesting that the high correlation is mostly driven by outliers.
+Predicted networks for the two gene pairs prioritized by Pearson are much less cohesive, suggesting that the high correlation in whole blood is mostly driven by outliers.
 For example, the minimum/maximum average of interaction probabilities with *MYOZ1* / *TNNI2* is only 0.11/0.12, and for *PYGM* / *TPM2* is 0.13/0.24.
 
 
 ![
 **Predicted tissue-specific networks from GIANT for each gene pairs prioritized by correlation coefficients.**
-A node represents a gene and an edge the probability that two genes are part of the same biological process in a blood-related cell type (indicated at the top of each subfigure).
+A node represents a gene and an edge the probability that two genes are part of the same biological process in a specific cell type (indicated at the top-right corner).
 A maximum of 15 genes are shown for each subfigure.
 The GIANT web application automatically determined a minimum weight for edges to be shown.
 These analyses can be performed online using the following links:
@@ -290,21 +325,16 @@ These analyses can be performed online using the following links:
 *PYGM* / *TPM2* [@url:https://hb.flatironinstitute.org/gene/5837+7169]
 ](images/coefs_comp/giant_networks/main.svg "GIANT network interaction"){#fig:giant_gene_pairs width="100%"}
 
+
+Some of these genes, such as *SDS* (12q24) and *ZDHHC12* (9q34), were previously found to have a relatively lower number of publications that correlated well with a small set of chemical, physical and biological features [@pmid:30226837].
+A gene co-expression analysis on large compendia and beyond linear patterns could shed light on the function of understudied genes.
+On the other hand, gene *KLHL21* (1p36) and the novel RNA gene *AC068580.6* (*ENSG00000235027*, in 11p15) have a high Clustermatch correlation and are entirely missed by the other methods.
+*KLHL21* was suggested as a potential therapeutic target for hepatocellular carcinoma [@pmid:27769251] and other cancers [@pmid:29574153; @pmid:35084622], and its nonlinear correlation with *AC068580.6* and potentially other genes might unveil other important players in cancer initiation or progression.
+
 <!--
 MENTION THE IMPORTANCE OF CLUSTERMATCH TO CONTRUCT COHESIVE GENE CLUSTERS: https://humanbase.readthedocs.io/en/latest/modules.html
 -->
 
-<!--
-SDS / IFNG:
-    https://hb.flatironinstitute.org/gene/10993+3458
-    expressed in leukocyte, blood, lymphocyte, spleen
-    serine seems to be essential for T cell expansion: https://www.cell.com/cell-metabolism/pdfExtended/S1550-4131(16)30644-1
-
-JUN / APOC1:
-    https://hb.flatironinstitute.org/gene/3725+341
-    both expressed in blood, liver, leukocyte
-    both seem to be very related to the regulation of immune response
- -->
 
 
 ### Clustermatch and Maximal Information Coefficient strongly agree on gene pair prioritization
@@ -320,16 +350,47 @@ Given the high time complexity of MIC, approximately 1% of gene pairs were sampl
 
 
 Finally, we compared all the coefficients with the Maximal Information Coefficient (MIC [@pmid:22174245]), a popular nonlinear method that can find complex relationships in data, although very expensive in computational terms.
-To circumvent this limitation of MIC, we took a small random sample of 100,000 gene pairs from all possible pairwise comparisons of our set with 5,000 highly variable genes from whole blood in GTEx v8.
+To circumvent this limitation of MIC, we took a small random sample of 100,000 gene pairs from all possible pairwise comparisons of our 5,000 highly variable genes from whole blood in GTEx v8.
 Then we performed the same analysis on the distribution of coefficients, shown in Figure @fig:dist_coefs_mic.
 We verified that Clustermatch and MIC behave similarly in this dataset, with essentially the same distribution but only shifted.
 Figure @fig:dist_coefs_mic c shows that these two coefficients relate almost linearly and compare very similarly with Pearson and Spearman.
-This result is important because MIC represented an important step in correlation analysis research, and it has been successfully used in various application domains [@pmid:33972855; @pmid:33001806; @pmid:27006077].
-However, the use of MIC in large datasets remained limited due to its very long computation time.
+This result is relevant because MIC represented a significant step forward in correlation analysis research, and it has been successfully used in various application domains [@pmid:33972855; @pmid:33001806; @pmid:27006077].
+However, the use of MIC in large datasets remains limited due to its very long computation time.
 Our work and analyses suggest that Clustermatch could be an equally effective but much more efficient next-generation correlation coefficient.
 
 
 ## Discussion
+
+We previously showed that Clustermatch outperformed all other coefficients in a simulated cluster analysis scenario with linear and nonlinear patterns and varying noise levels.
+Here we introduced the Clustermatch correlation coefficient, an efficient machine learning-based method and an optimized Python implementation.
+We applied it to gene expression data from GTEx v8 and found that our coefficient is robust to outliers and does not miss important linear relationships in gene-gene patterns.
+Clustermatch also captured complex and biologically meaningful relationships completely missed by standard coefficients.
+<!-- TODO: something about GIANT results? -->
+We also showed that directly comparing Clustermatch with linear-only coefficients highlighted the most complex and potentially promising gene pairs.
+Finally, Clustermatch derives scores very well aligned with the Maximal Information Coefficient while being much more computationally efficient and thus practical for use in large modern datasets.
+
+
+Our analyses have some limitations.
+We worked on a sample with the top variable genes to keep computation time feasible for Clustermatch.
+Although Clustermatch is faster than MIC or DC, Pearson and Spearman are still the fastest since they only rely on simple data statistics.
+This smaller sample of genes might not show an accurate picture of all patterns in data.
+However, our results confirm that the advantages of using more sophisticated yet efficient methods like Clustermatch can help detect and study more intricate molecular mechanisms.
+Although we only used GTEx, with a relatively homogeneous set of samples, we could still find complex and meaningful patterns, suggesting that the application of Clustermatch on larger compendia, such as recount3 with thousands of samples across different conditions, can reveal other potentially important gene interactions.
+
+
+It is well-known that biomedical research is biased towards a small fraction of human genes [@pmid:17620606; @pmid:17472739].
+Researching genes with well-known functions is easier, although this observational bias seems anachronic with current high-throughput technologies.
+Although several factors explaining this behavior have been identified [@pmid:30226837], such as RNA and protein abundance or gene length, another potential explanation could also be a bias of current statistical methods towards linear-only patterns.
+It is well-known that deep learning approaches have revolutionazed several areas in research and industry, but interpretation is crucial in other fields such as biology and medicine.
+In these health-related fields, another breakthrough theoretical advance was the omnigenic model of complex traits, where gene regulatory networks are now first-class players in genetic studies.
+This model not only shifted our attention to other, potentially less studied genes that are part of disease-relevant networks, but can also explain why polygenic risk scores perform so poorly across different population ancestries.
+The streetlight effect [@url:https://www.discovermagazine.com/the-sciences/why-scientific-studies-are-so-often-wrong-the-streetlight-effect], where we only search where it is easiest to look, is widespread in areas beyond biology.
+We anticipate that sophisticated and efficient approaches like Clustermatch will play a significant role in focusing on other less studied areas of the genome and other research fields and applications domains.
+
+
+Computing a correlation coefficient based on simple data summaries is tempting fast.
+However, this study shows that those methods can miss essential patterns to understand the big picture, such as a gene co-expression network representing robust, accurate and not-only-linear interactions.
+We provide an efficient method based on machine learning techniques that can process heterogeneous data types seamlessly, dramatically easing preprocessing steps for the end-user.
 
 
 ## Methods
@@ -348,6 +409,14 @@ https://www.overleaf.com/read/dsyjdrdjqjcp
 ![
 ](images/intro/clustermatch_algorithm.svg "Clustermatch algorithm"){width="75%"}
 
+
+### GTEx v8 data and sampling approach
+
+We downloaded GTEx v8 data for all tissues and focus our primary analysis on whole blood, which has good sample size (755) and has been normalized using TPM (transcripts per million).
+We selected the top 5,000 genes from whole blood with the largest variance after standardizing with pseudocounts $log(x + 1)$.
+We then computed Pearson, Spearman and Clustermatch on this 5,000 genes across all 755 samples, generating a pairwise similarity matrix of size 5,000 x 5,000.
+To reduce the time to compute MIC and compare it with the other coefficients, we randomly sampled 100,000 gene pairs from all possible combinations in this set of 5,000 genes ($n * (n-1) / 2=12497500$).
+
 ## References {.page_break_before}
 
 <!-- Explicitly insert bibliography here -->
@@ -357,5 +426,5 @@ https://www.overleaf.com/read/dsyjdrdjqjcp
 ## Acknowledgements
 
 
-## Supplementary material
+<!-- ## Supplementary material -->
 
