@@ -4,13 +4,12 @@ Anscombe
 Anscombe’s
 APOC
 ARI
+CCC
 CCL
 cgreene
 Científicas
 clusterings
 Clustermatch
-Clustermatch’s
-Clutermatch
 coefs
 compendia
 CONICET
@@ -25,7 +24,7 @@ ENSG
 GBMF
 Genotype
 GreeneScientist
-GTEx
+gtex
 GWAS
 hepatocellular
 IFNG

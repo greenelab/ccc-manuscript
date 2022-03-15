@@ -1,11 +1,11 @@
 ---
-title: An efficient not-only-linear dependence coefficient based on machine learning
+title: An efficient not-only-linear correlation coefficient based on machine learning
 keywords:
 - correlation coefficient
 - nonlinear relationships
 - gene expression
 lang: en-US
-date-meta: '2022-02-09'
+date-meta: '2022-03-15'
 author-meta:
 - Milton Pividori
 - Marylyn D. Ritchie
@@ -17,12 +17,12 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="An efficient not-only-linear dependence coefficient based on machine learning" />
-  <meta name="citation_title" content="An efficient not-only-linear dependence coefficient based on machine learning" />
-  <meta property="og:title" content="An efficient not-only-linear dependence coefficient based on machine learning" />
-  <meta property="twitter:title" content="An efficient not-only-linear dependence coefficient based on machine learning" />
-  <meta name="dc.date" content="2022-02-09" />
-  <meta name="citation_publication_date" content="2022-02-09" />
+  <meta name="dc.title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
+  <meta name="citation_title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
+  <meta property="og:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
+  <meta property="twitter:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
+  <meta name="dc.date" content="2022-03-15" />
+  <meta name="citation_publication_date" content="2022-03-15" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -52,9 +52,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/bebaa897f7e9e9374d883fc68555445902002444/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/bebaa897f7e9e9374d883fc68555445902002444/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/bebaa897f7e9e9374d883fc68555445902002444/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/b2593ea4636d0d7e1f8fb5cd08e01a4baafbba48/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/b2593ea4636d0d7e1f8fb5cd08e01a4baafbba48/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/b2593ea4636d0d7e1f8fb5cd08e01a4baafbba48/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -76,10 +76,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/bebaa897f7e9e9374d883fc68555445902002444/))
+([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/b2593ea4636d0d7e1f8fb5cd08e01a4baafbba48/))
 was automatically generated
-from [greenelab/clustermatch-gene-expr-manuscript@bebaa89](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/bebaa897f7e9e9374d883fc68555445902002444)
-on February 9, 2022.
+from [greenelab/clustermatch-gene-expr-manuscript@b2593ea](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/b2593ea4636d0d7e1f8fb5cd08e01a4baafbba48)
+on March 15, 2022.
 </em></small>
 
 [
@@ -139,51 +139,50 @@ This manuscript version is work-in-progress
 
 ## Abstract {.page_break_before}
 
-Correlation coefficients are used across different research areas to answer critical scientific questions.
-Genes with correlated expression, for instance, can provide valuable insight to infer their function and detect disease-relevant tissue-specific patterns.
-Indeed, since the introduction of recent models of the genetic architecture of complex traits, gene regulatory networks are playing an increasingly important role in genetic studies and the field of precision medicine.
-However, "correlation" is widely understood as "linear correlation," and more complex yet potentially meaningful patterns are usually not considered.
-This work provides an efficient and easy-to-use implementation of Clustermatch, a not-only-linear correlation coefficient based on machine learning models.
-Clustermatch can derive a similarity value between highly-diverse data features, and it has a single parameter.
-Using human RNA-seq data, we provide examples showing that Clustermatch significantly improves the detection of strongly linear and biologically meaningful nonlinear gene-gene relationships.
-We also show that Clustermatch and the Maximal Information Coefficient strongly agree, although Clustermatch runs at a fraction of time.
+Correlation coefficients are used across different research areas to identify intriguing relationships or answer critical questions.
+Knowing that genes have correlated expression can suggest that they share functions or are part of networks that influence different traits.
+Indeed, gene regulatory networks have been playing an increasingly important role in precision medicine since the introduction of more advanced models of the genetic architecture of complex traits.
+However, the strategies to detect these gene-gene connections are usually deployed with linear correlation coefficients, which are not well suited to discovering more complex, nonlinear patterns.
+Here we introduce the Clustermatch Correlation Coefficient (CCC), an efficient, easy-to-use and not-only-linear coefficient based on machine learning.
+Clustermatch derives a similarity value between numerical and categorical features by applying clustering algorithms on objects.
+Applying Clustermatch to human gene expression data reveals both linear and biologically meaningful nonlinear gene-gene relationships.
+We show that Clustermatch significantly improves the detection of different types of relationships, it is robust to outliers, and its single parameter can easily balance between pattern complexity and computation time.
+Clustermatch is most similar to the previously described Maximal Information Coefficient, although our method runs in a fraction of time and can be practically applied to genome-scale data.
 We anticipate that Clustermatch will dramatically improve the detection of crucial molecular patterns completely missed by standard coefficients.
 
 
 ## Introduction
 
-
 New technologies have vastly improved data collection, generating a deluge of information across different disciplines.
-This large amount of data provides new opportunities to address unanswered scientific questions, provided we have both efficient and complex enough tools for the analysis.
-For this purpose, correlation analysis is an essential statistical technique to discover relationships between variables [@pmid:21310971].
-Correlation coefficients are used in fundamental exploratory data mining techniques, such as clustering or community detection algorithms, to compute a similarity value between a pair of objects of scientific interest such as genes [@pmid:27479844] or morpho-agronomic traits in crop plans [@doi:10.1093/bioinformatics/bty899].
-Correlation methods are also successfully used in supervised tasks for feature selection to improve prediction accuracy [@pmid:27006077; @pmid:33729976].
-Standard coefficients such as Pearson are ubiquitous across application domains and diverse scientific areas.
+This large amount of data provides new opportunities to address unanswered scientific questions, provided we have efficient tools that implement sufficiently complex models to discover underlying patterns.
+Correlation analysis is an essential statistical technique to discover relationships between variables [@pmid:21310971].
+Correlation coefficients are often used in exploratory data mining techniques, such as clustering or community detection algorithms, to compute a similarity value between a pair of objects of interest such as genes [@pmid:27479844] or morpho-agronomic traits in crop plans [@doi:10.1093/bioinformatics/bty899].
+Correlation methods are also used in supervised tasks, for example, for feature selection to improve prediction accuracy [@pmid:27006077; @pmid:33729976].
+The Pearson correlation coefficient is ubiquitously deployed across application domains and diverse scientific areas.
 Even minor and significant improvements in these techniques could have enormous consequences in industry and research.
 
 
-In transcriptomics, almost every analysis starts with the correlation between genes.
+In transcriptomics, many analyses start with estimating the correlation between genes.
 More sophisticated approaches built on correlation analysis can suggest gene function [@pmid:21241896], aid in discovering common and cell lineage-specific regulatory networks [@pmid:25915600], and capture important interactions in a living organism that can uncover molecular mechanisms in other species [@pmid:21606319; @pmid:16968540].
 The analysis of large RNA-seq datasets [@pmid:32913098; @pmid:34844637] can also reveal complex transcriptional mechanisms underlying human diseases [@pmid:27479844; @pmid:31121115; @pmid:30668570; @pmid:32424349; @pmid:34475573].
-Since the introduction of the omnigenic model of complex traits [@pmid:28622505; @pmid:31051098], gene-gene relationships are playing an increasingly important role in genetic studies of human diseases [@pmid:34845454; @doi:10.1101/2021.07.05.450786; @doi:10.1101/2021.10.21.21265342], even in specific fields such as polygenic risk scores [@doi:10.1016/j.ajhg.2021.07.003].
-In this context, very recent approaches combine disease-associated genes from genome-wide association studies (GWAS) with gene co-expression networks to prioritize "core" genes directly driving diseases.
-These core genes are not captured by standard statistical methods but are part of disease-relevant and highly-interconnected regulatory networks.
-Therefore, more sophisticated correlation coefficients could dramatically improve the identification of more attractive candidate drug targets in the precision medicine field.
+Since the introduction of the omnigenic model of complex traits [@pmid:28622505; @pmid:31051098], gene-gene relationships are playing an increasingly important role in genetic studies of human diseases [@pmid:34845454; @doi:10.1101/2021.07.05.450786; @doi:10.1101/2021.10.21.21265342; @doi:10.1038/s41588-021-00913-z], even in specific fields such as polygenic risk scores [@doi:10.1016/j.ajhg.2021.07.003].
+In this context, recent approaches combine disease-associated genes from genome-wide association studies (GWAS) with gene co-expression networks to prioritize "core" genes directly affecting diseases [@doi:10.1186/s13040-020-00216-9; @doi:10.1101/2021.07.05.450786; @doi:10.1101/2021.10.21.21265342].
+These core genes are not captured by standard statistical methods but are believed to be part of disease-relevant and highly-interconnected regulatory networks.
+Therefore, more advanced correlation coefficients could dramatically improve the identification of more attractive candidate drug targets in the precision medicine field.
 
 
-Standard correlation methods such as Pearson and Spearman are the most popular approaches since they use simple statistics that can be computed quickly.
-However, they can only capture linear or monotonic patterns, which might certainly not be enough to detect more complex yet essential relationships.
-Novel approaches such as the Maximal Information Coefficient (MIC) [@pmid:22174245] or Distance Correlation (DC) [@doi:10.1214/009053607000000505] can capture nonlinear patterns.
+The Pearson and Spearman correlation coefficients are widely used because they reveal intuitive relationships and can be computed quickly.
+However, they can only capture linear or monotonic patterns, missing complex yet essential relationships.
+The Maximal Information Coefficient (MIC) [@pmid:22174245] or Distance Correlation (DC) [@doi:10.1214/009053607000000505] were proposed as metrics that capture nonlinear patterns.
 However, they are impractical not only for big data but also for even moderately sized datasets.
-We previously showed that Clustermatch, a method for cluster analysis on highly diverse datasets, significantly outperformed Pearson, Spearman, MIC and DC in detecting simulated linear and nonlinear relationships with varying levels of noise [@doi:10.1093/bioinformatics/bty899].
-Here we present the Clustermatch's correlation coefficient, an efficient not-only-linear method that can handle quantitative and qualitative variables.
-To assess its performance in RNA-seq data, we applied our method to gene expression data from the Genotype-Tissue Expression (GTEx) project across different tissues.
-We show that Clustermatch captured both known linear relationships and novel nonlinear and biologically meaningful gene-gene patterns completely missed by standard coefficients.
-<!-- TODO: Add something about GIANT results? -->
-Clustermatch scores distribute very similarly to MIC, although it is much faster to compute and results are easy to interpret.
-It also has a single parameter that balances the complexity of relationships found and computation time.
-Our results show that Clutermatch is an attractive replacement for standard linear-only coefficients that can be readily used across different research areas.
-Its ability to efficiently handle diverse data types (including numerical and categorical features) reduces preprocessing steps and makes it appealing to analyze large and complex repositories.
+We previously developed Clustermatch, a method for cluster analysis on highly diverse datasets that significantly outperformed Pearson, Spearman, MIC and DC in detecting simulated linear and nonlinear relationships with varying levels of noise [@doi:10.1093/bioinformatics/bty899].
+Here we introduce the Clustermatch Correlation Coefficient (CCC), an efficient not-only-linear coefficient that works across quantitative and qualitative variables.
+Clustermatch has a single parameter that balances the complexity of relationships found and computation time.
+To assess its performance in RNA-seq data, we applied our method to gene expression data from the Genotype-Tissue Expression v8 (GTEx) project across different tissues [@doi:10.1126/science.aaz1776].
+Clustermatch captured both known linear relationships and novel nonlinear and biologically meaningful gene-gene patterns completely missed by standard coefficients.
+The CCC is most similar to MIC, although it is much faster to compute.
+We found that a combined analysis of linear-only coefficients and CCC can help highlight complex, yet promising relationships.
+Furthermore, its ability to efficiently handle diverse data types (including numerical and categorical features) reduces preprocessing steps and makes it appealing to analyze large and heterogeneous repositories.
 
 
 ## Results
