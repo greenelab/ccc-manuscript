@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# convert input images (svg) to (pdf)
+parallel -j2 'inkscape {} --export-pdf={.}.pdf' ::: gene_pair_networks/*.svg
+
+latexmk -pdf main.tex
+pdfcrop main.pdf main.pdf
+pdf2svg main.pdf main.svg
+
+# cleanup
+latexmk -c main.tex
+rm main.pdf
+parallel -j2 'rm {.}.pdf' ::: gene_pair_networks/*.svg
