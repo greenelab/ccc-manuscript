@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# First, download PDF from Overleaf: https://www.overleaf.com/read/dsyjdrdjqjcp
-
-pdfcrop clustermatch_algorithm.pdf clustermatch_algorithm.pdf
-pdf2svg clustermatch_algorithm.pdf clustermatch_algorithm.svg
-
