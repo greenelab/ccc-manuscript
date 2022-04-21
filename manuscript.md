@@ -5,7 +5,7 @@ keywords:
 - nonlinear relationships
 - gene expression
 lang: en-US
-date-meta: '2022-04-11'
+date-meta: '2022-04-21'
 author-meta:
 - Milton Pividori
 - Marylyn D. Ritchie
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="og:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="twitter:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
-  <meta name="dc.date" content="2022-04-11" />
-  <meta name="citation_publication_date" content="2022-04-11" />
+  <meta name="dc.date" content="2022-04-21" />
+  <meta name="citation_publication_date" content="2022-04-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -79,7 +79,7 @@ This manuscript
 ([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/082cf815741269c6641c87324151ea04d0e6724f/))
 was automatically generated
 from [greenelab/clustermatch-gene-expr-manuscript@082cf81](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/082cf815741269c6641c87324151ea04d0e6724f)
-on April 11, 2022.
+on April 21, 2022.
 </em></small>
 
 [

@@ -39,7 +39,7 @@ interpretable
 intricated
 Investigaciones
 JASPAR
-KDM
+kdm
 KLHL
 Litoral
 Marylyn
