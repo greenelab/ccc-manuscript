@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="410.49249"
    width="411.28638"
    version="1.1"
    id="svg252"
    sodipodi:docname="GIANT-MYOZ1_vs_TNNI2-skeletal_muscle.svg"
-   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata173">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <defs
      id="defs256">
     <linearGradient
@@ -116,6 +130,28 @@
          x="37.267841"
          y="58.058514" />
     </clipPath>
+    <clipPath
+       id="clipPath1223"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         y="131.69157"
+         x="29.662529"
+         height="360.44467"
+         width="380.2197"
+         id="rect1225"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1, 6;stroke-dashoffset:0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1020"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         y="134.38815"
+         x="45.842091"
+         height="356.84921"
+         width="364.0401"
+         id="rect1022"
+         style="fill:#ffffff;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3, 18;stroke-dashoffset:0" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="namedview254"
@@ -127,7 +163,7 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="1.4066667"
-     inkscape:cx="181.99052"
+     inkscape:cx="26.301558"
      inkscape:cy="174.17061"
      inkscape:window-width="1714"
      inkscape:window-height="1371"
@@ -139,884 +175,959 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.864779;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.864779, 10.3773;stroke-dashoffset:0"
-     id="rect1456"
-     width="410.4216"
-     height="429.62772"
-     x="0.4323895"
-     y="0.4323895" />
-  <g
-     id="g199"
-     clip-path="url(#clipPath1126)"
-     transform="matrix(0.84180712,0,0,0.84180712,-20.512192,-43.105693)">
-    <rect
-       class="canvas"
-       width="540"
-       height="600"
-       style="fill:none"
-       id="rect2"
-       x="0"
-       y="0" />
-    <g
-       transform="matrix(1.2,0,0,1.2,-45.388382,-98.661201)"
-       id="g197">
-      <path
-         class="edge"
-         id="246"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 403.44133,231.5166 c 0,0 -159.59255,-44.75022 -305.977747,-43.34605" />
-      <path
-         class="edge"
-         id="256"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 403.44133,231.5166 c 0,0 37.37225,147.56741 7.04185,267.8635" />
-      <path
-         class="edge"
-         id="258"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 403.44133,231.5166 c 0,0 -61.77742,83.14468 -139.32051,146.13263" />
-      <path
-         class="edge"
-         id="273"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 403.44133,231.5166 c 0,0 67.0587,44.31387 11.345,102.67186" />
-      <path
-         class="edge"
-         id="275"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 403.44133,231.5166 c 0,0 76.62591,3.29271 24.74239,57.76655" />
-      <path
-         class="edge"
-         id="279"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 403.44133,231.5166 c 0,0 -19.74717,-85.28395 -99.2194,-68.32539" />
-      <path
-         class="edge"
-         id="281"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 403.44133,231.5166 c 0,0 33.47817,-72.25093 -31.47541,-46.9456" />
-      <path
-         class="edge"
-         id="286"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 403.44133,231.5166 c 0,0 -11.18864,93.37627 -80.14947,168.62789" />
-      <path
-         class="edge"
-         id="288"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 403.44133,231.5166 c 0,0 -83.9382,-60.2544 -195.75757,-54.33602" />
-      <path
-         class="edge"
-         id="289"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 403.44133,231.5166 c 0,0 -118.50857,-10.96864 -236.88173,37.58381" />
-      <path
-         class="edge"
-         id="347"
-         style="fill:none;stroke:#b0b247;stroke-width:1"
-         d="m 97.463583,188.17055 c 0,0 58.956267,107.22089 166.657237,189.47868" />
-      <path
-         class="edge"
-         id="348"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 97.463583,188.17055 c 0,0 -26.090761,75.29913 52.309877,127.95579" />
-      <path
-         class="edge"
-         id="360"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 97.463583,188.17055 c 0,0 64.449197,-20.60661 151.807547,38.22152" />
-      <path
-         class="edge"
-         id="362"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 97.463583,188.17055 c 0,0 147.229497,72.66548 317.322747,146.01791" />
-      <path
-         class="edge"
-         id="363"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 97.463583,188.17055 c 0,0 -30.65551,113.93357 24.059327,226.8205" />
-      <path
-         class="edge"
-         id="368"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 97.463583,188.17055 c 0,0 89.626477,-54.17831 206.758347,-24.97934" />
-      <path
-         class="edge"
-         id="370"
-         style="fill:none;stroke:#bcb449;stroke-width:1"
-         d="m 97.463583,188.17055 c 0,0 136.509257,-31.57957 274.502337,-3.59955" />
-      <path
-         class="edge"
-         id="377"
-         style="fill:none;stroke:#b0b247;stroke-width:1"
-         d="m 97.463583,188.17055 c 0,0 31.947447,-57.50057 110.220177,-10.98997" />
-      <path
-         class="edge"
-         id="378"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 97.463583,188.17055 c 0,0 -22.283379,47.07852 69.096017,80.92986" />
-      <path
-         class="edge"
-         id="471"
-         style="fill:none;stroke:#bcb449;stroke-width:1"
-         d="m 281.8707,501.24412 c 0,0 90.7875,51.96408 128.61248,-1.86402" />
-      <path
-         class="edge"
-         id="661"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 126.23259,362.77442 c 0,0 147.58066,101.4647 284.25059,136.60568" />
-      <path
-         class="edge"
-         id="663"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 126.23259,362.77442 c 0,0 46.81196,55.84188 137.88823,14.87481" />
-      <path
-         class="edge"
-         id="684"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 126.23259,362.77442 c 0,0 76.14671,-118.45761 177.98934,-199.58321" />
-      <path
-         class="edge"
-         id="691"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 126.23259,362.77442 c 0,0 87.6997,56.92114 197.05927,37.37007" />
-      <path
-         class="edge"
-         id="693"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 126.23259,362.77442 c 0,0 -0.30052,-104.25997 81.45117,-185.59384" />
-      <path
-         class="edge"
-         id="732"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 -75.30967,-37.167 -146.36236,-121.73087" />
-      <path
-         class="edge"
-         id="733"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 -143.28135,-70.33723 -260.70972,-183.25376" />
-      <path
-         class="edge"
-         id="740"
-         style="fill:none;stroke:#c0b54a;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 -95.36731,37.0076 -212.4361,-3.87576" />
-      <path
-         class="edge"
-         id="745"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 -80.38303,-126.49089 -161.21205,-272.98803" />
-      <path
-         class="edge"
-         id="747"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 36.33643,-65.20095 4.30315,-165.19164" />
-      <path
-         class="edge"
-         id="748"
-         style="fill:none;stroke:#aeb247;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 -145.96011,0.89892 -288.96027,-84.38905" />
-      <path
-         class="edge"
-         id="749"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 45.97177,-93.5406 17.70054,-210.09695" />
-      <path
-         class="edge"
-         id="753"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 -43.6005,-165.70661 -106.26125,-336.18889" />
-      <path
-         class="edge"
-         id="755"
-         style="fill:none;stroke:#b8b449;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 16.1171,-152.81252 -38.51726,-314.8091" />
-      <path
-         class="edge"
-         id="760"
-         style="fill:none;stroke:#c4b54b;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 -48.97814,-20.44158 -87.19132,-99.23561" />
-      <path
-         class="edge"
-         id="762"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 -106.4729,-153.52046 -202.79942,-322.19952" />
-      <path
-         class="edge"
-         id="763"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 410.48318,499.3801 c 0,0 -128.79622,-99.12975 -243.92358,-230.27969" />
-      <path
-         class="edge"
-         id="798"
-         style="fill:none;stroke:#b5b348;stroke-width:1"
-         d="m 264.12082,377.64923 c 0,0 -94.43501,7.22548 -114.34736,-61.52289" />
-      <path
-         class="edge"
-         id="810"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 264.12082,377.64923 c 0,0 -46.54109,-68.805 -14.84969,-151.25716" />
-      <path
-         class="edge"
-         id="812"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 264.12082,377.64923 c 0,0 91.99578,19.93632 150.66551,-43.46077" />
-      <path
-         class="edge"
-         id="814"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 264.12082,377.64923 c 0,0 99.07373,-18.27585 164.0629,-88.36608" />
-      <path
-         class="edge"
-         id="818"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 264.12082,377.64923 c 0,0 11.29957,-113.19426 40.10111,-214.45802" />
-      <path
-         class="edge"
-         id="820"
-         style="fill:none;stroke:#b2b347;stroke-width:1"
-         d="m 264.12082,377.64923 c 0,0 68.91555,-102.70944 107.8451,-193.07823" />
-      <path
-         class="edge"
-         id="825"
-         style="fill:none;stroke:#b9b449;stroke-width:1"
-         d="m 264.12082,377.64923 c 0,0 28.14388,70.53013 59.17104,22.49526" />
-      <path
-         class="edge"
-         id="828"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 264.12082,377.64923 c 0,0 -86.3293,-29.9016 -97.56122,-108.54882" />
-      <path
-         class="edge"
-         id="841"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 149.77346,316.12634 c 0,0 14.01037,-70.05848 99.49767,-89.73427" />
-      <path
-         class="edge"
-         id="845"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 149.77346,316.12634 c 0,0 141.34635,-6.32805 278.41026,-26.84319" />
-      <path
-         class="edge"
-         id="851"
-         style="fill:none;stroke:#bbb449;stroke-width:1"
-         d="m 149.77346,316.12634 c 0,0 110.01089,-80.56057 222.19246,-131.55534" />
-      <path
-         class="edge"
-         id="856"
-         style="fill:none;stroke:#c5b54b;stroke-width:1"
-         d="m 149.77346,316.12634 c 0,0 69.61564,70.56343 173.5184,84.01815" />
-      <path
-         class="edge"
-         id="858"
-         style="fill:none;stroke:#b9b449;stroke-width:1"
-         d="m 149.77346,316.12634 c 0,0 -16.89831,-88.48973 57.9103,-138.94576" />
-      <path
-         class="edge"
-         id="1033"
-         style="fill:none;stroke:#b8b348;stroke-width:1"
-         d="m 198.04708,495.50434 c 0,0 -77.93574,-2.90173 -76.52417,-80.51329" />
-      <path
-         class="edge"
-         id="1045"
-         style="fill:none;stroke:#afb247;stroke-width:1"
-         d="m 198.04708,495.50434 c 0,0 55.50761,-21.03826 125.24478,-95.35985" />
-      <path
-         class="edge"
-         id="1137"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 249.27113,226.39207 c 0,0 106.71633,33.0088 165.5152,107.79639" />
-      <path
-         class="edge"
-         id="1139"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 249.27113,226.39207 c 0,0 108.94203,1.27724 178.91259,62.89108" />
-      <path
-         class="edge"
-         id="1143"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 249.27113,226.39207 c 0,0 9.65249,-92.22542 54.9508,-63.20086" />
-      <path
-         class="edge"
-         id="1150"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 249.27113,226.39207 c 0,0 17.83936,102.63324 74.02073,173.75242" />
-      <path
-         class="edge"
-         id="1152"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 249.27113,226.39207 c 0,0 -30.6222,-97.82278 -41.58737,-49.21149" />
-      <path
-         class="edge"
-         id="1153"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 249.27113,226.39207 c 0,0 -76.2277,-20.87668 -82.71153,42.70834" />
-      <path
-         class="edge"
-         id="1174"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 414.78633,334.18846 c 0,0 75.54462,-13.23993 13.39739,-44.90531" />
-      <path
-         class="edge"
-         id="1180"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 414.78633,334.18846 c 0,0 21.93975,-90.98119 -42.82041,-149.61746" />
-      <path
-         class="edge"
-         id="1185"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 414.78633,334.18846 c 0,0 -15.03229,80.15888 -91.49447,65.95603" />
-      <path
-         class="edge"
-         id="1187"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 414.78633,334.18846 c 0,0 -94.75866,-104.65189 -207.10257,-157.00788" />
-      <path
-         class="edge"
-         id="1209"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 428.18372,289.28315 c 0,0 -31.01369,-95.51277 -123.96179,-126.09194" />
-      <path
-         class="edge"
-         id="1211"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 428.18372,289.28315 c 0,0 20.07022,-83.60938 -56.2178,-104.71215" />
-      <path
-         class="edge"
-         id="1216"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 428.18372,289.28315 c 0,0 -21.85406,87.20511 -104.89186,110.86134" />
-      <path
-         class="edge"
-         id="1219"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 428.18372,289.28315 c 0,0 -129.76065,-19.64662 -261.62412,-20.18274" />
-      <path
-         class="edge"
-         id="1261"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 304.22193,163.19121 c 0,0 53.08647,-51.98842 67.74399,21.37979" />
-      <path
-         class="edge"
-         id="1266"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 304.22193,163.19121 c 0,0 13.18263,125.18836 19.06993,236.95328" />
-      <path
-         class="edge"
-         id="1268"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 304.22193,163.19121 c 0,0 -54.30896,-59.48672 -96.53817,13.98937" />
-      <path
-         class="edge"
-         id="1285"
-         style="fill:none;stroke:#aeb246;stroke-width:1"
-         d="m 371.96592,184.571 c 0,0 2.12474,108.7684 -48.67406,215.57349" />
-      <path
-         class="edge"
-         id="1287"
-         style="fill:none;stroke:#c0b54a;stroke-width:1"
-         d="m 371.96592,184.571 c 0,0 -76.77773,-54.43489 -164.28216,-7.39042" />
-      <path
-         class="edge"
-         id="1317"
-         style="fill:none;stroke:#aeb246;stroke-width:1"
-         d="m 323.29186,400.14449 c 0,0 -76.22334,-106.66769 -115.6081,-222.96391" />
-      <path
-         class="edge"
-         id="1318"
-         style="fill:none;stroke:#b1b347;stroke-width:1"
-         d="m 323.29186,400.14449 c 0,0 -98.69176,-48.27356 -156.73226,-131.04408" />
-      <path
-         class="edge"
-         id="1323"
-         style="fill:none;stroke:#bab449;stroke-width:1"
-         d="m 207.68376,177.18058 c 0,0 -72.68314,14.85775 -41.12416,91.91983" />
-      <g
-         class="gene-group"
-         id="728395"
-         cx="371.9659176138841"
-         cy="184.57099681456975"
-         transform="translate(371.96592,184.571)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle78"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-22.679688"
-           y="-27"
-           width="44.943848"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect80" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text82">TSPY4</text>
-      </g>
-      <g
-         class="gene-group"
-         id="145814"
-         cx="198.0470757509343"
-         cy="495.50433547917794"
-         transform="translate(198.04708,495.50434)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle85"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-31.125"
-           y="-27"
-           width="62.375778"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect87" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text89">PGPEP1L</text>
-      </g>
-      <g
-         class="gene-group"
-         id="100506127"
-         cx="403.44132813033207"
-         cy="231.5166048354965"
-         transform="translate(403.44133,231.5166)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle92"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-27.3125"
-           y="-27"
-           width="54.625"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect94" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text96">GVQW3</text>
-      </g>
-      <g
-         class="gene-group"
-         id="100505502"
-         cx="249.27112906453897"
-         cy="226.39207434960397"
-         transform="translate(249.27113,226.39207)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle99"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-51.726562"
-           y="-27"
-           width="103.45312"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect101" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text103">LOC100505502</text>
-      </g>
-      <g
-         class="gene-group"
-         id="401934"
-         cx="166.5596009093901"
-         cy="269.1004063333807"
-         transform="translate(166.5596,269.10041)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle106"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-26.578125"
-           y="-27"
-           width="53.15625"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect108" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text110">RNF223</text>
-      </g>
-      <g
-         class="gene-group"
-         id="643596"
-         cx="304.2219260817019"
-         cy="163.19120806791253"
-         transform="translate(304.22193,163.19121)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle113"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-26.578125"
-           y="-27"
-           width="53.743805"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect115" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text117">RNF224</text>
-      </g>
-      <g
-         class="gene-group"
-         id="100130827"
-         cx="414.7863268006456"
-         cy="334.18845912939895"
-         transform="translate(414.78633,334.18846)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle120"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-18.09375"
-           y="-27"
-           width="36.1875"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect122" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text124">SBK3</text>
-      </g>
-      <g
-         class="gene-group"
-         id="401563"
-         cx="149.77345521608444"
-         cy="316.1263407775787"
-         transform="translate(149.77346,316.12634)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle127"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-31.085938"
-           y="-27"
-           width="62.171875"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect129" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text131">C9orf139</text>
-      </g>
-      <g
-         class="gene-group"
-         id="388931"
-         cx="264.12082106998093"
-         cy="377.6492286543638"
-         transform="translate(264.12082,377.64923)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle134"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-28.640625"
-           y="-27"
-           width="57.28125"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect136" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text138">MFSD2B</text>
-      </g>
-      <g
-         class="gene-group"
-         id="388468"
-         cx="207.68376497593198"
-         cy="177.1805775397981"
-         transform="translate(207.68376,177.18058)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle141"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-23.007812"
-           y="-27"
-           width="46.015625"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect143" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text145">POTEC</text>
-      </g>
-      <g
-         class="gene-group"
-         id="391002"
-         cx="121.52290624864678"
-         cy="414.99104868515604"
-         transform="translate(121.52291,414.99105)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle148"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-32.875"
-           y="-27"
-           width="65.75"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect150" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text152">PRAMEF8</text>
-      </g>
-      <g
-         class="gene-group"
-         id="728597"
-         cx="428.18371982229706"
-         cy="289.2831479668544"
-         transform="translate(428.18372,289.28315)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke-width:1"
-           id="circle155"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-29.148438"
-           y="-27"
-           width="58.296875"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect157" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text159">DCDC2C</text>
-      </g>
-      <g
-         class="gene-group"
-         id="100287045"
-         cx="126.23259453438322"
-         cy="362.77441689335916"
-         transform="translate(126.23259,362.77442)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle162"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-36.84375"
-           y="-27"
-           width="73.6875"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect164" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text166">FAM90A26</text>
-      </g>
-      <g
-         class="gene-group"
-         id="100288797"
-         cx="323.29185988352384"
-         cy="400.1444948262524"
-         transform="translate(323.29186,400.14449)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle169"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-34.28125"
-           y="-27"
-           width="67.5625"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect171" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text173">TMEM239</text>
-      </g>
-      <g
-         class="gene-group"
-         id="5942"
-         cx="281.8707021978942"
-         cy="501.24412355947095"
-         transform="translate(281.8707,501.24412)">
-        <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle176"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-28.984375"
-           y="-27"
-           width="57.96875"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect178" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-13"
-           id="text180">RBMY1C</text>
-      </g>
-      <g
-         class="gene-group"
-         id="58529"
-         cx="97.46358314115531"
-         cy="188.1705475592994"
-         transform="translate(97.463583,188.17055)">
-        <circle
-           class="gene gene-query"
-           r="15"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle183"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-23.929688"
-           y="-34"
-           width="47.859375"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect185" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-20"
-           id="text187">MYOZ1</text>
-      </g>
-      <g
-         class="gene-group"
-         id="7136"
-         cx="410.48318061479773"
-         cy="499.3800974913673"
-         transform="translate(410.48318,499.3801)">
-        <circle
-           class="gene gene-query"
-           r="15"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle190"
-           cx="0"
-           cy="0" />
-        <rect
-           rx="5"
-           ry="5"
-           x="-22"
-           y="-34"
-           width="43"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect192" />
-        <text
-           class="gene-name"
-           text-anchor="middle"
-           y="-20"
-           id="text194">TNNI2</text>
-      </g>
-    </g>
-  </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="305.49536"
-     y="9.1171875"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="244.36621"
+     y="20.183832"
      id="text1801"><tspan
        sodipodi:role="line"
        id="tspan1799"
-       x="305.49536"
-       y="9.1171875">Skeletal muscle</tspan></text>
+       x="244.36621"
+       y="20.183832"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.66666667px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start">Skeletal muscle</tspan></text>
+  <g
+     transform="matrix(1.1171685,0,0,1.1171685,-48.977469,-144.13267)"
+     clip-path="url(#clipPath1020)"
+     id="g199">
+    <rect
+       y="0"
+       x="0"
+       id="rect2"
+       style="fill:none"
+       height="600"
+       width="440"
+       class="canvas" />
+    <g
+       id="g197">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 119.71159,251.10479 c 0,0 -78.777334,-48.80246 -39.497491,-84.42326"
+         id="246"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 119.71159,251.10479 c 0,0 117.49766,123.19627 266.96819,200.99076"
+         id="256"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 119.71159,251.10479 c 0,0 -59.317572,58.60216 24.23062,76.36293"
+         id="258"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 119.71159,251.10479 c 0,0 17.59461,-73.74981 112.67196,-49.32593"
+         id="273"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 119.71159,251.10479 c 0,0 -27.847247,-65.71932 48.41781,-53.296"
+         id="275"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 119.71159,251.10479 c 0,0 126.64403,44.67168 250.24005,111.65467"
+         id="279"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 119.71159,251.10479 c 0,0 55.89024,-26.67562 146.20317,5.31847"
+         id="281"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 119.71159,251.10479 c 0,0 49.57148,96.90175 155.1812,152.10992"
+         id="286"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 119.71159,251.10479 c 0,0 133.38616,-13.75109 266.25652,15.66664"
+         id="288"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 119.71159,251.10479 c 0,0 -19.70418,87.07629 65.25614,129.97325"
+         id="289"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b0b247;stroke-width:1"
+         d="m 80.214099,166.68153 c 0,0 -17.136098,84.44195 63.728111,160.78619"
+         id="347"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 80.214099,166.68153 c 0,0 114.841431,-26.6966 236.492801,30.6563"
+         id="348"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 80.214099,166.68153 c 0,0 117.711181,50.44062 243.999311,143.71754"
+         id="360"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 80.214099,166.68153 c 0,0 62.794631,-34.02013 152.169451,35.09733"
+         id="362"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 80.214099,166.68153 c 0,0 -62.053207,52.34753 -0.486701,127.85231"
+         id="363"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 80.214099,166.68153 c 0,0 136.821641,95.65019 289.737541,196.07793"
+         id="368"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bcb449;stroke-width:1"
+         d="m 80.214099,166.68153 c 0,0 87.385551,7.27443 185.700661,89.74173"
+         id="370"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b0b247;stroke-width:1"
+         d="m 80.214099,166.68153 c 0,0 160.985341,16.23893 305.754011,100.0899"
+         id="377"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 80.214099,166.68153 c 0,0 17.553813,113.76046 104.753631,214.39651"
+         id="378"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bcb449;stroke-width:1"
+         d="m 101.42257,400.95251 c 0,0 183.94507,90.78765 285.25721,51.14304"
+         id="471"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 282.02047,471.03411 c 0,0 73.57608,45.48465 104.65931,-18.93856"
+         id="661"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 282.02047,471.03411 c 0,0 -113.38517,-37.76314 -138.07826,-143.56639"
+         id="663"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 282.02047,471.03411 c 0,0 79.648,-17.59542 87.93117,-108.27465"
+         id="684"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 282.02047,471.03411 c 0,0 -34.18315,33.31198 -7.12768,-67.8194"
+         id="691"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 282.02047,471.03411 c 0,0 85.73944,-84.88387 103.94764,-204.26268"
+         id="693"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 -129.93011,-31.80179 -242.73757,-124.62783"
+         id="732"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 -2.68537,-130.94832 -69.97288,-254.75772"
+         id="733"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#c0b54a;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 -79.07433,61.80517 -190.2429,21.84478"
+         id="740"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 13.2749,-67.86494 -62.46637,-141.69648"
+         id="745"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 -58.68272,-122.68777 -154.29623,-250.31669"
+         id="747"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#aeb247;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 -152.72979,-39.64378 -306.952382,-157.56171"
+         id="748"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 -103.02775,-129.53373 -218.55038,-254.28676"
+         id="749"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 49.59977,-32.4444 -16.72814,-89.33609"
+         id="753"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b8b449;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 -51.40185,-89.53238 -120.76502,-195.67229"
+         id="755"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#c4b54b;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 -57.40566,22.38656 -111.78699,-48.88084"
+         id="760"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 44.3453,-88.10193 -0.71167,-185.32412"
+         id="762"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 386.67978,452.09555 c 0,0 -100.30362,-7.20797 -201.71205,-71.01751"
+         id="763"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b5b348;stroke-width:1"
+         d="m 143.94221,327.46772 c 0,0 68.85807,-85.18875 172.76469,-130.12989"
+         id="798"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 143.94221,327.46772 c 0,0 76.03989,5.51436 180.2712,-17.06865"
+         id="810"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 143.94221,327.46772 c 0,0 5.44619,-82.72173 88.44134,-125.68886"
+         id="812"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 143.94221,327.46772 c 0,0 -45.249143,-80.46182 24.18719,-129.65893"
+         id="814"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 143.94221,327.46772 c 0,0 103.95886,28.35971 226.00943,35.29174"
+         id="818"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b2b347;stroke-width:1"
+         d="m 143.94221,327.46772 c 0,0 34.7565,-53.64926 121.97255,-71.04446"
+         id="820"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b9b449;stroke-width:1"
+         d="m 143.94221,327.46772 c 0,0 30.59143,77.09224 130.95058,75.74699"
+         id="825"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 143.94221,327.46772 c 0,0 -42.8021,53.55516 41.02552,53.61032"
+         id="828"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 316.7069,197.33783 c 0,0 59.77409,33.15374 7.50651,113.06124"
+         id="841"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 316.7069,197.33783 c 0,0 -71.37892,-63.00366 -148.5775,0.47096"
+         id="845"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bbb449;stroke-width:1"
+         d="m 316.7069,197.33783 c 0,0 -11.72072,-45.99192 -50.79214,59.08543"
+         id="851"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#c5b54b;stroke-width:1"
+         d="m 316.7069,197.33783 c 0,0 -5.65611,94.68741 -41.81411,205.87688"
+         id="856"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b9b449;stroke-width:1"
+         d="m 316.7069,197.33783 c 0,0 80.95267,-10.96629 69.26121,69.4336"
+         id="858"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b8b348;stroke-width:1"
+         d="m 196.43688,473.94033 c 0,0 -110.621977,-51.86208 -116.709482,-179.40649"
+         id="1033"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#afb247;stroke-width:1"
+         d="m 196.43688,473.94033 c 0,0 36.44416,16.92474 78.45591,-70.72562"
+         id="1045"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 324.21341,310.39907 c 0,0 -15.2719,-86.25345 -91.82986,-108.62021"
+         id="1137"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 324.21341,310.39907 c 0,0 -59.62642,-92.89152 -156.08401,-112.59028"
+         id="1139"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 324.21341,310.39907 c 0,0 87.22004,5.98566 45.73823,52.36039"
+         id="1143"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 324.21341,310.39907 c 0,0 8.4918,81.53293 -49.32062,92.81564"
+         id="1150"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 324.21341,310.39907 c 0,0 102.1299,-39.21191 61.7547,-43.62764"
+         id="1152"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 324.21341,310.39907 c 0,0 -59.77607,64.74493 -139.24568,70.67897"
+         id="1153"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 232.38355,201.77886 c 0,0 -48.84806,-78.79033 -64.25415,-3.97007"
+         id="1174"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 232.38355,201.77886 c 0,0 44.52964,-39.7755 33.53121,54.6444"
+         id="1180"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 232.38355,201.77886 c 0,0 1.1593,104.86199 42.50924,201.43585"
+         id="1185"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 232.38355,201.77886 c 0,0 106.2681,-18.97628 153.58456,64.99257"
+         id="1187"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 168.1294,197.80879 c 0,0 117.26889,66.92754 201.82224,164.95067"
+         id="1209"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 168.1294,197.80879 c 0,0 56.50039,-32.63852 97.78536,58.61447"
+         id="1211"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 168.1294,197.80879 c 0,0 27.91797,111.33138 106.76339,205.40592"
+         id="1216"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 168.1294,197.80879 c 0,0 -29.29493,94.72953 16.83833,183.26925"
+         id="1219"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 369.95164,362.75946 c 0,0 -16.68895,-82.65898 -104.03688,-106.3362"
+         id="1261"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 369.95164,362.75946 c 0,0 -23.18303,65.69956 -95.05885,40.45525"
+         id="1266"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 369.95164,362.75946 c 0,0 73.30101,-49.9373 16.01647,-95.98803"
+         id="1268"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#aeb246;stroke-width:1"
+         d="m 265.91476,256.42326 c 0,0 -3.47983,77.1301 8.97803,146.79145"
+         id="1285"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#c0b54a;stroke-width:1"
+         d="m 265.91476,256.42326 c 0,0 85.68635,-44.13723 120.05335,10.34817"
+         id="1287"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#aeb246;stroke-width:1"
+         d="m 274.89279,403.21471 c 0,0 83.3952,-60.36309 111.07532,-136.44328"
+         id="1317"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b1b347;stroke-width:1"
+         d="m 274.89279,403.21471 c 0,0 -73.68026,44.44093 -89.92506,-22.13667"
+         id="1318"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bab449;stroke-width:1"
+         d="m 385.96811,266.77143 c 0,0 -88.0095,71.11234 -201.00038,114.30661"
+         id="1323"
+         class="edge" />
+      <g
+         transform="translate(265.91476,256.42326)"
+         cy="256.4232575791516"
+         cx="265.9147610145537"
+         id="728395"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle78"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect80"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="44.943848"
+           y="-27"
+           x="-22.679688"
+           ry="5"
+           rx="5" />
+        <text
+           id="text82"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">TSPY4</text>
+      </g>
+      <g
+         transform="translate(196.43688,473.94033)"
+         cy="473.94033059413124"
+         cx="196.4368755863004"
+         id="145814"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle85"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect87"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="62.375778"
+           y="-27"
+           x="-31.125"
+           ry="5"
+           rx="5" />
+        <text
+           id="text89"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">PGPEP1L</text>
+      </g>
+      <g
+         transform="translate(119.71159,251.10479)"
+         cy="251.10478555567363"
+         cx="119.71159407126623"
+         id="100506127"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle92"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect94"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="54.625"
+           y="-27"
+           x="-27.3125"
+           ry="5"
+           rx="5" />
+        <text
+           id="text96"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">GVQW3</text>
+      </g>
+      <g
+         transform="translate(324.21341,310.39907)"
+         cy="310.3990673619122"
+         cx="324.21340923592084"
+         id="100505502"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle99"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect101"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="103.45312"
+           y="-27"
+           x="-51.726562"
+           ry="5"
+           rx="5" />
+        <text
+           id="text103"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">LOC100505502</text>
+      </g>
+      <g
+         transform="translate(184.96773,381.07804)"
+         cy="381.0780410793314"
+         cx="184.96772761627813"
+         id="401934"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle106"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect108"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="53.15625"
+           y="-27"
+           x="-26.578125"
+           ry="5"
+           rx="5" />
+        <text
+           id="text110"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">RNF223</text>
+      </g>
+      <g
+         transform="translate(369.95164,362.75946)"
+         cy="362.75945625965045"
+         cx="369.9516425114926"
+         id="643596"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle113"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect115"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="53.743805"
+           y="-27"
+           x="-26.578125"
+           ry="5"
+           rx="5" />
+        <text
+           id="text117"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">RNF224</text>
+      </g>
+      <g
+         transform="translate(232.38355,201.77886)"
+         cy="201.7788585353157"
+         cx="232.38355411076014"
+         id="100130827"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle120"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect122"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="36.1875"
+           y="-27"
+           x="-18.09375"
+           ry="5"
+           rx="5" />
+        <text
+           id="text124"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">SBK3</text>
+      </g>
+      <g
+         transform="translate(316.7069,197.33783)"
+         cy="197.337825767355"
+         cx="316.7068962012994"
+         id="401563"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle127"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect129"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="62.171875"
+           y="-27"
+           x="-31.085938"
+           ry="5"
+           rx="5" />
+        <text
+           id="text131"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">C9orf139</text>
+      </g>
+      <g
+         transform="translate(143.94221,327.46772)"
+         cy="327.46771803959496"
+         cx="143.9422075914042"
+         id="388931"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle134"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect136"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="57.28125"
+           y="-27"
+           x="-28.640625"
+           ry="5"
+           rx="5" />
+        <text
+           id="text138"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">MFSD2B</text>
+      </g>
+      <g
+         transform="translate(385.96811,266.77143)"
+         cy="266.77143023196004"
+         cx="385.9681105075027"
+         id="388468"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle141"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect143"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="46.015625"
+           y="-27"
+           x="-23.007812"
+           ry="5"
+           rx="5" />
+        <text
+           id="text145"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">POTEC</text>
+      </g>
+      <g
+         transform="translate(79.727398,294.53384)"
+         cy="294.5338421988463"
+         cx="79.72739835758516"
+         id="391002"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle148"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect150"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="65.75"
+           y="-27"
+           x="-32.875"
+           ry="5"
+           rx="5" />
+        <text
+           id="text152"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">PRAMEF8</text>
+      </g>
+      <g
+         transform="translate(168.1294,197.80879)"
+         cy="197.80878847883693"
+         cx="168.12939551077906"
+         id="728597"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle155"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect157"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="58.296875"
+           y="-27"
+           x="-29.148438"
+           ry="5"
+           rx="5" />
+        <text
+           id="text159"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">DCDC2C</text>
+      </g>
+      <g
+         transform="translate(282.02047,471.03411)"
+         cy="471.03410895923747"
+         cx="282.0204725229033"
+         id="100287045"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle162"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect164"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="73.6875"
+           y="-27"
+           x="-36.84375"
+           ry="5"
+           rx="5" />
+        <text
+           id="text166"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">FAM90A26</text>
+      </g>
+      <g
+         transform="translate(274.89279,403.21471)"
+         cy="403.21471206807144"
+         cx="274.8927919715235"
+         id="100288797"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle169"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect171"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="67.5625"
+           y="-27"
+           x="-34.28125"
+           ry="5"
+           rx="5" />
+        <text
+           id="text173"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">TMEM239</text>
+      </g>
+      <g
+         transform="translate(101.42257,400.95251)"
+         cy="400.95251214796514"
+         cx="101.42257124364039"
+         id="5942"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle176"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect178"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="57.96875"
+           y="-27"
+           x="-28.984375"
+           ry="5"
+           rx="5" />
+        <text
+           id="text180"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">RBMY1C</text>
+      </g>
+      <g
+         transform="translate(80.214099,166.68153)"
+         cy="166.68153108552266"
+         cx="80.21409924761173"
+         id="58529"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle183"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="15"
+           class="gene gene-query" />
+        <rect
+           id="rect185"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="47.859375"
+           y="-34"
+           x="-23.929688"
+           ry="5"
+           rx="5" />
+        <text
+           id="text187"
+           style="text-anchor:middle"
+           y="-20"
+           class="gene-name">
+          <tspan
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00057742px;text-anchor:middle;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+             id="tspan2096">MYOZ1</tspan>
+        </text>
+      </g>
+      <g
+         transform="translate(386.67978,452.09555)"
+         cy="452.095545460183"
+         cx="386.6797753365263"
+         id="7136"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle190"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="15"
+           class="gene gene-query" />
+        <rect
+           id="rect192"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="43"
+           y="-34"
+           x="-22"
+           ry="5"
+           rx="5" />
+        <text
+           id="text194"
+           style="text-anchor:middle"
+           y="-20"
+           class="gene-name">
+          <tspan
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00057742px;text-anchor:middle;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+             id="tspan2098">TNNI2</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
 </svg>

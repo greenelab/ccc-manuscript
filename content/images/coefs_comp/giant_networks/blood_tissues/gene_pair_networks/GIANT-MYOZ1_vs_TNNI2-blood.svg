@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="410.49249"
    width="411.28638"
    version="1.1"
    id="svg252"
    sodipodi:docname="GIANT-MYOZ1_vs_TNNI2-blood.svg"
-   inkscape:version="1.1.2 (76b9e6a115, 2022-02-25)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata164">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <defs
      id="defs256">
     <linearGradient
@@ -138,6 +152,39 @@
          x="32.712112"
          y="57.513329" />
     </clipPath>
+    <clipPath
+       id="clipPath1223"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         y="131.69157"
+         x="29.662529"
+         height="360.44467"
+         width="380.2197"
+         id="rect1225"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1, 6;stroke-dashoffset:0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1005"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         y="60.681267"
+         x="30.561396"
+         height="424.26407"
+         width="430.55612"
+         id="rect1007"
+         style="fill:#ffffff;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3, 18;stroke-dashoffset:0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1005-3"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         y="65.175591"
+         x="47.63982"
+         height="408.98334"
+         width="414.37656"
+         id="rect1007-6"
+         style="fill:#ffffff;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3, 18;stroke-dashoffset:0" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="namedview254"
@@ -149,7 +196,7 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="1.4066667"
-     inkscape:cx="221.80094"
+     inkscape:cx="49.052128"
      inkscape:cy="117.29858"
      inkscape:window-width="1714"
      inkscape:window-height="1371"
@@ -161,818 +208,892 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.848711;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.848711, 10.1844;stroke-dashoffset:0"
-     id="rect1456"
-     width="419.55774"
-     height="404.80002"
-     x="-4.8424907"
-     y="2.1971207" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="349.32358"
+     y="17.263689"
+     id="text1801"><tspan
+       sodipodi:role="line"
+       id="tspan1799"
+       x="349.32358"
+       y="17.263689"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.66666667px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start">Blood</tspan></text>
   <g
-     id="g5277"
-     clip-path="url(#clipPath5331)"
-     transform="matrix(0.85262462,0,0,0.85262462,-22.702725,-42.925414)">
+     transform="matrix(0.9878325,0,0,0.9878325,-44.270512,-61.301169)"
+     clip-path="url(#clipPath1005-3)"
+     id="g188">
     <rect
-       class="canvas"
-       width="540"
-       height="600"
-       style="fill:none"
-       id="rect5091"
+       y="0"
        x="0"
-       y="0" />
+       id="rect2"
+       style="fill:none"
+       height="600"
+       width="440"
+       class="canvas" />
     <g
-       transform="matrix(1.2,0,0,1.2,-72.374557,-33.417942)"
-       id="g5275">
+       id="g186">
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#9eb043;stroke-width:1"
+         d="m 89.445092,345.24488 c 0,0 -33.125796,-128.95114 4.584254,-242.07067"
          id="246"
-         d="m 261.16584,108.29311 c 0,0 -83.29041,-34.290751 -141.34639,10.66848"
-         style="fill:none;stroke:#9eb043;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b551;stroke-width:1"
+         d="m 89.445092,345.24488 c 0,0 -57.043612,-48.94251 -10.878251,-117.40587"
          id="248"
-         d="m 261.16584,108.29311 c 0,0 58.91827,-43.670235 79.9805,17.24915"
-         style="fill:none;stroke:#e6b551;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#a8b145;stroke-width:1"
+         d="m 89.445092,345.24488 c 0,0 -5.065387,54.56431 69.597098,17.57722"
          id="252"
-         d="m 261.16584,108.29311 c 0,0 57.70884,16.18555 36.44984,93.34189"
-         style="fill:none;stroke:#a8b145;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e4a94d;stroke-width:1"
+         d="m 89.445092,345.24488 c 0,0 153.869628,81.25379 314.966078,105.99165"
          id="255"
-         d="m 261.16584,108.29311 c 0,0 124.82803,132.02567 192.4692,273.84405"
-         style="fill:none;stroke:#e4a94d;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 89.445092,345.24488 c 0,0 8.656531,-48.75081 89.981398,-90.84152"
          id="289"
-         d="m 261.16584,108.29311 c 0,0 -96.62507,14.34839 -144.17661,93.62884"
-         style="fill:none;stroke:#e6b250;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#c4b54b;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 -51.269714,55.05801 -15.462505,124.6648"
          id="337"
-         d="m 119.81945,118.96159 c 0,0 104.56335,-31.040339 221.32689,6.58067"
-         style="fill:none;stroke:#c4b54b;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#a2b044;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 14.575334,129.06407 65.012844,259.64789"
          id="341"
-         d="m 119.81945,118.96159 c 0,0 80.24273,25.54313 177.79623,82.67341"
-         style="fill:none;stroke:#a2b044;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#aeb246;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 128.726864,52.83147 262.279114,130.79654"
          id="342"
-         d="m 119.81945,118.96159 c 0,0 123.47608,99.39058 234.54509,226.73603"
-         style="fill:none;stroke:#aeb246;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#acb246;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 145.699984,169.60362 310.381824,348.06232"
          id="344"
-         d="m 119.81945,118.96159 c 0,0 183.82127,119.36432 333.81559,263.17557"
-         style="fill:none;stroke:#acb246;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e08a45;stroke-width:1.00977004"
+         d="m 94.029346,103.17421 c 0,0 -10.707736,46.57716 83.651014,66.01666"
          id="346"
-         d="m 119.81945,118.96159 c 0,0 145.05287,30.13661 326.4032,129.7096"
-         style="fill:none;stroke:#e08a45;stroke-width:1.00977" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#adb246;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 78.314694,-17.345315 162.173154,25.8308"
          id="352"
-         d="m 119.81945,118.96159 c 0,0 124.13392,135.74922 257.48336,297.40499"
-         style="fill:none;stroke:#adb246;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e29749;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 100.372234,16.95538 209.880584,62.63251"
          id="367"
-         d="m 119.81945,118.96159 c 0,0 101.08611,162.35857 219.97308,328.44187"
-         style="fill:none;stroke:#e29749;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e39f4b;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 43.426114,-45.802449 118.592804,-8.311519"
          id="370"
-         d="m 119.81945,118.96159 c 0,0 131.5803,3.51483 291.23938,62.70578"
-         style="fill:none;stroke:#e39f4b;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e1b951;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 60.662634,95.56517 148.863754,190.0992"
          id="379"
-         d="m 119.81945,118.96159 c 0,0 17.76279,52.44829 97.92282,100.78022"
-         style="fill:none;stroke:#e1b951;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b751;stroke-width:1"
+         d="m 78.566841,227.83901 c 0,0 154.321849,125.84615 325.844329,223.39752"
          id="429"
-         d="m 341.14634,125.54226 c 0,0 82.21846,127.13688 112.4887,256.5949"
-         style="fill:none;stroke:#e6b751;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#adb246;stroke-width:1"
+         d="m 78.566841,227.83901 c 0,0 41.487849,-77.53453 134.055309,-132.976319"
          id="455"
-         d="m 341.14634,125.54226 c 0,0 69.69316,-10.59695 69.91249,56.12511"
-         style="fill:none;stroke:#adb246;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 78.566841,227.83901 c 0,0 9.596649,45.62293 100.859649,26.56435"
          id="463"
-         d="m 341.14634,125.54226 c 0,0 -118.64258,12.97162 -224.15711,76.37969"
-         style="fill:none;stroke:#e6b250;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#9eb043;stroke-width:1"
+         d="m 78.566841,227.83901 c 0,0 66.551909,40.43261 164.326259,65.4344"
          id="464"
-         d="m 341.14634,125.54226 c 0,0 -50.77057,37.63633 -123.40407,94.19955"
-         style="fill:none;stroke:#9eb043;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 -102.39036,31.84372 -170.79642,9.59267"
          id="546"
-         d="m 140.69876,343.25077 c 0,0 61.42088,-83.39914 156.91692,-141.61577"
-         style="fill:none;stroke:#e6b250;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e7b852;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 48.66784,-66.29513 26.46985,-119.25868"
          id="547"
-         d="m 140.69876,343.25077 c 0,0 102.84168,23.26394 213.66578,2.44685"
-         style="fill:none;stroke:#e7b852;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e7ba52;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 33.11171,65.9343 -9.18272,91.33715"
          id="548"
-         d="m 140.69876,343.25077 c 0,0 13.4411,50.40146 81.10754,1.54018"
-         style="fill:none;stroke:#e7ba52;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e4a74d;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 21.22566,87.11448 74.57256,98.0071"
          id="549"
-         d="m 140.69876,343.25077 c 0,0 166.41317,32.20508 312.93628,38.88639"
-         style="fill:none;stroke:#e4a74d;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e7b952;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 76.1791,-57.34345 83.83956,-121.308"
          id="560"
-         d="m 140.69876,343.25077 c 0,0 17.71019,82.13738 105.46206,63.40989"
-         style="fill:none;stroke:#e7b952;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#adb246;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 -48.23071,71.1589 -112.79779,87.88911"
          id="568"
-         d="m 140.69876,343.25077 c 0,0 -70.539135,-28.24937 -17.335,-76.66979"
-         style="fill:none;stroke:#adb246;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#adb246;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 -18.8881,-96.47045 -25.92868,-187.42271"
          id="572"
-         d="m 140.69876,343.25077 c 0,0 86.66511,84.54035 199.09377,104.15269"
-         style="fill:none;stroke:#adb246;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#9aaf42;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 73.27356,30.88149 100.50497,-22.87644"
          id="573"
-         d="m 140.69876,343.25077 c 0,0 -38.96375,65.83357 36.29558,65.21037"
-         style="fill:none;stroke:#9aaf42;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e1b951;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 -67.4576,-4.80338 -86.94551,-59.95602"
          id="584"
-         d="m 140.69876,343.25077 c 0,0 3.14862,-77.05404 77.04351,-123.50896"
-         style="fill:none;stroke:#e1b951;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e3a04b;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 90.92932,-56.52131 197.26627,-128.85135"
          id="585"
-         d="m 297.61568,201.635 c 0,0 61.24597,56.06126 56.74886,144.06262"
-         style="fill:none;stroke:#e3a04b;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b7b348;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 43.55163,80.87539 161.6137,81.74448"
          id="586"
-         d="m 297.61568,201.635 c 0,0 -32.28486,68.86111 -75.80938,143.15595"
-         style="fill:none;stroke:#b7b348;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e19448;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 113.41523,80.49668 245.36898,88.41443"
          id="587"
-         d="m 297.61568,201.635 c 0,0 103.86167,86.02987 156.01936,180.50216"
-         style="fill:none;stroke:#e19448;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bcb449;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 123.78626,-67.91103 254.63598,-130.90067"
          id="598"
-         d="m 297.61568,201.635 c 0,0 -26.99661,104.17016 -51.45486,205.02566"
-         style="fill:none;stroke:#bcb449;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b350;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 -19.53654,74.97231 57.99863,78.29644"
          id="606"
-         d="m 297.61568,201.635 c 0,0 -102.33525,8.23692 -174.25192,64.94598"
-         style="fill:none;stroke:#e6b350;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b350;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 3.73005,-42.59475 83.85091,-69.54869"
          id="622"
-         d="m 297.61568,201.635 c 0,0 -47.83468,-32.68266 -79.87341,18.10681"
-         style="fill:none;stroke:#e6b350;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#dc713e;stroke-width:1.33089995"
+         d="m 356.30846,233.97075 c 0,0 -6.39918,112.16324 -35.65257,210.59583"
          id="623"
-         d="m 354.36454,345.69762 c 0,0 -68.92842,40.41513 -132.55824,-0.90667"
-         style="fill:none;stroke:#dc713e;stroke-width:1.3309" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b450;stroke-width:1"
+         d="m 356.30846,233.97075 c 0,0 48.03678,112.99504 48.10271,217.26578"
          id="624"
-         d="m 354.36454,345.69762 c 0,0 85.69545,-10.82285 99.2705,36.43954"
-         style="fill:none;stroke:#e6b450;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 356.30846,233.97075 c 0,0 -30.34845,-86.08495 -100.10596,-104.96574"
          id="632"
-         d="m 354.36454,345.69762 c 0,0 68.21693,30.76804 22.93827,70.66896"
-         style="fill:none;stroke:#e6b250;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bfb44a;stroke-width:1"
+         d="m 356.30846,233.97075 c 0,0 62.62008,-51.47745 57.36971,-2.04932"
          id="635"
-         d="m 354.36454,345.69762 c 0,0 -43.62558,78.38719 -108.20372,60.96304"
-         style="fill:none;stroke:#bfb44a;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#dab84f;stroke-width:1"
+         d="m 356.30846,233.97075 c 0,0 4.70907,-78.2272 -52.39853,-68.16403"
          id="647"
-         d="m 354.36454,345.69762 c 0,0 46.26979,67.18197 -14.57201,101.70584"
-         style="fill:none;stroke:#dab84f;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e5ac4e;stroke-width:1"
+         d="m 356.30846,233.97075 c 0,0 -74.50187,2.93208 -113.41536,59.30266"
          id="659"
-         d="m 354.36454,345.69762 c 0,0 -50.93145,-80.55625 -136.62227,-125.95581"
-         style="fill:none;stroke:#e5ac4e;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#dd7b41;stroke-width:1.20081997"
+         d="m 320.65589,444.56658 c 0,0 42.52298,59.28001 83.75528,6.66995"
          id="660"
-         d="m 221.8063,344.79095 c 0,0 131.26766,29.25789 231.82874,37.34621"
-         style="fill:none;stroke:#dd7b41;stroke-width:1.20082" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#ddb950;stroke-width:1"
+         d="m 320.65589,444.56658 c 0,0 60.812,-98.33987 93.02228,-212.64515"
          id="671"
-         d="m 221.8063,344.79095 c 0,0 -25.19257,84.72549 24.35452,61.86971"
-         style="fill:none;stroke:#ddb950;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#9aaf42;stroke-width:1"
+         d="m 320.65589,444.56658 c 0,0 -66.75575,55.27847 -103.61507,-3.44804"
          id="679"
-         d="m 221.8063,344.79095 c 0,0 -100.32629,-12.7133 -98.44254,-78.20997"
-         style="fill:none;stroke:#9aaf42;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#a1b044;stroke-width:1"
+         d="m 320.65589,444.56658 c 0,0 81.26199,-27.30421 109.68769,-114.21359"
          id="684"
-         d="m 221.8063,344.79095 c 0,0 -87.44816,37.98362 -44.81196,63.67019"
-         style="fill:none;stroke:#a1b044;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b450;stroke-width:1"
+         d="m 320.65589,444.56658 c 0,0 -61.84197,-57.94334 -77.76279,-151.29317"
          id="695"
-         d="m 221.8063,344.79095 c 0,0 -44.34203,-64.53672 -4.06403,-125.04914"
-         style="fill:none;stroke:#e6b450;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 -65.72446,-159.97125 -148.20867,-322.23152"
          id="703"
-         d="m 453.63504,382.13716 c 0,0 3.13511,56.59671 -76.33223,34.22942"
-         style="fill:none;stroke:#e6b250;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e5ad4e;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 39.27652,-101.92915 9.267,-219.3151"
          id="706"
-         d="m 453.63504,382.13716 c 0,0 -93.7772,38.23938 -207.47422,24.5235"
-         style="fill:none;stroke:#e5ad4e;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e4a94d;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 -93.88582,36.12027 -187.37035,-10.11799"
          id="714"
-         d="m 453.63504,382.13716 c 0,0 -144.95025,-44.95827 -330.27128,-115.55618"
-         style="fill:none;stroke:#e4a94d;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#acb246;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 -36.45763,-139.73844 -100.50124,-285.42981"
          id="718"
-         d="m 453.63504,382.13716 c 0,0 -30.33989,69.01327 -113.84251,65.2663"
-         style="fill:none;stroke:#acb246;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e4a84d;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 52.83264,-42.85012 25.93241,-120.88354"
          id="719"
-         d="m 453.63504,382.13716 c 0,0 -124.7273,31.25411 -276.6407,26.32398"
-         style="fill:none;stroke:#e4a84d;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e5ac4e;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 -112.60782,-80.66696 -224.98468,-196.83317"
          id="729"
-         d="m 453.63504,382.13716 c 0,0 -142.0116,-90.93969 -336.64581,-180.21521"
-         style="fill:none;stroke:#e5ac4e;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e4a94d;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 -85.28038,-62.05047 -161.51807,-157.96312"
          id="730"
-         d="m 453.63504,382.13716 c 0,0 -100.083,-86.48924 -235.89277,-162.39535"
-         style="fill:none;stroke:#e4a94d;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#a3b144;stroke-width:1"
+         d="m 177.68036,169.19087 c 0,0 -31.47067,-69.88318 34.94179,-74.328179"
          id="788"
-         d="m 446.22265,248.67119 c 0,0 34.8823,-58.93556 -35.16382,-67.00382"
-         style="fill:none;stroke:#a3b144;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#cab64c;stroke-width:1"
+         d="m 256.2025,129.00501 c 0,0 42.84228,-38.258775 47.70743,36.80171"
          id="962"
-         d="m 377.30281,416.36658 c 0,0 6.2545,75.3571 -37.51028,31.03688"
-         style="fill:none;stroke:#cab64c;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bdb449;stroke-width:1"
+         d="m 256.2025,129.00501 c 0,0 103.45488,79.1783 174.14108,201.34798"
          id="963"
-         d="m 377.30281,416.36658 c 0,0 -103.27825,35.23003 -200.30847,-7.90544"
-         style="fill:none;stroke:#bdb449;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e5b04f;stroke-width:1"
+         d="m 256.2025,129.00501 c 0,0 -31.79989,75.82202 -13.3094,164.2684"
          id="974"
-         d="m 377.30281,416.36658 c 0,0 -71.77171,-103.42242 -159.56054,-196.62477"
-         style="fill:none;stroke:#e5b04f;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#9eb043;stroke-width:1"
+         d="m 413.67817,231.92143 c 0,0 -27.52925,-71.07371 -109.76824,-66.11471"
          id="1037"
-         d="m 246.16082,406.66066 c 0,0 34.90439,78.98851 93.63171,40.7428"
-         style="fill:none;stroke:#9eb043;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#c5b54b;stroke-width:1"
+         d="m 413.67817,231.92143 c 0,0 55.81437,36.06079 16.66541,98.43156"
          id="1038"
-         d="m 246.16082,406.66066 c 0,0 -49.17624,66.63199 -69.16648,1.80048"
-         style="fill:none;stroke:#c5b54b;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 413.67817,231.92143 c 0,0 -113.48986,-15.91421 -234.25168,22.48193"
          id="1048"
-         d="m 246.16082,406.66066 c 0,0 -91.17232,-87.87333 -129.17159,-204.73871"
-         style="fill:none;stroke:#e6b250;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#d1b74e;stroke-width:1"
+         d="m 413.67817,231.92143 c 0,0 -84.54262,13.93371 -170.78507,61.35198"
          id="1049"
-         d="m 246.16082,406.66066 c 0,0 -28.85248,-89.22997 -28.41855,-186.91885"
-         style="fill:none;stroke:#d1b74e;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e19548;stroke-width:1"
+         d="m 217.04082,441.11854 c 0,0 -28.00833,-68.25042 25.85228,-147.84513"
          id="1205"
-         d="m 123.36376,266.58098 c 0,0 15.15527,-51.07926 94.37851,-46.83917"
-         style="fill:none;stroke:#e19548;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#db703e;stroke-width:1.34012997"
+         d="m 303.90993,165.80672 c 0,0 -52.41754,48.16709 -61.01683,127.46669"
          id="1259"
-         d="m 339.79253,447.40346 c 0,0 -66.8706,-108.28092 -122.05026,-227.66165"
-         style="fill:none;stroke:#db703e;stroke-width:1.34013" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#c7b64c;stroke-width:1"
+         d="m 430.34358,330.35299 c 0,0 -99.85121,-16.16549 -187.45048,-37.07958"
          id="1270"
-         d="m 176.99434,408.46114 c 0,0 1.05381,-93.80502 40.74793,-188.71933"
-         style="fill:none;stroke:#c7b64c;stroke-width:1" />
+         class="edge" />
       <path
-         class="edge"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e5ae4f;stroke-width:1"
+         d="m 179.42649,254.40336 c 0,0 -11.58762,46.46542 63.46661,38.87005"
          id="1325"
-         d="m 116.98923,201.92195 c 0,0 43.14698,-28.35649 100.75304,17.81986"
-         style="fill:none;stroke:#e5ae4f;stroke-width:1" />
+         class="edge" />
       <g
-         class="gene-group"
+         transform="translate(320.65589,444.56658)"
+         cy="444.5665791798483"
+         cx="320.65588853265075"
          id="7134"
-         cx="221.80630160434347"
-         cy="344.7909486124234"
-         transform="translate(221.8063,344.79095)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5156"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle67"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-24.78125"
-           y="-27"
+           id="rect69"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="48.5625"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5158" />
+           y="-27"
+           x="-24.78125"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text71"
+           style="text-anchor:middle"
            y="-13"
-           id="text5160">TNNC1</text>
+           class="gene-name">TNNC1</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(159.04219,362.8221)"
+         cy="362.82210395648667"
+         cx="159.04219407253527"
          id="7140"
-         cx="297.61568342471"
-         cy="201.6349979474408"
-         transform="translate(297.61568,201.635)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5163"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle74"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-24.367188"
-           y="-27"
+           id="rect76"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="47.734375"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5165" />
+           y="-27"
+           x="-24.367188"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text78"
+           style="text-anchor:middle"
            y="-13"
-           id="text5167">TNNT3</text>
+           class="gene-name">TNNT3</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(303.90993,165.80672)"
+         cy="165.80672320306758"
+         cx="303.9099349239227"
          id="88"
-         cx="339.7925309633097"
-         cy="447.4034588208765"
-         transform="translate(339.79253,447.40346)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5170"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle81"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-23.578125"
-           y="-27"
-           width="47.15625"
-           height="19"
+           id="rect83"
            style="opacity:0.5;fill:#ffffff"
-           id="rect5172" />
+           height="19"
+           width="47.15625"
+           y="-27"
+           x="-23.578125"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text85"
+           style="text-anchor:middle"
            y="-13"
-           id="text5174">ACTN2</text>
+           class="gene-name">ACTN2</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(177.68036,169.19087)"
+         cy="169.19087132062262"
+         cx="177.6803614957783"
          id="4110"
-         cx="446.2226487309837"
-         cy="248.67118941680826"
-         transform="translate(446.22265,248.67119)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5177"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle88"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-34.03125"
-           y="-27"
+           id="rect90"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="68.0625"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5179" />
+           y="-27"
+           x="-34.03125"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text92"
+           style="text-anchor:middle"
            y="-13"
-           id="text5181">MAGEA11</text>
+           class="gene-name">MAGEA11</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(242.8931,293.27341)"
+         cy="293.27341258872246"
+         cx="242.89309536954363"
          id="7273"
-         cx="217.7422744564448"
-         cy="219.74181427281377"
-         transform="translate(217.74227,219.74181)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5184"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle95"
+           style="stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-15.023438"
-           y="-27"
+           id="rect97"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="29.046875"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5186" />
+           y="-27"
+           x="-15.023438"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text99"
+           style="text-anchor:middle"
            y="-13"
-           id="text5188">TTN</text>
+           class="gene-name">TTN</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(89.445092,345.24488)"
+         cy="345.2448828026208"
+         cx="89.44509237865408"
          id="124599"
-         cx="261.16583796955587"
-         cy="108.29310974306031"
-         transform="translate(261.16584,108.29311)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5191"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle102"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-31.445312"
-           y="-27"
+           id="rect104"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="62.890625"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5193" />
+           y="-27"
+           x="-31.445312"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text106"
+           style="text-anchor:middle"
            y="-13"
-           id="text5195">CD300LB</text>
+           class="gene-name">CD300LB</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(329.83861,353.22943)"
+         cy="353.2294307903945"
+         cx="329.83860994143816"
          id="1674"
-         cx="140.69875663763685"
-         cy="343.25076756513903"
-         transform="translate(140.69876,343.25077)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5198"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle109"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-13.867188"
-           y="-27"
+           id="rect111"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="27.885925"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5200" />
+           y="-27"
+           x="-13.867188"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text113"
+           style="text-anchor:middle"
            y="-13"
-           id="text5202">DES</text>
+           class="gene-name">DES</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(217.04082,441.11854)"
+         cy="441.11853643784264"
+         cx="217.040823108419"
          id="84676"
-         cx="123.36375714146118"
-         cy="266.58097527232803"
-         transform="translate(123.36376,266.58098)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5205"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle116"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-26.601562"
-           y="-27"
+           id="rect118"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="52.203125"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5207" />
+           y="-27"
+           x="-26.601562"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text120"
+           style="text-anchor:middle"
            y="-13"
-           id="text5209">TRIM63</text>
+           class="gene-name">TRIM63</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(179.42649,254.40336)"
+         cy="254.40335518423396"
+         cx="179.42648882390904"
          id="9659"
-         cx="116.98923038219027"
-         cy="201.92195367274775"
-         transform="translate(116.98923,201.92195)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5212"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle123"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-30.15625"
-           y="-27"
+           id="rect125"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="60.3125"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5214" />
+           y="-27"
+           x="-30.15625"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text127"
+           style="text-anchor:middle"
            y="-13"
-           id="text5216">PDE4DIP</text>
+           class="gene-name">PDE4DIP</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(430.34358,330.35299)"
+         cy="330.3529945479827"
+         cx="430.3435821019262"
          id="755"
-         cx="176.99434263286417"
-         cy="408.46114415181205"
-         transform="translate(176.99434,408.46114)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5219"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle130"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-26.882812"
-           y="-27"
+           id="rect132"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="53.765625"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5221" />
+           y="-27"
+           x="-26.882812"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text134"
+           style="text-anchor:middle"
            y="-13"
-           id="text5223">C21orf2</text>
+           class="gene-name">C21orf2</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(256.2025,129.00501)"
+         cy="129.0050064417617"
+         cx="256.2024986968947"
          id="1158"
-         cx="377.3028106297087"
-         cy="416.3665814785638"
-         transform="translate(377.30281,416.36658)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5226"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle137"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-15.492188"
-           y="-27"
+           id="rect139"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="30.984375"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5228" />
+           y="-27"
+           x="-15.492188"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text141"
+           style="text-anchor:middle"
            y="-13"
-           id="text5230">CKM</text>
+           class="gene-name">CKM</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(78.566841,227.83901)"
+         cy="227.8390116320323"
+         cx="78.56684142102158"
          id="64581"
-         cx="341.14634284464074"
-         cy="125.54225606960736"
-         transform="translate(341.14634,125.54226)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5233"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle144"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-27.039062"
-           y="-27"
+           id="rect146"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="54.65181"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5235" />
+           y="-27"
+           x="-27.039062"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text148"
+           style="text-anchor:middle"
            y="-13"
-           id="text5237">CLEC7A</text>
+           class="gene-name">CLEC7A</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(212.62215,94.862691)"
+         cy="94.86269116878151"
+         cx="212.62215040885383"
          id="87"
-         cx="411.05883324642707"
-         cy="181.66736982973202"
-         transform="translate(411.05883,181.66737)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5240"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle151"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-23.578125"
-           y="-27"
+           id="rect153"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="47.15625"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5242" />
+           y="-27"
+           x="-23.578125"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text155"
+           style="text-anchor:middle"
            y="-13"
-           id="text5244">ACTN1</text>
+           class="gene-name">ACTN1</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(356.30846,233.97075)"
+         cy="233.9707471923099"
+         cx="356.3084622339019"
          id="7135"
-         cx="354.3645378363483"
-         cy="345.69762329316336"
-         transform="translate(354.36454,345.69762)">
+         class="gene-group">
         <circle
-           class="gene"
-           r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5247"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle158"
+           style="stroke-width:1"
+           r="8"
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-22"
-           y="-27"
-           width="43"
-           height="19"
+           id="rect160"
            style="opacity:0.5;fill:#ffffff"
-           id="rect5249" />
+           height="19"
+           width="43"
+           y="-27"
+           x="-22"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text162"
+           style="text-anchor:middle"
            y="-13"
-           id="text5251">TNNI1</text>
+           class="gene-name">TNNI1</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(413.67817,231.92143)"
+         cy="231.9214316177529"
+         cx="413.6781694165508"
          id="4684"
-         cx="246.16081558392347"
-         cy="406.6606623573181"
-         transform="translate(246.16082,406.66066)">
+         class="gene-group">
         <circle
-           class="gene"
+           cy="0"
+           cx="0"
+           id="circle165"
+           style="stroke:#aaaaaa;stroke-width:1"
            r="8"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5254"
-           cx="0"
-           cy="0" />
+           class="gene" />
         <rect
-           rx="5"
-           ry="5"
-           x="-25.375"
-           y="-27"
+           id="rect167"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
            width="50.75"
-           height="19"
-           style="opacity:0.5;fill:#ffffff"
-           id="rect5256" />
+           y="-27"
+           x="-25.375"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text169"
+           style="text-anchor:middle"
            y="-13"
-           id="text5258">NCAM1</text>
+           class="gene-name">NCAM1</text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(94.029346,103.17421)"
+         cy="103.17420736075954"
+         cx="94.02934603067428"
          id="58529"
-         cx="119.81944821834196"
-         cy="118.96159034887987"
-         transform="translate(119.81945,118.96159)">
+         class="gene-group">
         <circle
-           class="gene gene-query"
-           r="15"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5261"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle172"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="15"
+           class="gene gene-query" />
         <rect
-           rx="5"
-           ry="5"
-           x="-23.929688"
-           y="-34"
-           width="47.859375"
-           height="19"
+           id="rect174"
            style="opacity:0.5;fill:#ffffff"
-           id="rect5263" />
+           height="19"
+           width="47.859375"
+           y="-34"
+           x="-23.929688"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text176"
+           style="text-anchor:middle"
            y="-20"
-           id="text5265">MYOZ1</text>
+           class="gene-name">
+          <tspan
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00001021px;text-anchor:middle;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+             id="tspan1429">MYOZ1</tspan>
+        </text>
       </g>
       <g
-         class="gene-group"
+         transform="translate(404.41117,451.23653)"
+         cy="451.23653496209585"
+         cx="404.41117369846995"
          id="7136"
-         cx="453.635035979286"
-         cy="382.13715636589444"
-         transform="translate(453.63504,382.13716)">
+         class="gene-group">
         <circle
-           class="gene gene-query"
-           r="15"
-           style="stroke:#aaaaaa;stroke-width:1"
-           id="circle5268"
+           cy="0"
            cx="0"
-           cy="0" />
+           id="circle179"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="15"
+           class="gene gene-query" />
         <rect
-           rx="5"
-           ry="5"
-           x="-22"
-           y="-34"
-           width="43"
-           height="19"
+           id="rect181"
            style="opacity:0.5;fill:#ffffff"
-           id="rect5270" />
+           height="19"
+           width="43"
+           y="-34"
+           x="-22"
+           ry="5"
+           rx="5" />
         <text
-           class="gene-name"
-           text-anchor="middle"
+           id="text183"
+           style="text-anchor:middle"
            y="-20"
-           id="text5272">TNNI2</text>
+           class="gene-name">
+          <tspan
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00001021px;text-anchor:middle;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+             id="tspan1431">TNNI2</tspan>
+        </text>
       </g>
     </g>
   </g>
