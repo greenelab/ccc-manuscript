@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="410.49249"
    width="411.28638"
    version="1.1"
    id="svg252"
    sodipodi:docname="GIANT-RASSF2_vs_CYTIP-blood.svg"
-   inkscape:version="1.1.2 (76b9e6a115, 2022-02-25)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata226">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <defs
      id="defs256">
     <linearGradient
@@ -138,7 +152,7 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="1.4066667"
-     inkscape:cx="221.80094"
+     inkscape:cx="163.5071"
      inkscape:cy="117.29858"
      inkscape:window-width="1714"
      inkscape:window-height="1371"
@@ -1253,7 +1267,11 @@
            class="gene-name"
            text-anchor="middle"
            y="-20"
-           id="text4818">CYTIP</text>
+           id="text4818">
+          <tspan
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:11.99998454px;text-anchor:middle;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+             id="tspan1043">CYTIP</tspan>
+        </text>
       </g>
       <g
          class="gene-group"
@@ -1281,8 +1299,23 @@
            class="gene-name"
            text-anchor="middle"
            y="-20"
-           id="text4825">RASSF2</text>
+           id="text4825">
+          <tspan
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:11.99998454px;text-anchor:middle;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+             id="tspan1041">RASSF2</tspan>
+        </text>
       </g>
     </g>
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="348.68771"
+     y="20.650942"
+     id="text1801"><tspan
+       sodipodi:role="line"
+       id="tspan1799"
+       x="348.68771"
+       y="20.650942"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.66666667px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start">Blood</tspan></text>
 </svg>

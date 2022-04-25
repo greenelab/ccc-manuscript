@@ -8,7 +8,7 @@
   <meta name="author" content="Marylyn D. Ritchie" />
   <meta name="author" content="Diego H. Milone" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2022-04-21" />
+  <meta name="dcterms.date" content="2022-04-25" />
   <meta name="keywords" content="correlation coefficient, nonlinear relationships, gene expression" />
   <title>An efficient not-only-linear correlation coefficient based on machine learning</title>
   <style>
@@ -50,8 +50,8 @@
   <meta name="citation_title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="og:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="twitter:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
-  <meta name="dc.date" content="2022-04-21" />
-  <meta name="citation_publication_date" content="2022-04-21" />
+  <meta name="dc.date" content="2022-04-25" />
+  <meta name="citation_publication_date" content="2022-04-25" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -81,9 +81,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/082cf815741269c6641c87324151ea04d0e6724f/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/082cf815741269c6641c87324151ea04d0e6724f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/082cf815741269c6641c87324151ea04d0e6724f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/c8f78eca62b55bec2594f92a05203c13095af188/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/c8f78eca62b55bec2594f92a05203c13095af188/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/c8f78eca62b55bec2594f92a05203c13095af188/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -97,10 +97,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/082cf815741269c6641c87324151ea04d0e6724f/">permalink</a>)
+(<a href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/c8f78eca62b55bec2594f92a05203c13095af188/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/082cf815741269c6641c87324151ea04d0e6724f">greenelab/clustermatch-gene-expr-manuscript@082cf81</a>
-on April 21, 2022.
+from <a href="https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/c8f78eca62b55bec2594f92a05203c13095af188">greenelab/clustermatch-gene-expr-manuscript@c8f78ec</a>
+on April 25, 2022.
 </em></small></p>
 <p><span class="banner lightgrey"><i class="fas fa-scroll fa-lg"></i> <strong>Draft</strong><br>
 This manuscript version is work-in-progress</span></p>
@@ -148,18 +148,18 @@ Center for Health AI, University of Colorado School of Medicine, Aurora, CO 8004
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>Correlation coefficients are essential to identify intriguing relationships in data.
-In transcriptomics, genes with correlated expression can suggest that they share functions or are part of disease-relevant biological processes.
+<p>Correlation coefficients are widely used to identify relevant patterns in data.
+In transcriptomics, genes with correlated expression often share functions or are part of disease-relevant biological processes.
 Here we introduce the Clustermatch Correlation Coefficient (CCC), an efficient, easy-to-use and not-only-linear coefficient based on machine learning models.
-CCC efficiently captures general patterns in data by applying clustering algorithms and automatically adjusting the model’s complexity.
-When applied to human gene expression data, CCC does not miss robust linear relationships while detecting more complex yet biologically meaningful patterns.
-CCC can detect non-linear patterns associated with sex as a biological variable missed by standard coefficients.
-Gene pairs highly ranked by CCC in expression data alone showed high probabilities of interaction in tissue-specific networks built from protein-interaction data, transcription factor regulation, and chemical and genetic perturbations.
-CCC is a highly-efficient, next-generation correlation coefficient that can readily be applied to genome-scale data and various domains.</p>
+We show that CCC can capture biologically meaningful linear and nonlinear patterns missed by standard, linear-only correlation coefficients (Pearson and Spearman).
+CCC captures general patterns in data by comparing clustering solutions derived from each variable individually while being much faster than state-of-the-art coefficients such as the Maximal Information Coefficient (MIC).
+When applied to human gene expression data, CCC identifies robust linear relationships while detecting nonlinear patterns associated with sex differences that are not captured by linear-only coefficients.
+Gene pairs highly ranked by CCC but not detected by linear-only coefficients showed high probabilities of interaction in tissue-specific networks built from protein-protein interaction, transcription factor regulation, and chemical and genetic perturbations.
+CCC is a highly-efficient, next-generation not-only-linear correlation coefficient that can readily be applied to genome-scale data and other domains across different data types.</p>
 <h2 id="introduction">Introduction</h2>
 <p>New technologies have vastly improved data collection, generating a deluge of information across different disciplines.
 This large amount of data provides new opportunities to address unanswered scientific questions, provided we have efficient tools that implement sufficiently complex models to discover underlying patterns.
-Correlation analysis is an essential statistical technique to discover relationships between variables <span class="citation" data-cites="DUeOcxpt">[<a href="#ref-DUeOcxpt" role="doc-biblioref">1</a>]</span>.
+Correlation analysis is an essential statistical technique for discovering relationships between variables <span class="citation" data-cites="DUeOcxpt">[<a href="#ref-DUeOcxpt" role="doc-biblioref">1</a>]</span>.
 Correlation coefficients are often used in exploratory data mining techniques, such as clustering or community detection algorithms, to compute a similarity value between a pair of objects of interest such as genes <span class="citation" data-cites="yvIastvc">[<a href="#ref-yvIastvc" role="doc-biblioref">2</a>]</span> or morpho-agronomic traits in crop plans <span class="citation" data-cites="VCRLONE">[<a href="#ref-VCRLONE" role="doc-biblioref">3</a>]</span>.
 Correlation methods are also used in supervised tasks, for example, for feature selection to improve prediction accuracy <span class="citation" data-cites="iZjSr8s2 1FQ1FgsCm">[<a href="#ref-iZjSr8s2" role="doc-biblioref">4</a>,<a href="#ref-1FQ1FgsCm" role="doc-biblioref">5</a>]</span>.
 The Pearson correlation coefficient is ubiquitously deployed across application domains and diverse scientific areas.
@@ -172,25 +172,28 @@ In this context, recent approaches combine disease-associated genes from genome-
 These core genes are not captured by standard statistical methods but are believed to be part of disease-relevant and highly-interconnected regulatory networks.
 Therefore, more advanced correlation coefficients could dramatically improve the identification of more attractive candidate drug targets in the precision medicine field.</p>
 <p>The Pearson and Spearman correlation coefficients are widely used because they reveal intuitive relationships and can be computed quickly.
-However, they can only capture linear or monotonic patterns, missing complex yet essential relationships.
-The Maximal Information Coefficient (MIC) <span class="citation" data-cites="tbcQL0eR">[<a href="#ref-tbcQL0eR" role="doc-biblioref">24</a>]</span> or Distance Correlation (DC) <span class="citation" data-cites="IvOGGmxI">[<a href="#ref-IvOGGmxI" role="doc-biblioref">25</a>]</span> were proposed as metrics that capture non-linear patterns.
+However, they can only capture linear or monotonic patterns (referred to as linear-only), missing complex yet essential relationships.
+The Maximal Information Coefficient (MIC) <span class="citation" data-cites="tbcQL0eR">[<a href="#ref-tbcQL0eR" role="doc-biblioref">24</a>]</span> or Distance Correlation (DC) <span class="citation" data-cites="IvOGGmxI">[<a href="#ref-IvOGGmxI" role="doc-biblioref">25</a>]</span> were proposed as metrics that capture nonlinear patterns.
 However, their computational complexity makes them impractical for big data and even moderately sized datasets.
-We previously developed Clustermatch, a method for cluster analysis on highly diverse datasets that significantly outperformed Pearson, Spearman, MIC and DC in detecting simulated linear and non-linear relationships with varying levels of noise <span class="citation" data-cites="VCRLONE">[<a href="#ref-VCRLONE" role="doc-biblioref">3</a>]</span>.
+We previously developed Clustermatch, a method for cluster analysis that significantly outperformed Pearson, Spearman, MIC and DC in detecting simulated linear and nonlinear relationships with varying noise levels <span class="citation" data-cites="VCRLONE">[<a href="#ref-VCRLONE" role="doc-biblioref">3</a>]</span>.
 Here we introduce the Clustermatch Correlation Coefficient (CCC), an efficient not-only-linear coefficient that works across quantitative and qualitative variables.
 CCC has a single parameter that balances the complexity of relationships found and computation time.
-To assess its performance in RNA-seq data, we applied our method to gene expression data from the Genotype-Tissue Expression v8 (GTEx) project across different tissues <span class="citation" data-cites="9Pr9idng">[<a href="#ref-9Pr9idng" role="doc-biblioref">26</a>]</span>.
-CCC captured both strong linear relationships and novel non-linear patterns associated with sex as a biological variable, which were completely missed by standard coefficients.
+To assess its performance, we applied our method to gene expression data from the Genotype-Tissue Expression v8 (GTEx) project across different tissues <span class="citation" data-cites="9Pr9idng">[<a href="#ref-9Pr9idng" role="doc-biblioref">26</a>]</span>.
+CCC captured both strong linear relationships and novel nonlinear patterns associated with sex as a biological variable, which were entirely missed by standard coefficients.
 We also show that the CCC is most similar to MIC, although it is much faster to compute.
-Gene pairs detected in expression data by CCC were found to have higher probabilities of interaction in tissue-specific gene networks from the Genome-wide Analysis of gene Networks in Tissues (GIANT) <span class="citation" data-cites="CVF61Un5">[<a href="#ref-CVF61Un5" role="doc-biblioref">27</a>]</span>.
-<!-- We found that a combined analysis of linear-only coefficients and CCC can help highlight complex yet promising relationships. -->
+Gene pairs detected in expression data by CCC had higher interaction probabilities in tissue-specific gene networks from the Genome-wide Analysis of gene Networks in Tissues (GIANT) <span class="citation" data-cites="CVF61Un5">[<a href="#ref-CVF61Un5" role="doc-biblioref">27</a>]</span>.
 Furthermore, its ability to efficiently handle diverse data types (including numerical and categorical features) reduces preprocessing steps and makes it appealing to analyze large and heterogeneous repositories.</p>
 <h2 id="results">Results</h2>
 <h3 id="a-robust-and-efficient-not-only-linear-dependence-coefficient">A robust and efficient not-only-linear dependence coefficient</h3>
 <p>The Clustermatch Correlation Coefficient (CCC) provides a similarity measure between any pair of variables, either with numerical or categorical values.
-The method assumes that if there is a relationship between two variables/features describing <span class="math inline">\(n\)</span> data points/objects, then the partitioning of those <span class="math inline">\(n\)</span> objects derived by clustering each individual variable should match.
+The method assumes that if there is a relationship between two variables/features describing <span class="math inline">\(n\)</span> data points/objects, then the partitioning of those <span class="math inline">\(n\)</span> objects derived by clustering each variable alone should match.
 In the case of numerical values, CCC uses quantiles to efficiently separate data points into different clusters (e.g., the median separates numerical data into two clusters).
 Once all partitions are generated according to each variable, CCC is defined as the maximum adjusted Rand index (ARI) <span class="citation" data-cites="e4AuoW8N">[<a href="#ref-e4AuoW8N" role="doc-biblioref">28</a>]</span> between them, ranging between 0 and 1.
 Details of the CCC algorithm can be found in <a href="#sec:ccc_algo">Methods</a>.</p>
+<p>First, we examined how the Pearson (<span class="math inline">\(p\)</span>), Spearman (<span class="math inline">\(s\)</span>) and CCC (<span class="math inline">\(c\)</span>) correlation coefficients behaved on different simulated data patterns.
+In the first row of Figure <a href="#fig:datasets_rel">1</a>, we examine the classic Anscombe’s quartet <span class="citation" data-cites="WP7yhZGS">[<a href="#ref-WP7yhZGS" role="doc-biblioref">29</a>]</span>, where red lines indicate how CCC clusters data points using each variable/feature individually (either <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span>).
+Anscombe’s quartet comprises four synthetic datasets with different patterns but the same data statistics (mean, standard deviation and Pearson’s correlation).
+This kind of simulated data, recently revisited with the “Datasaurus” <span class="citation" data-cites="LW7cVCGa dvyMwrz9 FhufXP6P">[<a href="#ref-LW7cVCGa" role="doc-biblioref">30</a>,<a href="#ref-dvyMwrz9" role="doc-biblioref">31</a>,<a href="#ref-FhufXP6P" role="doc-biblioref">32</a>]</span>, is used as a reminder of the importance of going beyond simple statistics, where either undesirable patterns (such as outliers) or desirable ones (such as biologically meaningful nonlinear relationships) can be masked by summary statistics alone.</p>
 <div id="fig:datasets_rel" class="fignos">
 <figure>
 <img src="images/intro/relationships.svg" style="width:100.0%" alt="Figure 1: Different types of relationships in data. Each panel contains a set of simulated data points described by two variables: x and y. The first row shows Anscombe’s quartet with four different datasets (from Anscombe I to IV) and 11 data points each. The second row contains a set of general patterns with 100 data points each. Each panel shows the correlation value using Pearson (p), Spearman (s) and the CCC (c). Vertical and horizontal lines show how CCC partitioned data points using x and y, respectively." /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Different types of relationships in data.</strong>
@@ -201,11 +204,7 @@ Each panel shows the correlation value using Pearson (<span class="math inline">
 Vertical and horizontal lines show how CCC partitioned data points using <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, respectively.</figcaption>
 </figure>
 </div>
-<p>First, we examined how the Pearson (<span class="math inline">\(p\)</span>), Spearman (<span class="math inline">\(s\)</span>) and CCC (<span class="math inline">\(c\)</span>) correlation coefficients behaved on different simulated data patterns.
-In the first row of Figure <a href="#fig:datasets_rel">1</a>, we examine the classic Anscombe’s quartet <span class="citation" data-cites="WP7yhZGS">[<a href="#ref-WP7yhZGS" role="doc-biblioref">29</a>]</span>, where red lines indicate how CCC clusters data points using each variable/feature individually (either <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span>).
-Anscombe’s quartet comprises four synthetic datasets with different patterns but the same data statistics (mean, standard deviation and Pearson’s correlation).
-This kind of simulated data, recently revisited with the “Datasaurus” <span class="citation" data-cites="LW7cVCGa dvyMwrz9 FhufXP6P">[<a href="#ref-LW7cVCGa" role="doc-biblioref">30</a>,<a href="#ref-dvyMwrz9" role="doc-biblioref">31</a>,<a href="#ref-FhufXP6P" role="doc-biblioref">32</a>]</span>, is used as a reminder of the importance of going beyond simple statistics, where either undesirable patterns (such as outliers) or desirable ones (such as biologically meaningful non-linear relationships) can be masked by summary statistics alone.
-For example, Anscombe I contains a noisy but clear linear pattern, similar to Anscombe III where the linearity is perfect besides one outlier.
+<p>For example, Anscombe I contains a noisy but clear linear pattern, similar to Anscombe III where the linearity is perfect besides one outlier.
 In these two examples, CCC separates data points using two clusters (one red line for each variable <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>), yielding 1.0, indicating a strong relationship.
 Anscombe II seems to follow a quadratic relationship and is interpreted as linear by Pearson and Spearman.
 In contrast, CCC yields a lower yet non-zero value of 0.34, reflecting a more complex relationship than a linear pattern.
@@ -214,22 +213,18 @@ This outlier does not influence CCC as it does for Pearson or Spearman.
 Thus <span class="math inline">\(c=0.00\)</span> (the minimum value) correctly indicates no association for this variable pair because, besides the outlier, for a single value of <span class="math inline">\(x\)</span> there are ten different values for <span class="math inline">\(y\)</span>.
 This variable pair does not fit the CCC assumption: the two clusters formed with <span class="math inline">\(x\)</span> (approximately separated by <span class="math inline">\(x=13\)</span>) do not match the three clusters formed with <span class="math inline">\(y\)</span>.
 The Pearson’s correlation coefficient is the same across all these Anscombe’s examples (<span class="math inline">\(p=0.82\)</span>), whereas Spearman is always above or equal to 0.50.
-These simulated datasets show that both Pearson and Spearman are very powerful in detecting linear patterns.
-However, any deviation in this assumption (like non-linear relationships or outliers) affects their robustness.
+These simulated datasets show that both Pearson and Spearman are powerful in detecting linear patterns.
+However, any deviation in this assumption (like nonlinear relationships or outliers) affects their robustness.
 One reason for this behavior is that these coefficients are based on data statistics alone, such as the mean, standard deviation or simple rankings, which seem to fall short in dealing with noisy data or more complex patterns.</p>
-<p>The second row of Figure <a href="#fig:datasets_rel">1</a> shows other simulated relationships with general non-linear patterns, some previously observed in gene expression data <span class="citation" data-cites="yCHLC0oS 1AMcxTw9R 16ddFzCqe">[<a href="#ref-yCHLC0oS" role="doc-biblioref">33</a>,<a href="#ref-1AMcxTw9R" role="doc-biblioref">34</a>,<a href="#ref-16ddFzCqe" role="doc-biblioref">35</a>]</span>.
+<p>The second row of Figure <a href="#fig:datasets_rel">1</a> shows other simulated relationships with general nonlinear patterns, some previously observed in gene expression data <span class="citation" data-cites="yCHLC0oS 1AMcxTw9R 16ddFzCqe">[<a href="#ref-yCHLC0oS" role="doc-biblioref">33</a>,<a href="#ref-1AMcxTw9R" role="doc-biblioref">34</a>,<a href="#ref-16ddFzCqe" role="doc-biblioref">35</a>]</span>.
 For the random/independent pair of variables, all coefficients correctly agree with a value close to zero.
 The non-coexistence pattern, correctly captured by all coefficients, represents a case where one gene (<span class="math inline">\(x\)</span>) might be expressed while the other one (<span class="math inline">\(y\)</span>) is inhibited, highlighting a potentially strong biological relationship (such as a microRNA negatively regulating another gene).
-For the other two examples (quadratic and two-lines), Pearson and Spearman do not capture the non-linear pattern between variables <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.
+For the other two examples (quadratic and two-lines), Pearson and Spearman do not capture the nonlinear pattern between variables <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.
 These patterns also show how CCC uses different degrees of complexity to capture the relationships.
 For the quadratic pattern, for example, CCC separates <span class="math inline">\(x\)</span> into more clusters (four in this case) to reach the maximum ARI.
 The two-lines example shows two embedded linear relationships with different slopes, which neither Pearson nor Spearman detect (<span class="math inline">\(p=-0.12\)</span> and <span class="math inline">\(s=0.05\)</span>, respectively).
 Here, CCC increases the complexity of the model by using eight clusters for <span class="math inline">\(x\)</span> and six for <span class="math inline">\(y\)</span>, resulting in <span class="math inline">\(c=0.31\)</span>.</p>
-<p>Datasets such as Anscombe or “Datasaurus” highlight the value of visualization instead of relying on simple data summaries.
-While visual analysis is helpful, for many datasets examining each possible relationship is infeasible, and this is where more sophisticated and robust correlation coefficients are necessary.
-Advanced yet interpretable coefficients can focus human interpretation on patterns that are more likely to reflect real biology.
-Those that capture non-linear patterns can reveal relationships missed by the linear-only coefficients that are often deployed.</p>
-<h3 id="the-ccc-reveals-linear-and-non-linear-patterns-in-human-transcriptomic-data">The CCC reveals linear and non-linear patterns in human transcriptomic data</h3>
+<h3 id="the-ccc-reveals-linear-and-nonlinear-patterns-in-human-transcriptomic-data">The CCC reveals linear and nonlinear patterns in human transcriptomic data</h3>
 <p>Here we compare the coefficients on real gene expression data and highlight some complex and biologically interesting relationships that only CCC detects.
 We used gene expression data from GTEx v8 across different tissues.
 We selected the top 5,000 genes with the largest variance for our initial analyses on whole blood and then computed the correlation matrix between genes using Pearson, Spearman and CCC (see <a href="#sec:data_gtex">Methods</a>).</p>
@@ -258,124 +253,111 @@ No triangle means that the correlation value for the gene pair is between the 30
 A logarithmic scale was used to color each hexagon.</figcaption>
 </figure>
 </div>
-<p>For most cases, the three coefficients agreed on whether there is a strong correlation (42.1%) and whether there is no relationship (34.3%).
+<p>For most cases, the three coefficients agreed on whether there is a strong correlation (42.1%) or there is no relationship (34.3%).
 Since Pearson and Spearman are linear-only, and CCC can also capture these patterns, it would be relatively safe to assume that these highly correlated gene pairs represent strong linear patterns.
 These results are crucial because it suggests that the user will not miss important linear patterns in expression data when using CCC.
 CCC and Spearman agree more on either highly or poorly correlated pairs (4.0% in “high”, and 7.0% in “low”) than any of these with Pearson (all between 0.3%-3.5% for “high”, and 2.8%-5.5% for “low”).
-In summary, CCC agrees with either Pearson or Spearman in 90.5% of gene pairs, either by assigning a high or a low correlation value.
+In summary, CCC agrees with either Pearson or Spearman in 90.5% of gene pairs by assigning a high or a low correlation value.
 Regarding disagreements (right part of Figure <a href="#fig:upsetplot_coefs">3</a> a), more than 20 thousand gene pairs (20,987) with a high CCC value are not highly ranked by any other coefficient.
 There are also gene pairs with a high Pearson value and either low CCC (1,075), low Spearman (87) or both low CCC and low Spearman values (531).
-However, these cases mostly seem to be driven by potential outliers (Figure <a href="#fig:upsetplot_coefs">3</a> b, analyzed below).
+However, these cases mostly seem to be driven by potential outliers (Figure <a href="#fig:upsetplot_coefs">3</a> b, and analyzed below).
 CCC does not miss gene pairs highly ranked by Spearman.
 We also compared the Maximal Information Coefficient (MIC) in a small random sample of this data (see <a href="#sec:mic">Supplementary Material</a>), given its higher computational complexity.
 We found that CCC behaves very similarly to MIC, although CCC performs up to two orders of magnitude faster than this coefficient (see <a href="#sec:time_test">Supplementary Material</a>).
-This result is relevant because MIC, an advanced correlation coefficient able to capture general patterns beyond linear relationships, represented a significant step forward in correlation analysis research, and it has been successfully used in various application domains <span class="citation" data-cites="NnsqWXcp g8HrFUfP iZjSr8s2">[<a href="#ref-iZjSr8s2" role="doc-biblioref">4</a>,<a href="#ref-NnsqWXcp" role="doc-biblioref">37</a>,<a href="#ref-g8HrFUfP" role="doc-biblioref">38</a>]</span>.
+This result is relevant because MIC, an advanced correlation coefficient able to capture general patterns beyond linear relationships, represented a significant step forward in correlation analysis research.
+For example, MIC has been successfully used in various application domains <span class="citation" data-cites="NnsqWXcp g8HrFUfP iZjSr8s2">[<a href="#ref-iZjSr8s2" role="doc-biblioref">4</a>,<a href="#ref-NnsqWXcp" role="doc-biblioref">37</a>,<a href="#ref-g8HrFUfP" role="doc-biblioref">38</a>]</span>.
 CCC, however, runs in a fraction of the time, making it a practical alternative for large data sets.</p>
 <p>Next, we selected individual gene pairs where CCC disagreed with the rest.
-We analyzed gene pairs among the top five of each intersection in the “Disagreements” group (Figure <a href="#fig:upsetplot_coefs">3</a> b, right) where CCC disagrees with Pearson, Spearman or both.
-The first three gene pairs at the top (<em>IFNG</em> - <em>SDS</em>, <em>JUN</em> - <em>APOC1</em>, and <em>ZDHHC12</em> - <em>CCL18</em>), with high CCC and low Pearson values, seem to follow a non-coexistence relationship: in samples where one of the genes is highly (slightly) expressed, the other is slightly (highly) activated, suggesting a potential inhibiting effect.
+We analyzed gene pairs among the top five of each intersection in the “Disagreements” group (Figure <a href="#fig:upsetplot_coefs">3</a> a, right) where CCC disagrees with Pearson, Spearman or both.
+The first three gene pairs at the top (<em>IFNG</em> - <em>SDS</em>, <em>JUN</em> - <em>APOC1</em>, and <em>ZDHHC12</em> - <em>CCL18</em>), with high CCC and low Pearson values, seem to follow a non-coexistence relationship: in samples where one of the genes is highly (slightly) expressed, the other is slightly (highly) activated, suggesting a potentially inhibiting effect.
 The following three gene pairs (<em>UTY</em> - <em>KDM6A</em>, <em>RASSF2</em> - <em>CYTIP</em>, and <em>AC068580.6</em> - <em>KLHL21</em>) follow patterns combining either two linear or one linear and one independent relationships.
-In particular, genes <em>UTY</em> and <em>KDM6A</em> (paralogs) show a non-linear relationship where a subset of samples follows a robust linear pattern and another subset has a constant expression of one gene.
+In particular, genes <em>UTY</em> and <em>KDM6A</em> (paralogs) show a nonlinear relationship where a subset of samples follows a robust linear pattern and another subset has a constant expression of one gene.
 This relationship is explained by the fact that <em>UTY</em> is in chromosome Y (Yq11) whereas <em>KDM6A</em> is in chromosome X (Xp11), and samples with a linear pattern are males, whereas those with no expression for <em>UTY</em> are females.
 This combination of linear and independent patterns is captured by CCC (<span class="math inline">\(c=0.29\)</span>, above the 80th percentile) but not by Pearson (<span class="math inline">\(p=0.24\)</span>, below the 55th percentile) or Spearman (<span class="math inline">\(s=0.10\)</span>, below the 15th percentile).
 Furthermore, the same gene pair pattern is highly ranked by CCC in all other tissues in GTEx, except for female-specific organs (Figure <a href="#fig:gtex_tissues:kdm6a_uty">4</a>).</p>
 <div id="fig:gtex_tissues:kdm6a_uty" class="fignos">
 <figure>
-<img src="images/coefs_comp/kdm6a_vs_uty/gtex-KDM6A_vs_UTY-main.svg" style="width:95.0%" alt="Figure 4: Scatter plots of genes KDM6A and UTY across different GTEx tissues. CCC captures this non-linear relationship in all GTEx tissues (nine examples are shown in the first three rows), except in female-specific organs (last row)." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Scatter plots of genes <em>KDM6A</em> and <em>UTY</em> across different GTEx tissues.</strong>
-CCC captures this non-linear relationship in all GTEx tissues (nine examples are shown in the first three rows), except in female-specific organs (last row).</figcaption>
+<img src="images/coefs_comp/kdm6a_vs_uty/gtex-KDM6A_vs_UTY-main.svg" style="width:95.0%" alt="Figure 4: Scatter plots of genes KDM6A and UTY across different GTEx tissues. CCC captures this nonlinear relationship in all GTEx tissues (nine examples are shown in the first three rows), except in female-specific organs (last row)." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Scatter plots of genes <em>KDM6A</em> and <em>UTY</em> across different GTEx tissues.</strong>
+CCC captures this nonlinear relationship in all GTEx tissues (nine examples are shown in the first three rows), except in female-specific organs (last row).</figcaption>
 </figure>
 </div>
-<p>This particular example highlights the importance of considering sex as a biological variable (SABV) <span class="citation" data-cites="4QgDZ8bF">[<a href="#ref-4QgDZ8bF" role="doc-biblioref">39</a>]</span> to avoid overlooking important differences between men and women, for example, in disease manifestations <span class="citation" data-cites="iox25BGw 1GpiBQk8d">[<a href="#ref-iox25BGw" role="doc-biblioref">40</a>,<a href="#ref-1GpiBQk8d" role="doc-biblioref">41</a>]</span>.
-In transcriptome studies, a not-only-linear correlation coefficient like CCC could identify sex-specific differences in gene expression that, like the <em>UTY</em> - <em>KDM6A</em> example, are entirely missed by linear-only coefficients.</p>
-<p>Some of these genes, such as <em>SDS</em> (12q24) and <em>ZDHHC12</em> (9q34), were previously found to have a relatively lower number of publications that were explained by a small set of chemical, physical and biological features <span class="citation" data-cites="IlPwHaTE">[<a href="#ref-IlPwHaTE" role="doc-biblioref">42</a>]</span>.
-A gene co-expression analysis on large compendia and beyond linear patterns could shed light on the function of understudied genes.
-On the other hand, gene <em>KLHL21</em> (1p36) and the novel RNA gene <em>AC068580.6</em> (<em>ENSG00000235027</em>, in 11p15) have a high CCC value and are entirely missed by the other methods.
-<em>KLHL21</em> was suggested as a potential therapeutic target for hepatocellular carcinoma <span class="citation" data-cites="9i58Tfs4">[<a href="#ref-9i58Tfs4" role="doc-biblioref">43</a>]</span> and other cancers <span class="citation" data-cites="efGVmXWt 1FQgFkJoJ">[<a href="#ref-efGVmXWt" role="doc-biblioref">44</a>,<a href="#ref-1FQgFkJoJ" role="doc-biblioref">45</a>]</span>, and its non-linear correlation with <em>AC068580.6</em> and potentially other genes might unveil other important players in cancer initiation or progression.</p>
 <h3 id="replication-of-gene-associations-using-tissue-specific-gene-networks-from-giant">Replication of gene associations using tissue-specific gene networks from GIANT</h3>
-<p>We analyzed the other gene pairs in Figure <a href="#fig:upsetplot_coefs">3</a> b to assess whether associations were replicated in other datasets besides GTEx.
+<p>We systematically analyzed the other gene pairs in Figure <a href="#fig:upsetplot_coefs">3</a> to assess whether associations were replicated in other datasets besides GTEx.
 This is challenging and prone to bias because linear-only correlation coefficients are usually used in gene co-expression analyses.
-We used 144 tissue-specific gene networks from the Genome-wide Analysis of gene Networks in Tissues (GIANT) <span class="citation" data-cites="9ZXy7Ut2 ZSXf7Pdq">[<a href="#ref-9ZXy7Ut2" role="doc-biblioref">46</a>,<a href="#ref-ZSXf7Pdq" role="doc-biblioref">47</a>]</span>, where nodes represent genes and each edge a functional relationship weighted with a probability of interaction between two genes (see <a href="#sec:giant">Methods</a>).
-Importantly, the version of GIANT used in this study did not include GTEx samples <span class="citation" data-cites="BgCQnLU6">[<a href="#ref-BgCQnLU6" role="doc-biblioref">48</a>]</span>, making it an ideal case for replication.
-These networks were built from expression and different interaction measurements, including gene co-expression (using Pearson correlation after several preprocessing steps), protein-interaction, transcription factor regulation, and chemical/genetic perturbations and microRNA target profiles from the Molecular Signatures Database (MSigDB <span class="citation" data-cites="tt0Vdf4C">[<a href="#ref-tt0Vdf4C" role="doc-biblioref">49</a>]</span>).
-We reasoned that our highly-ranked gene pairs using three different coefficients in a single tissue (whole blood in GTEx, Figure <a href="#fig:upsetplot_coefs">3</a> b) should replicate across the multi-tissue, multi-cell type functional interaction networks in GIANT.
-First, for each pair in Figure <a href="#fig:upsetplot_coefs">3</a> b for which genes were present in GIANT models (this excluded <em>AC068580.6</em> - <em>KLHL21</em>, which we comment below), we ran the tissue-specific interaction analysis selecting “blood”, which was the most equivalent to whole blood in GTEx.
-The predicted blood-specific networks for each of these six gene pairs is shown in Figure <a href="#fig:giant_gene_pairs:blood">5</a>.
+We used 144 tissue-specific gene networks from the Genome-wide Analysis of gene Networks in Tissues (GIANT) <span class="citation" data-cites="9ZXy7Ut2 ZSXf7Pdq">[<a href="#ref-9ZXy7Ut2" role="doc-biblioref">39</a>,<a href="#ref-ZSXf7Pdq" role="doc-biblioref">40</a>]</span>, where nodes represent genes and each edge a functional relationship weighted with a probability of interaction between two genes (see <a href="#sec:giant">Methods</a>).
+Importantly, the version of GIANT used in this study did not include GTEx samples <span class="citation" data-cites="BgCQnLU6">[<a href="#ref-BgCQnLU6" role="doc-biblioref">41</a>]</span>, making it an ideal case for replication.
+These networks were built from expression and different interaction measurements, including protein-interaction, transcription factor regulation, chemical/genetic perturbations and microRNA target profiles from the Molecular Signatures Database (MSigDB <span class="citation" data-cites="tt0Vdf4C">[<a href="#ref-tt0Vdf4C" role="doc-biblioref">42</a>]</span>).
+We reasoned that if our highly-ranked gene pairs using three different coefficients in a single tissue (whole blood in GTEx, Figure <a href="#fig:upsetplot_coefs">3</a>) represented real patterns, they should replicate across the multi-tissue, multi-cell type functional interaction networks in GIANT.
+In addition to predicting a network with interactions for a pair of genes, the GIANT web application can also automatically detect a relevant tissue or cell type where genes are predicted to be specifically expressed (the approach uses a machine learning method introduced in <span class="citation" data-cites="mk4SLpDo">[<a href="#ref-mk4SLpDo" role="doc-biblioref">43</a>]</span> and described in <a href="#sec:giant">Methods</a>).
+For example, we obtained the networks in blood and the automatically-predicted cell type for gene pairs <em>RASSF2</em> - <em>CYTIP</em> (CCC high, Figure <a href="#fig:giant_gene_pairs">5</a> a) and <em>MYOZ1</em> - <em>TNNI2</em> (Pearson high, Figure <a href="#fig:giant_gene_pairs">5</a> b).
+In addition to the gene pair, the networks include other genes connected according to their probability of interaction (up to 15 additional genes are shown), which allows estimating whether genes are part of the same tissue-specific biological process.
 Two large black nodes in each network’s top-left and bottom-right corners represent our gene pairs.
-A green edge means a close-to-zero probability of interaction, whereas a red edge represents a strong predicted relationship between two genes.</p>
-<div id="fig:giant_gene_pairs:blood" class="fignos">
+A green edge means a close-to-zero probability of interaction, whereas a red edge represents a strong predicted relationship between the two genes.</p>
+<div id="fig:giant_gene_pairs" class="fignos">
 <figure>
-<img src="images/coefs_comp/giant_networks/blood_tissues/main.svg" style="width:100.0%" alt="Figure 5: Predicted blood-specific networks from GIANT for six gene pairs prioritized by correlation coefficients. A node represents a gene, and an edge the probability that two genes are part of the same biological process in blood. A maximum of 15 genes are shown for each subfigure. The GIANT web application automatically determined a minimum interaction confidence (edges’ weights) to be shown. All these analyses can be performed online using the following links: IFNG - SDS [50], JUN - APOC1 [51], ZDHHC12 - CCL18 [52], RASSF2 - CYTIP [53], MYOZ1 - TNNI2 [54], PYGM - TPM2 [55]. The GIANT web-server was accessed on April 4, 2022." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Predicted blood-specific networks from GIANT for six gene pairs prioritized by correlation coefficients.</strong>
-A node represents a gene, and an edge the probability that two genes are part of the same biological process in blood.
-A maximum of 15 genes are shown for each subfigure.
+<img src="images/coefs_comp/giant_networks/top_gene_pairs-main.svg" style="width:100.0%" alt="Figure 5: Analysis of GIANT tissue-specific predicted networks for gene pairs prioritized by correlation coefficients. a-b) Two gene pairs prioritized by correlation coefficients (from Figure 3 b) with their predicted networks in blood (left) and an automatically selected tissue/cell type (right) using the method described in [43]. A node represents a gene and an edge the probability that two genes are part of the same biological process in a specific cell type. A maximum of 15 genes are shown for each network. The GIANT web application automatically determined a minimum interaction confidence (edges’ weights) to be shown. These networks can be analyzed online using the following links: RASSF2 - CYTIP [44], MYOZ1 - TNNI2 [45]. c) Summary of predicted tissue/cell type networks for gene pairs exclusively prioritized by CCC and Pearson. The first row combines all gene pairs where CCC is high and Pearson or Spearman are low. The second row combines all gene pairs where Pearson is high and CCC or Spearman are low. Bar plots (left) show the number of gene pairs for each predicted tissue/cell type. Box plots (right) show the average probability of interaction between genes in these predicted tissue-specific networks. Red indicates CCC-only tissues/cell types, blue are Pearson-only, and purple are shared." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Analysis of GIANT tissue-specific predicted networks for gene pairs prioritized by correlation coefficients.</strong>
+<strong>a-b)</strong> Two gene pairs prioritized by correlation coefficients (from Figure <a href="#fig:upsetplot_coefs">3</a> b) with their predicted networks in blood (left) and an automatically selected tissue/cell type (right) using the method described in <span class="citation" data-cites="mk4SLpDo">[<a href="#ref-mk4SLpDo" role="doc-biblioref">43</a>]</span>.
+A node represents a gene and an edge the probability that two genes are part of the same biological process in a specific cell type.
+A maximum of 15 genes are shown for each network.
 The GIANT web application automatically determined a minimum interaction confidence (edges’ weights) to be shown.
-All these analyses can be performed online using the following links:
-<em>IFNG</em> - <em>SDS</em> <span class="citation" data-cites="KcdwueBe">[<a href="#ref-KcdwueBe" role="doc-biblioref">50</a>]</span>,
-<em>JUN</em> - <em>APOC1</em> <span class="citation" data-cites="fNQkvQLg">[<a href="#ref-fNQkvQLg" role="doc-biblioref">51</a>]</span>,
-<em>ZDHHC12</em> - <em>CCL18</em> <span class="citation" data-cites="7U8Feifj">[<a href="#ref-7U8Feifj" role="doc-biblioref">52</a>]</span>,
-<em>RASSF2</em> - <em>CYTIP</em> <span class="citation" data-cites="FKQEHB1F">[<a href="#ref-FKQEHB1F" role="doc-biblioref">53</a>]</span>,
-<em>MYOZ1</em> - <em>TNNI2</em> <span class="citation" data-cites="JpfbR0un">[<a href="#ref-JpfbR0un" role="doc-biblioref">54</a>]</span>,
-<em>PYGM</em> - <em>TPM2</em> <span class="citation" data-cites="irsTxKvs">[<a href="#ref-irsTxKvs" role="doc-biblioref">55</a>]</span>.
-The GIANT web-server was accessed on April 4, 2022.</figcaption>
-</figure>
-</div>
-<p>In general, gene pairs highly ranked by CCC were part of more cohesive networks compared with Pearson and Spearman.
-For example, the average probability of <em>IFNG</em> and <em>SDS</em> with other genes in the network was 0.42 and 0.29, respectively (Supplementary Table <a href="#tbl:giant:weights">1</a>).
-A similar pattern was found for <em>JUN</em> and <em>APOC1</em>, where the interaction probability was 0.68 and 0.47, respectively.
-The evidence of interaction between <em>ZDHHC12</em> and <em>CCL18</em> was less evident, with interaction averages of 0.07 and 0.79, respectively.
-For this gene pair, a dense network was connected with <em>CCL18</em>, although the predicted interaction of <em>ZDHHC12</em> with this potential process was weak.
-<em>RASSF2</em> and <em>CYTIP</em>, with a high CCC value (<span class="math inline">\(c=0.20\)</span>) and low Pearson and Spearman (<span class="math inline">\(p=0.16\)</span> and <span class="math inline">\(s=0.11\)</span>), were both strongly connected to the network, with interaction scores of at least 0.63 for both and an average of 0.75 and 0.84, respectively.
-The predicted networks for the two gene pairs exclusively prioritized by Pearson were much less cohesive.
-<em>MYOZ1</em> and <em>TNNI2</em> had low average interaction scores of 0.17 and 0.22 with the rest of the genes.
-On the other hand, the average interaction probability of <em>PYGM</em> with the network was very low (0.04), where only <em>TPM2</em> showed a strong connection to the network.
-This lack of replication for these two gene pairs in GIANT suggests that their high Pearson value in GTEx is driven by outliers (Figure <a href="#fig:upsetplot_coefs">3</a> b).</p>
-<p>We also assessed whether top gene pairs detected in whole blood from GTEx had evidence of being specifically expressed in blood cell lineages.
-For this, we let GIANT automatically predict a relevant tissue- or cell type-specific network (see <a href="#sec:giant">Methods</a>).
-All six gene pairs prioritized by CCC were predicted to be specific to a blood-relevant cell lineage (Supplementary Figure <a href="#fig:giant_gene_pairs:pred_tissue">9</a>): natural killer cells, mononuclear phagocytes, macrophages and leukocytes.
-Additionally, the interaction of these gene pairs with the cell lineage-specific networks improved over the blood-specific network (Supplementary Table <a href="#tbl:giant:weights">1</a>).
-Conversely, the top two Pearson gene pairs were predicted to be specific to skeletal muscle, and their interaction decreased.
-To confirm whether these patterns were globally present, we performed a systematic evaluation using the top 100 gene pairs from each intersection where CCC disagrees with Pearson and Spearman.
-We automatically predicted a relevant tissue or cell type network for each gene pair using GIANT.
-Then, we took the top 5 more common predicted tissues/cell types in each coefficient intersection (shown in Figure <a href="#fig:upsetplot_coefs">3</a> a).
-The results are in Figure <a href="#fig:giant_gene_pairs:top">6</a>, where each row shows
-1) the number of gene pairs predicted to be specific to a tissue/cell type (bar plot on the left) and
-2) the average probability of gene interaction in each tissue-specific network (box plot on the right).</p>
-<div id="fig:giant_gene_pairs:top" class="fignos">
-<figure>
-<img src="images/coefs_comp/giant_networks/top_gene_pairs-main.svg" style="width:100.0%" alt="Figure 6: Summary of predicted tissue/cell type networks for gene pairs exclusively prioritized by CCC and Pearson. The first row combines all gene pairs where CCC is high and Pearson or Spearman are low. The second row combines all gene pairs where Pearson is high and CCC or Spearman are low. Bar plots (left) show the number of gene pairs for each predicted tissue/cell type. Box plots (right) show the average probability of interaction between genes in these predicted tissue-specific networks." /><figcaption aria-hidden="true"><span>Figure 6:</span> <strong>Summary of predicted tissue/cell type networks for gene pairs exclusively prioritized by CCC and Pearson.</strong>
+These networks can be analyzed online using the following links:
+<em>RASSF2</em> - <em>CYTIP</em> <span class="citation" data-cites="FKQEHB1F">[<a href="#ref-FKQEHB1F" role="doc-biblioref">44</a>]</span>,
+<em>MYOZ1</em> - <em>TNNI2</em> <span class="citation" data-cites="JpfbR0un">[<a href="#ref-JpfbR0un" role="doc-biblioref">45</a>]</span>.
+<strong>c)</strong> Summary of predicted tissue/cell type networks for gene pairs exclusively prioritized by CCC and Pearson.
 The first row combines all gene pairs where CCC is high and Pearson or Spearman are low.
 The second row combines all gene pairs where Pearson is high and CCC or Spearman are low.
 Bar plots (left) show the number of gene pairs for each predicted tissue/cell type.
-Box plots (right) show the average probability of interaction between genes in these predicted tissue-specific networks.</figcaption>
+Box plots (right) show the average probability of interaction between genes in these predicted tissue-specific networks.
+Red indicates CCC-only tissues/cell types, blue are Pearson-only, and purple are shared.</figcaption>
 </figure>
 </div>
-<p>Notably, most gene pairs highly prioritized by CCC and not by the rest were predicted to be strongly blood-specific (indicated with red bars/boxes), including several cell lineages in this tissue like natural killer cells, macrophages, and other leukocytes.
-The average probability of interaction between genes in these CCC-ranked networks was also very high, with all medians close to 75% and first quartiles above 40%.
-In contrast, most Pearson’s gene pairs were predicted to be specific to tissues unrelated to blood.
-The probabilities of interaction in these Pearson-ranked networks were also generally lower than in CCC, except for blood-specific gene pairs.
-The gene-gene relationships exclusively detected by CCC in whole blood from GTEx were replicated in more sophisticated network models trained without GTEx.
-These results suggest that CCC can disentangle intricated cell lineage-specific transcriptional patterns missed by linear-only coefficients.</p>
+<p>In this example, genes <em>RASSF2</em> and <em>CYTIP</em> (Figure <a href="#fig:giant_gene_pairs">5</a> a), with a high CCC value (<span class="math inline">\(c=0.20\)</span>) and low Pearson and Spearman (<span class="math inline">\(p=0.16\)</span> and <span class="math inline">\(s=0.11\)</span>), were both strongly connected to the blood network, with interaction scores of at least 0.63 and an average of 0.75 and 0.84, respectively (Supplementary Table <a href="#tbl:giant:weights">1</a>).
+The autodetected cell type for this pair was leukocytes, a blood-specific cell lineage, and interaction scores slightly improved over the blood network (Supplementary Table <a href="#tbl:giant:weights">1</a>).
+However, genes <em>MYOZ1</em> and <em>TNNI2</em>, with a very high Pearson value (<span class="math inline">\(p=0.97\)</span>), moderate Spearman (<span class="math inline">\(s=0.28\)</span>) and very low CCC (<span class="math inline">\(c=0.03\)</span>), were predicted to belong to much less cohesive networks (Figure <a href="#fig:giant_gene_pairs">5</a> b), with average interaction scores of 0.17 and 0.22 with the rest of the genes, respectively.
+Additionally, the autodetected cell type (skeletal muscle) is not related to blood or one of its cell lineages.
+These preliminary results suggested that CCC might be capturing blood-specific patterns missed by the other coefficients.</p>
+<p>To confirm this trend, we performed a systematic evaluation using the top 100 gene pairs across intersections where CCC completely disagreed with the rest (CCC high and either of the rest low; or CCC low and either of the rest high).
+For each gene pair prioritized in GTEx (whole blood), we autodetected a relevant cell type using GIANT to assess whether genes were predicted to be specifically expressed in a blood-relevant cell lineage.
+For this, we took the top five more common autodetected cell types for each coefficient and assessed networks connectivity (see <a href="#sec:giant">Methods</a>).
+Notably, the top 5 predicted cell types for gene pairs highly ranked by CCC and not by the rest were all blood-specific (Figure <a href="#fig:giant_gene_pairs">5</a> c, top left), including macrophage, leukocyte, natural killer cell, blood and mononuclear phagocyte.
+The average probability of interaction between genes in these CCC-ranked networks was significantly higher than the other coefficients (Figure <a href="#fig:giant_gene_pairs">5</a> c, top right), with all medians larger than 67% and first quartiles above 41% across predicted cell types.
+In contrast, most Pearson’s gene pairs were predicted to be specific to tissues unrelated to blood (Figure <a href="#fig:giant_gene_pairs">5</a> c, bottom left), with skeletal muscle being the most common predicted tissue.
+The interaction probabilities in these Pearson-ranked networks were also generally lower than in CCC, except for blood-specific gene pairs (Figure <a href="#fig:giant_gene_pairs">5</a> c, bottom right).
+These results show that most gene pairs exclusively detected by CCC in whole blood from GTEx were replicated in sophisticated network models trained without GTEx samples and including interaction measurements.
+CCC-ranked gene pairs not only have high probabilities of belonging to the same biological process but were also predicted to be specifically expressed in blood cell lineages.
+Conversely, most Pearson-ranked gene pairs were not predicted to be blood-specific, and their interaction probabilities were relatively low.
+This lack of replication in GIANT suggests that top Pearson-ranked gene pairs in GTEx might be driven mainly by outliers, which is also suggested by the plots in Figure <a href="#fig:upsetplot_coefs">3</a> b.</p>
 <h2 id="discussion">Discussion</h2>
 <p>We introduced the Clustermatch Correlation Coefficient (CCC), an efficient not-only-linear machine learning-based method that captures more general patterns in data.
-We applied it to gene expression data from GTEx v8 and found that our coefficient is robust to outliers and does not miss strongly linear relationships in gene-gene patterns.
+We applied it to gene expression data from GTEx v8 and found that our coefficient is robust to outliers and does not miss strongly linear gene-gene relationships.
 Moreover, CCC also captured complex and biologically meaningful relationships completely missed by standard coefficients.
-For instance, CCC exclusively detected gene pairs from the sex chromosomes following complex non-linear patterns.
+For instance, CCC exclusively detected gene pairs from the sex chromosomes following complex nonlinear patterns.
 These examples, in particular, highlight the importance of considering sex as a biological variable and the critical role that not-only-linear coefficients can play in capturing sex-specific differences.
 We also replicated gene pairs prioritized by CCC in GTEx using tissue-specific gene networks from GIANT trained without GTEx samples.
 We found that top CCC-ranked gene pairs in whole blood from GTEx were predicted in GIANT to be part of the same biological mechanism and specifically expressed in cell lineages from blood, even though CCC did not have access to any cell lineage-specific information.
+This suggests that CCC can disentangle intricate cell lineage-specific transcriptional patterns missed by linear-only coefficients.
 CCC derives scores very well aligned with MIC while being much more computationally efficient and thus practical for use in large modern datasets.
-Our approach has a single parameter that controls the complexity of the detected relationships while also balancing compute time.
-Finally, CCC is conceptually easy to interpret and robust to outliers, making it an advanced coefficient that can focus human interpretation on patterns more likely to resemble biological processes.</p>
-<p>It is well-known that biomedical research is biased towards a small fraction of human genes <span class="citation" data-cites="1CZbj0k1F 104MiBf8H">[<a href="#ref-1CZbj0k1F" role="doc-biblioref">56</a>,<a href="#ref-104MiBf8H" role="doc-biblioref">57</a>]</span>.
-Researching genes with well-known functions is easier, although this observational bias seems anachronic with current high-throughput technologies.
-Several factors explaining this behavior have been identified <span class="citation" data-cites="IlPwHaTE">[<a href="#ref-IlPwHaTE" role="doc-biblioref">42</a>]</span>, such as RNA and protein abundance or gene length.
-Another potential explanation could also be a bias towards linear-only statistical methods.
-For example, genome-wide association studies (GWAS), which in most cases employ a linear model, have been successful in identifying thousands of genetic variants associated with complex human diseases <span class="citation" data-cites="yqBcaXHD RHAvYpWr">[<a href="#ref-yqBcaXHD" role="doc-biblioref">58</a>,<a href="#ref-RHAvYpWr" role="doc-biblioref">59</a>]</span>.
-These findings have been beneficial to understand the molecular basis of common diseases <span class="citation" data-cites="tfSxJKIN">[<a href="#ref-tfSxJKIN" role="doc-biblioref">60</a>]</span> and, more recently, design polygenic scores to estimate an individual’s genetic predisposition for a particular trait or disorder <span class="citation" data-cites="Gh0gKn77">[<a href="#ref-Gh0gKn77" role="doc-biblioref">61</a>]</span>.
-However, the estimated effects of genes identified with GWAS are generally modest, and they explain only a fraction of the trait variance, hampering the clinical translation of these findings <span class="citation" data-cites="17B4AigZT">[<a href="#ref-17B4AigZT" role="doc-biblioref">62</a>]</span>.
-Recent theories, like the omnigenic model for complex traits <span class="citation" data-cites="g7Id81Dt sfMulPrl">[<a href="#ref-g7Id81Dt" role="doc-biblioref">16</a>,<a href="#ref-sfMulPrl" role="doc-biblioref">17</a>]</span>, argue that these observations in genetic studies are explained by highly-interconnected gene regulatory networks, with some core genes having a more direct effect on the phenotype than others.
+Our method is conceptually easy to interpret and has a single parameter that controls the complexity of the detected relationships while also balancing compute time.</p>
+<p>Datasets such as Anscombe or “Datasaurus” highlight the value of visualization instead of relying on simple data summaries.
+While visual analysis is helpful, for many datasets examining each possible relationship is infeasible, and this is where more sophisticated and robust correlation coefficients are necessary.
+Advanced yet interpretable coefficients like CCC can focus human interpretation on patterns that are more likely to reflect real biology.
+The complexity of these patterns might reflect heterogeneity in samples that mask clear relationships between variables.
+For example, genes <em>UTY</em> - <em>KDM6A</em> (from sex chromosomes), detected by CCC, have a strong linear relationship but only in a subset of samples (males), which was not captured by linear-only coefficients.
+This example highlights the importance of considering sex as a biological variable (SABV) <span class="citation" data-cites="4QgDZ8bF">[<a href="#ref-4QgDZ8bF" role="doc-biblioref">46</a>]</span> to avoid overlooking important differences between men and women, for example, in disease manifestations <span class="citation" data-cites="iox25BGw 1GpiBQk8d">[<a href="#ref-iox25BGw" role="doc-biblioref">47</a>,<a href="#ref-1GpiBQk8d" role="doc-biblioref">48</a>]</span>.
+In transcriptome studies, a not-only-linear correlation coefficient like CCC could identify significant sex-specific differences in gene expression that are entirely missed by linear-only coefficients.</p>
+<p>It is well-known that biomedical research is biased towards a small fraction of human genes <span class="citation" data-cites="1CZbj0k1F 104MiBf8H">[<a href="#ref-1CZbj0k1F" role="doc-biblioref">49</a>,<a href="#ref-104MiBf8H" role="doc-biblioref">50</a>]</span>.
+Some genes analyzed in this study (Figure <a href="#fig:upsetplot_coefs">3</a> b), such as <em>SDS</em> (12q24) and <em>ZDHHC12</em> (9q34), were previously found to have a relatively lower number of publications that were explained by a small set of chemical, physical and biological features <span class="citation" data-cites="IlPwHaTE">[<a href="#ref-IlPwHaTE" role="doc-biblioref">51</a>]</span>.
+A gene co-expression analysis on large compendia and beyond linear patterns could shed light on the function of understudied genes.
+For example, gene <em>KLHL21</em> (1p36) and the novel RNA gene <em>AC068580.6</em> (<em>ENSG00000235027</em>, in 11p15) have a high CCC value and are missed by the other coefficients.
+<em>KLHL21</em> was suggested as a potential therapeutic target for hepatocellular carcinoma <span class="citation" data-cites="9i58Tfs4">[<a href="#ref-9i58Tfs4" role="doc-biblioref">52</a>]</span> and other cancers <span class="citation" data-cites="efGVmXWt 1FQgFkJoJ">[<a href="#ref-efGVmXWt" role="doc-biblioref">53</a>,<a href="#ref-1FQgFkJoJ" role="doc-biblioref">54</a>]</span>.
+Its nonlinear correlation with <em>AC068580.6</em> might unveil other important players in cancer initiation or progression, potentially in subsets of samples with specific characteristics (as suggested in Figure <a href="#fig:upsetplot_coefs">3</a> b).</p>
+<p>Not-only-linear correlation coefficients might also be helpful in the field of genetic studies.
+In this context, genome-wide association studies (GWAS) have been successful in understanding the molecular basis of common diseases by estimating the association between genotype and phenotype <span class="citation" data-cites="yqBcaXHD">[<a href="#ref-yqBcaXHD" role="doc-biblioref">55</a>]</span>.
+However, the estimated effect sizes of genes identified with GWAS are generally modest, and they explain only a fraction of the phenotype variance, hampering the clinical translation of these findings <span class="citation" data-cites="17B4AigZT">[<a href="#ref-17B4AigZT" role="doc-biblioref">56</a>]</span>.
+Recent theories, like the omnigenic model for complex traits <span class="citation" data-cites="g7Id81Dt sfMulPrl">[<a href="#ref-g7Id81Dt" role="doc-biblioref">16</a>,<a href="#ref-sfMulPrl" role="doc-biblioref">17</a>]</span>, argue that these observations are explained by highly-interconnected gene regulatory networks, with some core genes having a more direct effect on the phenotype than others.
 Using this omnigenic perspective, we and others <span class="citation" data-cites="FEh1bD0A 57TjOMEA 17f9RJ1ul">[<a href="#ref-FEh1bD0A" role="doc-biblioref">19</a>,<a href="#ref-17f9RJ1ul" role="doc-biblioref">20</a>,<a href="#ref-57TjOMEA" role="doc-biblioref">23</a>]</span> have shown that integrating gene co-expression networks in genetic studies could potentially identify core genes that are missed by linear-only models alone like GWAS.
-Our results strongly suggest that building these networks with more advanced and efficient correlation coefficients could better estimate gene co-expression profiles and thus more accurately identify these core genes.
-We anticipate that approaches like CCC will play a significant role in the precision medicine field by providing the computational tools to focus on less-studied yet potentially more promising genes.</p>
+Our results suggest that building these networks with more advanced and efficient correlation coefficients could better estimate gene co-expression profiles and thus more accurately identify these core genes.
+Approaches like CCC could play a significant role in the precision medicine field by providing the computational tools to focus on more promising genes representing potentially better candidate drug targets.</p>
 <p>Our analyses have some limitations.
 We worked on a sample with the top variable genes to keep computation time feasible.
 Although CCC is much faster than MIC, Pearson and Spearman are still the most computationally efficient since they only rely on simple data statistics.
@@ -385,21 +367,22 @@ Although we only used GTEx, we could still find complex and meaningful patterns 
 The application of CCC on larger compendia, such as recount3 <span class="citation" data-cites="TryC3OjB">[<a href="#ref-TryC3OjB" role="doc-biblioref">11</a>]</span> with thousands of heterogeneous samples across different conditions, can reveal other potentially meaningful gene interactions.
 The single parameter of CCC, <span class="math inline">\(k_{\mathrm{max}}\)</span>, controls the complexity of patterns found and also the compute time.
 We used <span class="math inline">\(k_{\mathrm{max}}=10\)</span> in our analyses which, given our results, seems to be enough to find both linear and more complex patterns.
-A more comprehensive analysis of the most optimal values for this parameter could provide insights into better adjusting it for different applications.</p>
+A more comprehensive analysis of the most optimal values for this parameter could provide insights to adjust it for different applications.</p>
 <p>While linear and rank-based correlation coefficients are exceptionally fast to calculate, not all relevant patterns in biological datasets are linear.
 For example, patterns associated with sex as a biological variable are not apparent to the linear-only coefficients that we evaluated but are revealed by not-only-linear methods.
-Not-only-linear coefficients can also disentangle intricate, yet relevant patterns from gene expression data alone replicated in models integrating different data modalities.
+Not-only-linear coefficients can also disentangle intricate yet relevant patterns from expression data alone that were replicated in models integrating different data modalities.
 CCC, in particular, is highly parallelizable, and we anticipate efficient GPU-based implementations that could make it even faster.
-We found that the CCC is an efficient, next-generation correlation coefficient that is highly effective in transcriptome analyses and potentially useful in a broad range of other domains.</p>
+The CCC is an efficient, next-generation correlation coefficient that is highly effective in transcriptome analyses and potentially useful in a broad range of other domains.</p>
 <h2 id="methods">Methods</h2>
 <p>The code needed to reproduce all of our analyses and generate the figures is available in <a href="https://github.com/greenelab/clustermatch-gene-expr">https://github.com/greenelab/clustermatch-gene-expr</a>.
-We provide scripts to automatically download the required data and run all the steps.
+We provide scripts to download the required data and run all the steps.
 A Docker image is provided to use the same runtime environment.</p>
 <h3 id="sec:ccc_algo">The CCC algorithm</h3>
 <p>The Clustermatch Correlation Coefficient (CCC) computes a similarity value <span class="math inline">\(c \in \left[0,1\right]\)</span> between any pair of numerical or categorical features/variables <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\mathbf{y}\)</span> measured on <span class="math inline">\(n\)</span> objects.
 CCC assumes that if two features <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\mathbf{y}\)</span> are similar, then the partitioning of the <span class="math inline">\(n\)</span> objects using each feature separately should match.
 For example, given <span class="math inline">\(\mathbf{x}=(1.1, 2.7, 3.2, 4.0)\)</span> and <span class="math inline">\(\mathbf{y}=10x=(11, 27, 32, 40)\)</span> for <span class="math inline">\(n=4\)</span>, partitioning each variable into two clusters (<span class="math inline">\(k=2\)</span>) using their medians (2.95 for <span class="math inline">\(\mathbf{x}\)</span> and 29.5 for <span class="math inline">\(\mathbf{y}\)</span>) would result in partition <span class="math inline">\(\pi^{\mathbf{x}}=(1, 1, 2, 2)\)</span> for <span class="math inline">\(\mathbf{x}\)</span>, and partition <span class="math inline">\(\pi^{\mathbf{y}}=(1, 1, 2, 2)\)</span> for <span class="math inline">\(\mathbf{y}\)</span>.
-If we compute the agreement between <span class="math inline">\(\pi^{\mathbf{x}}\)</span> and <span class="math inline">\(\pi^{\mathbf{y}}\)</span> using any measure of similarity between partitions, like the adjusted Rand index (ARI) <span class="citation" data-cites="e4AuoW8N">[<a href="#ref-e4AuoW8N" role="doc-biblioref">28</a>]</span>, it will return the maximum value (1.0 in the case of ARI).
+Suppose we compute the agreement between <span class="math inline">\(\pi^{\mathbf{x}}\)</span> and <span class="math inline">\(\pi^{\mathbf{y}}\)</span> using any measure of similarity between partitions, like the adjusted Rand index (ARI) <span class="citation" data-cites="e4AuoW8N">[<a href="#ref-e4AuoW8N" role="doc-biblioref">28</a>]</span>.
+In that case, it will return the maximum value (1.0 in the case of ARI).
 For CCC, a given value of <span class="math inline">\(k\)</span> might not be the right one to find a relationship between two features.
 For instance, in the quadratic example in Figure <a href="#fig:datasets_rel">1</a>, CCC returns a value of 0.36 (grouping objects in four clusters using one feature and two using the other).
 If we used only two clusters instead, CCC would return a similarity value of 0.02.
@@ -416,37 +399,39 @@ If the feature is categorical (lines 7 to 9), the categories are used to group o
 Consequently, since features are internally categorized into clusters, numerical and categorical variables can be naturally integrated since clusters do not need an order.
 Although not developed in this study, CCC provides a framework where not only 1-dimensional variables can be compared (such as genes across <span class="math inline">\(n\)</span> samples) but, in theory, also random vectors (multivariate random variables) such as an image.</p>
 <p>For all our analyses we used <span class="math inline">\(k_{\mathrm{max}}=10\)</span>.
-This means that for each gene pair, 20 partitions are generated (10 for each gene), and 100 ARI comparisons are performed.
+This means that for each gene pair, 18 partitions are generated (9 for each gene, from <span class="math inline">\(k=2\)</span> to <span class="math inline">\(k=10\)</span>), and 81 ARI comparisons are performed.
 Smaller values of <span class="math inline">\(k_{\mathrm{max}}\)</span> can reduce computation time, although at the expense of missing more complex, general relationships.
 Our examples in Figure <a href="#fig:datasets_rel">1</a> suggest that using <span class="math inline">\(k_{\mathrm{max}}=2\)</span> would force CCC to find linear-only patterns, which could be a valid use case scenario where only this kind of relationships are desired.
-In addition, <span class="math inline">\(k_{\mathrm{max}}=2\)</span> implies that only two partitions are generated, and only one ARI comparison is performed.</p>
+In addition, <span class="math inline">\(k_{\mathrm{max}}=2\)</span> implies that only two partitions are generated, and only one ARI comparison is performed.
+In this regard, our Python implementation of CCC allows some flexibility in specifying <span class="math inline">\(k_{\mathrm{max}}\)</span>.
+For instance, instead of the maximum <span class="math inline">\(k\)</span> (an integer), the parameter could be a custom list of integers: for example, <code>[2, 5, 10]</code> will partition the data into two, five and ten clusters.</p>
 <p>For a single pair of features (genes in our study), generating partitions or computing their similarity can be parallelized with CCC.
 We used three CPU cores in our analyses to speed up the computation of CCC.
 A future improved implementation of CCC could potentially use graphical processing units (GPU) to parallelize its computation further.</p>
-<p>A Python implementation of CCC (optimized with <code>numba</code> <span class="citation" data-cites="189xgFrlN">[<a href="#ref-189xgFrlN" role="doc-biblioref">63</a>]</span>) can be found in our Github repository <span class="citation" data-cites="190WLq6rx">[<a href="#ref-190WLq6rx" role="doc-biblioref">64</a>]</span>, as well as a package published in the Python Package Index (PyPI) that can be easily installed.</p>
-<h3 id="sec:methods:mic">Maximal Information Coefficient (MIC)</h3>
-<p>We used the Python package <code>minepy</code> <span class="citation" data-cites="wY5WU58s ah0tGOQ0">[<a href="#ref-wY5WU58s" role="doc-biblioref">65</a>,<a href="#ref-ah0tGOQ0" role="doc-biblioref">66</a>]</span> (version 1.2.5) to estimate the MIC coefficient.
-In GTEx v8 (whole blood), we ran MIC (the original implementation using the heuristic estimator ApproxMaxMI <span class="citation" data-cites="yCHLC0oS">[<a href="#ref-yCHLC0oS" role="doc-biblioref">33</a>]</span>) with the default parameters <code>alpha=0.6</code>, <code>c=15</code> and <code>estimator='mic_approx'</code>.
-For our computational complexity analyses (see <a href="#sec:time_test">Supplementary Material</a>), we also ran a new optimized implementation called MIC<sub>e</sub> <span class="citation" data-cites="AcVZZdTz">[<a href="#ref-AcVZZdTz" role="doc-biblioref">67</a>]</span> provided by <code>minepy</code> (using parameter <code>estimator='mic_e'</code>).</p>
+<p>A Python implementation of CCC (optimized with <code>numba</code> <span class="citation" data-cites="189xgFrlN">[<a href="#ref-189xgFrlN" role="doc-biblioref">57</a>]</span>) can be found in our Github repository <span class="citation" data-cites="190WLq6rx">[<a href="#ref-190WLq6rx" role="doc-biblioref">58</a>]</span>, as well as a package published in the Python Package Index (PyPI) that can be easily installed.</p>
 <h3 id="sec:data_gtex">Gene expression data, preprocessing and sampling</h3>
 <p>We downloaded GTEx v8 data for all tissues, normalized using TPM (transcripts per million), and focused our primary analysis on whole blood, which has a good sample size (755).
 We selected the top 5,000 genes from whole blood with the largest variance after standardizing with <span class="math inline">\(log(x + 1)\)</span> to avoid a bias towards highly-expressed genes.
 We then computed Pearson, Spearman and CCC on these 5,000 genes across all 755 samples on the TPM-normalized data, generating a pairwise similarity matrix of size 5,000 x 5,000.
 To reduce the time to compute MIC and compare it with the other coefficients, we randomly sampled 100,000 gene pairs from all possible combinations in the set of 5,000 top variable genes (<span class="math inline">\(n * (n-1) / 2=12497500\)</span>).</p>
+<h3 id="sec:methods:mic">Maximal Information Coefficient (MIC)</h3>
+<p>We used the Python package <code>minepy</code> <span class="citation" data-cites="wY5WU58s ah0tGOQ0">[<a href="#ref-wY5WU58s" role="doc-biblioref">59</a>,<a href="#ref-ah0tGOQ0" role="doc-biblioref">60</a>]</span> (version 1.2.5) to estimate the MIC coefficient.
+In GTEx v8 (whole blood), we ran MIC (the original implementation using the heuristic estimator ApproxMaxMI <span class="citation" data-cites="yCHLC0oS">[<a href="#ref-yCHLC0oS" role="doc-biblioref">33</a>]</span>) with the default parameters <code>alpha=0.6</code>, <code>c=15</code> and <code>estimator='mic_approx'</code>.
+For our computational complexity analyses (see <a href="#sec:time_test">Supplementary Material</a>), we also ran a new optimized implementation called MIC<sub>e</sub> <span class="citation" data-cites="AcVZZdTz">[<a href="#ref-AcVZZdTz" role="doc-biblioref">61</a>]</span> provided by <code>minepy</code> (using parameter <code>estimator='mic_e'</code>).</p>
 <h3 id="sec:giant">Tissue-specific network analyses using GIANT</h3>
-<p>We accessed tissue-specific gene networks of GIANT using both the web interface and web services provided by HumanBase <span class="citation" data-cites="ZSXf7Pdq">[<a href="#ref-ZSXf7Pdq" role="doc-biblioref">47</a>/]</span>.
-The GIANT version used in this study included 987 genome-scale datasets with approximately 38,000 conditions from an estimated number of 14,000 publications.
+<p>We accessed tissue-specific gene networks of GIANT using both the web interface and web services provided by HumanBase <span class="citation" data-cites="ZSXf7Pdq">[<a href="#ref-ZSXf7Pdq" role="doc-biblioref">40</a>]</span>.
+The GIANT version used in this study included 987 genome-scale datasets with approximately 38,000 conditions from around 14,000 publications.
 Details on how these networks were built are described in <span class="citation" data-cites="CVF61Un5">[<a href="#ref-CVF61Un5" role="doc-biblioref">27</a>]</span>.
-Briefly, tissue-specific gene networks were built using gene expression data (without GTEx samples <span class="citation" data-cites="BgCQnLU6">[<a href="#ref-BgCQnLU6" role="doc-biblioref">48</a>]</span>) from the NCBI’s Gene Expression Omnibus (GEO) <span class="citation" data-cites="tGvcfcsl">[<a href="#ref-tGvcfcsl" role="doc-biblioref">68</a>]</span>, protein-protein interaction (BioGRID <span class="citation" data-cites="JHRpiznV">[<a href="#ref-JHRpiznV" role="doc-biblioref">69</a>]</span>, IntAct <span class="citation" data-cites="7fExfA0i">[<a href="#ref-7fExfA0i" role="doc-biblioref">70</a>]</span>, MINT <span class="citation" data-cites="ODdRgjHY">[<a href="#ref-ODdRgjHY" role="doc-biblioref">71</a>]</span> and MIPS <span class="citation" data-cites="2AZQGpIZ">[<a href="#ref-2AZQGpIZ" role="doc-biblioref">72</a>]</span>), transcription factor regulation using binding motifs from JASPAR <span class="citation" data-cites="h6BVQcKz">[<a href="#ref-h6BVQcKz" role="doc-biblioref">73</a>]</span>, and chemical and genetic perturbations from MSigDB <span class="citation" data-cites="15p5LWIVP">[<a href="#ref-15p5LWIVP" role="doc-biblioref">74</a>]</span>.
+Briefly, tissue-specific gene networks were built using gene expression data (without GTEx samples <span class="citation" data-cites="BgCQnLU6">[<a href="#ref-BgCQnLU6" role="doc-biblioref">41</a>]</span>) from the NCBI’s Gene Expression Omnibus (GEO) <span class="citation" data-cites="tGvcfcsl">[<a href="#ref-tGvcfcsl" role="doc-biblioref">62</a>]</span>, protein-protein interaction (BioGRID <span class="citation" data-cites="JHRpiznV">[<a href="#ref-JHRpiznV" role="doc-biblioref">63</a>]</span>, IntAct <span class="citation" data-cites="7fExfA0i">[<a href="#ref-7fExfA0i" role="doc-biblioref">64</a>]</span>, MINT <span class="citation" data-cites="ODdRgjHY">[<a href="#ref-ODdRgjHY" role="doc-biblioref">65</a>]</span> and MIPS <span class="citation" data-cites="2AZQGpIZ">[<a href="#ref-2AZQGpIZ" role="doc-biblioref">66</a>]</span>), transcription factor regulation using binding motifs from JASPAR <span class="citation" data-cites="h6BVQcKz">[<a href="#ref-h6BVQcKz" role="doc-biblioref">67</a>]</span>, and chemical and genetic perturbations from MSigDB <span class="citation" data-cites="15p5LWIVP">[<a href="#ref-15p5LWIVP" role="doc-biblioref">68</a>]</span>.
 Gene expression data were log-transformed, and the Pearson correlation was computed for each gene pair, normalized using the Fisher’s z transform, and z-scores discretized into different bins.
-Gold standards for tissue functional relationships were built using expert curation and experimentally derived gene annotations from the Gene Ontology.
+Gold standards for tissue-specific functional relationships were built using expert curation and experimentally derived gene annotations from the Gene Ontology.
 Then, one naive Bayesian classifier for each of the 144 tissues was trained using these gold standards.
 Finally, these classifiers were used to estimate the probability of tissue-specific interactions for each gene pair.</p>
 <p>For each pair of genes prioritized in our study using GTEx, we used GIANT through HumanBase to obtain
 1) a predicted gene network for blood (manually selected to match whole blood in GTEx) and
-2) a gene network with an automatically predicted tissue using the method described in <span class="citation" data-cites="mk4SLpDo">[<a href="#ref-mk4SLpDo" role="doc-biblioref">75</a>]</span> and provided by HumanBase web interfaces/services.
+2) a gene network with an automatically predicted tissue using the method described in <span class="citation" data-cites="mk4SLpDo">[<a href="#ref-mk4SLpDo" role="doc-biblioref">43</a>]</span> and provided by HumanBase web interfaces/services.
 Briefly, the tissue prediction approach trains a machine learning model using comprehensive transcriptional data with human-curated markers of different cell lineages (e.g., macrophages) as gold standards.
-Then, these models are used to predict additional cell lineage-specific genes.
+Then, these models are used to predict other cell lineage-specific genes.
 In addition to reporting this predicted tissue or cell lineage, we computed the average probability of interaction between all genes in the network retrieved from GIANT.
 Following the default procedure used in GIANT, we included the top 15 genes with the highest probability of interaction with the queried gene pair for each network.</p>
 <h2 class="page_break_before" id="references">References</h2>
@@ -566,141 +551,120 @@ Following the default procedure used in GIANT, we included the top 15 genes with
 <div id="ref-g8HrFUfP" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>Time-Frequency Maximal Information Coefficient Method and its Application to Functional Corticomuscular Coupling.</strong> <div class="csl-block">Tie Liang, Qingyu Zhang, Xiaoguang Liu, Cunguang Lou, Xiuling Liu, Hongrui Wang</div> <em>IEEE transactions on neural systems and rehabilitation engineering : a publication of the IEEE Engineering in Medicine and Biology Society</em> (2020-11-06) <a href="https://www.ncbi.nlm.nih.gov/pubmed/33001806">https://www.ncbi.nlm.nih.gov/pubmed/33001806</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/tnsre.2020.3028199">10.1109/tnsre.2020.3028199</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33001806">33001806</a></div></div>
 </div>
-<div id="ref-4QgDZ8bF" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Policy: NIH to balance sex in cell and animal studies</strong> <div class="csl-block">Janine A Clayton, Francis S Collins</div> <em>Nature</em> (2014-05) <a href="https://doi.org/gfzc82">https://doi.org/gfzc82</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/509282a">10.1038/509282a</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24834516">24834516</a></div></div>
-</div>
-<div id="ref-iox25BGw" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Considering Sex as a Biological Variable in Basic and Clinical Studies: An Endocrine Society Scientific Statement</strong> <div class="csl-block">Aditi Bhargava, Arthur P Arnold, Debra A Bangasser, Kate M Denton, Arpana Gupta, Lucinda M Hilliard Krause, Emeran A Mayer, Margaret McCarthy, Walter L Miller, Armin Raznahan, Ragini Verma</div> <em>Endocrine Reviews</em> (2021-05-25) <a href="https://doi.org/gm642r">https://doi.org/gm642r</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1210/endrev/bnaa034">10.1210/endrev/bnaa034</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33704446">33704446</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8348944">PMC8348944</a></div></div>
-</div>
-<div id="ref-1GpiBQk8d" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Considering sex as a biological variable will require a global shift in science culture</strong> <div class="csl-block">Rebecca M Shansky, Anne Z Murphy</div> <em>Nature Neuroscience</em> (2021-04) <a href="https://doi.org/gjhkx8">https://doi.org/gjhkx8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41593-021-00806-8">10.1038/s41593-021-00806-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33649507">33649507</a></div></div>
-</div>
-<div id="ref-IlPwHaTE" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>Large-scale investigation of the reasons why potentially important genes are ignored.</strong> <div class="csl-block">Thomas Stoeger, Martin Gerlach, Richard I Morimoto, Luís A Nunes Amaral</div> <em>PLoS biology</em> (2018-09-18) <a href="https://www.ncbi.nlm.nih.gov/pubmed/30226837">https://www.ncbi.nlm.nih.gov/pubmed/30226837</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pbio.2006643">10.1371/journal.pbio.2006643</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30226837">30226837</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6143198">PMC6143198</a></div></div>
-</div>
-<div id="ref-9i58Tfs4" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">43. </div><div class="csl-right-inline"><strong>KLHL21, a novel gene that contributes to the progression of hepatocellular carcinoma.</strong> <div class="csl-block">Lei Shi, Wenfa Zhang, Fagui Zou, Lihua Mei, Gang Wu, Yong Teng</div> <em>BMC cancer</em> (2016-10-21) <a href="https://www.ncbi.nlm.nih.gov/pubmed/27769251">https://www.ncbi.nlm.nih.gov/pubmed/27769251</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s12885-016-2851-7">10.1186/s12885-016-2851-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27769251">27769251</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5073891">PMC5073891</a></div></div>
-</div>
-<div id="ref-efGVmXWt" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">44. </div><div class="csl-right-inline"><strong>Inhibition of KLHL21 prevents cholangiocarcinoma progression through regulating cell proliferation and motility, arresting cell cycle and reducing Erk activation.</strong> <div class="csl-block">Jian Chen, Wenfeng Song, Yehui Du, Zequn Li, Zefeng Xuan, Long Zhao, Jun Chen, Yongchao Zhao, Biguang Tuo, Shusen Zheng, Penghong Song</div> <em>Biochemical and biophysical research communications</em> (2018-03-31) <a href="https://www.ncbi.nlm.nih.gov/pubmed/29574153">https://www.ncbi.nlm.nih.gov/pubmed/29574153</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.bbrc.2018.03.152">10.1016/j.bbrc.2018.03.152</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29574153">29574153</a></div></div>
-</div>
-<div id="ref-1FQgFkJoJ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">45. </div><div class="csl-right-inline"><strong>Tumor-promoting mechanisms of macrophage-derived extracellular vesicles-enclosed microRNA-660 in breast cancer progression.</strong> <div class="csl-block">Changchun Li, Ruiqing Li, Xingchi Hu, Guangjun Zhou, Guoqing Jiang</div> <em>Breast cancer research and treatment</em> (2022-01-27) <a href="https://www.ncbi.nlm.nih.gov/pubmed/35084622">https://www.ncbi.nlm.nih.gov/pubmed/35084622</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/s10549-021-06433-y">10.1007/s10549-021-06433-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/35084622">35084622</a></div></div>
-</div>
 <div id="ref-9ZXy7Ut2" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">46. </div><div class="csl-right-inline"><strong>Understanding multicellular function and disease with human tissue-specific networks</strong> <div class="csl-block">Casey S Greene, Arjun Krishnan, Aaron K Wong, Emanuela Ricciotti, Rene A Zelaya, Daniel S Himmelstein, Ran Zhang, Boris M Hartmann, Elena Zaslavsky, Stuart C Sealfon, … Olga G Troyanskaya</div> <em>Nature genetics</em> (2015-06) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828725/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828725/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/ng.3259">10.1038/ng.3259</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25915600">25915600</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828725">PMC4828725</a></div></div>
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Understanding multicellular function and disease with human tissue-specific networks</strong> <div class="csl-block">Casey S Greene, Arjun Krishnan, Aaron K Wong, Emanuela Ricciotti, Rene A Zelaya, Daniel S Himmelstein, Ran Zhang, Boris M Hartmann, Elena Zaslavsky, Stuart C Sealfon, … Olga G Troyanskaya</div> <em>Nature genetics</em> (2015-06) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828725/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828725/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/ng.3259">10.1038/ng.3259</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25915600">25915600</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828725">PMC4828725</a></div></div>
 </div>
 <div id="ref-ZSXf7Pdq" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">47. </div><div class="csl-right-inline"><strong>HumanBase: data-driven predictions of gene function and interactions</strong> <a href="https://hb.flatironinstitute.org/">https://hb.flatironinstitute.org/</a></div>
+<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>HumanBase: data-driven predictions of gene function and interactions</strong> <a href="https://hb.flatironinstitute.org/">https://hb.flatironinstitute.org/</a></div>
 </div>
 <div id="ref-BgCQnLU6" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">48. </div><div class="csl-right-inline"><strong>Data sources</strong> <a href="https://hb.flatironinstitute.org/data">https://hb.flatironinstitute.org/data</a></div>
+<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Data sources</strong> <a href="https://hb.flatironinstitute.org/data">https://hb.flatironinstitute.org/data</a></div>
 </div>
 <div id="ref-tt0Vdf4C" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">49. </div><div class="csl-right-inline"><strong>Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.</strong> <div class="csl-block">Aravind Subramanian, Pablo Tamayo, Vamsi K Mootha, Sayan Mukherjee, Benjamin L Ebert, Michael A Gillette, Amanda Paulovich, Scott L Pomeroy, Todd R Golub, Eric S Lander, Jill P Mesirov</div> <em>Proceedings of the National Academy of Sciences of the United States of America</em> (2005-09-30) <a href="https://www.ncbi.nlm.nih.gov/pubmed/16199517">https://www.ncbi.nlm.nih.gov/pubmed/16199517</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1073/pnas.0506580102">10.1073/pnas.0506580102</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/16199517">16199517</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1239896">PMC1239896</a></div></div>
-</div>
-<div id="ref-KcdwueBe" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">50. </div><div class="csl-right-inline"><strong>SDS, IFNG - HumanBase</strong> <a href="https://hb.flatironinstitute.org/gene/10993+3458">https://hb.flatironinstitute.org/gene/10993+3458</a></div>
-</div>
-<div id="ref-fNQkvQLg" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">51. </div><div class="csl-right-inline"><strong>JUN, APOC1 - HumanBase</strong> <a href="https://hb.flatironinstitute.org/gene/3725+341">https://hb.flatironinstitute.org/gene/3725+341</a></div>
-</div>
-<div id="ref-7U8Feifj" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">52. </div><div class="csl-right-inline"><strong>CCL18, ZDHHC12 - HumanBase</strong> <a href="https://hb.flatironinstitute.org/gene/6362+84885">https://hb.flatironinstitute.org/gene/6362+84885</a></div>
-</div>
-<div id="ref-FKQEHB1F" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">53. </div><div class="csl-right-inline"><strong>RASSF2, CYTIP - HumanBase</strong> <a href="https://hb.flatironinstitute.org/gene/9770+9595">https://hb.flatironinstitute.org/gene/9770+9595</a></div>
-</div>
-<div id="ref-JpfbR0un" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">54. </div><div class="csl-right-inline"><strong>MYOZ1, TNNI2 - HumanBase</strong> <a href="https://hb.flatironinstitute.org/gene/58529+7136">https://hb.flatironinstitute.org/gene/58529+7136</a></div>
-</div>
-<div id="ref-irsTxKvs" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">55. </div><div class="csl-right-inline"><strong>PYGM, TPM2 - HumanBase</strong> <a href="https://hb.flatironinstitute.org/gene/5837+7169">https://hb.flatironinstitute.org/gene/5837+7169</a></div>
-</div>
-<div id="ref-1CZbj0k1F" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">56. </div><div class="csl-right-inline"><strong>Temporal patterns of genes in scientific publications.</strong> <div class="csl-block">Thomas Pfeiffer, Robert Hoffmann</div> <em>Proceedings of the National Academy of Sciences of the United States of America</em> (2007-07-09) <a href="https://www.ncbi.nlm.nih.gov/pubmed/17620606">https://www.ncbi.nlm.nih.gov/pubmed/17620606</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1073/pnas.0701315104">10.1073/pnas.0701315104</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/17620606">17620606</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1924584">PMC1924584</a></div></div>
-</div>
-<div id="ref-104MiBf8H" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">57. </div><div class="csl-right-inline"><strong>Power-law-like distributions in biomedical publications and research funding.</strong> <div class="csl-block">Andrew I Su, John B Hogenesch</div> <em>Genome biology</em> (2007) <a href="https://www.ncbi.nlm.nih.gov/pubmed/17472739">https://www.ncbi.nlm.nih.gov/pubmed/17472739</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/gb-2007-8-4-404">10.1186/gb-2007-8-4-404</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/17472739">17472739</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895997">PMC1895997</a></div></div>
-</div>
-<div id="ref-yqBcaXHD" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">58. </div><div class="csl-right-inline"><strong>10 Years of GWAS Discovery: Biology, Function, and Translation</strong> <div class="csl-block">Peter M Visscher, Naomi R Wray, Qian Zhang, Pamela Sklar, Mark I McCarthy, Matthew A Brown, Jian Yang</div> <em>The American Journal of Human Genetics</em> (2017-07) <a href="https://doi.org/gcsmnm">https://doi.org/gcsmnm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.ajhg.2017.06.005">10.1016/j.ajhg.2017.06.005</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28686856">28686856</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5501872">PMC5501872</a></div></div>
-</div>
-<div id="ref-RHAvYpWr" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">59. </div><div class="csl-right-inline"><strong>15 years of genome-wide association studies and no signs of slowing down</strong> <div class="csl-block">Ruth JF Loos</div> <em>Nature Communications</em> (2020-12) <a href="https://doi.org/gpt8k5">https://doi.org/gpt8k5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41467-020-19653-5">10.1038/s41467-020-19653-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33214558">33214558</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7677394">PMC7677394</a></div></div>
-</div>
-<div id="ref-tfSxJKIN" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">60. </div><div class="csl-right-inline"><strong>Fine-mapping type 2 diabetes loci to single-variant resolution using high-density imputation and islet-specific epigenome maps</strong> <div class="csl-block">Anubha Mahajan, Daniel Taliun, Matthias Thurner, Neil R Robertson, Jason M Torres, NWilliam Rayner, Anthony J Payne, Valgerdur Steinthorsdottir, Robert A Scott, Niels Grarup, … Mark I McCarthy</div> <em>Nature Genetics</em> (2018-11) <a href="https://doi.org/gfb68d">https://doi.org/gfb68d</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41588-018-0241-6">10.1038/s41588-018-0241-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30297969">30297969</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6287706">PMC6287706</a></div></div>
-</div>
-<div id="ref-Gh0gKn77" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">61. </div><div class="csl-right-inline"><strong>Genome-wide polygenic scores for common diseases identify individuals with risk equivalent to monogenic mutations</strong> <div class="csl-block">Amit V Khera, Mark Chaffin, Krishna G Aragam, Mary E Haas, Carolina Roselli, Seung Hoan Choi, Pradeep Natarajan, Eric S Lander, Steven A Lubitz, Patrick T Ellinor, Sekar Kathiresan</div> <em>Nature Genetics</em> (2018-09) <a href="https://doi.org/gdz64f">https://doi.org/gdz64f</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41588-018-0183-z">10.1038/s41588-018-0183-z</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30104762">30104762</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6128408">PMC6128408</a></div></div>
-</div>
-<div id="ref-17B4AigZT" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">62. </div><div class="csl-right-inline"><strong>Benefits and limitations of genome-wide association studies</strong> <div class="csl-block">Vivian Tam, Nikunj Patel, Michelle Turcotte, Yohan Bossé, Guillaume Paré, David Meyre</div> <em>Nature Reviews Genetics</em> (2019-08) <a href="https://doi.org/ggcxxb">https://doi.org/ggcxxb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41576-019-0127-1">10.1038/s41576-019-0127-1</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31068683">31068683</a></div></div>
-</div>
-<div id="ref-189xgFrlN" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">63. </div><div class="csl-right-inline"><strong>Numba: a LLVM-based Python JIT compiler</strong> <div class="csl-block">Siu Kwan Lam, Antoine Pitrou, Stanley Seibert</div> <em>Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC - LLVM '15</em> (2015) <a href="https://doi.org/gf3nks">https://doi.org/gf3nks</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/2833157.2833162">10.1145/2833157.2833162</a> · ISBN: 9781450340052</div></div>
-</div>
-<div id="ref-190WLq6rx" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">64. </div><div class="csl-right-inline"><strong>GitHub - greenelab/clustermatch-gene-expr</strong> <div class="csl-block">GitHub</div> <a href="https://github.com/greenelab/clustermatch-gene-expr">https://github.com/greenelab/clustermatch-gene-expr</a></div>
-</div>
-<div id="ref-wY5WU58s" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">65. </div><div class="csl-right-inline"><strong>minerva and minepy: a C engine for the MINE suite and its R, Python and MATLAB wrappers</strong> <div class="csl-block">Davide Albanese, Michele Filosi, Roberto Visintainer, Samantha Riccadonna, Giuseppe Jurman, Cesare Furlanello</div> <em>Bioinformatics</em> (2013-02-01) <a href="https://doi.org/f4nxg6">https://doi.org/f4nxg6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/bts707">10.1093/bioinformatics/bts707</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23242262">23242262</a></div></div>
-</div>
-<div id="ref-ah0tGOQ0" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">66. </div><div class="csl-right-inline"><strong>GitHub - minepy/minepy: minepy - Maximal Information-based Nonparametric Exploration</strong> <div class="csl-block">GitHub</div> <a href="https://github.com/minepy/minepy">https://github.com/minepy/minepy</a></div>
-</div>
-<div id="ref-AcVZZdTz" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">67. </div><div class="csl-right-inline"><strong>Measuring Dependence Powerfully and Equitably</strong> <div class="csl-block">Yakir Reshef, David Reshef, Hilary Finucane, Pardis Sabeti, Michael Mitzenmacher</div> <em>Journal of Machine Learning Research</em> (2010) <a href="https://jmlr.org/papers/v17/15-308.html">https://jmlr.org/papers/v17/15-308.html</a></div>
-</div>
-<div id="ref-tGvcfcsl" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">68. </div><div class="csl-right-inline"><strong>NCBI GEO: archive for functional genomics data sets—update</strong> <div class="csl-block">Tanya Barrett, Stephen E Wilhite, Pierre Ledoux, Carlos Evangelista, Irene F Kim, Maxim Tomashevsky, Kimberly A Marshall, Katherine H Phillippy, Patti M Sherman, Michelle Holko, … Alexandra Soboleva</div> <em>Nucleic Acids Research</em> (2012-11-26) <a href="https://doi.org/f3mn62">https://doi.org/f3mn62</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gks1193">10.1093/nar/gks1193</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23193258">23193258</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531084">PMC3531084</a></div></div>
-</div>
-<div id="ref-JHRpiznV" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">69. </div><div class="csl-right-inline"><strong>The BioGRID interaction database: 2013 update</strong> <div class="csl-block">Andrew Chatr-Aryamontri, Bobby-Joe Breitkreutz, Sven Heinicke, Lorrie Boucher, Andrew Winter, Chris Stark, Julie Nixon, Lindsay Ramage, Nadine Kolas, Lara O'Donnell, … Mike Tyers</div> <em>Nucleic acids research</em> (2013-01) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531226/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531226/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gks1158">10.1093/nar/gks1158</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23203989">23203989</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531226">PMC3531226</a></div></div>
-</div>
-<div id="ref-7fExfA0i" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">70. </div><div class="csl-right-inline"><strong>The IntAct molecular interaction database in 2012</strong> <div class="csl-block">S Kerrien, B Aranda, L Breuza, A Bridge, F Broackes-Carter, C Chen, M Duesbury, M Dumousseau, M Feuermann, U Hinz, … H Hermjakob</div> <em>Nucleic Acids Research</em> (2012-01-01) <a href="https://doi.org/bpmrdk">https://doi.org/bpmrdk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkr1088">10.1093/nar/gkr1088</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22121220">22121220</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3245075">PMC3245075</a></div></div>
-</div>
-<div id="ref-ODdRgjHY" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">71. </div><div class="csl-right-inline"><strong>MINT, the molecular interaction database: 2012 update</strong> <div class="csl-block">Luana Licata, Leonardo Briganti, Daniele Peluso, Livia Perfetto, Marta Iannuccelli, Eugenia Galeota, Francesca Sacco, Anita Palma, Aurelio Pio Nardozza, Elena Santonico, … Gianni Cesareni</div> <em>Nucleic Acids Research</em> (2012-01) <a href="https://doi.org/cqvx3b">https://doi.org/cqvx3b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkr930">10.1093/nar/gkr930</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22096227">22096227</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3244991">PMC3244991</a></div></div>
-</div>
-<div id="ref-2AZQGpIZ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">72. </div><div class="csl-right-inline"><strong>MIPS: a database for genomes and protein sequences</strong> <div class="csl-block">HW Mewes, K Heumann, A Kaps, K Mayer, F Pfeiffer, S Stocker, D Frishman</div> <em>Nucleic acids research</em> (1999-01-01) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC148093/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC148093/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/27.1.44">10.1093/nar/27.1.44</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/9847138">9847138</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC148093">PMC148093</a></div></div>
-</div>
-<div id="ref-h6BVQcKz" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">73. </div><div class="csl-right-inline"><strong>JASPAR 2010: the greatly expanded open-access database of transcription factor binding profiles</strong> <div class="csl-block">Elodie Portales-Casamar, Supat Thongjuea, Andrew T Kwon, David Arenillas, Xiaobei Zhao, Eivind Valen, Dimas Yusuf, Boris Lenhard, Wyeth W Wasserman, Albin Sandelin</div> <em>Nucleic Acids Research</em> (2010-01) <a href="https://doi.org/ddwfqp">https://doi.org/ddwfqp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkp950">10.1093/nar/gkp950</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19906716">19906716</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2808906">PMC2808906</a></div></div>
-</div>
-<div id="ref-15p5LWIVP" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">74. </div><div class="csl-right-inline"><strong>Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles</strong> <div class="csl-block">Aravind Subramanian, Pablo Tamayo, Vamsi K Mootha, Sayan Mukherjee, Benjamin L Ebert, Michael A Gillette, Amanda Paulovich, Scott L Pomeroy, Todd R Golub, Eric S Lander, Jill P Mesirov</div> <em>Proceedings of the National Academy of Sciences</em> (2005-10-25) <a href="https://doi.org/d4qbh8">https://doi.org/d4qbh8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1073/pnas.0506580102">10.1073/pnas.0506580102</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/16199517">16199517</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1239896">PMC1239896</a></div></div>
+<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.</strong> <div class="csl-block">Aravind Subramanian, Pablo Tamayo, Vamsi K Mootha, Sayan Mukherjee, Benjamin L Ebert, Michael A Gillette, Amanda Paulovich, Scott L Pomeroy, Todd R Golub, Eric S Lander, Jill P Mesirov</div> <em>Proceedings of the National Academy of Sciences of the United States of America</em> (2005-09-30) <a href="https://www.ncbi.nlm.nih.gov/pubmed/16199517">https://www.ncbi.nlm.nih.gov/pubmed/16199517</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1073/pnas.0506580102">10.1073/pnas.0506580102</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/16199517">16199517</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1239896">PMC1239896</a></div></div>
 </div>
 <div id="ref-mk4SLpDo" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">75. </div><div class="csl-right-inline"><strong>Defining cell-type specificity at the transcriptional level in human disease</strong> <div class="csl-block">Wenjun Ju, Casey S Greene, Felix Eichinger, Viji Nair, Jeffrey B Hodgin, Markus Bitzer, Young-suk Lee, Qian Zhu, Masami Kehata, Min Li, … Matthias Kretzler</div> <em>Genome Research</em> (2013-11) <a href="https://doi.org/f5g4hm">https://doi.org/f5g4hm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/gr.155697.113">10.1101/gr.155697.113</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23950145">23950145</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3814886">PMC3814886</a></div></div>
+<div class="csl-left-margin">43. </div><div class="csl-right-inline"><strong>Defining cell-type specificity at the transcriptional level in human disease</strong> <div class="csl-block">Wenjun Ju, Casey S Greene, Felix Eichinger, Viji Nair, Jeffrey B Hodgin, Markus Bitzer, Young-suk Lee, Qian Zhu, Masami Kehata, Min Li, … Matthias Kretzler</div> <em>Genome Research</em> (2013-11) <a href="https://doi.org/f5g4hm">https://doi.org/f5g4hm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/gr.155697.113">10.1101/gr.155697.113</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23950145">23950145</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3814886">PMC3814886</a></div></div>
+</div>
+<div id="ref-FKQEHB1F" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">44. </div><div class="csl-right-inline"><strong>RASSF2, CYTIP - HumanBase</strong> <a href="https://hb.flatironinstitute.org/gene/9770+9595">https://hb.flatironinstitute.org/gene/9770+9595</a></div>
+</div>
+<div id="ref-JpfbR0un" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">45. </div><div class="csl-right-inline"><strong>MYOZ1, TNNI2 - HumanBase</strong> <a href="https://hb.flatironinstitute.org/gene/58529+7136">https://hb.flatironinstitute.org/gene/58529+7136</a></div>
+</div>
+<div id="ref-4QgDZ8bF" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">46. </div><div class="csl-right-inline"><strong>Policy: NIH to balance sex in cell and animal studies</strong> <div class="csl-block">Janine A Clayton, Francis S Collins</div> <em>Nature</em> (2014-05) <a href="https://doi.org/gfzc82">https://doi.org/gfzc82</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/509282a">10.1038/509282a</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24834516">24834516</a></div></div>
+</div>
+<div id="ref-iox25BGw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">47. </div><div class="csl-right-inline"><strong>Considering Sex as a Biological Variable in Basic and Clinical Studies: An Endocrine Society Scientific Statement</strong> <div class="csl-block">Aditi Bhargava, Arthur P Arnold, Debra A Bangasser, Kate M Denton, Arpana Gupta, Lucinda M Hilliard Krause, Emeran A Mayer, Margaret McCarthy, Walter L Miller, Armin Raznahan, Ragini Verma</div> <em>Endocrine Reviews</em> (2021-05-25) <a href="https://doi.org/gm642r">https://doi.org/gm642r</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1210/endrev/bnaa034">10.1210/endrev/bnaa034</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33704446">33704446</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8348944">PMC8348944</a></div></div>
+</div>
+<div id="ref-1GpiBQk8d" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">48. </div><div class="csl-right-inline"><strong>Considering sex as a biological variable will require a global shift in science culture</strong> <div class="csl-block">Rebecca M Shansky, Anne Z Murphy</div> <em>Nature Neuroscience</em> (2021-04) <a href="https://doi.org/gjhkx8">https://doi.org/gjhkx8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41593-021-00806-8">10.1038/s41593-021-00806-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33649507">33649507</a></div></div>
+</div>
+<div id="ref-1CZbj0k1F" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">49. </div><div class="csl-right-inline"><strong>Temporal patterns of genes in scientific publications.</strong> <div class="csl-block">Thomas Pfeiffer, Robert Hoffmann</div> <em>Proceedings of the National Academy of Sciences of the United States of America</em> (2007-07-09) <a href="https://www.ncbi.nlm.nih.gov/pubmed/17620606">https://www.ncbi.nlm.nih.gov/pubmed/17620606</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1073/pnas.0701315104">10.1073/pnas.0701315104</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/17620606">17620606</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1924584">PMC1924584</a></div></div>
+</div>
+<div id="ref-104MiBf8H" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">50. </div><div class="csl-right-inline"><strong>Power-law-like distributions in biomedical publications and research funding.</strong> <div class="csl-block">Andrew I Su, John B Hogenesch</div> <em>Genome biology</em> (2007) <a href="https://www.ncbi.nlm.nih.gov/pubmed/17472739">https://www.ncbi.nlm.nih.gov/pubmed/17472739</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/gb-2007-8-4-404">10.1186/gb-2007-8-4-404</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/17472739">17472739</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895997">PMC1895997</a></div></div>
+</div>
+<div id="ref-IlPwHaTE" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">51. </div><div class="csl-right-inline"><strong>Large-scale investigation of the reasons why potentially important genes are ignored.</strong> <div class="csl-block">Thomas Stoeger, Martin Gerlach, Richard I Morimoto, Luís A Nunes Amaral</div> <em>PLoS biology</em> (2018-09-18) <a href="https://www.ncbi.nlm.nih.gov/pubmed/30226837">https://www.ncbi.nlm.nih.gov/pubmed/30226837</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pbio.2006643">10.1371/journal.pbio.2006643</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30226837">30226837</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6143198">PMC6143198</a></div></div>
+</div>
+<div id="ref-9i58Tfs4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">52. </div><div class="csl-right-inline"><strong>KLHL21, a novel gene that contributes to the progression of hepatocellular carcinoma.</strong> <div class="csl-block">Lei Shi, Wenfa Zhang, Fagui Zou, Lihua Mei, Gang Wu, Yong Teng</div> <em>BMC cancer</em> (2016-10-21) <a href="https://www.ncbi.nlm.nih.gov/pubmed/27769251">https://www.ncbi.nlm.nih.gov/pubmed/27769251</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s12885-016-2851-7">10.1186/s12885-016-2851-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27769251">27769251</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5073891">PMC5073891</a></div></div>
+</div>
+<div id="ref-efGVmXWt" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">53. </div><div class="csl-right-inline"><strong>Inhibition of KLHL21 prevents cholangiocarcinoma progression through regulating cell proliferation and motility, arresting cell cycle and reducing Erk activation.</strong> <div class="csl-block">Jian Chen, Wenfeng Song, Yehui Du, Zequn Li, Zefeng Xuan, Long Zhao, Jun Chen, Yongchao Zhao, Biguang Tuo, Shusen Zheng, Penghong Song</div> <em>Biochemical and biophysical research communications</em> (2018-03-31) <a href="https://www.ncbi.nlm.nih.gov/pubmed/29574153">https://www.ncbi.nlm.nih.gov/pubmed/29574153</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.bbrc.2018.03.152">10.1016/j.bbrc.2018.03.152</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29574153">29574153</a></div></div>
+</div>
+<div id="ref-1FQgFkJoJ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">54. </div><div class="csl-right-inline"><strong>Tumor-promoting mechanisms of macrophage-derived extracellular vesicles-enclosed microRNA-660 in breast cancer progression.</strong> <div class="csl-block">Changchun Li, Ruiqing Li, Xingchi Hu, Guangjun Zhou, Guoqing Jiang</div> <em>Breast cancer research and treatment</em> (2022-01-27) <a href="https://www.ncbi.nlm.nih.gov/pubmed/35084622">https://www.ncbi.nlm.nih.gov/pubmed/35084622</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/s10549-021-06433-y">10.1007/s10549-021-06433-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/35084622">35084622</a></div></div>
+</div>
+<div id="ref-yqBcaXHD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">55. </div><div class="csl-right-inline"><strong>10 Years of GWAS Discovery: Biology, Function, and Translation</strong> <div class="csl-block">Peter M Visscher, Naomi R Wray, Qian Zhang, Pamela Sklar, Mark I McCarthy, Matthew A Brown, Jian Yang</div> <em>The American Journal of Human Genetics</em> (2017-07) <a href="https://doi.org/gcsmnm">https://doi.org/gcsmnm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.ajhg.2017.06.005">10.1016/j.ajhg.2017.06.005</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28686856">28686856</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5501872">PMC5501872</a></div></div>
+</div>
+<div id="ref-17B4AigZT" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">56. </div><div class="csl-right-inline"><strong>Benefits and limitations of genome-wide association studies</strong> <div class="csl-block">Vivian Tam, Nikunj Patel, Michelle Turcotte, Yohan Bossé, Guillaume Paré, David Meyre</div> <em>Nature Reviews Genetics</em> (2019-08) <a href="https://doi.org/ggcxxb">https://doi.org/ggcxxb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41576-019-0127-1">10.1038/s41576-019-0127-1</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31068683">31068683</a></div></div>
+</div>
+<div id="ref-189xgFrlN" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">57. </div><div class="csl-right-inline"><strong>Numba: a LLVM-based Python JIT compiler</strong> <div class="csl-block">Siu Kwan Lam, Antoine Pitrou, Stanley Seibert</div> <em>Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC - LLVM '15</em> (2015) <a href="https://doi.org/gf3nks">https://doi.org/gf3nks</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/2833157.2833162">10.1145/2833157.2833162</a> · ISBN: 9781450340052</div></div>
+</div>
+<div id="ref-190WLq6rx" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">58. </div><div class="csl-right-inline"><strong>GitHub - greenelab/clustermatch-gene-expr</strong> <div class="csl-block">GitHub</div> <a href="https://github.com/greenelab/clustermatch-gene-expr">https://github.com/greenelab/clustermatch-gene-expr</a></div>
+</div>
+<div id="ref-wY5WU58s" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">59. </div><div class="csl-right-inline"><strong>minerva and minepy: a C engine for the MINE suite and its R, Python and MATLAB wrappers</strong> <div class="csl-block">Davide Albanese, Michele Filosi, Roberto Visintainer, Samantha Riccadonna, Giuseppe Jurman, Cesare Furlanello</div> <em>Bioinformatics</em> (2013-02-01) <a href="https://doi.org/f4nxg6">https://doi.org/f4nxg6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/bts707">10.1093/bioinformatics/bts707</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23242262">23242262</a></div></div>
+</div>
+<div id="ref-ah0tGOQ0" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">60. </div><div class="csl-right-inline"><strong>GitHub - minepy/minepy: minepy - Maximal Information-based Nonparametric Exploration</strong> <div class="csl-block">GitHub</div> <a href="https://github.com/minepy/minepy">https://github.com/minepy/minepy</a></div>
+</div>
+<div id="ref-AcVZZdTz" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">61. </div><div class="csl-right-inline"><strong>Measuring Dependence Powerfully and Equitably</strong> <div class="csl-block">Yakir Reshef, David Reshef, Hilary Finucane, Pardis Sabeti, Michael Mitzenmacher</div> <em>Journal of Machine Learning Research</em> (2010) <a href="https://jmlr.org/papers/v17/15-308.html">https://jmlr.org/papers/v17/15-308.html</a></div>
+</div>
+<div id="ref-tGvcfcsl" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">62. </div><div class="csl-right-inline"><strong>NCBI GEO: archive for functional genomics data sets—update</strong> <div class="csl-block">Tanya Barrett, Stephen E Wilhite, Pierre Ledoux, Carlos Evangelista, Irene F Kim, Maxim Tomashevsky, Kimberly A Marshall, Katherine H Phillippy, Patti M Sherman, Michelle Holko, … Alexandra Soboleva</div> <em>Nucleic Acids Research</em> (2012-11-26) <a href="https://doi.org/f3mn62">https://doi.org/f3mn62</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gks1193">10.1093/nar/gks1193</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23193258">23193258</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531084">PMC3531084</a></div></div>
+</div>
+<div id="ref-JHRpiznV" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">63. </div><div class="csl-right-inline"><strong>The BioGRID interaction database: 2013 update</strong> <div class="csl-block">Andrew Chatr-Aryamontri, Bobby-Joe Breitkreutz, Sven Heinicke, Lorrie Boucher, Andrew Winter, Chris Stark, Julie Nixon, Lindsay Ramage, Nadine Kolas, Lara O'Donnell, … Mike Tyers</div> <em>Nucleic acids research</em> (2013-01) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531226/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531226/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gks1158">10.1093/nar/gks1158</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23203989">23203989</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531226">PMC3531226</a></div></div>
+</div>
+<div id="ref-7fExfA0i" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">64. </div><div class="csl-right-inline"><strong>The IntAct molecular interaction database in 2012</strong> <div class="csl-block">S Kerrien, B Aranda, L Breuza, A Bridge, F Broackes-Carter, C Chen, M Duesbury, M Dumousseau, M Feuermann, U Hinz, … H Hermjakob</div> <em>Nucleic Acids Research</em> (2012-01-01) <a href="https://doi.org/bpmrdk">https://doi.org/bpmrdk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkr1088">10.1093/nar/gkr1088</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22121220">22121220</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3245075">PMC3245075</a></div></div>
+</div>
+<div id="ref-ODdRgjHY" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">65. </div><div class="csl-right-inline"><strong>MINT, the molecular interaction database: 2012 update</strong> <div class="csl-block">Luana Licata, Leonardo Briganti, Daniele Peluso, Livia Perfetto, Marta Iannuccelli, Eugenia Galeota, Francesca Sacco, Anita Palma, Aurelio Pio Nardozza, Elena Santonico, … Gianni Cesareni</div> <em>Nucleic Acids Research</em> (2012-01) <a href="https://doi.org/cqvx3b">https://doi.org/cqvx3b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkr930">10.1093/nar/gkr930</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22096227">22096227</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3244991">PMC3244991</a></div></div>
+</div>
+<div id="ref-2AZQGpIZ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">66. </div><div class="csl-right-inline"><strong>MIPS: a database for genomes and protein sequences</strong> <div class="csl-block">HW Mewes, K Heumann, A Kaps, K Mayer, F Pfeiffer, S Stocker, D Frishman</div> <em>Nucleic acids research</em> (1999-01-01) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC148093/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC148093/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/27.1.44">10.1093/nar/27.1.44</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/9847138">9847138</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC148093">PMC148093</a></div></div>
+</div>
+<div id="ref-h6BVQcKz" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">67. </div><div class="csl-right-inline"><strong>JASPAR 2010: the greatly expanded open-access database of transcription factor binding profiles</strong> <div class="csl-block">Elodie Portales-Casamar, Supat Thongjuea, Andrew T Kwon, David Arenillas, Xiaobei Zhao, Eivind Valen, Dimas Yusuf, Boris Lenhard, Wyeth W Wasserman, Albin Sandelin</div> <em>Nucleic Acids Research</em> (2010-01) <a href="https://doi.org/ddwfqp">https://doi.org/ddwfqp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkp950">10.1093/nar/gkp950</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19906716">19906716</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2808906">PMC2808906</a></div></div>
+</div>
+<div id="ref-15p5LWIVP" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">68. </div><div class="csl-right-inline"><strong>Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles</strong> <div class="csl-block">Aravind Subramanian, Pablo Tamayo, Vamsi K Mootha, Sayan Mukherjee, Benjamin L Ebert, Michael A Gillette, Amanda Paulovich, Scott L Pomeroy, Todd R Golub, Eric S Lander, Jill P Mesirov</div> <em>Proceedings of the National Academy of Sciences</em> (2005-10-25) <a href="https://doi.org/d4qbh8">https://doi.org/d4qbh8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1073/pnas.0506580102">10.1073/pnas.0506580102</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/16199517">16199517</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1239896">PMC1239896</a></div></div>
 </div>
 <div id="ref-CHkDwNWM" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">76. </div><div class="csl-right-inline"><strong>An improved algorithm for the maximal information coefficient and its application</strong> <div class="csl-block">Dan Cao, Yuan Chen, Jin Chen, Hongyan Zhang, Zheming Yuan</div> <em>Royal Society Open Science</em> (2021-02) <a href="https://doi.org/gpcwkd">https://doi.org/gpcwkd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rsos.201424">10.1098/rsos.201424</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33972855">33972855</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8074658">PMC8074658</a></div></div>
+<div class="csl-left-margin">69. </div><div class="csl-right-inline"><strong>An improved algorithm for the maximal information coefficient and its application</strong> <div class="csl-block">Dan Cao, Yuan Chen, Jin Chen, Hongyan Zhang, Zheming Yuan</div> <em>Royal Society Open Science</em> (2021-02) <a href="https://doi.org/gpcwkd">https://doi.org/gpcwkd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rsos.201424">10.1098/rsos.201424</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33972855">33972855</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8074658">PMC8074658</a></div></div>
 </div>
 <div id="ref-NRWTH7z2" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">77. </div><div class="csl-right-inline"><strong>A New Algorithm to Optimize Maximal Information Coefficient</strong> <div class="csl-block">Yuan Chen, Ying Zeng, Feng Luo, Zheming Yuan</div> <em>PLOS ONE</em> (2016-06-22) <a href="https://doi.org/gbpjt7">https://doi.org/gbpjt7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pone.0157567">10.1371/journal.pone.0157567</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27333001">27333001</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4917098">PMC4917098</a></div></div>
+<div class="csl-left-margin">70. </div><div class="csl-right-inline"><strong>A New Algorithm to Optimize Maximal Information Coefficient</strong> <div class="csl-block">Yuan Chen, Ying Zeng, Feng Luo, Zheming Yuan</div> <em>PLOS ONE</em> (2016-06-22) <a href="https://doi.org/gbpjt7">https://doi.org/gbpjt7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pone.0157567">10.1371/journal.pone.0157567</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27333001">27333001</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4917098">PMC4917098</a></div></div>
 </div>
 <div id="ref-hjqdXcdK" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">78. </div><div class="csl-right-inline"><strong>RapidMic: Rapid Computation of the Maximal Information Coefficient</strong> <div class="csl-block">Dongming Tang, Mingwen Wang, Weifan Zheng, Hongjun Wang</div> <em>Evolutionary Bioinformatics</em> (2014-01) <a href="https://doi.org/gpt7c8">https://doi.org/gpt7c8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.4137/ebo.s13121">10.4137/ebo.s13121</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24526831">24526831</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3921152">PMC3921152</a></div></div>
+<div class="csl-left-margin">71. </div><div class="csl-right-inline"><strong>RapidMic: Rapid Computation of the Maximal Information Coefficient</strong> <div class="csl-block">Dongming Tang, Mingwen Wang, Weifan Zheng, Hongjun Wang</div> <em>Evolutionary Bioinformatics</em> (2014-01) <a href="https://doi.org/gpt7c8">https://doi.org/gpt7c8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.4137/ebo.s13121">10.4137/ebo.s13121</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24526831">24526831</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3921152">PMC3921152</a></div></div>
 </div>
 <div id="ref-HLCXXMYj" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">79. </div><div class="csl-right-inline"><strong>A Novel Algorithm for the Precise Calculation of the Maximal Information Coefficient</strong> <div class="csl-block">Yi Zhang, Shili Jia, Haiyun Huang, Jiqing Qiu, Changjie Zhou</div> <em>Scientific Reports</em> (2015-05) <a href="https://doi.org/gpt7c7">https://doi.org/gpt7c7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/srep06662">10.1038/srep06662</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25322794">25322794</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4200418">PMC4200418</a></div></div>
+<div class="csl-left-margin">72. </div><div class="csl-right-inline"><strong>A Novel Algorithm for the Precise Calculation of the Maximal Information Coefficient</strong> <div class="csl-block">Yi Zhang, Shili Jia, Haiyun Huang, Jiqing Qiu, Changjie Zhou</div> <em>Scientific Reports</em> (2015-05) <a href="https://doi.org/gpt7c7">https://doi.org/gpt7c7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/srep06662">10.1038/srep06662</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25322794">25322794</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4200418">PMC4200418</a></div></div>
 </div>
 </div>
 <!-- ## Acknowledgements -->
 <h2 id="supplementary-material">Supplementary material</h2>
 <h3 id="sec:mic">Comparison with the Maximal Information Coefficient (MIC) on gene expression data</h3>
-<p>We compared all the coefficients in this study with the MIC <span class="citation" data-cites="tbcQL0eR">[<a href="#ref-tbcQL0eR" role="doc-biblioref">24</a>]</span>, a popular non-linear method that can find complex relationships in data, although very computationally intensive <span class="citation" data-cites="CHkDwNWM">[<a href="#ref-CHkDwNWM" role="doc-biblioref">76</a>]</span>.
+<p>We compared all the coefficients in this study with the MIC <span class="citation" data-cites="tbcQL0eR">[<a href="#ref-tbcQL0eR" role="doc-biblioref">24</a>]</span>, a popular nonlinear method that can find complex relationships in data, although very computationally intensive <span class="citation" data-cites="CHkDwNWM">[<a href="#ref-CHkDwNWM" role="doc-biblioref">69</a>]</span>.
 To circumvent this limitation of MIC, we took a small random sample of 100,000 gene pairs from all possible pairwise comparisons of our 5,000 highly variable genes from whole blood in GTEx v8.
-Then we performed the analysis on the distribution of coefficients (the same as in the main text), shown in Figure <a href="#fig:dist_coefs_mic">7</a>.
-We verified that CCC and MIC behave very similarly in this dataset, with essentially the same distribution but only shifted.
-Figure <a href="#fig:dist_coefs_mic">7</a> c shows that these two coefficients relate almost linearly and both compare very similarly with Pearson and Spearman.</p>
+Then we performed the analysis on the distribution of coefficients (the same as in the main text), shown in Figure <a href="#fig:dist_coefs_mic">6</a>.
+We verified that CCC and MIC behave similarly in this dataset, with essentially the same distribution but only shifted.
+Figure <a href="#fig:dist_coefs_mic">6</a> c shows that these two coefficients relate almost linearly, and both compare very similarly with Pearson and Spearman.</p>
 <div id="fig:dist_coefs_mic" class="fignos">
 <figure>
-<img src="images/coefs_comp/gtex_whole_blood/mic/dist-main.svg" style="width:100.0%" alt="Figure 7: Distribution of MIC values on a small sample from whole blood (GTEx v8) and comparison with other methods. We randomly sampled 100,000 gene pairs (approximately 1% of the total) from our set of 5,000 genes. a) Histogram of coefficient values. b) Corresponding cumulative histogram. The dotted line maps the coefficient value that accumulates 70% of gene pairs. c) 2D histogram plot with hexagonal bins between all coefficients, where a logarithmic scale was used to color each hexagon." /><figcaption aria-hidden="true"><span>Figure 7:</span> <strong>Distribution of MIC values on a small sample from whole blood (GTEx v8) and comparison with other methods.</strong>
+<img src="images/coefs_comp/gtex_whole_blood/mic/dist-main.svg" style="width:100.0%" alt="Figure 6: Distribution of MIC values on a small sample from whole blood (GTEx v8) and comparison with other methods. We randomly sampled 100,000 gene pairs (approximately 1% of the total) from our set of 5,000 genes. a) Histogram of coefficient values. b) Corresponding cumulative histogram. The dotted line maps the coefficient value that accumulates 70% of gene pairs. c) 2D histogram plot with hexagonal bins between all coefficients, where a logarithmic scale was used to color each hexagon." /><figcaption aria-hidden="true"><span>Figure 6:</span> <strong>Distribution of MIC values on a small sample from whole blood (GTEx v8) and comparison with other methods.</strong>
 We randomly sampled 100,000 gene pairs (approximately 1% of the total) from our set of 5,000 genes.
 <strong>a)</strong> Histogram of coefficient values.
 <strong>b)</strong> Corresponding cumulative histogram. The dotted line maps the coefficient value that accumulates 70% of gene pairs.
@@ -709,40 +673,39 @@ We randomly sampled 100,000 gene pairs (approximately 1% of the total) from our 
 </div>
 <h3 id="sec:time_test">Computational complexity of coefficients</h3>
 <p>We also compared CCC with the other coefficients in terms of computational complexity.
-Although CCC and MIC identify the same gene pairs in the gene expression data (see <a href="#sec:mic">here</a>), the use MIC in large datasets remains limited due to its very long computation time, despite some methodological/implementation improvements <span class="citation" data-cites="wY5WU58s NRWTH7z2 hjqdXcdK HLCXXMYj CHkDwNWM">[<a href="#ref-wY5WU58s" role="doc-biblioref">65</a>,<a href="#ref-CHkDwNWM" role="doc-biblioref">76</a>,<a href="#ref-NRWTH7z2" role="doc-biblioref">77</a>,<a href="#ref-hjqdXcdK" role="doc-biblioref">78</a>,<a href="#ref-HLCXXMYj" role="doc-biblioref">79</a>]</span>.
+Although CCC and MIC identify the same gene pairs in the gene expression data (see <a href="#sec:mic">here</a>), the use MIC in large datasets remains limited due to its very long computation time, despite some methodological/implementation improvements <span class="citation" data-cites="wY5WU58s NRWTH7z2 hjqdXcdK HLCXXMYj CHkDwNWM">[<a href="#ref-wY5WU58s" role="doc-biblioref">59</a>,<a href="#ref-CHkDwNWM" role="doc-biblioref">69</a>,<a href="#ref-NRWTH7z2" role="doc-biblioref">70</a>,<a href="#ref-hjqdXcdK" role="doc-biblioref">71</a>,<a href="#ref-HLCXXMYj" role="doc-biblioref">72</a>]</span>.
 The original MIC implementation uses ApproxMaxMI, a computationally demanding heuristic estimator <span class="citation" data-cites="yCHLC0oS">[<a href="#ref-yCHLC0oS" role="doc-biblioref">33</a>]</span>.
-Recently, a more efficient implementation called MIC<sub>e</sub> was proposed <span class="citation" data-cites="AcVZZdTz">[<a href="#ref-AcVZZdTz" role="doc-biblioref">67</a>]</span>.
-These two MIC estimators are provided by the <code>minepy</code> package <span class="citation" data-cites="wY5WU58s">[<a href="#ref-wY5WU58s" role="doc-biblioref">65</a>]</span>, a C implementation available for Python, which we used here.
-We compared all these coefficients in terms of computation time on randomly generated variables of differente sizes, which simulates an scenario of gene expression data with different numbers of conditions.
-Differently than the rest, our method CCC allows to easily parallelize the computation of a single gene pair (see <a href="#sec:ccc_algo">Methods</a>), so we also tested the cases using 1 and 3 CPU cores.
-The results in Figure <a href="#fig:time_test">8</a> show the time in seconds (left) and its log scale (right).</p>
+Recently, a more efficient implementation called MIC<sub>e</sub> was proposed <span class="citation" data-cites="AcVZZdTz">[<a href="#ref-AcVZZdTz" role="doc-biblioref">61</a>]</span>.
+These two MIC estimators are provided by the <code>minepy</code> package <span class="citation" data-cites="wY5WU58s">[<a href="#ref-wY5WU58s" role="doc-biblioref">59</a>]</span>, a C implementation available for Python, which we used here.
+We compared all these coefficients in terms of computation time on randomly generated variables of different sizes, which simulates a scenario of gene expression data with different numbers of conditions.
+Differently from the rest, our method CCC allows us to easily parallelize the computation of a single gene pair (see <a href="#sec:ccc_algo">Methods</a>), so we also tested the cases using 1 and 3 CPU cores.
+Figure <a href="#fig:time_test">7</a> shows the time in seconds (left) and its log scale (right).</p>
 <div id="fig:time_test" class="fignos">
 <figure>
-<img src="images/coefs_comp/time_test/time_test-main.svg" style="width:100.0%" alt="Figure 8: Computational complexity of all correlation coefficients on simulated data. We simulated variables/features with varying data sizes (from 100 to a million, x-axis). The plots show the average time taken for each coefficient (in seconds on the left, and log scale on the right) on 10 repetitions (1000 repetitions were performed for data size 100). CCC was run using 1 and 3 CPU cores. MIC and MICe did not finish running in a reasonable amount of time for data sizes of 10,000 and 100,000, respectively." /><figcaption aria-hidden="true"><span>Figure 8:</span> <strong>Computational complexity of all correlation coefficients on simulated data.</strong>
+<img src="images/coefs_comp/time_test/time_test-main.svg" style="width:100.0%" alt="Figure 7: Computational complexity of all correlation coefficients on simulated data. We simulated variables/features with varying data sizes (from 100 to a million, x-axis). The plots show the average time taken for each coefficient (in seconds on the left and log scale on the right) on ten repetitions (1000 repetitions were performed for data size 100). CCC was run using 1 and 3 CPU cores. MIC and MICe did not finish running in a reasonable amount of time for data sizes of 10,000 and 100,000, respectively." /><figcaption aria-hidden="true"><span>Figure 7:</span> <strong>Computational complexity of all correlation coefficients on simulated data.</strong>
 We simulated variables/features with varying data sizes (from 100 to a million, <span class="math inline">\(x\)</span>-axis).
-The plots show the average time taken for each coefficient (in seconds on the left, and log scale on the right) on 10 repetitions (1000 repetitions were performed for data size 100).
+The plots show the average time taken for each coefficient (in seconds on the left and log scale on the right) on ten repetitions (1000 repetitions were performed for data size 100).
 CCC was run using 1 and 3 CPU cores.
 MIC and MIC<sub>e</sub> did not finish running in a reasonable amount of time for data sizes of 10,000 and 100,000, respectively.</figcaption>
 </figure>
 </div>
 <p>As we already expected, Pearson and Spearman were the fastest, given that they only need to compute basic summary statistics from the data.
 For example, Pearson is three orders of magnitude faster than CCC.
-Among the non-linear coefficients, CCC was faster than the two MIC variations (up to two orders of magnitude), with the only exception in very small data sizes.
-The difference is important because both MIC variants were implemented in C <span class="citation" data-cites="wY5WU58s">[<a href="#ref-wY5WU58s" role="doc-biblioref">65</a>]</span>, a high performance programming language, whereas CCC was implemented in Python (optimized with <code>numba</code>).
-For a data size of a million, the multi-core CCC was twice as fast at the single-core CCC.
-This suggests that new implementations using more advaned processing units (such as GPUs) are feasible and could make CCC reach speeds closer to Pearson.</p>
+Among the nonlinear coefficients, CCC was faster than the two MIC variations (up to two orders of magnitude), with the only exception in very small data sizes.
+The difference is important because both MIC variants were implemented in C <span class="citation" data-cites="wY5WU58s">[<a href="#ref-wY5WU58s" role="doc-biblioref">59</a>]</span>, a high-performance programming language, whereas CCC was implemented in Python (optimized with <code>numba</code>).
+For a data size of a million, the multi-core CCC was twice as fast as the single-core CCC.
+This suggests that new implementations using more advanced processing units (such as GPUs) are feasible and could make CCC reach speeds closer to Pearson.</p>
 <h3 id="tissue-specific-gene-networks-with-giant">Tissue-specific gene networks with GIANT</h3>
 <div id="tbl:giant:weights" class="tablenos">
 <table id="tbl:giant:weights">
-<caption><span>Table 1:</span> Network statistics of six gene pairs (prioritized by correlation coefficients) for blood and predicted cell types.
-The minimum, average and maximum interaction coefficients for genes in each network are shown.
-For each gene pair, also the direct interaction coefficient in each cell type is shown.
+<caption><span>Table 1:</span> Network statistics of six gene pairs shown in Figure <a href="#fig:upsetplot_coefs">3</a> b for blood and predicted cell types.
+Only gene pairs present in GIANT models are listed.
+For each gene in the pair (first column), the minimum, average and maximum interaction coefficients with the other genes in the network are shown.
 </caption>
 <thead>
 <tr class="header">
 <th style="text-align: center;"></th>
-<th style="text-align: center;"><strong>Interaction confidence</strong> <!-- $colspan="8" --></th>
-<th style="text-align: center;"></th>
+<th style="text-align: center;"><strong>Interaction confidence</strong> <!-- $colspan="7" --></th>
 <th style="text-align: center;"></th>
 <th style="text-align: center;"></th>
 <th style="text-align: center;"></th>
@@ -754,8 +717,7 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 <tbody>
 <tr class="odd">
 <td style="text-align: center;"></td>
-<td style="text-align: center;"><strong>Blood</strong> <!-- $colspan="4" --></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>Blood</strong> <!-- $colspan="3" --></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><strong>Predicted cell type</strong> <!-- $colspan="4" --></td>
@@ -765,22 +727,20 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 </tr>
 <tr class="even">
 <td style="text-align: center;"><strong>Gene</strong></td>
-<td style="text-align: center;"><strong>Direct</strong></td>
 <td style="text-align: center;"><strong>Min.</strong></td>
 <td style="text-align: center;"><strong>Avg.</strong></td>
 <td style="text-align: center;"><strong>Max.</strong></td>
-<td style="text-align: center;"><strong>Direct</strong></td>
+<td style="text-align: center;"><strong>Cell type</strong></td>
 <td style="text-align: center;"><strong>Min.</strong></td>
 <td style="text-align: center;"><strong>Avg.</strong></td>
 <td style="text-align: center;"><strong>Max.</strong></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><em>IFNG</em></td>
-<td style="text-align: center;">0.11<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.19</td>
 <td style="text-align: center;">0.42</td>
 <td style="text-align: center;">0.54</td>
-<td style="text-align: center;">0.50<!-- $rowspan="2" --></td>
+<td style="text-align: center;">Natural killer cell<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.74</td>
 <td style="text-align: center;">0.90</td>
 <td style="text-align: center;">0.99</td>
@@ -792,13 +752,11 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 <td style="text-align: center;">0.41</td>
 <td style="text-align: center;">0.65</td>
 <td style="text-align: center;">0.81</td>
-<td style="text-align: center;">0.94<!-- $removenext="3" --></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">0.94<!-- $removenext="2" --></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"><!-- $colspan="9" --></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;"><!-- $colspan="7" --></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
@@ -809,11 +767,10 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 </tr>
 <tr class="even">
 <td style="text-align: center;"><em>JUN</em></td>
-<td style="text-align: center;">0.07<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.26</td>
 <td style="text-align: center;">0.68</td>
 <td style="text-align: center;">0.97</td>
-<td style="text-align: center;">0.07<!-- $rowspan="2" --></td>
+<td style="text-align: center;">Mononuclear phagocyte<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.36</td>
 <td style="text-align: center;">0.73</td>
 <td style="text-align: center;">0.94</td>
@@ -825,8 +782,7 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 <td style="text-align: center;">0.77</td>
 <td style="text-align: center;">0.29</td>
 <td style="text-align: center;">0.50</td>
-<td style="text-align: center;">0.80<!-- $removenext="3" --></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">0.80<!-- $removenext="2" --></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
@@ -838,15 +794,13 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><em>ZDHHC12</em></td>
-<td style="text-align: center;">0.04<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.05</td>
 <td style="text-align: center;">0.07</td>
 <td style="text-align: center;">0.10</td>
-<td style="text-align: center;">0.02<!-- $rowspan="2" --></td>
+<td style="text-align: center;">Macrophage<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.03</td>
 <td style="text-align: center;">0.12</td>
 <td style="text-align: center;">0.33</td>
@@ -858,8 +812,7 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 <td style="text-align: center;">0.86</td>
 <td style="text-align: center;">0.36</td>
 <td style="text-align: center;">0.70</td>
-<td style="text-align: center;">0.90<!-- $removenext="3" --></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">0.90<!-- $removenext="2" --></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
@@ -871,15 +824,13 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><em>RASSF2</em></td>
-<td style="text-align: center;">0.63<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.63</td>
 <td style="text-align: center;">0.75</td>
 <td style="text-align: center;">0.90</td>
-<td style="text-align: center;">0.65<!-- $rowspan="2" --></td>
+<td style="text-align: center;">Leukocyte<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.69</td>
 <td style="text-align: center;">0.75</td>
 <td style="text-align: center;">0.88</td>
@@ -891,8 +842,7 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 <td style="text-align: center;">0.91</td>
 <td style="text-align: center;">0.76</td>
 <td style="text-align: center;">0.84</td>
-<td style="text-align: center;">0.91<!-- $removenext="3" --></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">0.91<!-- $removenext="2" --></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
@@ -904,15 +854,13 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><em>MYOZ1</em></td>
-<td style="text-align: center;">0.10<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.09</td>
 <td style="text-align: center;">0.17</td>
 <td style="text-align: center;">0.37</td>
-<td style="text-align: center;">0.01<!-- $rowspan="2" --></td>
+<td style="text-align: center;">Skeletal muscle<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.11</td>
 <td style="text-align: center;">0.11</td>
 <td style="text-align: center;">0.12</td>
@@ -924,8 +872,7 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 <td style="text-align: center;">0.44</td>
 <td style="text-align: center;">0.10</td>
 <td style="text-align: center;">0.11</td>
-<td style="text-align: center;">0.12<!-- $removenext="3" --></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">0.12<!-- $removenext="2" --></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
@@ -937,15 +884,13 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><em>PYGM</em></td>
-<td style="text-align: center;">0.05<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.02</td>
 <td style="text-align: center;">0.04</td>
 <td style="text-align: center;">0.14</td>
-<td style="text-align: center;">0.01<!-- $rowspan="2" --></td>
+<td style="text-align: center;">Skeletal muscle<!-- $rowspan="2" --></td>
 <td style="text-align: center;">0.01</td>
 <td style="text-align: center;">0.02</td>
 <td style="text-align: center;">0.04</td>
@@ -957,31 +902,28 @@ For each gene pair, also the direct interaction coefficient in each cell type is
 <td style="text-align: center;">0.80</td>
 <td style="text-align: center;">0.01</td>
 <td style="text-align: center;">0.28</td>
-<td style="text-align: center;">0.47<!-- $removenext="3" --></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">0.47<!-- $removenext="2" --></td>
 <td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="fig:giant_gene_pairs:pred_tissue" class="fignos">
-<figure>
-<img src="images/coefs_comp/giant_networks/auto_selected_tissues/main.svg" style="width:100.0%" alt="Figure 9: Predicted tissue-specific networks from GIANT for six gene pairs prioritized by correlation coefficients. Gene pairs are from Figure 3 b. A node represents a gene and an edge the probability that two genes are part of the same biological process in a specific cell type. The cell type for each gene network was automatically predicted using [75] and it is indicated at the top-right corner of each network. A maximum of 15 genes are shown for each subfigure. The GIANT web application automatically determined a minimum interaction confidence (edges’s weights) to be shown. All these analyses can be performed online using the following links: IFNG - SDS [50], JUN - APOC1 [51], ZDHHC12 - CCL18 [52], RASSF2 - CYTIP [53], MYOZ1 - TNNI2 [54], PYGM - TPM2 [55]. The GIANT web-server was accessed on April 4, 2022." /><figcaption aria-hidden="true"><span>Figure 9:</span> <strong>Predicted tissue-specific networks from GIANT for six gene pairs prioritized by correlation coefficients.</strong>
-Gene pairs are from Figure <a href="#fig:upsetplot_coefs">3</a> b.
+<!-- ![
+**Predicted tissue-specific networks from GIANT for six gene pairs prioritized by correlation coefficients.**
+Gene pairs are from Figure @fig:upsetplot_coefs b.
 A node represents a gene and an edge the probability that two genes are part of the same biological process in a specific cell type.
-The cell type for each gene network was automatically predicted using <span class="citation" data-cites="mk4SLpDo">[<a href="#ref-mk4SLpDo" role="doc-biblioref">75</a>]</span> and it is indicated at the top-right corner of each network.
+The cell type for each gene network was automatically predicted using [@doi:10.1101/gr.155697.113], and it is indicated at the top-right corner of each network.
 A maximum of 15 genes are shown for each subfigure.
-The GIANT web application automatically determined a minimum interaction confidence (edges’s weights) to be shown.
+The GIANT web application automatically determined a minimum interaction confidence (edges' weights) to be shown.
 All these analyses can be performed online using the following links:
-<em>IFNG</em> - <em>SDS</em> <span class="citation" data-cites="KcdwueBe">[<a href="#ref-KcdwueBe" role="doc-biblioref">50</a>]</span>,
-<em>JUN</em> - <em>APOC1</em> <span class="citation" data-cites="fNQkvQLg">[<a href="#ref-fNQkvQLg" role="doc-biblioref">51</a>]</span>,
-<em>ZDHHC12</em> - <em>CCL18</em> <span class="citation" data-cites="7U8Feifj">[<a href="#ref-7U8Feifj" role="doc-biblioref">52</a>]</span>,
-<em>RASSF2</em> - <em>CYTIP</em> <span class="citation" data-cites="FKQEHB1F">[<a href="#ref-FKQEHB1F" role="doc-biblioref">53</a>]</span>,
-<em>MYOZ1</em> - <em>TNNI2</em> <span class="citation" data-cites="JpfbR0un">[<a href="#ref-JpfbR0un" role="doc-biblioref">54</a>]</span>,
-<em>PYGM</em> - <em>TPM2</em> <span class="citation" data-cites="irsTxKvs">[<a href="#ref-irsTxKvs" role="doc-biblioref">55</a>]</span>.
-The GIANT web-server was accessed on April 4, 2022.</figcaption>
-</figure>
-</div>
+*IFNG* - *SDS* [@url:https://hb.flatironinstitute.org/gene/10993+3458],
+*JUN* - *APOC1* [@url:https://hb.flatironinstitute.org/gene/3725+341],
+*ZDHHC12* - *CCL18* [@url:https://hb.flatironinstitute.org/gene/6362+84885],
+*RASSF2* - *CYTIP* [@url:https://hb.flatironinstitute.org/gene/9770+9595],
+*MYOZ1* - *TNNI2* [@url:https://hb.flatironinstitute.org/gene/58529+7136],
+*PYGM* - *TPM2* [@url:https://hb.flatironinstitute.org/gene/5837+7169].
+The GIANT web-server was accessed on April 4, 2022.
+](images/coefs_comp/giant_networks/auto_selected_tissues/main.svg "GIANT network interaction"){#fig:giant_gene_pairs:pred_tissue width="100%"} -->
 <!-- default theme -->
 
 <style>
