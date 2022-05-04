@@ -5,8 +5,6 @@
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://greenelab.github.io/ccc-manuscript/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://greenelab.github.io/ccc-manuscript/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/greenelab/ccc-manuscript/workflows/Manubot/badge.svg)](https://github.com/greenelab/ccc-manuscript/actions)
-[![Travis Build Status](https://travis-ci.com/greenelab/ccc-manuscript.svg?branch=main)](https://travis-ci.com/greenelab/ccc-manuscript)
-<!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
 
@@ -118,4 +116,4 @@ All other files are only available under CC BY 4.0, including:
 + `*.pdf`
 + `*.docx`
 
-Please open [an issue](https://github.com/greenelab/clustermatch-gene-expr-manuscript/issues) for any question related to licensing.
+Please open [an issue](https://github.com/greenelab/ccc-manuscript/issues) for any question related to licensing.
