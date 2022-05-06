@@ -5,7 +5,7 @@ keywords:
 - nonlinear relationships
 - gene expression
 lang: en-US
-date-meta: '2022-04-25'
+date-meta: '2022-05-06'
 author-meta:
 - Milton Pividori
 - Marylyn D. Ritchie
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="og:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="twitter:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
-  <meta name="dc.date" content="2022-04-25" />
-  <meta name="citation_publication_date" content="2022-04-25" />
+  <meta name="dc.date" content="2022-05-06" />
+  <meta name="citation_publication_date" content="2022-05-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -46,15 +46,15 @@ header-includes: |-
   <meta name="citation_author_institution" content="Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA" />
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
   <meta name="twitter:creator" content="@GreeneScientist" />
-  <link rel="canonical" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
-  <meta property="og:url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
-  <meta property="twitter:url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
-  <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/" />
-  <meta name="citation_pdf_url" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/c8f78eca62b55bec2594f92a05203c13095af188/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/c8f78eca62b55bec2594f92a05203c13095af188/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/c8f78eca62b55bec2594f92a05203c13095af188/manuscript.pdf" />
+  <link rel="canonical" href="https://greenelab.github.io/ccc-manuscript/" />
+  <meta property="og:url" content="https://greenelab.github.io/ccc-manuscript/" />
+  <meta property="twitter:url" content="https://greenelab.github.io/ccc-manuscript/" />
+  <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/ccc-manuscript/" />
+  <meta name="citation_pdf_url" content="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/aec2aeb68b0c0422a8738ea6171dee898fda76ef/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/aec2aeb68b0c0422a8738ea6171dee898fda76ef/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/aec2aeb68b0c0422a8738ea6171dee898fda76ef/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -76,10 +76,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/clustermatch-gene-expr-manuscript/v/c8f78eca62b55bec2594f92a05203c13095af188/))
+([permalink](https://greenelab.github.io/ccc-manuscript/v/aec2aeb68b0c0422a8738ea6171dee898fda76ef/))
 was automatically generated
-from [greenelab/clustermatch-gene-expr-manuscript@c8f78ec](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/c8f78eca62b55bec2594f92a05203c13095af188)
-on April 25, 2022.
+from [greenelab/ccc-manuscript@aec2aeb](https://github.com/greenelab/ccc-manuscript/tree/aec2aeb68b0c0422a8738ea6171dee898fda76ef)
+on May 6, 2022.
 </em></small>
 
 [

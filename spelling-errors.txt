@@ -24,7 +24,7 @@ discretized
 dmilone
 ENSG
 GBMF
-genotype
+Genotype
 GPUs
 GreeneScientist
 GTEx
@@ -38,7 +38,7 @@ JASPAR
 KDM
 KLHL
 Litoral
-macrophage
+Macrophage
 Marylyn
 MarylynRitchie
 microRNA
@@ -79,7 +79,7 @@ transcriptomic
 transcriptomics
 Universidad
 upsetplot
-uty
+UTY
 Xp
 Yq
 ZDHHC
