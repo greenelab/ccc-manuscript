@@ -1,4 +1,4 @@
-# Automated scholarly manuscripts on GitHub
+# An efficient not-only-linear correlation coefficient based on machine learning
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
@@ -6,12 +6,9 @@
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://greenelab.github.io/ccc-manuscript/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/greenelab/ccc-manuscript/workflows/Manubot/badge.svg)](https://github.com/greenelab/ccc-manuscript/actions)
 
-## Manuscript description
+This is the manuscript repository of the Clustermatch Correlation Coefficient (CCC), a highly-efficient, next-generation not-only-linear correlation coefficient that can readily be applied to genome-scale data and other domains across different data types. The source code repository, with installation instructions for CCC, can be found [here](https://github.com/greenelab/ccc).
 
-<!-- usage note: edit this section. -->
-
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+Check out the manuscript using the links above!
 
 ## Manubot
 
