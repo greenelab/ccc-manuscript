@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="96.458961mm"
+   height="1.9486659mm"
+   viewBox="0 0 96.458961 1.9486659"
+   version="1.1"
+   id="svg901"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="color_bar_raw.svg"
+   inkscape:export-filename="/home/miltondp/projects/labs/greenelab/clustermatch_repos/clustermatch-gene-expr-manuscript/content/images/coefs_comp/giant_networks/blood_tissues/gene_pair_networks/color_bar_raw.png"
+   inkscape:export-xdpi="299.79486"
+   inkscape:export-ydpi="299.79486">
+  <defs
+     id="defs895">
+    <linearGradient
+       gradientTransform="translate(63.291567,-53.812908)"
+       inkscape:collect="always"
+       xlink:href="#legend2-1"
+       id="linearGradient858"
+       x1="-68.809738"
+       y1="-95.020424"
+       x2="27.649223"
+       y2="-95.020424"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="legend2-1"
+       x1="3.5533452"
+       y1="0"
+       x2="73.909584"
+       y2="0"
+       spreadMethod="pad"
+       gradientTransform="matrix(1.371008,0,0,0.02769713,-73.681399,-95.994762)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(44, 160, 44);"
+         id="stop2-9" />
+      <stop
+         offset="25%"
+         style="stop-color: rgb(228, 164, 76);"
+         id="stop4-6" />
+      <stop
+         offset="50%"
+         style="stop-color: rgb(219, 109, 61);"
+         id="stop6-9" />
+      <stop
+         offset="75%"
+         style="stop-color: rgb(211, 55, 47);"
+         id="stop8-3" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(202, 0, 32);"
+         id="stop10-3" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="197.60592"
+     inkscape:cy="1.4755019"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1714"
+     inkscape:window-height="1371"
+     inkscape:window-x="4"
+     inkscape:window-y="28"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata898">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(90.94079,-147.859)">
+    <rect
+       width="96.458961"
+       height="1.9486659"
+       x="-5.5181713"
+       y="-149.80766"
+       id="rect15"
+       style="fill:url(#linearGradient858);fill-opacity:1;stroke-width:0.194867"
+       transform="scale(-1)" />
+  </g>
+</svg>
