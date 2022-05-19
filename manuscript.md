@@ -52,9 +52,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/ccc-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/c319069a743831dbd559a73a6bbcf2e825723ae0/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/c319069a743831dbd559a73a6bbcf2e825723ae0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/c319069a743831dbd559a73a6bbcf2e825723ae0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/6ac59927c82858ca50c2f7bb0ab199b4b158ecbb/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/6ac59927c82858ca50c2f7bb0ab199b4b158ecbb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/6ac59927c82858ca50c2f7bb0ab199b4b158ecbb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -76,9 +76,9 @@ manubot-clear-requests-cache: false
 <!-- 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/ccc-manuscript/v/c319069a743831dbd559a73a6bbcf2e825723ae0/))
+([permalink](https://greenelab.github.io/ccc-manuscript/v/6ac59927c82858ca50c2f7bb0ab199b4b158ecbb/))
 was automatically generated
-from [greenelab/ccc-manuscript@c319069](https://github.com/greenelab/ccc-manuscript/tree/c319069a743831dbd559a73a6bbcf2e825723ae0)
+from [greenelab/ccc-manuscript@6ac5992](https://github.com/greenelab/ccc-manuscript/tree/6ac59927c82858ca50c2f7bb0ab199b4b158ecbb)
 on May 19, 2022.
 </em></small> -->
 
@@ -403,8 +403,7 @@ We provide scripts to download the required data and run all the steps.
 A Docker image is provided to use the same runtime environment.
 
 
-
-### The CCC algorithm {#sec:ccc_algo}
+### The CCC algorithm {#sec:ccc_algo .page_break_before}
 
 The Clustermatch Correlation Coefficient (CCC) computes a similarity value $c \in \left[0,1\right]$ between any pair of numerical or categorical features/variables $\mathbf{x}$ and $\mathbf{y}$ measured on $n$ objects.
 CCC assumes that if two features $\mathbf{x}$ and $\mathbf{y}$ are similar, then the partitioning by clustering of the $n$ objects using each feature separately should match.
@@ -544,7 +543,7 @@ This suggests that new implementations using more advanced processing units (suc
 
 
 | | **Interaction confidence** <!-- $colspan="7" -->    | | | | | | |
-|:------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|:------:|:-----:|:-----:|:-----:|:--------:|:-----:|:-----:|:-----:|
 | | **Blood** <!-- $colspan="3" --> | | | **Predicted cell type** <!-- $colspan="4" --> | | | |
 | **Gene** |  **Min.** | **Avg.** | **Max.** |  **Cell type** | **Min.** | **Avg.** | **Max.** |
 | *IFNG* | 0.19 | 0.42 | 0.54 | Natural killer cell<!-- $rowspan="2" --> | 0.74 | 0.90 | 0.99 |
