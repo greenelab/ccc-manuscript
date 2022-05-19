@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="410.49249"
+   width="411.28638"
+   version="1.1"
+   id="svg252"
+   sodipodi:docname="GIANT-MYOZ1_vs_TNNI2-blood.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata164">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs256">
+    <linearGradient
+       id="legend2"
+       x1="3.5533452"
+       y1="0"
+       x2="73.909584"
+       y2="0"
+       spreadMethod="pad"
+       gradientTransform="matrix(4.9990019,0,0,0.10098994,22.321037,410.78561)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(44, 160, 44);"
+         id="stop2" />
+      <stop
+         offset="25%"
+         style="stop-color: rgb(228, 164, 76);"
+         id="stop4" />
+      <stop
+         offset="50%"
+         style="stop-color: rgb(219, 109, 61);"
+         id="stop6" />
+      <stop
+         offset="75%"
+         style="stop-color: rgb(211, 55, 47);"
+         id="stop8" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(202, 0, 32);"
+         id="stop10" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1221">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.35509;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.35509, 16.261;stroke-dashoffset:0"
+         id="rect1223"
+         width="403.2023"
+         height="396.51294"
+         x="74.897202"
+         y="130.29227" />
+    </clipPath>
+    <linearGradient
+       id="legend2-1"
+       x1="3.5533452"
+       y1="0"
+       x2="73.909584"
+       y2="0"
+       spreadMethod="pad"
+       gradientTransform="matrix(7.0356236,0,0,0.14213381,-25,15.27081)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(44, 160, 44);"
+         id="stop2-9" />
+      <stop
+         offset="25%"
+         style="stop-color: rgb(228, 164, 76);"
+         id="stop4-6" />
+      <stop
+         offset="50%"
+         style="stop-color: rgb(219, 109, 61);"
+         id="stop6-9" />
+      <stop
+         offset="75%"
+         style="stop-color: rgb(211, 55, 47);"
+         id="stop8-3" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(202, 0, 32);"
+         id="stop10-3" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1771">
+      <rect
+         style="fill:#fefefe;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:10, 5;stroke-dashoffset:0"
+         id="rect1773"
+         width="438.29736"
+         height="449.99292"
+         x="41.806408"
+         y="86.000839" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3450">
+      <rect
+         style="fill:#fefefe;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:10, 5;stroke-dashoffset:0"
+         id="rect3452"
+         width="436.6178"
+         height="500.89938"
+         x="56.287468"
+         y="49.557167" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4168">
+      <rect
+         style="fill:#fefefe;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:10, 5;stroke-dashoffset:0"
+         id="rect4170"
+         width="458.97461"
+         height="459.98932"
+         x="35.95993"
+         y="74.78331" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4884">
+      <rect
+         style="fill:#fefefe;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:10, 5;stroke-dashoffset:0"
+         id="rect4886"
+         width="481.69214"
+         height="472.88062"
+         x="20.610344"
+         y="62.696053" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5331">
+      <rect
+         style="fill:#fefefe;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:10, 5;stroke-dashoffset:0"
+         id="rect5333"
+         width="468.5484"
+         height="465.58652"
+         x="32.712112"
+         y="57.513329" />
+    </clipPath>
+    <clipPath
+       id="clipPath1223"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         y="131.69157"
+         x="29.662529"
+         height="360.44467"
+         width="380.2197"
+         id="rect1225"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1, 6;stroke-dashoffset:0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1005"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         y="60.681267"
+         x="30.561396"
+         height="424.26407"
+         width="430.55612"
+         id="rect1007"
+         style="fill:#ffffff;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3, 18;stroke-dashoffset:0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1005-3"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         y="65.175591"
+         x="47.63982"
+         height="408.98334"
+         width="414.37656"
+         id="rect1007-6"
+         style="fill:#ffffff;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3, 18;stroke-dashoffset:0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview254"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.4066667"
+     inkscape:cx="49.052128"
+     inkscape:cy="117.29858"
+     inkscape:window-width="1714"
+     inkscape:window-height="1371"
+     inkscape:window-x="4"
+     inkscape:window-y="28"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg252"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="349.32358"
+     y="17.263689"
+     id="text1801"><tspan
+       sodipodi:role="line"
+       id="tspan1799"
+       x="349.32358"
+       y="17.263689"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.66666667px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start">Blood</tspan></text>
+  <g
+     transform="matrix(0.9878325,0,0,0.9878325,-44.270512,-61.301169)"
+     clip-path="url(#clipPath1005-3)"
+     id="g188">
+    <rect
+       y="0"
+       x="0"
+       id="rect2"
+       style="fill:none"
+       height="600"
+       width="440"
+       class="canvas" />
+    <g
+       id="g186">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#9eb043;stroke-width:1"
+         d="m 89.445092,345.24488 c 0,0 -33.125796,-128.95114 4.584254,-242.07067"
+         id="246"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b551;stroke-width:1"
+         d="m 89.445092,345.24488 c 0,0 -57.043612,-48.94251 -10.878251,-117.40587"
+         id="248"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#a8b145;stroke-width:1"
+         d="m 89.445092,345.24488 c 0,0 -5.065387,54.56431 69.597098,17.57722"
+         id="252"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e4a94d;stroke-width:1"
+         d="m 89.445092,345.24488 c 0,0 153.869628,81.25379 314.966078,105.99165"
+         id="255"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 89.445092,345.24488 c 0,0 8.656531,-48.75081 89.981398,-90.84152"
+         id="289"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#c4b54b;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 -51.269714,55.05801 -15.462505,124.6648"
+         id="337"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#a2b044;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 14.575334,129.06407 65.012844,259.64789"
+         id="341"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#aeb246;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 128.726864,52.83147 262.279114,130.79654"
+         id="342"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#acb246;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 145.699984,169.60362 310.381824,348.06232"
+         id="344"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e08a45;stroke-width:1.00977004"
+         d="m 94.029346,103.17421 c 0,0 -10.707736,46.57716 83.651014,66.01666"
+         id="346"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#adb246;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 78.314694,-17.345315 162.173154,25.8308"
+         id="352"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e29749;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 100.372234,16.95538 209.880584,62.63251"
+         id="367"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e39f4b;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 43.426114,-45.802449 118.592804,-8.311519"
+         id="370"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e1b951;stroke-width:1"
+         d="m 94.029346,103.17421 c 0,0 60.662634,95.56517 148.863754,190.0992"
+         id="379"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b751;stroke-width:1"
+         d="m 78.566841,227.83901 c 0,0 154.321849,125.84615 325.844329,223.39752"
+         id="429"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#adb246;stroke-width:1"
+         d="m 78.566841,227.83901 c 0,0 41.487849,-77.53453 134.055309,-132.976319"
+         id="455"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 78.566841,227.83901 c 0,0 9.596649,45.62293 100.859649,26.56435"
+         id="463"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#9eb043;stroke-width:1"
+         d="m 78.566841,227.83901 c 0,0 66.551909,40.43261 164.326259,65.4344"
+         id="464"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 -102.39036,31.84372 -170.79642,9.59267"
+         id="546"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e7b852;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 48.66784,-66.29513 26.46985,-119.25868"
+         id="547"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e7ba52;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 33.11171,65.9343 -9.18272,91.33715"
+         id="548"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e4a74d;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 21.22566,87.11448 74.57256,98.0071"
+         id="549"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e7b952;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 76.1791,-57.34345 83.83956,-121.308"
+         id="560"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#adb246;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 -48.23071,71.1589 -112.79779,87.88911"
+         id="568"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#adb246;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 -18.8881,-96.47045 -25.92868,-187.42271"
+         id="572"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#9aaf42;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 73.27356,30.88149 100.50497,-22.87644"
+         id="573"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e1b951;stroke-width:1"
+         d="m 329.83861,353.22943 c 0,0 -67.4576,-4.80338 -86.94551,-59.95602"
+         id="584"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e3a04b;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 90.92932,-56.52131 197.26627,-128.85135"
+         id="585"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#b7b348;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 43.55163,80.87539 161.6137,81.74448"
+         id="586"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e19448;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 113.41523,80.49668 245.36898,88.41443"
+         id="587"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bcb449;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 123.78626,-67.91103 254.63598,-130.90067"
+         id="598"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b350;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 -19.53654,74.97231 57.99863,78.29644"
+         id="606"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b350;stroke-width:1"
+         d="m 159.04219,362.8221 c 0,0 3.73005,-42.59475 83.85091,-69.54869"
+         id="622"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#dc713e;stroke-width:1.33089995"
+         d="m 356.30846,233.97075 c 0,0 -6.39918,112.16324 -35.65257,210.59583"
+         id="623"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b450;stroke-width:1"
+         d="m 356.30846,233.97075 c 0,0 48.03678,112.99504 48.10271,217.26578"
+         id="624"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 356.30846,233.97075 c 0,0 -30.34845,-86.08495 -100.10596,-104.96574"
+         id="632"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bfb44a;stroke-width:1"
+         d="m 356.30846,233.97075 c 0,0 62.62008,-51.47745 57.36971,-2.04932"
+         id="635"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#dab84f;stroke-width:1"
+         d="m 356.30846,233.97075 c 0,0 4.70907,-78.2272 -52.39853,-68.16403"
+         id="647"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e5ac4e;stroke-width:1"
+         d="m 356.30846,233.97075 c 0,0 -74.50187,2.93208 -113.41536,59.30266"
+         id="659"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#dd7b41;stroke-width:1.20081997"
+         d="m 320.65589,444.56658 c 0,0 42.52298,59.28001 83.75528,6.66995"
+         id="660"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#ddb950;stroke-width:1"
+         d="m 320.65589,444.56658 c 0,0 60.812,-98.33987 93.02228,-212.64515"
+         id="671"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#9aaf42;stroke-width:1"
+         d="m 320.65589,444.56658 c 0,0 -66.75575,55.27847 -103.61507,-3.44804"
+         id="679"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#a1b044;stroke-width:1"
+         d="m 320.65589,444.56658 c 0,0 81.26199,-27.30421 109.68769,-114.21359"
+         id="684"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b450;stroke-width:1"
+         d="m 320.65589,444.56658 c 0,0 -61.84197,-57.94334 -77.76279,-151.29317"
+         id="695"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 -65.72446,-159.97125 -148.20867,-322.23152"
+         id="703"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e5ad4e;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 39.27652,-101.92915 9.267,-219.3151"
+         id="706"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e4a94d;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 -93.88582,36.12027 -187.37035,-10.11799"
+         id="714"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#acb246;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 -36.45763,-139.73844 -100.50124,-285.42981"
+         id="718"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e4a84d;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 52.83264,-42.85012 25.93241,-120.88354"
+         id="719"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e5ac4e;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 -112.60782,-80.66696 -224.98468,-196.83317"
+         id="729"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e4a94d;stroke-width:1"
+         d="m 404.41117,451.23653 c 0,0 -85.28038,-62.05047 -161.51807,-157.96312"
+         id="730"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#a3b144;stroke-width:1"
+         d="m 177.68036,169.19087 c 0,0 -31.47067,-69.88318 34.94179,-74.328179"
+         id="788"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#cab64c;stroke-width:1"
+         d="m 256.2025,129.00501 c 0,0 42.84228,-38.258775 47.70743,36.80171"
+         id="962"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#bdb449;stroke-width:1"
+         d="m 256.2025,129.00501 c 0,0 103.45488,79.1783 174.14108,201.34798"
+         id="963"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e5b04f;stroke-width:1"
+         d="m 256.2025,129.00501 c 0,0 -31.79989,75.82202 -13.3094,164.2684"
+         id="974"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#9eb043;stroke-width:1"
+         d="m 413.67817,231.92143 c 0,0 -27.52925,-71.07371 -109.76824,-66.11471"
+         id="1037"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#c5b54b;stroke-width:1"
+         d="m 413.67817,231.92143 c 0,0 55.81437,36.06079 16.66541,98.43156"
+         id="1038"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e6b250;stroke-width:1"
+         d="m 413.67817,231.92143 c 0,0 -113.48986,-15.91421 -234.25168,22.48193"
+         id="1048"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#d1b74e;stroke-width:1"
+         d="m 413.67817,231.92143 c 0,0 -84.54262,13.93371 -170.78507,61.35198"
+         id="1049"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e19548;stroke-width:1"
+         d="m 217.04082,441.11854 c 0,0 -28.00833,-68.25042 25.85228,-147.84513"
+         id="1205"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#db703e;stroke-width:1.34012997"
+         d="m 303.90993,165.80672 c 0,0 -52.41754,48.16709 -61.01683,127.46669"
+         id="1259"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#c7b64c;stroke-width:1"
+         d="m 430.34358,330.35299 c 0,0 -99.85121,-16.16549 -187.45048,-37.07958"
+         id="1270"
+         class="edge" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#e5ae4f;stroke-width:1"
+         d="m 179.42649,254.40336 c 0,0 -11.58762,46.46542 63.46661,38.87005"
+         id="1325"
+         class="edge" />
+      <g
+         transform="translate(320.65589,444.56658)"
+         cy="444.5665791798483"
+         cx="320.65588853265075"
+         id="7134"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle67"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect69"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="48.5625"
+           y="-27"
+           x="-24.78125"
+           ry="5"
+           rx="5" />
+        <text
+           id="text71"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">TNNC1</text>
+      </g>
+      <g
+         transform="translate(159.04219,362.8221)"
+         cy="362.82210395648667"
+         cx="159.04219407253527"
+         id="7140"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle74"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect76"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="47.734375"
+           y="-27"
+           x="-24.367188"
+           ry="5"
+           rx="5" />
+        <text
+           id="text78"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">TNNT3</text>
+      </g>
+      <g
+         transform="translate(303.90993,165.80672)"
+         cy="165.80672320306758"
+         cx="303.9099349239227"
+         id="88"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle81"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect83"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="47.15625"
+           y="-27"
+           x="-23.578125"
+           ry="5"
+           rx="5" />
+        <text
+           id="text85"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">ACTN2</text>
+      </g>
+      <g
+         transform="translate(177.68036,169.19087)"
+         cy="169.19087132062262"
+         cx="177.6803614957783"
+         id="4110"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle88"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect90"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="68.0625"
+           y="-27"
+           x="-34.03125"
+           ry="5"
+           rx="5" />
+        <text
+           id="text92"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">MAGEA11</text>
+      </g>
+      <g
+         transform="translate(242.8931,293.27341)"
+         cy="293.27341258872246"
+         cx="242.89309536954363"
+         id="7273"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle95"
+           style="stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect97"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="29.046875"
+           y="-27"
+           x="-15.023438"
+           ry="5"
+           rx="5" />
+        <text
+           id="text99"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">TTN</text>
+      </g>
+      <g
+         transform="translate(89.445092,345.24488)"
+         cy="345.2448828026208"
+         cx="89.44509237865408"
+         id="124599"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle102"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect104"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="62.890625"
+           y="-27"
+           x="-31.445312"
+           ry="5"
+           rx="5" />
+        <text
+           id="text106"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">CD300LB</text>
+      </g>
+      <g
+         transform="translate(329.83861,353.22943)"
+         cy="353.2294307903945"
+         cx="329.83860994143816"
+         id="1674"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle109"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect111"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="27.885925"
+           y="-27"
+           x="-13.867188"
+           ry="5"
+           rx="5" />
+        <text
+           id="text113"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">DES</text>
+      </g>
+      <g
+         transform="translate(217.04082,441.11854)"
+         cy="441.11853643784264"
+         cx="217.040823108419"
+         id="84676"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle116"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect118"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="52.203125"
+           y="-27"
+           x="-26.601562"
+           ry="5"
+           rx="5" />
+        <text
+           id="text120"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">TRIM63</text>
+      </g>
+      <g
+         transform="translate(179.42649,254.40336)"
+         cy="254.40335518423396"
+         cx="179.42648882390904"
+         id="9659"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle123"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect125"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="60.3125"
+           y="-27"
+           x="-30.15625"
+           ry="5"
+           rx="5" />
+        <text
+           id="text127"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">PDE4DIP</text>
+      </g>
+      <g
+         transform="translate(430.34358,330.35299)"
+         cy="330.3529945479827"
+         cx="430.3435821019262"
+         id="755"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle130"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect132"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="53.765625"
+           y="-27"
+           x="-26.882812"
+           ry="5"
+           rx="5" />
+        <text
+           id="text134"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">C21orf2</text>
+      </g>
+      <g
+         transform="translate(256.2025,129.00501)"
+         cy="129.0050064417617"
+         cx="256.2024986968947"
+         id="1158"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle137"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect139"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="30.984375"
+           y="-27"
+           x="-15.492188"
+           ry="5"
+           rx="5" />
+        <text
+           id="text141"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">CKM</text>
+      </g>
+      <g
+         transform="translate(78.566841,227.83901)"
+         cy="227.8390116320323"
+         cx="78.56684142102158"
+         id="64581"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle144"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect146"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="54.65181"
+           y="-27"
+           x="-27.039062"
+           ry="5"
+           rx="5" />
+        <text
+           id="text148"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">CLEC7A</text>
+      </g>
+      <g
+         transform="translate(212.62215,94.862691)"
+         cy="94.86269116878151"
+         cx="212.62215040885383"
+         id="87"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle151"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect153"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="47.15625"
+           y="-27"
+           x="-23.578125"
+           ry="5"
+           rx="5" />
+        <text
+           id="text155"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">ACTN1</text>
+      </g>
+      <g
+         transform="translate(356.30846,233.97075)"
+         cy="233.9707471923099"
+         cx="356.3084622339019"
+         id="7135"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle158"
+           style="stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect160"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="43"
+           y="-27"
+           x="-22"
+           ry="5"
+           rx="5" />
+        <text
+           id="text162"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">TNNI1</text>
+      </g>
+      <g
+         transform="translate(413.67817,231.92143)"
+         cy="231.9214316177529"
+         cx="413.6781694165508"
+         id="4684"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle165"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="8"
+           class="gene" />
+        <rect
+           id="rect167"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="50.75"
+           y="-27"
+           x="-25.375"
+           ry="5"
+           rx="5" />
+        <text
+           id="text169"
+           style="text-anchor:middle"
+           y="-13"
+           class="gene-name">NCAM1</text>
+      </g>
+      <g
+         transform="translate(94.029346,103.17421)"
+         cy="103.17420736075954"
+         cx="94.02934603067428"
+         id="58529"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle172"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="15"
+           class="gene gene-query" />
+        <rect
+           id="rect174"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="47.859375"
+           y="-34"
+           x="-23.929688"
+           ry="5"
+           rx="5" />
+        <text
+           id="text176"
+           style="text-anchor:middle"
+           y="-20"
+           class="gene-name">
+          <tspan
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00001021px;text-anchor:middle;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+             id="tspan1429">MYOZ1</tspan>
+        </text>
+      </g>
+      <g
+         transform="translate(404.41117,451.23653)"
+         cy="451.23653496209585"
+         cx="404.41117369846995"
+         id="7136"
+         class="gene-group">
+        <circle
+           cy="0"
+           cx="0"
+           id="circle179"
+           style="stroke:#aaaaaa;stroke-width:1"
+           r="15"
+           class="gene gene-query" />
+        <rect
+           id="rect181"
+           style="opacity:0.5;fill:#ffffff"
+           height="19"
+           width="43"
+           y="-34"
+           x="-22"
+           ry="5"
+           rx="5" />
+        <text
+           id="text183"
+           style="text-anchor:middle"
+           y="-20"
+           class="gene-name">
+          <tspan
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00001021px;text-anchor:middle;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+             id="tspan1431">TNNI2</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
