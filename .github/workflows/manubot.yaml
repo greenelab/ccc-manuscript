@@ -75,6 +75,17 @@ jobs:
           key: ci-cache-${{ github.ref }}
           restore-keys: |
             ci-cache-${{ env.DEFAULT_BRANCH_REF }}
+      - name: Install OS packages
+        if: 
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          apt-get update
+
+          # rsvg-convert is needed for DOCX conversion of SVG images
+          apt-get install -y --no-install-recommends librsvg2-bin
+
+          apt-get clean
       - name: Install Environment
         uses: conda-incubator/setup-miniconda@v2
         with:
