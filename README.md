@@ -1,17 +1,14 @@
-# Automated scholarly manuscripts on GitHub
+# An efficient not-only-linear correlation coefficient based on machine learning
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
-[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://greenelab.github.io/clustermatch-gene-expr-manuscript/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf)
-[![GitHub Actions Status](https://github.com/greenelab/clustermatch-gene-expr-manuscript/workflows/Manubot/badge.svg)](https://github.com/greenelab/clustermatch-gene-expr-manuscript/actions)
+[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://greenelab.github.io/ccc-manuscript/)
+[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://greenelab.github.io/ccc-manuscript/manuscript.pdf)
+[![GitHub Actions Status](https://github.com/greenelab/ccc-manuscript/workflows/Manubot/badge.svg)](https://github.com/greenelab/ccc-manuscript/actions)
 
-## Manuscript description
+This is the manuscript repository of the Clustermatch Correlation Coefficient (CCC), a highly-efficient, next-generation not-only-linear correlation coefficient that can readily be applied to genome-scale data and other domains across different data types. The source code repository, with installation instructions for CCC, can be found [here](https://github.com/greenelab/ccc).
 
-<!-- usage note: edit this section. -->
-
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+Check out the manuscript using the links above!
 
 ## Manubot
 
@@ -77,11 +74,11 @@ Whenever a pull request is opened, CI (continuous integration) will test whether
 The build process aims to detect common errors, such as invalid citations.
 If your pull request build fails, see the CI logs for the cause of failure and revise your pull request accordingly.
 
-When a commit to the `main` branch occurs (for example, when a pull request is merged), CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/gh-pages) and [`output`](https://github.com/greenelab/clustermatch-gene-expr-manuscript/tree/output) branches.
+When a commit to the `main` branch occurs (for example, when a pull request is merged), CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/greenelab/ccc-manuscript/tree/gh-pages) and [`output`](https://github.com/greenelab/ccc-manuscript/tree/output) branches.
 The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the following URLs:
 
-+ **HTML manuscript** at https://greenelab.github.io/clustermatch-gene-expr-manuscript/
-+ **PDF manuscript** at https://greenelab.github.io/clustermatch-gene-expr-manuscript/manuscript.pdf
++ **HTML manuscript** at https://greenelab.github.io/ccc-manuscript/
++ **PDF manuscript** at https://greenelab.github.io/ccc-manuscript/manuscript.pdf
 
 For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml).
 
@@ -96,7 +93,7 @@ We encourage users to openly license their manuscripts, which is the default as 
 [![License: CC0 1.0](https://img.shields.io/badge/License%20Parts-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 Except when noted otherwise, the entirety of this repository is licensed under a CC BY 4.0 License ([`LICENSE.md`](LICENSE.md)), which allows reuse with attribution.
-Please attribute by linking to https://github.com/greenelab/clustermatch-gene-expr-manuscript.
+Please attribute by linking to https://github.com/greenelab/ccc-manuscript.
 
 Since CC BY is not ideal for code and data, certain repository components are also released under the CC0 1.0 public domain dedication ([`LICENSE-CC0.md`](LICENSE-CC0.md)).
 All files matched by the following glob patterns are dual licensed under CC BY 4.0 and CC0 1.0:
@@ -116,4 +113,4 @@ All other files are only available under CC BY 4.0, including:
 + `*.pdf`
 + `*.docx`
 
-Please open [an issue](https://github.com/greenelab/clustermatch-gene-expr-manuscript/issues) for any question related to licensing.
+Please open [an issue](https://github.com/greenelab/ccc-manuscript/issues) for any question related to licensing.

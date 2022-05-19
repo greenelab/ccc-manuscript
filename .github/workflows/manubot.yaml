@@ -40,7 +40,8 @@ jobs:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
       # Set SPELLCHECK to true/false for whether to check spelling in this action.
       # For workflow dispatch jobs, this SPELLCHECK setting will be overridden by the user input.
-      SPELLCHECK: true
+      SPELLCHECK: false
+      BUILD_DOCX: true
     defaults:
       run:
         shell: bash --login {0}
@@ -74,6 +75,15 @@ jobs:
           key: ci-cache-${{ github.ref }}
           restore-keys: |
             ci-cache-${{ env.DEFAULT_BRANCH_REF }}
+      # - name: Install OS packages
+      #   if: 
+      #   env:
+      #     DEBIAN_FRONTEND: noninteractive
+      #   run: |
+      #     sudo apt-get update
+      #
+      #     # rsvg-convert is needed for DOCX conversion of SVG images
+      #     sudo apt-get install -y --no-install-recommends librsvg2-bin
       - name: Install Environment
         uses: conda-incubator/setup-miniconda@v2
         with:
