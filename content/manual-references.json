@@ -37,5 +37,88 @@
         "page": "1-63",
         "title": "Measuring Dependence Powerfully and Equitably",
         "URL": "https://jmlr.org/papers/v17/15-308.html"
+      },
+      {
+        "type": "article-journal",
+        "id": "Sklearn2011",
+        "container-title": "Journal of Machine Learning Research",
+        "author": [
+          {
+            "family": "Pedregosa",
+            "given": "Fabian"
+          },
+          {
+            "family": "Varoquaux",
+            "given": "Gael"
+          },
+          {
+            "family": "Gramfort",
+            "given": "Alexandre"
+          },
+          {
+            "family": "Michel",
+            "given": "Vincent"
+          },
+          {
+            "family": "Thirion",
+            "given": "Bertrand"
+          },
+          {
+            "family": "Grisel",
+            "given": "Olivier"
+          },
+          {
+            "family": "Blondel",
+            "given": "Mathieu"
+          },
+          {
+            "family": "Prettenhofer",
+            "given": "Peter"
+          },
+          {
+            "family": "Weiss",
+            "given": "Ron"
+          },
+          {
+            "family": "Dubourg",
+            "given": "Vincent"
+          },
+          {
+            "family": "Vanderplas",
+            "given": "Jake"
+          },
+          {
+            "family": "Passos",
+            "given": "Alexandre"
+          },
+          {
+            "family": "Cournapeau",
+            "given": "David"
+          },
+          {
+            "family": "Brucher",
+            "given": "Matthieu"
+          },
+          {
+            "family": "Perrot",
+            "given": "Matthieu"
+          },
+          {
+            "family": "Duchesnay",
+            "given": "Edouard"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2011
+            ]
+          ]
+        },
+        "volume": "12",
+        "issue": "85",
+        "page": "2825-2830",
+        "title": "Scikit-learn: Machine Learning in Python",
+        "URL": "https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html"
       }
 ]
