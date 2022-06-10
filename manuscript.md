@@ -5,7 +5,7 @@ keywords:
 - nonlinear relationships
 - gene expression
 lang: en-US
-date-meta: '2022-05-19'
+date-meta: '2022-06-10'
 author-meta:
 - Milton Pividori
 - Marylyn D. Ritchie
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="og:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="twitter:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
-  <meta name="dc.date" content="2022-05-19" />
-  <meta name="citation_publication_date" content="2022-05-19" />
+  <meta name="dc.date" content="2022-06-10" />
+  <meta name="citation_publication_date" content="2022-06-10" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -52,9 +52,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/ccc-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/6ac59927c82858ca50c2f7bb0ab199b4b158ecbb/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/6ac59927c82858ca50c2f7bb0ab199b4b158ecbb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/6ac59927c82858ca50c2f7bb0ab199b4b158ecbb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/1be018316a042ac783c2eb01a4b585a28d86fc81/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/1be018316a042ac783c2eb01a4b585a28d86fc81/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/1be018316a042ac783c2eb01a4b585a28d86fc81/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -76,10 +76,10 @@ manubot-clear-requests-cache: false
 <!-- 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/ccc-manuscript/v/6ac59927c82858ca50c2f7bb0ab199b4b158ecbb/))
+([permalink](https://greenelab.github.io/ccc-manuscript/v/1be018316a042ac783c2eb01a4b585a28d86fc81/))
 was automatically generated
-from [greenelab/ccc-manuscript@6ac5992](https://github.com/greenelab/ccc-manuscript/tree/6ac59927c82858ca50c2f7bb0ab199b4b158ecbb)
-on May 19, 2022.
+from [greenelab/ccc-manuscript@1be0183](https://github.com/greenelab/ccc-manuscript/tree/1be018316a042ac783c2eb01a4b585a28d86fc81)
+on June 10, 2022.
 </em></small> -->
 
 ## Authors
@@ -166,11 +166,15 @@ Therefore, advanced correlation coefficients could immediately find wide applica
 
 The Pearson and Spearman correlation coefficients are widely used because they reveal intuitive relationships and can be computed quickly.
 However, they are designed to capture linear or monotonic patterns (referred to as linear-only) and may miss complex yet critical relationships.
-The Maximal Information Coefficient (MIC) [@pmid:22174245] and the Distance Correlation (DC) [@doi:10.1214/009053607000000505] were proposed as metrics that capture nonlinear patterns.
-However, their computational complexity makes them impractical for even moderately sized datasets.
-We previously developed a clustering method for highly diverse datasets that significantly outperformed Pearson, Spearman, MIC and DC in detecting simulated linear and nonlinear relationships with varying noise levels [@doi:10.1093/bioinformatics/bty899].
+Novel coefficients have been proposed as metrics that capture nonlinear patterns such as the Maximal Information Coefficient (MIC) [@pmid:22174245] and the Distance Correlation (DC) [@doi:10.1214/009053607000000505].
+MIC, in particular, is one of the most commonly used statistics to capture more complex relationships, with successful applications across several domains [@pmid:33972855; @pmid:33001806; @pmid:27006077].
+However, the computational complexity makes them impractical for even moderately sized datasets [@pmid:33972855; @pmid:27333001].
+Recent implementations of MIC, for example, take several seconds to compute on a single variable pair across a few thousand objects or conditions [@pmid:33972855].
+We previously developed a clustering method for highly diverse datasets that significantly outperformed approaches based on Pearson, Spearman, DC and MIC in detecting clusters of simulated linear and nonlinear relationships with varying noise levels [@doi:10.1093/bioinformatics/bty899].
 Here we introduce the Clustermatch Correlation Coefficient (CCC), an efficient not-only-linear coefficient that works across quantitative and qualitative variables.
-CCC has a single parameter that limits the maximum complexity of relationships found and computation time.
+CCC has a single parameter that limits the maximum complexity of relationships found (from linear to more general patterns) and computation time.
+CCC provides a high level of flexibility to detect specific types of patterns that are more important for the user, while providing safe defaults to capture general relationships.
+We also provide an efficient CCC implementation that is highly parallelizable, allowing to speed up computation across variable pairs with millions of objects or conditions.
 To assess its performance, we applied our method to gene expression data from the Genotype-Tissue Expression v8 (GTEx) project across different tissues [@doi:10.1126/science.aaz1776].
 CCC captured both strong linear relationships and novel nonlinear patterns, which were entirely missed by standard coefficients.
 For example, some of these nonlinear patterns were associated with sex differences in gene expression, suggesting that CCC can capture strong relationships present only in a subset of samples.
@@ -184,13 +188,6 @@ Furthermore, its ability to efficiently handle diverse data types (including num
 
 ### A robust and efficient not-only-linear dependence coefficient
 
-The CCC provides a similarity measure between any pair of variables, either with numerical or categorical values.
-The method assumes that if there is a relationship between two variables/features describing $n$ data points/objects, then the **cluster**ings of those objects using each variable should **match**.
-In the case of numerical values, CCC uses quantiles to efficiently separate data points into different clusters (e.g., the median separates numerical data into two clusters).
-Once all clusterings are generated according to each variable, we define the CCC as the maximum adjusted Rand index (ARI) [@doi:10.1007/BF01908075] between them, ranging between 0 and 1.
-Details of the CCC algorithm can be found in [Methods](#sec:ccc_algo).
-
-
 ![
 **Different types of relationships in data.**
 Each panel contains a set of simulated data points described by two generic variables: $x$ and $y$.
@@ -199,6 +196,13 @@ The second row contains a set of general patterns with 100 data points each.
 Each panel shows the correlation value using Pearson ($p$), Spearman ($s$) and CCC ($c$).
 Vertical and horizontal red lines show how CCC clustered data points using $x$ and $y$.
 ](images/intro/relationships.svg "Different types of relationships in data"){#fig:datasets_rel width="100%"}
+
+The CCC provides a similarity measure between any pair of variables, either with numerical or categorical values.
+The method assumes that if there is a relationship between two variables/features describing $n$ data points/objects, then the **cluster**ings of those objects using each variable should **match**.
+In the case of numerical values, CCC uses quantiles to efficiently separate data points into different clusters (e.g., the median separates numerical data into two clusters).
+Once all clusterings are generated according to each variable, we define the CCC as the maximum adjusted Rand index (ARI) [@doi:10.1007/BF01908075] between them, ranging between 0 and 1.
+Details of the CCC algorithm can be found in [Methods](#sec:ccc_algo).
+
 
 We examined how the Pearson ($p$), Spearman ($s$) and CCC ($c$) correlation coefficients behaved on different simulated data patterns.
 In the first row of Figure @fig:datasets_rel, we examine the classic Anscombe's quartet [@doi:10.1080/00031305.1973.10478966], which comprises four synthetic datasets with different patterns but the same data statistics (mean, standard deviation and Pearson's correlation).
@@ -238,10 +242,10 @@ We examined the distribution of each coefficient's absolute values in GTEx (Figu
 CCC (mean=0.14, median=0.08, sd=0.15) has a much more skewed distribution than Pearson (mean=0.31, median=0.24, sd=0.24) and Spearman (mean=0.39, median=0.37, sd=0.26).
 The coefficients reach a cumulative set containing 70% of gene pairs at different values (Figure @fig:dist_coefs b), $c=0.18$, $p=0.44$ and $s=0.56$, suggesting that for this type of data, the coefficients are not directly comparable by magnitude, so we used ranks for further comparisons.
 In GTEx v8, CCC values were closer to Spearman and vice versa than either was to Pearson (Figure @fig:dist_coefs c).
-We also compared the Maximal Information Coefficient (MIC) in a small random sample of this data (see [Supplementary Note 1](#sec:mic)), given its higher computational complexity.
+We also compared the Maximal Information Coefficient (MIC) in this data (see [Supplementary Note 1](#sec:mic)).
 We found that CCC behaved very similarly to MIC, although CCC was up to two orders of magnitude faster to run (see [Supplementary Note 2](#sec:time_test)).
 MIC, an advanced correlation coefficient able to capture general patterns beyond linear relationships, represented a significant step forward in correlation analysis research and has been successfully used in various application domains [@pmid:33972855; @pmid:33001806; @pmid:27006077].
-We could not apply MIC through subsequent analyses due to its computational requirements, but these results suggest that our findings for CCC may generalize to MIC.
+These results suggest that our findings for CCC generalize to MIC, therefore, in the subsequent analyses we focus on CCC and linear-only coefficients.
 
 
 ![
@@ -274,14 +278,14 @@ While there was broad agreement, more than 20,000 gene pairs with a high CCC val
 There were also gene pairs with a high Pearson value and either low CCC (1,075), low Spearman (87) or both low CCC and low Spearman values (531).
 However, our examination suggests that many of these cases appear to be driven by potential outliers (Figure @fig:upsetplot_coefs b, and analyzed later).
 We analyzed gene pairs among the top five of each intersection in the "Disagreements" group (Figure @fig:upsetplot_coefs a, right) where CCC disagrees with Pearson, Spearman or both.
-The first three gene pairs at the top (*IFNG* - *SDS*, *JUN* - *APOC1*, and *ZDHHC12* - *CCL18*), with high CCC and low Pearson values, appear to follow a non-coexistence relationship: in samples where one of the genes is highly (slightly) expressed, the other is slightly (highly) activated, suggesting a potentially inhibiting effect.
-The following three gene pairs (*UTY* - *KDM6A*, *RASSF2* - *CYTIP*, and *AC068580.6* - *KLHL21*) follow patterns combining either two linear or one linear and one independent relationships.
 
 ![
 **The expression levels of *KDM6A* and *UTY* display sex-specific associations across GTEx tissues.**
 CCC captures this nonlinear relationship in all GTEx tissues (nine examples are shown in the first three rows), except in female-specific organs (last row).
 ](images/coefs_comp/kdm6a_vs_uty/gtex-KDM6A_vs_UTY-main.svg "KDM6A and UTY across different GTEx tissues"){#fig:gtex_tissues:kdm6a_uty width="95%"}
 
+The first three gene pairs at the top (*IFNG* - *SDS*, *JUN* - *APOC1*, and *ZDHHC12* - *CCL18*), with high CCC and low Pearson values, appear to follow a non-coexistence relationship: in samples where one of the genes is highly (slightly) expressed, the other is slightly (highly) activated, suggesting a potentially inhibiting effect.
+The following three gene pairs (*UTY* - *KDM6A*, *RASSF2* - *CYTIP*, and *AC068580.6* - *KLHL21*) follow patterns combining either two linear or one linear and one independent relationships.
 In particular, genes *UTY* and *KDM6A* (paralogs) show a nonlinear relationship where a subset of samples follows a robust linear pattern and another subset has a constant (independent) expression of one gene.
 This relationship is explained by the fact that *UTY* is in chromosome Y (Yq11) whereas *KDM6A* is in chromosome X (Xp11), and samples with a linear pattern are males, whereas those with no expression for *UTY* are females.
 This combination of linear and independent patterns is captured by CCC ($c=0.29$, above the 80th percentile) but not by Pearson ($p=0.24$, below the 55th percentile) or Spearman ($s=0.10$, below the 15th percentile).
@@ -347,7 +351,8 @@ The ability to capture these nonlinear patterns, however, extends beyond sex dif
 We found that top CCC-ranked gene pairs in whole blood from GTEx were replicated in independent tissue-specific networks trained from multiple data types and attributed to cell lineages from blood, even though CCC did not have access to any cell lineage-specific information.
 This suggests that CCC can disentangle intricate cell lineage-specific transcriptional patterns missed by linear-only coefficients.
 In addition to capturing nonlinear patterns, the CCC was more similar to Spearman than Pearson, highlighting their shared robustness to outliers.
-The CCC results were concordant with MIC on the random subset that we were able to analyze, but much faster to compute and thus practical for large datasets.
+The CCC results were concordant with MIC, but much faster to compute and thus practical for large datasets.
+Another advantage over MIC is that CCC can also process categorical variables together with numerical values.
 CCC is conceptually easy to interpret and has a single parameter that controls the maximum complexity of the detected relationships while also balancing compute time.
 
 
@@ -446,12 +451,11 @@ A future improved implementation of CCC could potentially use graphical processi
 A Python implementation of CCC (optimized with `numba` [@doi:10.1145/2833157.2833162]) can be found in our Github repository [@url:https://github.com/greenelab/clustermatch-gene-expr], as well as a package published in the Python Package Index (PyPI) that can be easily installed.
 
 
-### Gene expression data, preprocessing and sampling {#sec:data_gtex}
+### Gene expression data and preprocessing {#sec:data_gtex}
 
 We downloaded GTEx v8 data for all tissues, normalized using TPM (transcripts per million), and focused our primary analysis on whole blood, which has a good sample size (755).
 We selected the top 5,000 genes from whole blood with the largest variance after standardizing with $log(x + 1)$ to avoid a bias towards highly-expressed genes.
-We then computed Pearson, Spearman and CCC on these 5,000 genes across all 755 samples on the TPM-normalized data, generating a pairwise similarity matrix of size 5,000 x 5,000.
-To reduce the time to compute MIC and compare it with the other coefficients, we randomly sampled 100,000 gene pairs from all possible combinations in the set of 5,000 top variable genes ($n * (n-1) / 2=12497500$).
+We then computed Pearson, Spearman, MIC and CCC on these 5,000 genes across all 755 samples on the TPM-normalized data, generating a pairwise similarity matrix of size 5,000 x 5,000.
 
 
 ### Tissue-specific network analyses using GIANT {#sec:giant}
@@ -478,8 +482,9 @@ Following the default procedure used in GIANT, we included the top 15 genes with
 ### Maximal Information Coefficient (MIC) {#sec:methods:mic}
 
 We used the Python package `minepy` [@doi:10.1093/bioinformatics/bts707; @url:https://github.com/minepy/minepy] (version 1.2.5) to estimate the MIC coefficient.
-In GTEx v8 (whole blood), we ran MIC (the original implementation using the heuristic estimator ApproxMaxMI [@doi:10.1126/science.1205438]) with the default parameters `alpha=0.6`, `c=15` and `estimator='mic_approx'`.
-For our computational complexity analyses (see [Supplementary Material](#sec:time_test)), we also ran a new optimized implementation called MIC<sub>e</sub> [@Reshef2016] provided by `minepy` (using parameter `estimator='mic_e'`).
+In GTEx v8 (whole blood), we used MIC<sub>e</sub> (an improved implementation of the original MIC introduced in [@Reshef2016]) with the default parameters `alpha=0.6`, `c=15` and `estimator='mic_e'`.
+We used the `pairwise_distances` function from `scikit-learn` [@Sklearn2011] to parallelize the computation of MIC on GTEx.
+For our computational complexity analyses (see [Supplementary Material](#sec:time_test)), we ran the original MIC (using parameter `estimator='mic_approx'`) and MIC<sub>e</sub> (`estimator='mic_e'`).
 
 
 ## References {.page_break_before}
@@ -495,15 +500,15 @@ For our computational complexity analyses (see [Supplementary Material](#sec:tim
 
 ### Supplementary Note 1: Comparison with the Maximal Information Coefficient (MIC) on gene expression data {#sec:mic}
 
-We compared all the coefficients in this study with the MIC [@pmid:22174245], a popular nonlinear method that can find complex relationships in data, although very computationally intensive [@doi:10.1098/rsos.201424].
-To circumvent this limitation of MIC, we took a small random sample of 100,000 gene pairs from all possible pairwise comparisons of our 5,000 highly variable genes from whole blood in GTEx v8.
+We compared all the coefficients in this study with MIC [@pmid:22174245], a popular nonlinear method that can find complex relationships in data, although very computationally intensive [@doi:10.1098/rsos.201424].
+We ran MIC<sub>e</sub> (see Methods) on all possible pairwise comparisons of our 5,000 highly variable genes from whole blood in GTEx v8.
+This took 4 days and 19 hours to finish (compared with 9 hours for CCC).
 Then we performed the analysis on the distribution of coefficients (the same as in the main text), shown in Figure @fig:dist_coefs_mic.
 We verified that CCC and MIC behave similarly in this dataset, with essentially the same distribution but only shifted.
 Figure @fig:dist_coefs_mic c shows that these two coefficients relate almost linearly, and both compare very similarly with Pearson and Spearman.
 
 ![
-**Distribution of MIC values on a small sample from whole blood (GTEx v8) and comparison with other methods.**
-We randomly sampled 100,000 gene pairs (approximately 1% of the total) from our set of 5,000 genes.
+**Distribution of MIC values on gene expression (GTEx v8, whole blood)  and comparison with other methods.**
 **a)** Histogram of coefficient values.
 **b)** Corresponding cumulative histogram. The dotted line maps the coefficient value that accumulates 70% of gene pairs.
 **c)** 2D histogram plot with hexagonal bins between all coefficients, where a logarithmic scale was used to color each hexagon.
