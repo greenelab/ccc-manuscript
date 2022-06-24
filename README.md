@@ -2,8 +2,8 @@
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
+[![bioRxiv Manuscript](https://img.shields.io/badge/manuscript-bioRxiv-blue.svg)](https://doi.org/10.1101/2022.06.15.496326)
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://greenelab.github.io/ccc-manuscript/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://greenelab.github.io/ccc-manuscript/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/greenelab/ccc-manuscript/workflows/Manubot/badge.svg)](https://github.com/greenelab/ccc-manuscript/actions)
 
 This is the manuscript repository of the Clustermatch Correlation Coefficient (CCC), a highly-efficient, next-generation not-only-linear correlation coefficient that can readily be applied to genome-scale data and other domains across different data types. The source code repository, with installation instructions for CCC, can be found [here](https://github.com/greenelab/ccc).
