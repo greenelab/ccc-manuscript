@@ -5,24 +5,28 @@ keywords:
 - nonlinear relationships
 - gene expression
 lang: en-US
-date-meta: '2022-12-30'
+date-meta: '2023-01-01'
 author-meta:
 - Milton Pividori
 - Marylyn D. Ritchie
 - Diego H. Milone
 - Casey S. Greene
-header-includes: |-
+header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
+  <meta property="og:type" content="article" />
   <meta name="dc.title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta name="citation_title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="og:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="twitter:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
-  <meta name="dc.date" content="2022-12-30" />
-  <meta name="citation_publication_date" content="2022-12-30" />
+  <meta name="dc.date" content="2023-01-01" />
+  <meta name="citation_publication_date" content="2023-01-01" />
+  <meta property="article:published_time" content="2023-01-01" />
+  <meta name="dc.modified" content="2023-01-01T07:34:15+00:00" />
+  <meta property="article:modified_time" content="2023-01-01T07:34:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -52,9 +56,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/ccc-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/f66af259ed7c719a2dc50a378f354cd17507cbf0/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/f66af259ed7c719a2dc50a378f354cd17507cbf0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/f66af259ed7c719a2dc50a378f354cd17507cbf0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/baabd493a6a1f28e2c82c1cd49f37bca8305e1b1/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/baabd493a6a1f28e2c82c1cd49f37bca8305e1b1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/baabd493a6a1f28e2c82c1cd49f37bca8305e1b1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -76,60 +80,78 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 <!-- 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/ccc-manuscript/v/f66af259ed7c719a2dc50a378f354cd17507cbf0/))
+([permalink](https://greenelab.github.io/ccc-manuscript/v/baabd493a6a1f28e2c82c1cd49f37bca8305e1b1/))
 was automatically generated
-from [greenelab/ccc-manuscript@f66af25](https://github.com/greenelab/ccc-manuscript/tree/f66af259ed7c719a2dc50a378f354cd17507cbf0)
-on December 30, 2022.
+from [greenelab/ccc-manuscript@baabd49](https://github.com/greenelab/ccc-manuscript/tree/baabd493a6a1f28e2c82c1cd49f37bca8305e1b1)
+on January 1, 2023.
 </em></small> -->
+
+
 
 ## Authors
 
 
 
-+ **Milton Pividori**<br>
++ **Milton Pividori**
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-3035-4403](https://orcid.org/0000-0002-3035-4403)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [miltondp](https://github.com/miltondp)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [miltondp](https://twitter.com/miltondp)<br>
+    [miltondp](https://twitter.com/miltondp)
+    <br>
   <small>
      Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
-     · Funded by The Gordon and Betty Moore Foundation GBMF 4552; The National Human Genome Research Institute (R01 HG010067)
+     · Funded by The Gordon and Betty Moore Foundation GBMF 4552; The National Human Genome Research Institute (R01 HG010067); The National Human Genome Research Institute (K99HG011898)
   </small>
 
-+ **Marylyn D. Ritchie**<br>
++ **Marylyn D. Ritchie**
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-1208-1720](https://orcid.org/0000-0002-1208-1720)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [MarylynRitchie](https://twitter.com/MarylynRitchie)<br>
+    [MarylynRitchie](https://twitter.com/MarylynRitchie)
+    <br>
   <small>
      Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
   </small>
 
-+ **Diego H. Milone**<br>
++ **Diego H. Milone**
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-2182-4351](https://orcid.org/0000-0003-2182-4351)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [dmilone](https://github.com/dmilone)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [d1001](https://twitter.com/d1001)<br>
+    [d1001](https://twitter.com/d1001)
+    <br>
   <small>
      Research Institute for Signals, Systems and Computational Intelligence (sinc(i)), Universidad Nacional del Litoral, Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET), Santa Fe CP3000, Argentina
   </small>
 
-+ **Casey S. Greene**<br>
++ **Casey S. Greene**
+  ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [cgreene](https://github.com/cgreene)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [GreeneScientist](https://twitter.com/GreeneScientist)<br>
+    [GreeneScientist](https://twitter.com/GreeneScientist)
+    <br>
   <small>
      Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA
      · Funded by The Gordon and Betty Moore Foundation (GBMF 4552); The National Human Genome Research Institute (R01 HG010067); The National Cancer Institute (R01 CA237170)
   </small>
 
+
+::: {#correspondence}
+✉ — Correspondence possible via [GitHub Issues](https://github.com/greenelab/ccc-manuscript/issues)
+or email to
+Casey S. Greene \<casey.s.greene@cuanschutz.edu\>.
+
+
+:::
 
 
 ## Abstract {.page_break_before}
@@ -591,3 +613,4 @@ All these analyses can be performed online using the following links:
 *PYGM* - *TPM2* [@url:https://hb.flatironinstitute.org/gene/5837+7169].
 The GIANT web-server was accessed on April 4, 2022.
 ](images/coefs_comp/giant_networks/auto_selected_tissues/main.svg "GIANT network interaction"){#fig:giant_gene_pairs:pred_tissue width="100%"} -->
+
