@@ -28,7 +28,7 @@ jobs:
         run: bash ci/install-manuscript-editor.sh
       - name: Revise manuscript
         env:
-          OPENAI_API_KEY: ${{ secrets.CHATGPT_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           AI_EDITOR_LANGUAGE_MODEL: ${{ inputs.model }}
           # More variables can be specified to control the behavior of the model:
           #  https://github.com/greenelab/manubot-ai-editor/blob/main/libs/manubot/ai_editor/env_vars.py
