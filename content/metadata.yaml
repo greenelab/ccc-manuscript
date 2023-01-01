@@ -1,5 +1,6 @@
 ---
 title: "An efficient not-only-linear correlation coefficient based on machine learning"
+date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
   - correlation coefficient
   - nonlinear relationships
@@ -17,6 +18,7 @@ authors:
     funders:
       - The Gordon and Betty Moore Foundation GBMF 4552
       - The National Human Genome Research Institute (R01 HG010067)
+      - The National Human Genome Research Institute (K99HG011898)
   
   - name: Marylyn D. Ritchie
     initials: MDR
@@ -48,3 +50,4 @@ authors:
       - The Gordon and Betty Moore Foundation (GBMF 4552)
       - The National Human Genome Research Institute (R01 HG010067)
       - The National Cancer Institute (R01 CA237170)
+    corresponding: true
