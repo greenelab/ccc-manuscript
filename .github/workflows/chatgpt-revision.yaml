@@ -4,21 +4,19 @@ on:
     inputs:
       branch:
         description: 'Branch to revise'
+        required: true
         type: string
         default: 'main'
       model:
         description: 'Language model to use. Check out options in https://beta.openai.com/docs/models/gpt-3'
+        required: true
         type: string
         default: 'text-davinci-003'
-      branch_suffix:
-        description: 'Branch suffix. See description in https://github.com/peter-evans/create-pull-request'
-        type: choice
-        default: ''
-        options:
-        - 
-        - random
-        - timestamp
-        - short-commit-hash
+      branch_name:
+        description: 'Branch name'
+        required: true
+        type: string
+        default: 'ai-revision-davinci'
 
 jobs:
   chatgpt-revise:
@@ -46,6 +44,5 @@ jobs:
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           add-paths: |
             content/*.md
-          branch: ai-revision
+          branch: ${{ inputs.branch_name }}
           draft: true
-          branch-suffix: ${{ inputs.branch_suffix }}
