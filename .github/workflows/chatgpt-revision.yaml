@@ -3,15 +3,15 @@ on:
   workflow_dispatch:
     inputs:
       branch:
-        description: Branch to revise
+        description: 'Branch to revise'
         type: string
         default: 'main'
       model:
-        description: Language model to use
+        description: 'Language model to use. Check out options in https://beta.openai.com/docs/models/gpt-3'
         type: string
         default: 'text-davinci-003'
       branch_suffix:
-        description: Branch suffix. It can be empty (default), random, timestamp or short-commit-hash
+        description: 'Branch suffix. See description in https://github.com/peter-evans/create-pull-request'
         type: choice
         default: ''
         options:
