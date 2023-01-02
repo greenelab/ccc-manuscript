@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/greenelab/ccc-manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://greenelab.github.io/ccc-manuscript/>.
-The permalink for this webpage version is <https://greenelab.github.io/ccc-manuscript/v/da0c0babfb80e92f3b980d8be7ab5989c887db8c/>.
+The permalink for this webpage version is <https://greenelab.github.io/ccc-manuscript/v/9bb79e79da335b803e24956a70904aa4bd73ef3d/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://greenelab.github.io/ccc-manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`da0c0babfb80e92f3b980d8be7ab5989c887db8c`](https://github.com/greenelab/ccc-manuscript/commit/da0c0babfb80e92f3b980d8be7ab5989c887db8c).
+[`9bb79e79da335b803e24956a70904aa4bd73ef3d`](https://github.com/greenelab/ccc-manuscript/commit/9bb79e79da335b803e24956a70904aa4bd73ef3d).
