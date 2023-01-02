@@ -8,7 +8,7 @@ on:
         type: string
         default: 'main'
       model:
-        description: 'Language model to use. Check out options in https://beta.openai.com/docs/models/gpt-3'
+        description: 'Language model to use (https://beta.openai.com/docs/models/gpt-3)'
         required: true
         type: string
         default: 'text-davinci-003'
