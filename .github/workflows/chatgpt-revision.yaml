@@ -3,17 +3,22 @@ on:
   workflow_dispatch:
     inputs:
       branch:
-        description: 'Branch to revise'
+        description: Branch to revise
         type: string
         default: 'main'
       model:
-        description: 'Language model to use'
+        description: Language model to use
         type: string
         default: 'text-davinci-003'
       branch_suffix:
-        description: 'Branch suffix. It can be empty (default), random, timestamp or short-commit-hash'
-        type: string
+        description: Branch suffix. It can be empty (default), random, timestamp or short-commit-hash
+        type: choice
         default: ''
+        options:
+        - 
+        - random
+        - timestamp
+        - short-commit-hash
 
 jobs:
   chatgpt-revise:
