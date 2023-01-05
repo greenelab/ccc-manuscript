@@ -7,6 +7,11 @@ on:
         required: true
         type: string
         default: 'main'
+      file_names:
+        description: 'File names to revise (e.g., "00.abstract.md,01.intro.md")'
+        required: false
+        type: string
+        default: ''
       model:
         description: 'Language model to use (https://beta.openai.com/docs/models/gpt-3)'
         required: true
@@ -33,6 +38,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           AI_EDITOR_LANGUAGE_MODEL: ${{ inputs.model }}
+          AI_EDITOR_FILENAMES_TO_REVISE: ${{ inputs.model }}
           # More variables can be specified to control the behavior of the model:
           #  https://github.com/greenelab/manubot-ai-editor/blob/main/libs/manubot/ai_editor/env_vars.py
         run: python ci/run-manuscript-editor.py
