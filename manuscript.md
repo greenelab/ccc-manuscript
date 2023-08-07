@@ -5,7 +5,7 @@ keywords:
 - nonlinear relationships
 - gene expression
 lang: en-US
-date-meta: '2023-01-06'
+date-meta: '2023-08-07'
 author-meta:
 - Milton Pividori
 - Marylyn D. Ritchie
@@ -22,11 +22,11 @@ header-includes: |
   <meta name="citation_title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="og:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="twitter:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
-  <meta name="dc.date" content="2023-01-06" />
-  <meta name="citation_publication_date" content="2023-01-06" />
-  <meta property="article:published_time" content="2023-01-06" />
-  <meta name="dc.modified" content="2023-01-06T15:26:55+00:00" />
-  <meta property="article:modified_time" content="2023-01-06T15:26:55+00:00" />
+  <meta name="dc.date" content="2023-08-07" />
+  <meta name="citation_publication_date" content="2023-08-07" />
+  <meta property="article:published_time" content="2023-08-07" />
+  <meta name="dc.modified" content="2023-08-07T22:16:27+00:00" />
+  <meta property="article:modified_time" content="2023-08-07T22:16:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,6 +34,7 @@ header-includes: |
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Milton Pividori" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA" />
   <meta name="citation_author_institution" content="Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA" />
   <meta name="citation_author_orcid" content="0000-0002-3035-4403" />
   <meta name="twitter:creator" content="@miltondp" />
@@ -47,7 +48,7 @@ header-includes: |
   <meta name="twitter:creator" content="@d1001" />
   <meta name="citation_author" content="Casey S. Greene" />
   <meta name="citation_author_institution" content="Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA" />
-  <meta name="citation_author_institution" content="Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA" />
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
   <meta name="twitter:creator" content="@GreeneScientist" />
   <link rel="canonical" href="https://greenelab.github.io/ccc-manuscript/" />
@@ -56,9 +57,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/ccc-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/9a3f2f123d0d09116d15679bc69b1d05fcb969b0/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/9a3f2f123d0d09116d15679bc69b1d05fcb969b0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/9a3f2f123d0d09116d15679bc69b1d05fcb969b0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/cd018f10a7c63594388979cb071922ffda632770/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/cd018f10a7c63594388979cb071922ffda632770/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/cd018f10a7c63594388979cb071922ffda632770/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,10 +81,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 <!-- 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/ccc-manuscript/v/9a3f2f123d0d09116d15679bc69b1d05fcb969b0/))
+([permalink](https://greenelab.github.io/ccc-manuscript/v/cd018f10a7c63594388979cb071922ffda632770/))
 was automatically generated
-from [greenelab/ccc-manuscript@9a3f2f1](https://github.com/greenelab/ccc-manuscript/tree/9a3f2f123d0d09116d15679bc69b1d05fcb969b0)
-on January 6, 2023.
+from [greenelab/ccc-manuscript@cd018f1](https://github.com/greenelab/ccc-manuscript/tree/cd018f10a7c63594388979cb071922ffda632770)
+on August 7, 2023.
 </em></small> -->
 
 
@@ -100,10 +101,12 @@ on January 6, 2023.
     [miltondp](https://github.com/miltondp)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [miltondp](https://twitter.com/miltondp)
+    · ![Mastodon icon](images/mastodon.svg){.inline_icon width=16 height=16}
+    [\@miltondp@genomic.social](https://genomic.social/@miltondp)
     <br>
   <small>
-     Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
-     · Funded by The Gordon and Betty Moore Foundation GBMF 4552; The National Human Genome Research Institute (R01 HG010067); The National Human Genome Research Institute (K99HG011898)
+     Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
+     · Funded by The Gordon and Betty Moore Foundation GBMF 4552; The National Human Genome Research Institute (R01 HG010067); The National Human Genome Research Institute (K99/R00 HG011898)
   </small>
 
 + **Marylyn D. Ritchie**
@@ -138,9 +141,11 @@ on January 6, 2023.
     [cgreene](https://github.com/cgreene)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [GreeneScientist](https://twitter.com/GreeneScientist)
+    · ![Mastodon icon](images/mastodon.svg){.inline_icon width=16 height=16}
+    [\@greenescientist@genomic.social](https://genomic.social/@greenescientist)
     <br>
   <small>
-     Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA
+     Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA
      · Funded by The Gordon and Betty Moore Foundation (GBMF 4552); The National Human Genome Research Institute (R01 HG010067); The National Cancer Institute (R01 CA237170)
   </small>
 

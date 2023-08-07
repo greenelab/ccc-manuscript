@@ -947,6 +947,7 @@
   {
     "publisher": "Springer Science and Business Media LLC",
     "issue": "1",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Measuring associations is an important scientific task. A novel measurement method <jats:italic>maximal information coefficient</jats:italic> (MIC) was proposed to identify a broad class of associations. As foreseen by its authors, MIC implementation algorithm ApproxMaxMI is not always convergent to real MIC values. An algorithm called SG (Simulated annealing and Genetic) was developed to facilitate the optimal calculation of MIC and the convergence of SG was proved based on Markov theory. When run on fruit fly data set including 1,000,000 pairs of gene expression profiles, the mean squared difference between SG and the exhaustive algorithm is 0.00075499, compared with 0.1834 in the case of ApproxMaxMI. The software SGMIC and its manual are freely available at <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"http://lxy.depart.hebust.edu.cn/SGMIC/SGMIC.htm\">http://lxy.depart.hebust.edu.cn/SGMIC/SGMIC.htm</jats:ext-link>.</jats:p>",
     "DOI": "10.1038/srep06662",
     "type": "article-journal",
     "source": "Crossref",
@@ -1220,6 +1221,7 @@
   {
     "publisher": "Oxford University Press (OUP)",
     "issue": "3",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Summary: We introduce a novel implementation in ANSI C of the MINE family of algorithms for computing maximal information-based measures of dependence between two variables in large datasets, with the aim of a low memory footprint and ease of integration within bioinformatics pipelines. We provide the libraries minerva (with the R interface) and minepy for Python, MATLAB, Octave and C++. The C solution reduces the large memory requirement of the original Java implementation, has good upscaling properties and offers a native parallelization for the R interface. Low memory requirements are demonstrated on the MINE benchmarks as well as on large ( = 1340) microarray and Illumina GAII RNA-seq transcriptomics datasets.</jats:p>\n               <jats:p>Availability and implementation: Source code and binaries are freely available for download under GPL3 licence at http://minepy.sourceforge.net for minepy and through the CRAN repository http://cran.r-project.org for the R package minerva. All software is multiplatform (MS Windows, Linux and OSX).</jats:p>\n               <jats:p>Contact:  furlan@fbk.eu</jats:p>\n               <jats:p>Supplementary information:  Supplementary data are available at Bioinformatics online.</jats:p>",
     "DOI": "10.1093/bioinformatics/bts707",
     "type": "article-journal",
     "page": "407-408",
@@ -1271,6 +1273,7 @@
   {
     "publisher": "Oxford University Press (OUP)",
     "issue": "11",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:sec>\n                  <jats:title>Motivation</jats:title>\n                  <jats:p>Heterogeneous and voluminous data sources are common in modern datasets, particularly in systems biology studies. For instance, in multi-holistic approaches in the fruit biology field, data sources can include a mix of measurements such as morpho-agronomic traits, different kinds of molecules (nucleic acids and metabolites) and consumer preferences. These sources not only have different types of data (quantitative and qualitative), but also large amounts of variables with possibly non-linear relationships among them. An integrative analysis is usually hard to conduct, since it requires several manual standardization steps, with a direct and critical impact on the results obtained. These are important issues in clustering applications, which highlight the need of new methods for uncovering complex relationships in such diverse repositories.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Results</jats:title>\n                  <jats:p>We designed a new method named Clustermatch to easily and efficiently perform data-mining tasks on large and highly heterogeneous datasets. Our approach can derive a similarity measure between any quantitative or qualitative variables by looking on how they influence on the clustering of the biological materials under study. Comparisons with other methods in both simulated and real datasets show that Clustermatch is better suited for finding meaningful relationships in complex datasets.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Availability and implementation</jats:title>\n                  <jats:p>Files can be downloaded from https://sourceforge.net/projects/sourcesinc/files/clustermatch/ and https://bitbucket.org/sinc-lab/clustermatch/. In addition, a web-demo is available at http://sinc.unl.edu.ar/web-demo/clustermatch/.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Supplementary information</jats:title>\n                  <jats:p>Supplementary data are available at Bioinformatics online.</jats:p>\n               </jats:sec>",
     "DOI": "10.1093/bioinformatics/bty899",
     "type": "article-journal",
     "page": "1931-1939",
@@ -2841,7 +2844,7 @@
     "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1126/science.aaz1776"
   },
   {
-    "publisher": "ACM Press",
+    "publisher": "ACM",
     "DOI": "10.1145/2833157.2833162",
     "type": "paper-conference",
     "source": "Crossref",
@@ -2860,12 +2863,14 @@
         "family": "Seibert"
       }
     ],
-    "event": "the Second Workshop",
-    "container-title": "Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC - LLVM '15",
+    "event": "SC15: The International Conference for High Performance Computing, Networking, Storage and Analysis",
+    "container-title": "Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC",
     "issued": {
       "date-parts": [
         [
-          2015
+          2015,
+          11,
+          15
         ]
       ]
     },
@@ -3230,8 +3235,8 @@
       "date-parts": [
         [
           2023,
-          1,
-          1
+          8,
+          7
         ]
       ]
     },
@@ -3296,8 +3301,8 @@
       "date-parts": [
         [
           2023,
-          1,
-          1
+          8,
+          7
         ]
       ]
     },
@@ -3413,8 +3418,8 @@
       "date-parts": [
         [
           2023,
-          1,
-          1
+          8,
+          7
         ]
       ]
     },
@@ -5506,8 +5511,8 @@
       "date-parts": [
         [
           "2023",
-          1,
-          6
+          8,
+          7
         ]
       ]
     },
@@ -5515,7 +5520,7 @@
   },
   {
     "id": "190WLq6rx",
-    "type": "book",
+    "type": "software",
     "genre": "Jupyter Notebook",
     "note": "original-date: 2021-08-05T15:44:44Z\nThis CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: url:https://github.com/greenelab/clustermatch-gene-expr",
     "publisher": "Greene Laboratory",
@@ -5526,8 +5531,8 @@
       "date-parts": [
         [
           "2023",
-          1,
-          6
+          8,
+          7
         ]
       ]
     },
@@ -5535,15 +5540,15 @@
       "date-parts": [
         [
           "2023",
-          1,
-          4
+          4,
+          19
         ]
       ]
     }
   },
   {
     "id": "ah0tGOQ0",
-    "type": "book",
+    "type": "software",
     "abstract": "minepy - Maximal Information-based Nonparametric Exploration",
     "genre": "C",
     "note": "original-date: 2013-02-24T16:50:44Z\nThis CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: url:https://github.com/minepy/minepy",
@@ -5555,8 +5560,8 @@
       "date-parts": [
         [
           "2023",
-          1,
-          6
+          8,
+          7
         ]
       ]
     },
@@ -5564,8 +5569,8 @@
       "date-parts": [
         [
           "2023",
-          1,
-          3
+          8,
+          7
         ]
       ]
     }
@@ -5580,8 +5585,8 @@
       "date-parts": [
         [
           "2023",
-          1,
-          6
+          8,
+          7
         ]
       ]
     },
@@ -5597,8 +5602,8 @@
       "date-parts": [
         [
           "2023",
-          1,
-          6
+          8,
+          7
         ]
       ]
     },
@@ -5614,8 +5619,8 @@
       "date-parts": [
         [
           "2023",
-          1,
-          6
+          8,
+          7
         ]
       ]
     },
@@ -5631,8 +5636,8 @@
       "date-parts": [
         [
           "2023",
-          1,
-          6
+          8,
+          7
         ]
       ]
     },
