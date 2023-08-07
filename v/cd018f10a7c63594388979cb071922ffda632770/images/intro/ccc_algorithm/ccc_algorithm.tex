@@ -1,0 +1,82 @@
+\documentclass{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[linesnumbered,titlenumbered,ruled,vlined]{algorithm2e}
+\usepackage{amsmath,amsfonts,amssymb}
+\thispagestyle{empty}
+
+\title{clustermatch-algorithm}
+\author{Milton Pividori}
+% \date{December 2021}
+
+\usepackage{xcolor}
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+
+\newcommand{\vect}[1]{\ifthenelse{\equal{#1}{\mu}}{\boldsymbol{#1}}{\mathbf{#1}}}
+
+\begin{document}
+    \pagecolor{white}
+
+\begin{algorithm}[t]
+  \DontPrintSemicolon
+  \SetKwFunction{FPartitions}{get\_partitions}
+  \SetKwProg{Fn}{Function}{:}{}
+  \Fn{\FPartitions{$\vect{v}$, $k_{\mathrm{max}}$}}{
+      \KwOut{\\
+        $\quad \; \ \Omega_{r}$: clustering with $r$ clusters over $n$ objects\\
+      }
+      \BlankLine
+      
+      \If{$\vect{v} \in \mathbb{R}^n$}{\label{alg:num}
+        \For{$r \leftarrow 2$ \KwTo $\min\lbrace k_{\mathrm{max}},\left\vert\vect{v}\right\vert - 1 \rbrace$}{
+          $\boldsymbol{\rho} \leftarrow (\rho_\ell \mid \Pr\left(v_{i}\!<\!\rho_\ell\right)\!\leq\!(\ell-1)/r),
+            \!\forall \ell \in [1,r+1]$\label{alg:ref3}\;
+          $\Omega_{r\ell} \leftarrow \{i \mid \rho_\ell < v_{i} \leq \rho_{\ell+1}\}, \forall \ell \in \left[1,r\right]$\label{alg:ref33}\;
+        }
+      }
+      \Else{\label{alg:cat}
+        $\mathcal{C} \leftarrow \cup_{j}\{v_{i}\}$\;\label{alg:ref4}
+        $r \leftarrow \left\vert\mathcal{C}\right\vert$\;\label{alg:ref5}
+        $\Omega_{rc} \leftarrow \{i \mid v_{i} = \mathcal{C}_{c}\}, \forall c \in \left[1,r\right]$\;
+      }
+      
+      $\Omega \leftarrow \{\Omega_{r} \mid \left\vert\Omega_{r}\right\vert > 1\}, \forall r$\;
+      
+      \KwRet{$\Omega$}
+  }
+  \;
+  \SetKwFunction{FClustermatch}{ccc}
+  \SetKwProg{Fn}{Function}{:}{}
+  \Fn{\FClustermatch{$\vect{x}$, $\vect{y}$, $k_{\mathrm{max}}$}}{
+    %   \SetKwData{FeatureiParts}{$\pi_{i}$}
+    %   \SetKwData{FeaturejParts}{$\pi_{j}$}
+    %   \SetKwData{PartitionsComparison}{$\Lambda_{ij}$}
+      \KwIn{\\
+        $\quad \; \ \vect{x}$: feature values on $n$ objects\\
+        $\quad \; \ \vect{y}$: feature values on $n$ objects\\
+        $\quad \; \ k_{\mathrm{max}}$: maximum number of internal clusters \\
+      }
+      \KwOut{\\
+        $\quad \; \ c$: similarity value for $\vect{x}$ and $\vect{y}$ ($c \in \left[0,1\right]$)\\
+      }
+      \BlankLine
+        
+        %\ForEach{row $\vect{r}_i \in D$}{
+      $\Omega^{\vect{x}}$ = get\_partitions($\vect{x}$, $k_{\mathrm{max}}$)\;
+      $\Omega^{\vect{y}}$ = get\_partitions($\vect{y}$, $k_{\mathrm{max}}$)\;
+        
+    %   \tcp{get the maximum adjusted Rand index (A) across all clusterings}
+      $c \leftarrow \max
+        \lbrace \mathcal{A}(\Omega_{p}^{\vect{x}}, \Omega_{q}^{\vect{y}}) \rbrace,
+        \forall p,q$
+        % \forall m,n \in \left[1,M\right],\!
+        % m \neq n$\;\label{alg:simmat}
+    
+      \KwRet{$\max(c, 0)$}
+  }
+  \caption{CCC algorithm}
+\end{algorithm}
+
+
+\end{document}
+
