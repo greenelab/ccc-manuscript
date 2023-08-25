@@ -5,7 +5,7 @@ keywords:
 - nonlinear relationships
 - gene expression
 lang: en-US
-date-meta: '2023-08-07'
+date-meta: '2023-08-25'
 author-meta:
 - Milton Pividori
 - Marylyn D. Ritchie
@@ -22,11 +22,11 @@ header-includes: |
   <meta name="citation_title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="og:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="twitter:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
-  <meta name="dc.date" content="2023-08-07" />
-  <meta name="citation_publication_date" content="2023-08-07" />
-  <meta property="article:published_time" content="2023-08-07" />
-  <meta name="dc.modified" content="2023-08-07T22:16:27+00:00" />
-  <meta property="article:modified_time" content="2023-08-07T22:16:27+00:00" />
+  <meta name="dc.date" content="2023-08-25" />
+  <meta name="citation_publication_date" content="2023-08-25" />
+  <meta property="article:published_time" content="2023-08-25" />
+  <meta name="dc.modified" content="2023-08-25T16:56:58+00:00" />
+  <meta property="article:modified_time" content="2023-08-25T16:56:58+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -57,9 +57,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/ccc-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/cd018f10a7c63594388979cb071922ffda632770/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/cd018f10a7c63594388979cb071922ffda632770/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/cd018f10a7c63594388979cb071922ffda632770/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/7afb12a6326aa177c035ae95f2a8fb4f01205e45/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/7afb12a6326aa177c035ae95f2a8fb4f01205e45/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/7afb12a6326aa177c035ae95f2a8fb4f01205e45/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -81,10 +81,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 <!-- 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/ccc-manuscript/v/cd018f10a7c63594388979cb071922ffda632770/))
+([permalink](https://greenelab.github.io/ccc-manuscript/v/7afb12a6326aa177c035ae95f2a8fb4f01205e45/))
 was automatically generated
-from [greenelab/ccc-manuscript@cd018f1](https://github.com/greenelab/ccc-manuscript/tree/cd018f10a7c63594388979cb071922ffda632770)
-on August 7, 2023.
+from [greenelab/ccc-manuscript@7afb12a](https://github.com/greenelab/ccc-manuscript/tree/7afb12a6326aa177c035ae95f2a8fb4f01205e45)
+on August 25, 2023.
 </em></small> -->
 
 
@@ -106,7 +106,7 @@ on August 7, 2023.
     <br>
   <small>
      Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
-     · Funded by The Gordon and Betty Moore Foundation GBMF 4552; The National Human Genome Research Institute (R01 HG010067); The National Human Genome Research Institute (K99/R00 HG011898)
+     · Funded by The Gordon and Betty Moore Foundation GBMF 4552; The National Human Genome Research Institute (R01 HG010067); The National Human Genome Research Institute (K99/R00 HG011898); The Eunice Kennedy Shriver National Institute of Child Health and Human Development (R01 HD109765)
   </small>
 
 + **Marylyn D. Ritchie**
@@ -146,7 +146,7 @@ on August 7, 2023.
     <br>
   <small>
      Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA
-     · Funded by The Gordon and Betty Moore Foundation (GBMF 4552); The National Human Genome Research Institute (R01 HG010067); The National Cancer Institute (R01 CA237170)
+     · Funded by The Gordon and Betty Moore Foundation (GBMF 4552); The National Human Genome Research Institute (R01 HG010067); The National Cancer Institute (R01 CA237170); The Eunice Kennedy Shriver National Institute of Child Health and Human Development (R01 HD109765)
   </small>
 
 
