@@ -1,5 +1,36 @@
 [
     {
+        "id": "Vinh2010",
+        "type": "article-journal",
+        "title": "Information Theoretic Measures for Clusterings Comparison: Variants, Properties, Normalization and Correction for Chance",
+        "container-title": "Journal of Machine Learning Research",
+        "page": "2837-2854",
+        "volume": "11",
+        "issue": "95",
+        "author": [
+          {
+            "family": "Vinh",
+            "given": "Nguyen Xuan"
+          },
+          {
+            "family": "Epps",
+            "given": "Julien"
+          },
+          {
+            "family": "Bailey",
+            "given": "James"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2010
+            ]
+          ]
+        },
+        "URL": "https://jmlr.org/papers/v11/vinh10a.html"
+    },
+    {
         "type": "article-journal",
         "id": "Reshef2016",
         "container-title": "Journal of Machine Learning Research",
