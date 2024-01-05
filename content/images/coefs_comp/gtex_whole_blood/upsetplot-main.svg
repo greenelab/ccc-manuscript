@@ -6,7 +6,7 @@
    width="714.96741pt"
    id="svg1239"
    sodipodi:docname="upsetplot-main.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
    inkscape:export-filename="/home/miltondp/projects/labs/greenelab/clustermatch_repos/clustermatch-gene-expr-manuscript/content/images/coefs_comp/upsetplot.png"
    inkscape:export-xdpi="299.992"
    inkscape:export-ydpi="299.992"
@@ -35,16 +35,18 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.4120423"
-     inkscape:cx="788.22004"
-     inkscape:cy="709.61049"
-     inkscape:window-x="1924"
+     inkscape:zoom="7.3799932"
+     inkscape:cx="832.45335"
+     inkscape:cy="503.86226"
+     inkscape:window-x="8"
      inkscape:window-y="64"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg1239"
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
-     inkscape:snap-global="false" />
+     inkscape:snap-global="false"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata2">
     <rdf:RDF>
@@ -14369,7 +14371,7 @@
      id="text70965-9-4-2-3-9"><tspan
        sodipodi:role="line"
        id="tspan70963-6-6-5-8-0"
-       style="text-align:center;text-anchor:middle;stroke-width:0.187541;fill:#ffffff;fill-opacity:1"
+       style="text-align:center;text-anchor:middle;stroke-width:0.187541;fill:none;fill-opacity:1"
        x="648.08069"
        y="353.09521">**</tspan></text>
   <text
