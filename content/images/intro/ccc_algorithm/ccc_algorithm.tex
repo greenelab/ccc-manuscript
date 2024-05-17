@@ -40,10 +40,9 @@
         }
       }
       \Else{\label{alg:cat}
-        $\mathcal{C} \leftarrow \{v_{i} | v_{i} \in \mathbf{v}\}$\;\label{alg:ref4}
-        $k \leftarrow \left\vert\mathcal{C}\right\vert$\;\label{alg:ref5}
-        $\pi_{c} \leftarrow \{i \mid v_{i} = \mathcal{C}_{c}\}, \forall c \in \left[1,k\right]$\;
-        $\Pi_{k} \leftarrow \pi$\;
+        $\mathcal{C} \leftarrow \{c_1, c_2,\dots,c_m\}$ (set of $m$ unique categorical values in $\mathbf{v}$)\;\label{alg:ref4}
+        $\pi_{\ell} \leftarrow \{i \mid v_{i} = \mathcal{C}_{\ell}\}, \forall \ell \in \left[1,m\right]$\;
+        $\Pi_{m} \leftarrow \pi$\;
       }
       
       $\Pi \leftarrow \{\Pi_{k} \mid \left\vert\Pi_{k}\right\vert > 1\}, \forall k$\;
