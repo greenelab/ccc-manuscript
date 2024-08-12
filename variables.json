@@ -7,14 +7,14 @@
       "gene expression"
     ],
     "lang": "en-US",
-    "date-meta": "2024-06-18",
+    "date-meta": "2024-08-12",
     "author-meta": [
       "Milton Pividori",
       "Marylyn D. Ritchie",
       "Diego H. Milone",
       "Casey S. Greene"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"An efficient not-only-linear correlation coefficient based on clustering\" />\n<meta name=\"citation_title\" content=\"An efficient not-only-linear correlation coefficient based on clustering\" />\n<meta property=\"og:title\" content=\"An efficient not-only-linear correlation coefficient based on clustering\" />\n<meta property=\"twitter:title\" content=\"An efficient not-only-linear correlation coefficient based on clustering\" />\n<meta name=\"dc.date\" content=\"2024-06-18\" />\n<meta name=\"citation_publication_date\" content=\"2024-06-18\" />\n<meta property=\"article:published_time\" content=\"2024-06-18\" />\n<meta name=\"dc.modified\" content=\"2024-06-18T19:51:49+00:00\" />\n<meta property=\"article:modified_time\" content=\"2024-06-18T19:51:49+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Milton Pividori\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA\" />\n<meta name=\"citation_author_institution\" content=\"Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3035-4403\" />\n<meta name=\"twitter:creator\" content=\"@miltondp\" />\n<meta name=\"citation_author\" content=\"Marylyn D. Ritchie\" />\n<meta name=\"citation_author_institution\" content=\"Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1208-1720\" />\n<meta name=\"twitter:creator\" content=\"@MarylynRitchie\" />\n<meta name=\"citation_author\" content=\"Diego H. Milone\" />\n<meta name=\"citation_author_institution\" content=\"Research Institute for Signals, Systems and Computational Intelligence (sinc(i)), Universidad Nacional del Litoral, Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET), Santa Fe CP3000, Argentina\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2182-4351\" />\n<meta name=\"twitter:creator\" content=\"@d1001\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"twitter:creator\" content=\"@GreeneScientist\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/ccc-manuscript/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/ccc-manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/ccc-manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/ccc-manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/ccc-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/ccc-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/ccc-manuscript/v/3c71849ba5e980ebd1bbd8ed6ff7a17e6b6a9855/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/ccc-manuscript/v/3c71849ba5e980ebd1bbd8ed6ff7a17e6b6a9855/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/ccc-manuscript/v/3c71849ba5e980ebd1bbd8ed6ff7a17e6b6a9855/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"An efficient not-only-linear correlation coefficient based on clustering\" />\n<meta name=\"citation_title\" content=\"An efficient not-only-linear correlation coefficient based on clustering\" />\n<meta property=\"og:title\" content=\"An efficient not-only-linear correlation coefficient based on clustering\" />\n<meta property=\"twitter:title\" content=\"An efficient not-only-linear correlation coefficient based on clustering\" />\n<meta name=\"dc.date\" content=\"2024-08-12\" />\n<meta name=\"citation_publication_date\" content=\"2024-08-12\" />\n<meta property=\"article:published_time\" content=\"2024-08-12\" />\n<meta name=\"dc.modified\" content=\"2024-08-12T21:43:52+00:00\" />\n<meta property=\"article:modified_time\" content=\"2024-08-12T21:43:52+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Milton Pividori\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA\" />\n<meta name=\"citation_author_institution\" content=\"Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3035-4403\" />\n<meta name=\"twitter:creator\" content=\"@miltondp\" />\n<meta name=\"citation_author\" content=\"Marylyn D. Ritchie\" />\n<meta name=\"citation_author_institution\" content=\"Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1208-1720\" />\n<meta name=\"twitter:creator\" content=\"@MarylynRitchie\" />\n<meta name=\"citation_author\" content=\"Diego H. Milone\" />\n<meta name=\"citation_author_institution\" content=\"Research Institute for Signals, Systems and Computational Intelligence (sinc(i)), Universidad Nacional del Litoral, Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET), Santa Fe CP3000, Argentina\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2182-4351\" />\n<meta name=\"twitter:creator\" content=\"@d1001\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"twitter:creator\" content=\"@GreeneScientist\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/ccc-manuscript/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/ccc-manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/ccc-manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/ccc-manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/ccc-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/ccc-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/ccc-manuscript/v/1b71ed008e4c7b962a64754ba2c9a013060ff779/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/ccc-manuscript/v/1b71ed008e4c7b962a64754ba2c9a013060ff779/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/ccc-manuscript/v/1b71ed008e4c7b962a64754ba2c9a013060ff779/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
     "bibliography": [
       "content/manual-references-2024-01-05.json",
       "content/manual-references.json"
@@ -25,10 +25,10 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "2024-06-18",
-    "date_long": "June 18, 2024",
-    "generated": "2024-06-18T19:51:49+00:00",
-    "generated_date_long": "June 18, 2024",
+    "date": "2024-08-12",
+    "date_long": "August 12, 2024",
+    "generated": "2024-08-12T21:43:52+00:00",
+    "generated_date_long": "August 12, 2024",
     "randomize_author_order": false,
     "authors": [
       {
@@ -50,6 +50,7 @@
           "The National Human Genome Research Institute (K99/R00 HG011898)",
           "The Eunice Kennedy Shriver National Institute of Child Health and Human Development (R01 HD109765)"
         ],
+        "corresponding": true,
         "affiliation_numbers": [
           1,
           2
@@ -131,19 +132,19 @@
       "repo_slug": "greenelab/ccc-manuscript",
       "repo_owner": "greenelab",
       "repo_name": "ccc-manuscript",
-      "commit": "3c71849ba5e980ebd1bbd8ed6ff7a17e6b6a9855",
-      "triggering_commit": "3c71849ba5e980ebd1bbd8ed6ff7a17e6b6a9855",
-      "build_url": "https://github.com/greenelab/ccc-manuscript/commit/3c71849ba5e980ebd1bbd8ed6ff7a17e6b6a9855/checks",
-      "job_url": "https://github.com/greenelab/ccc-manuscript/actions/runs/9571302924"
+      "commit": "1b71ed008e4c7b962a64754ba2c9a013060ff779",
+      "triggering_commit": "1b71ed008e4c7b962a64754ba2c9a013060ff779",
+      "build_url": "https://github.com/greenelab/ccc-manuscript/commit/1b71ed008e4c7b962a64754ba2c9a013060ff779/checks",
+      "job_url": "https://github.com/greenelab/ccc-manuscript/actions/runs/10359824616"
     },
     "html_url": "https://greenelab.github.io/ccc-manuscript/",
     "pdf_url": "https://greenelab.github.io/ccc-manuscript/manuscript.pdf",
-    "html_url_versioned": "https://greenelab.github.io/ccc-manuscript/v/3c71849ba5e980ebd1bbd8ed6ff7a17e6b6a9855/",
-    "pdf_url_versioned": "https://greenelab.github.io/ccc-manuscript/v/3c71849ba5e980ebd1bbd8ed6ff7a17e6b6a9855/manuscript.pdf",
+    "html_url_versioned": "https://greenelab.github.io/ccc-manuscript/v/1b71ed008e4c7b962a64754ba2c9a013060ff779/",
+    "pdf_url_versioned": "https://greenelab.github.io/ccc-manuscript/v/1b71ed008e4c7b962a64754ba2c9a013060ff779/manuscript.pdf",
     "manubot_version": "0.5.6",
     "rootstock_commit": "299abcea4c710cdda024017b54148e24c8d37228",
     "manuscript_stats": {
-      "word_count": 9537
+      "word_count": 10280
     }
   }
 }

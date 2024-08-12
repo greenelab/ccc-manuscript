@@ -1040,6 +1040,481 @@
   },
   {
     "publisher": "Springer Science and Business Media LLC",
+    "issue": "3",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>SciPy is an open-source scientific computing library for the Python programming language. Since its initial release in 2001, SciPy has become a de facto standard for leveraging scientific algorithms in Python, with over 600 unique code contributors, thousands of dependent packages, over 100,000 dependent repositories and millions of downloads per year. In this work, we provide an overview of the capabilities and development practices of SciPy 1.0 and highlight some recent technical developments.</jats:p>",
+    "DOI": "10.1038/s41592-019-0686-2",
+    "type": "article-journal",
+    "page": "261-272",
+    "source": "Crossref",
+    "title": "SciPy 1.0: fundamental algorithms for scientific computing in Python",
+    "volume": "17",
+    "author": [
+      {
+        "given": "Pauli",
+        "family": "Virtanen"
+      },
+      {
+        "given": "Ralf",
+        "family": "Gommers"
+      },
+      {
+        "given": "Travis E.",
+        "family": "Oliphant"
+      },
+      {
+        "given": "Matt",
+        "family": "Haberland"
+      },
+      {
+        "given": "Tyler",
+        "family": "Reddy"
+      },
+      {
+        "given": "David",
+        "family": "Cournapeau"
+      },
+      {
+        "given": "Evgeni",
+        "family": "Burovski"
+      },
+      {
+        "given": "Pearu",
+        "family": "Peterson"
+      },
+      {
+        "given": "Warren",
+        "family": "Weckesser"
+      },
+      {
+        "given": "Jonathan",
+        "family": "Bright"
+      },
+      {
+        "given": "Stéfan J.",
+        "family": "van der Walt"
+      },
+      {
+        "given": "Matthew",
+        "family": "Brett"
+      },
+      {
+        "given": "Joshua",
+        "family": "Wilson"
+      },
+      {
+        "given": "K. Jarrod",
+        "family": "Millman"
+      },
+      {
+        "given": "Nikolay",
+        "family": "Mayorov"
+      },
+      {
+        "given": "Andrew R. J.",
+        "family": "Nelson"
+      },
+      {
+        "given": "Eric",
+        "family": "Jones"
+      },
+      {
+        "given": "Robert",
+        "family": "Kern"
+      },
+      {
+        "given": "Eric",
+        "family": "Larson"
+      },
+      {
+        "given": "C J",
+        "family": "Carey"
+      },
+      {
+        "given": "İlhan",
+        "family": "Polat"
+      },
+      {
+        "given": "Yu",
+        "family": "Feng"
+      },
+      {
+        "given": "Eric W.",
+        "family": "Moore"
+      },
+      {
+        "given": "Jake",
+        "family": "VanderPlas"
+      },
+      {
+        "given": "Denis",
+        "family": "Laxalde"
+      },
+      {
+        "given": "Josef",
+        "family": "Perktold"
+      },
+      {
+        "given": "Robert",
+        "family": "Cimrman"
+      },
+      {
+        "given": "Ian",
+        "family": "Henriksen"
+      },
+      {
+        "given": "E. A.",
+        "family": "Quintero"
+      },
+      {
+        "given": "Charles R.",
+        "family": "Harris"
+      },
+      {
+        "given": "Anne M.",
+        "family": "Archibald"
+      },
+      {
+        "given": "Antônio H.",
+        "family": "Ribeiro"
+      },
+      {
+        "given": "Fabian",
+        "family": "Pedregosa"
+      },
+      {
+        "given": "Paul",
+        "family": "van Mulbregt"
+      },
+      {},
+      {
+        "given": "Aditya",
+        "family": "Vijaykumar"
+      },
+      {
+        "given": "Alessandro Pietro",
+        "family": "Bardelli"
+      },
+      {
+        "given": "Alex",
+        "family": "Rothberg"
+      },
+      {
+        "given": "Andreas",
+        "family": "Hilboll"
+      },
+      {
+        "given": "Andreas",
+        "family": "Kloeckner"
+      },
+      {
+        "given": "Anthony",
+        "family": "Scopatz"
+      },
+      {
+        "given": "Antony",
+        "family": "Lee"
+      },
+      {
+        "given": "Ariel",
+        "family": "Rokem"
+      },
+      {
+        "given": "C. Nathan",
+        "family": "Woods"
+      },
+      {
+        "given": "Chad",
+        "family": "Fulton"
+      },
+      {
+        "given": "Charles",
+        "family": "Masson"
+      },
+      {
+        "given": "Christian",
+        "family": "Häggström"
+      },
+      {
+        "given": "Clark",
+        "family": "Fitzgerald"
+      },
+      {
+        "given": "David A.",
+        "family": "Nicholson"
+      },
+      {
+        "given": "David R.",
+        "family": "Hagen"
+      },
+      {
+        "given": "Dmitrii V.",
+        "family": "Pasechnik"
+      },
+      {
+        "given": "Emanuele",
+        "family": "Olivetti"
+      },
+      {
+        "given": "Eric",
+        "family": "Martin"
+      },
+      {
+        "given": "Eric",
+        "family": "Wieser"
+      },
+      {
+        "given": "Fabrice",
+        "family": "Silva"
+      },
+      {
+        "given": "Felix",
+        "family": "Lenders"
+      },
+      {
+        "given": "Florian",
+        "family": "Wilhelm"
+      },
+      {
+        "given": "G.",
+        "family": "Young"
+      },
+      {
+        "given": "Gavin A.",
+        "family": "Price"
+      },
+      {
+        "given": "Gert-Ludwig",
+        "family": "Ingold"
+      },
+      {
+        "given": "Gregory E.",
+        "family": "Allen"
+      },
+      {
+        "given": "Gregory R.",
+        "family": "Lee"
+      },
+      {
+        "given": "Hervé",
+        "family": "Audren"
+      },
+      {
+        "given": "Irvin",
+        "family": "Probst"
+      },
+      {
+        "given": "Jörg P.",
+        "family": "Dietrich"
+      },
+      {
+        "given": "Jacob",
+        "family": "Silterra"
+      },
+      {
+        "given": "James T",
+        "family": "Webber"
+      },
+      {
+        "given": "Janko",
+        "family": "Slavič"
+      },
+      {
+        "given": "Joel",
+        "family": "Nothman"
+      },
+      {
+        "given": "Johannes",
+        "family": "Buchner"
+      },
+      {
+        "given": "Johannes",
+        "family": "Kulick"
+      },
+      {
+        "given": "Johannes L.",
+        "family": "Schönberger"
+      },
+      {
+        "given": "José Vinícius",
+        "family": "de Miranda Cardoso"
+      },
+      {
+        "given": "Joscha",
+        "family": "Reimer"
+      },
+      {
+        "given": "Joseph",
+        "family": "Harrington"
+      },
+      {
+        "given": "Juan Luis Cano",
+        "family": "Rodríguez"
+      },
+      {
+        "given": "Juan",
+        "family": "Nunez-Iglesias"
+      },
+      {
+        "given": "Justin",
+        "family": "Kuczynski"
+      },
+      {
+        "given": "Kevin",
+        "family": "Tritz"
+      },
+      {
+        "given": "Martin",
+        "family": "Thoma"
+      },
+      {
+        "given": "Matthew",
+        "family": "Newville"
+      },
+      {
+        "given": "Matthias",
+        "family": "Kümmerer"
+      },
+      {
+        "given": "Maximilian",
+        "family": "Bolingbroke"
+      },
+      {
+        "given": "Michael",
+        "family": "Tartre"
+      },
+      {
+        "given": "Mikhail",
+        "family": "Pak"
+      },
+      {
+        "given": "Nathaniel J.",
+        "family": "Smith"
+      },
+      {
+        "given": "Nikolai",
+        "family": "Nowaczyk"
+      },
+      {
+        "given": "Nikolay",
+        "family": "Shebanov"
+      },
+      {
+        "given": "Oleksandr",
+        "family": "Pavlyk"
+      },
+      {
+        "given": "Per A.",
+        "family": "Brodtkorb"
+      },
+      {
+        "given": "Perry",
+        "family": "Lee"
+      },
+      {
+        "given": "Robert T.",
+        "family": "McGibbon"
+      },
+      {
+        "given": "Roman",
+        "family": "Feldbauer"
+      },
+      {
+        "given": "Sam",
+        "family": "Lewis"
+      },
+      {
+        "given": "Sam",
+        "family": "Tygier"
+      },
+      {
+        "given": "Scott",
+        "family": "Sievert"
+      },
+      {
+        "given": "Sebastiano",
+        "family": "Vigna"
+      },
+      {
+        "given": "Stefan",
+        "family": "Peterson"
+      },
+      {
+        "given": "Surhud",
+        "family": "More"
+      },
+      {
+        "given": "Tadeusz",
+        "family": "Pudlik"
+      },
+      {
+        "given": "Takuya",
+        "family": "Oshima"
+      },
+      {
+        "given": "Thomas J.",
+        "family": "Pingel"
+      },
+      {
+        "given": "Thomas P.",
+        "family": "Robitaille"
+      },
+      {
+        "given": "Thomas",
+        "family": "Spura"
+      },
+      {
+        "given": "Thouis R.",
+        "family": "Jones"
+      },
+      {
+        "given": "Tim",
+        "family": "Cera"
+      },
+      {
+        "given": "Tim",
+        "family": "Leslie"
+      },
+      {
+        "given": "Tiziano",
+        "family": "Zito"
+      },
+      {
+        "given": "Tom",
+        "family": "Krauss"
+      },
+      {
+        "given": "Utkarsh",
+        "family": "Upadhyay"
+      },
+      {
+        "given": "Yaroslav O.",
+        "family": "Halchenko"
+      },
+      {
+        "given": "Yoshiki",
+        "family": "Vázquez-Baeza"
+      }
+    ],
+    "container-title": "Nature Methods",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          3
+        ]
+      ]
+    },
+    "URL": "https://doi.org/ggj45f",
+    "container-title-short": "Nat Methods",
+    "PMCID": "PMC7056644",
+    "PMID": "32015543",
+    "id": "8Miti2Gz",
+    "note": "This CSL Item was generated by Manubot v0.5.6 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41592-019-0686-2"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "4",
     "DOI": "10.1038/s41593-021-00806-8",
     "type": "article-journal",
@@ -3026,41 +3501,6 @@
     "PMID": "32913098",
     "id": "9Pr9idng",
     "note": "This CSL Item was generated by Manubot v0.5.6 from its persistent identifier (standard_id).\nstandard_id: doi:10.1126/science.aaz1776\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-2024-01-05.json\noriginal_id: 9Pr9idng"
-  },
-  {
-    "publisher": "ACM",
-    "DOI": "10.1145/2833157.2833162",
-    "type": "paper-conference",
-    "source": "Crossref",
-    "title": "Numba",
-    "author": [
-      {
-        "given": "Siu Kwan",
-        "family": "Lam"
-      },
-      {
-        "given": "Antoine",
-        "family": "Pitrou"
-      },
-      {
-        "given": "Stanley",
-        "family": "Seibert"
-      }
-    ],
-    "event": "SC15: The International Conference for High Performance Computing, Networking, Storage and Analysis",
-    "container-title": "Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC",
-    "issued": {
-      "date-parts": [
-        [
-          2015,
-          11,
-          15
-        ]
-      ]
-    },
-    "URL": "https://doi.org/gf3nks",
-    "id": "189xgFrlN",
-    "note": "This CSL Item was generated by Manubot v0.5.6 from its persistent identifier (standard_id).\nstandard_id: doi:10.1145/2833157.2833162\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-2024-01-05.json\noriginal_id: 189xgFrlN"
   },
   {
     "publisher": "ACM",
