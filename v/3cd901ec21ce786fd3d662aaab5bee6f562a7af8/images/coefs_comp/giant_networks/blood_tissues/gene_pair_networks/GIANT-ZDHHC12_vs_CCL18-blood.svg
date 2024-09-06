@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="410.49249"
+   width="411.28638"
+   version="1.1"
+   id="svg252"
+   sodipodi:docname="GIANT-ZDHHC12_vs_CCL18-blood.svg"
+   inkscape:version="1.1.2 (76b9e6a115, 2022-02-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs256">
+    <linearGradient
+       id="legend2"
+       x1="3.5533452"
+       y1="0"
+       x2="73.909584"
+       y2="0"
+       spreadMethod="pad"
+       gradientTransform="matrix(4.9990019,0,0,0.10098994,22.321037,410.78561)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(44, 160, 44);"
+         id="stop2" />
+      <stop
+         offset="25%"
+         style="stop-color: rgb(228, 164, 76);"
+         id="stop4" />
+      <stop
+         offset="50%"
+         style="stop-color: rgb(219, 109, 61);"
+         id="stop6" />
+      <stop
+         offset="75%"
+         style="stop-color: rgb(211, 55, 47);"
+         id="stop8" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(202, 0, 32);"
+         id="stop10" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1221">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.35509;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.35509, 16.261;stroke-dashoffset:0"
+         id="rect1223"
+         width="403.2023"
+         height="396.51294"
+         x="74.897202"
+         y="130.29227" />
+    </clipPath>
+    <linearGradient
+       id="legend2-1"
+       x1="3.5533452"
+       y1="0"
+       x2="73.909584"
+       y2="0"
+       spreadMethod="pad"
+       gradientTransform="matrix(7.0356236,0,0,0.14213381,-25,15.27081)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(44, 160, 44);"
+         id="stop2-9" />
+      <stop
+         offset="25%"
+         style="stop-color: rgb(228, 164, 76);"
+         id="stop4-6" />
+      <stop
+         offset="50%"
+         style="stop-color: rgb(219, 109, 61);"
+         id="stop6-9" />
+      <stop
+         offset="75%"
+         style="stop-color: rgb(211, 55, 47);"
+         id="stop8-3" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(202, 0, 32);"
+         id="stop10-3" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1771">
+      <rect
+         style="fill:#fefefe;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:10, 5;stroke-dashoffset:0"
+         id="rect1773"
+         width="438.29736"
+         height="449.99292"
+         x="41.806408"
+         y="86.000839" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3450">
+      <rect
+         style="fill:#fefefe;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:10, 5;stroke-dashoffset:0"
+         id="rect3452"
+         width="436.6178"
+         height="500.89938"
+         x="56.287468"
+         y="49.557167" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4168">
+      <rect
+         style="fill:#fefefe;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:10, 5;stroke-dashoffset:0"
+         id="rect4170"
+         width="458.97461"
+         height="459.98932"
+         x="35.95993"
+         y="74.78331" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview254"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.4066667"
+     inkscape:cx="221.80094"
+     inkscape:cy="117.29858"
+     inkscape:window-width="1714"
+     inkscape:window-height="1371"
+     inkscape:window-x="4"
+     inkscape:window-y="28"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg252"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.848711;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.848711, 10.1844;stroke-dashoffset:0"
+     id="rect1456"
+     width="419.55774"
+     height="404.80002"
+     x="-4.8424907"
+     y="2.1971207" />
+  <g
+     id="g4114"
+     clip-path="url(#clipPath4168)"
+     transform="matrix(0.87412644,0,0,0.87412644,-27.098067,-61.817352)">
+    <rect
+       class="canvas"
+       width="540"
+       height="600"
+       style="fill:none"
+       id="rect3862"
+       x="0"
+       y="0" />
+    <g
+       transform="matrix(1.2,0,0,1.2,-87.276108,-65.212479)"
+       id="g4112">
+      <path
+         class="edge"
+         id="56"
+         d="m 405.1915,343.46448 c 0,0 92.27283,-60.42572 30.77798,-104.58202"
+         style="fill:none;stroke:#d9613a;stroke-width:1.53506" />
+      <path
+         class="edge"
+         id="57"
+         d="m 405.1915,343.46448 c 0,0 -136.99927,29.67176 -252.23949,1.30503"
+         style="fill:none;stroke:#cd1425;stroke-width:2.4963" />
+      <path
+         class="edge"
+         id="58"
+         d="m 405.1915,343.46448 c 0,0 103.34445,-24.04273 35.69694,-51.09014"
+         style="fill:none;stroke:#cb0922;stroke-width:2.64091" />
+      <path
+         class="edge"
+         id="63"
+         d="m 405.1915,343.46448 c 0,0 -144.40262,-4.70862 -260.59864,-47.72549"
+         style="fill:none;stroke:#d43f31;stroke-width:1.9572" />
+      <path
+         class="edge"
+         id="65"
+         d="m 405.1915,343.46448 c 0,0 11.70189,106.49146 -73.48726,116.79162"
+         style="fill:none;stroke:#ce1d28;stroke-width:2.38949" />
+      <path
+         class="edge"
+         id="66"
+         d="m 405.1915,343.46448 c 0,0 -45.71174,108.84425 -151.85394,118.37116"
+         style="fill:none;stroke:#cf2029;stroke-width:2.3473" />
+      <path
+         class="edge"
+         id="69"
+         d="m 405.1915,343.46448 c 0,0 3.90077,-115.67072 -81.98989,-171.34069"
+         style="fill:none;stroke:#cd1425;stroke-width:2.49806" />
+      <path
+         class="edge"
+         id="71"
+         d="m 405.1915,343.46448 c 0,0 56.30668,-101.73018 -17.62577,-161.61454"
+         style="fill:none;stroke:#d12a2b;stroke-width:2.2252" />
+      <path
+         class="edge"
+         id="78"
+         d="m 405.1915,343.46448 c 0,0 -138.8966,-64.2712 -256.20655,-108.001"
+         style="fill:none;stroke:#dd7b41;stroke-width:1.20715" />
+      <path
+         class="edge"
+         id="80"
+         d="m 405.1915,343.46448 c 0,0 94.82585,69.72907 45.67581,106.47492"
+         style="fill:none;stroke:#d12e2c;stroke-width:2.16865" />
+      <path
+         class="edge"
+         id="81"
+         d="m 405.1915,343.46448 c 0,0 -71.44518,-114.38148 -191.55595,-163.49948"
+         style="fill:none;stroke:#db6b3d;stroke-width:1.40311" />
+      <path
+         class="edge"
+         id="83"
+         d="m 405.1915,343.46448 c 0,0 -26.63619,-128.00285 -117.58702,-196.61266"
+         style="fill:none;stroke:#e08e46;stroke-width:1" />
+      <path
+         class="edge"
+         id="89"
+         d="m 405.1915,343.46448 c 0,0 -81.56868,81.58119 -195.36363,76.87751"
+         style="fill:none;stroke:#d75437;stroke-width:1.69065" />
+      <path
+         class="edge"
+         id="93"
+         d="m 405.1915,343.46448 c 0,0 -117.93698,50.50995 -227.90017,37.30052"
+         style="fill:none;stroke:#d75236;stroke-width:1.71781" />
+      <path
+         class="edge"
+         id="99"
+         d="m 405.1915,343.46448 c 0,0 55.87677,83.80707 -22.7521,96.79136"
+         style="fill:none;stroke:#d43e31;stroke-width:1.97316" />
+      <path
+         class="edge"
+         id="336"
+         d="m 435.96948,238.88246 c 0,0 -133.8129,25.20361 -283.01747,105.88705"
+         style="fill:none;stroke:#d0242a;stroke-width:2.30001" />
+      <path
+         class="edge"
+         id="337"
+         d="m 435.96948,238.88246 c 0,0 80.43736,1.29442 4.91896,53.49188"
+         style="fill:none;stroke:#d65036;stroke-width:1.74291" />
+      <path
+         class="edge"
+         id="342"
+         d="m 435.96948,238.88246 c 0,0 -150.67139,-7.81882 -291.37662,56.85653"
+         style="fill:none;stroke:#d54733;stroke-width:1.85339" />
+      <path
+         class="edge"
+         id="344"
+         d="m 435.96948,238.88246 c 0,0 -9.21729,131.41453 -104.26524,221.37364"
+         style="fill:none;stroke:#d9633b;stroke-width:1.50473" />
+      <path
+         class="edge"
+         id="345"
+         d="m 435.96948,238.88246 c 0,0 -59.82874,136.16924 -182.63192,222.95318"
+         style="fill:none;stroke:#d0262a;stroke-width:2.27805" />
+      <path
+         class="edge"
+         id="348"
+         d="m 435.96948,238.88246 c 0,0 -10.7377,-94.34955 -112.76787,-66.75867"
+         style="fill:none;stroke:#ce1a27;stroke-width:2.41725" />
+      <path
+         class="edge"
+         id="350"
+         d="m 435.96948,238.88246 c 0,0 36.79333,-81.75147 -48.40375,-57.03252"
+         style="fill:none;stroke:#d12f2d;stroke-width:2.16039" />
+      <path
+         class="edge"
+         id="357"
+         d="m 435.96948,238.88246 c 0,0 -142.2323,-45.17938 -286.98453,-3.41898"
+         style="fill:none;stroke:#df8443;stroke-width:1.09099" />
+      <path
+         class="edge"
+         id="359"
+         d="m 435.96948,238.88246 c 0,0 67.56207,109.93418 14.89783,211.05694"
+         style="fill:none;stroke:#d2342e;stroke-width:2.10211" />
+      <path
+         class="edge"
+         id="360"
+         d="m 435.96948,238.88246 c 0,0 -93.72391,-85.06363 -222.33393,-58.91746"
+         style="fill:none;stroke:#d64c34;stroke-width:1.79365" />
+      <path
+         class="edge"
+         id="362"
+         d="m 435.96948,238.88246 c 0,0 -43.23167,-103.45052 -148.365,-92.03064"
+         style="fill:none;stroke:#d2362f;stroke-width:2.06713" />
+      <path
+         class="edge"
+         id="368"
+         d="m 435.96948,238.88246 c 0,0 -89.56115,115.13621 -226.14161,181.45953"
+         style="fill:none;stroke:#d95d39;stroke-width:1.57668" />
+      <path
+         class="edge"
+         id="372"
+         d="m 435.96948,238.88246 c 0,0 -116.34106,79.42678 -258.67815,141.88254"
+         style="fill:none;stroke:#d75336;stroke-width:1.70995" />
+      <path
+         class="edge"
+         id="378"
+         d="m 435.96948,238.88246 c 0,0 27.09481,113.40795 -53.53008,201.37338"
+         style="fill:none;stroke:#d44232;stroke-width:1.92368" />
+      <path
+         class="edge"
+         id="380"
+         d="m 152.95201,344.76951 c 0,0 144.10245,-12.46695 287.93643,-52.39517"
+         style="fill:none;stroke:#cf1f28;stroke-width:2.36513" />
+      <path
+         class="edge"
+         id="385"
+         d="m 152.95201,344.76951 c 0,0 -92.023393,-14.11423 -8.35915,-49.03052"
+         style="fill:none;stroke:#cc0c23;stroke-width:2.59763" />
+      <path
+         class="edge"
+         id="386"
+         d="m 152.95201,344.76951 c 0,0 -66.092399,-106.17149 -4.65564,-194.06243"
+         style="fill:none;stroke:#a8b145;stroke-width:1" />
+      <path
+         class="edge"
+         id="387"
+         d="m 152.95201,344.76951 c 0,0 55.17401,108.26921 178.75223,115.48659"
+         style="fill:none;stroke:#cd1225;stroke-width:2.52392" />
+      <path
+         class="edge"
+         id="388"
+         d="m 152.95201,344.76951 c 0,0 2.50845,106.68831 100.38555,117.06613"
+         style="fill:none;stroke:#d12f2d;stroke-width:2.15779" />
+      <path
+         class="edge"
+         id="391"
+         d="m 152.95201,344.76951 c 0,0 57.22996,-118.90572 170.2496,-172.64572"
+         style="fill:none;stroke:#ce1a27;stroke-width:2.42084" />
+      <path
+         class="edge"
+         id="393"
+         d="m 152.95201,344.76951 c 0,0 99.77787,-114.365 234.61372,-162.91957"
+         style="fill:none;stroke:#ce1b27;stroke-width:2.40541" />
+      <path
+         class="edge"
+         id="400"
+         d="m 152.95201,344.76951 c 0,0 -81.622402,-58.2245 -3.96706,-109.30603"
+         style="fill:none;stroke:#d43f31;stroke-width:1.95242" />
+      <path
+         class="edge"
+         id="402"
+         d="m 152.95201,344.76951 c 0,0 142.67232,91.94152 297.9153,105.16989"
+         style="fill:none;stroke:#d0252a;stroke-width:2.27931" />
+      <path
+         class="edge"
+         id="403"
+         d="m 152.95201,344.76951 c 0,0 -31.32053,-104.37177 60.68354,-164.80451"
+         style="fill:none;stroke:#d2362f;stroke-width:2.06537" />
+      <path
+         class="edge"
+         id="405"
+         d="m 152.95201,344.76951 c 0,0 24.16662,-130.84433 134.65247,-197.91769"
+         style="fill:none;stroke:#d12c2c;stroke-width:2.19645" />
+      <path
+         class="edge"
+         id="411"
+         d="m 152.95201,344.76951 c 0,0 -39.9182,84.09147 56.87586,75.57248"
+         style="fill:none;stroke:#d75236;stroke-width:1.71967" />
+      <path
+         class="edge"
+         id="415"
+         d="m 152.95201,344.76951 c 0,0 -69.003297,56.45144 24.33932,35.99549"
+         style="fill:none;stroke:#d33b30;stroke-width:2.01464" />
+      <path
+         class="edge"
+         id="421"
+         d="m 152.95201,344.76951 c 0,0 96.03171,88.53051 229.48739,95.48633"
+         style="fill:none;stroke:#d54432;stroke-width:1.8957" />
+      <path
+         class="edge"
+         id="427"
+         d="m 440.88844,292.37434 c 0,0 -149.74977,-17.40496 -296.29558,3.36465"
+         style="fill:none;stroke:#d0282b;stroke-width:2.24548" />
+      <path
+         class="edge"
+         id="429"
+         d="m 440.88844,292.37434 c 0,0 -11.40322,114.08295 -109.1842,167.88176"
+         style="fill:none;stroke:#d0292b;stroke-width:2.23908" />
+      <path
+         class="edge"
+         id="430"
+         d="m 440.88844,292.37434 c 0,0 -62.91609,118.11649 -187.55088,169.4613"
+         style="fill:none;stroke:#d44132;stroke-width:1.92732" />
+      <path
+         class="edge"
+         id="433"
+         d="m 440.88844,292.37434 c 0,0 -8.21904,-103.81798 -117.68683,-120.25055"
+         style="fill:none;stroke:#cd1425;stroke-width:2.49763" />
+      <path
+         class="edge"
+         id="435"
+         d="m 440.88844,292.37434 c 0,0 38.38775,-91.54565 -53.32271,-110.5244"
+         style="fill:none;stroke:#ce1c27;stroke-width:2.40305" />
+      <path
+         class="edge"
+         id="442"
+         d="m 440.88844,292.37434 c 0,0 -135.33583,-65.15023 -291.90349,-56.91086"
+         style="fill:none;stroke:#cf2229;stroke-width:2.31762" />
+      <path
+         class="edge"
+         id="444"
+         d="m 440.88844,292.37434 c 0,0 72.34198,89.17853 9.97887,157.56506"
+         style="fill:none;stroke:#cf2028;stroke-width:2.3536" />
+      <path
+         class="edge"
+         id="445"
+         d="m 440.88844,292.37434 c 0,0 -93.57942,-97.26512 -227.25289,-112.40934"
+         style="fill:none;stroke:#d43e31;stroke-width:1.96516" />
+      <path
+         class="edge"
+         id="447"
+         d="m 440.88844,292.37434 c 0,0 -36.75752,-119.16647 -153.28396,-145.52252"
+         style="fill:none;stroke:#d0242a;stroke-width:2.29808" />
+      <path
+         class="edge"
+         id="453"
+         d="m 440.88844,292.37434 c 0,0 -95.64073,97.24523 -231.06057,127.96765"
+         style="fill:none;stroke:#d9613a;stroke-width:1.53567" />
+      <path
+         class="edge"
+         id="457"
+         d="m 440.88844,292.37434 c 0,0 -120.70992,70.97691 -263.59711,88.39066"
+         style="fill:none;stroke:#cd1626;stroke-width:2.4718" />
+      <path
+         class="edge"
+         id="463"
+         d="m 440.88844,292.37434 c 0,0 29.27054,98.31474 -58.44904,147.8815"
+         style="fill:none;stroke:#d54532;stroke-width:1.88702" />
+      <path
+         class="edge"
+         id="623"
+         d="m 144.59286,295.73899 c 0,0 -70.254921,-92.34529 3.70351,-145.03191"
+         style="fill:none;stroke:#82ac3e;stroke-width:1" />
+      <path
+         class="edge"
+         id="624"
+         d="m 144.59286,295.73899 c 0,0 57.36014,111.63686 187.11138,164.51711"
+         style="fill:none;stroke:#d2352e;stroke-width:2.08345" />
+      <path
+         class="edge"
+         id="625"
+         d="m 144.59286,295.73899 c 0,0 5.51999,118.39062 108.7447,166.09665"
+         style="fill:none;stroke:#cd1526;stroke-width:2.48426" />
+      <path
+         class="edge"
+         id="628"
+         d="m 144.59286,295.73899 c 0,0 57.59567,-101.97054 178.60875,-123.6152"
+         style="fill:none;stroke:#d65035;stroke-width:1.74613" />
+      <path
+         class="edge"
+         id="630"
+         d="m 144.59286,295.73899 c 0,0 107.82207,-97.84047 242.97287,-113.88905"
+         style="fill:none;stroke:#cf2129;stroke-width:2.34022" />
+      <path
+         class="edge"
+         id="637"
+         d="m 144.59286,295.73899 c 0,0 -83.319336,-44.50255 4.39209,-60.27551"
+         style="fill:none;stroke:#d75236;stroke-width:1.71954" />
+      <path
+         class="edge"
+         id="639"
+         d="m 144.59286,295.73899 c 0,0 150.95255,111.56317 306.27445,154.20041"
+         style="fill:none;stroke:#d2342e;stroke-width:2.10138" />
+      <path
+         class="edge"
+         id="640"
+         d="m 144.59286,295.73899 c 0,0 -27.08825,-96.58856 69.04269,-115.77399"
+         style="fill:none;stroke:#d33d30;stroke-width:1.98631" />
+      <path
+         class="edge"
+         id="642"
+         d="m 144.59286,295.73899 c 0,0 28.61712,-119.05695 143.01162,-148.88717"
+         style="fill:none;stroke:#d44232;stroke-width:1.91514" />
+      <path
+         class="edge"
+         id="648"
+         d="m 144.59286,295.73899 c 0,0 -31.79546,92.58779 65.23501,124.603"
+         style="fill:none;stroke:#d0292b;stroke-width:2.23126" />
+      <path
+         class="edge"
+         id="652"
+         d="m 144.59286,295.73899 c 0,0 -63.638963,65.45746 32.69847,85.02601"
+         style="fill:none;stroke:#d12d2c;stroke-width:2.18597" />
+      <path
+         class="edge"
+         id="658"
+         d="m 144.59286,295.73899 c 0,0 97.40054,104.05585 237.84654,144.51685"
+         style="fill:none;stroke:#d54733;stroke-width:1.85156" />
+      <path
+         class="edge"
+         id="664"
+         d="m 148.29637,150.70708 c 0,0 79.34219,-48.29253 174.90524,21.41671"
+         style="fill:none;stroke:#71aa3a;stroke-width:1" />
+      <path
+         class="edge"
+         id="666"
+         d="m 148.29637,150.70708 c 0,0 127.49064,-39.58363 239.26936,31.14286"
+         style="fill:none;stroke:#68a838;stroke-width:1" />
+      <path
+         class="edge"
+         id="673"
+         d="m 148.29637,150.70708 c 0,0 -71.655453,6.36726 0.68858,84.7564"
+         style="fill:none;stroke:#6ea939;stroke-width:1" />
+      <path
+         class="edge"
+         id="676"
+         d="m 148.29637,150.70708 c 0,0 -4.82072,-58.465173 65.33918,29.25792"
+         style="fill:none;stroke:#66a838;stroke-width:1" />
+      <path
+         class="edge"
+         id="678"
+         d="m 148.29637,150.70708 c 0,0 50.0745,-73.600759 139.30811,-3.85526"
+         style="fill:none;stroke:#85ac3e;stroke-width:1" />
+      <path
+         class="edge"
+         id="684"
+         d="m 148.29637,150.70708 c 0,0 -25.19737,142.29787 61.5315,269.63491"
+         style="fill:none;stroke:#94ae41;stroke-width:1" />
+      <path
+         class="edge"
+         id="696"
+         d="m 331.70424,460.2561 c 0,0 -47.014,83.06797 -78.36668,1.57954"
+         style="fill:none;stroke:#d33c30;stroke-width:1.99586" />
+      <path
+         class="edge"
+         id="699"
+         d="m 331.70424,460.2561 c 0,0 28.81317,-141.56669 -8.50263,-288.13231"
+         style="fill:none;stroke:#ce1726;stroke-width:2.4583" />
+      <path
+         class="edge"
+         id="701"
+         d="m 331.70424,460.2561 c 0,0 62.75658,-133.63668 55.86149,-278.40616"
+         style="fill:none;stroke:#d2352e;stroke-width:2.08432" />
+      <path
+         class="edge"
+         id="708"
+         d="m 331.70424,460.2561 c 0,0 -123.38223,-92.04764 -182.71929,-224.79262"
+         style="fill:none;stroke:#da6a3c;stroke-width:1.42136" />
+      <path
+         class="edge"
+         id="710"
+         d="m 331.70424,460.2561 c 0,0 86.25302,58.77596 119.16307,-10.3167"
+         style="fill:none;stroke:#d2342e;stroke-width:2.10042" />
+      <path
+         class="edge"
+         id="711"
+         d="m 331.70424,460.2561 c 0,0 -92.87253,-129.99889 -118.06869,-280.2911"
+         style="fill:none;stroke:#d64c34;stroke-width:1.80075" />
+      <path
+         class="edge"
+         id="713"
+         d="m 331.70424,460.2561 c 0,0 -1.26992,-171.79583 -44.09976,-313.40428"
+         style="fill:none;stroke:#cf1e28;stroke-width:2.37702" />
+      <path
+         class="edge"
+         id="719"
+         d="m 331.70424,460.2561 c 0,0 -84.29983,54.48328 -121.87637,-39.91411"
+         style="fill:none;stroke:#d12a2b;stroke-width:2.22042" />
+      <path
+         class="edge"
+         id="723"
+         d="m 331.70424,460.2561 c 0,0 -108.43053,22.67151 -154.41291,-79.4911"
+         style="fill:none;stroke:#d0252a;stroke-width:2.28878" />
+      <path
+         class="edge"
+         id="729"
+         d="m 331.70424,460.2561 c 0,0 54.54193,67.49664 50.73516,-20.00026"
+         style="fill:none;stroke:#da673c;stroke-width:1.45551" />
+      <path
+         class="edge"
+         id="733"
+         d="m 253.33756,461.83564 c 0,0 21.43796,-142.48047 69.86405,-289.71185"
+         style="fill:none;stroke:#ce1d28;stroke-width:2.39008" />
+      <path
+         class="edge"
+         id="735"
+         d="m 253.33756,461.83564 c 0,0 88.86348,-129.94662 134.22817,-279.9857"
+         style="fill:none;stroke:#ce1927;stroke-width:2.43015" />
+      <path
+         class="edge"
+         id="742"
+         d="m 253.33756,461.83564 c 0,0 -100.20502,-90.98855 -104.35261,-226.37216"
+         style="fill:none;stroke:#da693c;stroke-width:1.42925" />
+      <path
+         class="edge"
+         id="744"
+         d="m 253.33756,461.83564 c 0,0 111.56252,51.12951 197.52975,-11.89624"
+         style="fill:none;stroke:#d02a2b;stroke-width:2.22685" />
+      <path
+         class="edge"
+         id="745"
+         d="m 253.33756,461.83564 c 0,0 -57.06999,-135.0431 -39.70201,-281.87064"
+         style="fill:none;stroke:#d3372f;stroke-width:2.05393" />
+      <path
+         class="edge"
+         id="747"
+         d="m 253.33756,461.83564 c 0,0 -7.80683,-158.3963 34.26692,-314.98382"
+         style="fill:none;stroke:#d33d30;stroke-width:1.98596" />
+      <path
+         class="edge"
+         id="753"
+         d="m 253.33756,461.83564 c 0,0 -63.705,53.17453 -43.50969,-41.49365"
+         style="fill:none;stroke:#d3382f;stroke-width:2.04403" />
+      <path
+         class="edge"
+         id="757"
+         d="m 253.33756,461.83564 c 0,0 -87.69268,21.48629 -76.04623,-81.07064"
+         style="fill:none;stroke:#cf1e28;stroke-width:2.37813" />
+      <path
+         class="edge"
+         id="763"
+         d="m 253.33756,461.83564 c 0,0 72.528,64.42955 129.10184,-21.5798"
+         style="fill:none;stroke:#d12e2c;stroke-width:2.17267" />
+      <path
+         class="edge"
+         id="831"
+         d="m 323.20161,172.12379 c 0,0 66.81864,-71.25874 64.36412,9.72615"
+         style="fill:none;stroke:#cf1e28;stroke-width:2.37862" />
+      <path
+         class="edge"
+         id="838"
+         d="m 323.20161,172.12379 c 0,0 -109.25683,-25.27768 -174.21666,63.33969"
+         style="fill:none;stroke:#cf1d28;stroke-width:2.38143" />
+      <path
+         class="edge"
+         id="840"
+         d="m 323.20161,172.12379 c 0,0 99.97424,128.72885 127.6657,277.81561"
+         style="fill:none;stroke:#d0262a;stroke-width:2.27143" />
+      <path
+         class="edge"
+         id="841"
+         d="m 323.20161,172.12379 c 0,0 -61.59168,-75.45475 -109.56606,7.84121"
+         style="fill:none;stroke:#d2322e;stroke-width:2.11819" />
+      <path
+         class="edge"
+         id="843"
+         d="m 323.20161,172.12379 c 0,0 -3.57205,-96.861052 -35.59713,-25.27197"
+         style="fill:none;stroke:#d64c34;stroke-width:1.79447" />
+      <path
+         class="edge"
+         id="849"
+         d="m 323.20161,172.12379 c 0,0 -87.14174,112.67723 -113.37374,248.2182"
+         style="fill:none;stroke:#d2332e;stroke-width:2.10498" />
+      <path
+         class="edge"
+         id="853"
+         d="m 323.20161,172.12379 c 0,0 -100.3492,81.23395 -145.91028,208.64121"
+         style="fill:none;stroke:#cd1225;stroke-width:2.52301" />
+      <path
+         class="edge"
+         id="859"
+         d="m 323.20161,172.12379 c 0,0 64.97689,124.59674 59.23779,268.13205"
+         style="fill:none;stroke:#d64f35;stroke-width:1.76012" />
+      <path
+         class="edge"
+         id="897"
+         d="m 387.56573,181.84994 c 0,0 -129.40393,-21.49779 -238.58078,53.61354"
+         style="fill:none;stroke:#d9623a;stroke-width:1.51552" />
+      <path
+         class="edge"
+         id="899"
+         d="m 387.56573,181.84994 c 0,0 84.33829,126.99134 63.30158,268.08946"
+         style="fill:none;stroke:#d12b2c;stroke-width:2.20757" />
+      <path
+         class="edge"
+         id="900"
+         d="m 387.56573,181.84994 c 0,0 -78.37121,-65.82913 -173.93018,-1.88494"
+         style="fill:none;stroke:#da653b;stroke-width:1.48388" />
+      <path
+         class="edge"
+         id="902"
+         d="m 387.56573,181.84994 c 0,0 -27.52938,-90.569217 -99.96125,-34.99812"
+         style="fill:none;stroke:#d54533;stroke-width:1.87702" />
+      <path
+         class="edge"
+         id="908"
+         d="m 387.56573,181.84994 c 0,0 -93.35479,112.55263 -177.73786,238.49205"
+         style="fill:none;stroke:#d0262a;stroke-width:2.26683" />
+      <path
+         class="edge"
+         id="912"
+         d="m 387.56573,181.84994 c 0,0 -120.28753,73.78441 -210.2744,198.91506"
+         style="fill:none;stroke:#cf1e28;stroke-width:2.373" />
+      <path
+         class="edge"
+         id="918"
+         d="m 387.56573,181.84994 c 0,0 48.89546,134.97314 -5.12633,258.4059"
+         style="fill:none;stroke:#d2342e;stroke-width:2.0934" />
+      <path
+         class="edge"
+         id="1074"
+         d="m 148.98495,235.46348 c 0,0 146.55761,126.14349 301.88236,214.47592"
+         style="fill:none;stroke:#d3392f;stroke-width:2.03313" />
+      <path
+         class="edge"
+         id="1075"
+         d="m 148.98495,235.46348 c 0,0 -27.8581,-83.36175 64.6506,-55.49848"
+         style="fill:none;stroke:#de8143;stroke-width:1.12415" />
+      <path
+         class="edge"
+         id="1077"
+         d="m 148.98495,235.46348 c 0,0 33.65071,-102.60429 138.61953,-88.61166"
+         style="fill:none;stroke:#db6b3d;stroke-width:1.40426" />
+      <path
+         class="edge"
+         id="1083"
+         d="m 148.98495,235.46348 c 0,0 -29.42352,108.2823 60.84292,184.87851"
+         style="fill:none;stroke:#e6b350;stroke-width:1" />
+      <path
+         class="edge"
+         id="1087"
+         d="m 148.98495,235.46348 c 0,0 -56.772509,79.41837 28.30638,145.30152"
+         style="fill:none;stroke:#d75136;stroke-width:1.72921" />
+      <path
+         class="edge"
+         id="1093"
+         d="m 148.98495,235.46348 c 0,0 91.22155,124.92647 233.45445,204.79236"
+         style="fill:none;stroke:#dd7a41;stroke-width:1.21642" />
+      <path
+         class="edge"
+         id="1116"
+         d="m 450.86731,449.9394 c 0,0 -96.01667,-149.63344 -237.23176,-269.9744"
+         style="fill:none;stroke:#d12f2d;stroke-width:2.15823" />
+      <path
+         class="edge"
+         id="1118"
+         d="m 450.86731,449.9394 c 0,0 -46.2804,-173.45646 -163.26283,-303.08758"
+         style="fill:none;stroke:#d3372f;stroke-width:2.06127" />
+      <path
+         class="edge"
+         id="1124"
+         d="m 450.86731,449.9394 c 0,0 -114.64811,40.49971 -241.03944,-29.59741"
+         style="fill:none;stroke:#d2352e;stroke-width:2.08" />
+      <path
+         class="edge"
+         id="1128"
+         d="m 450.86731,449.9394 c 0,0 -140.23217,14.77432 -273.57598,-69.1744"
+         style="fill:none;stroke:#d12f2d;stroke-width:2.15398" />
+      <path
+         class="edge"
+         id="1134"
+         d="m 450.86731,449.9394 c 0,0 7.9713,58.99257 -68.42791,-9.68356"
+         style="fill:none;stroke:#d12b2c;stroke-width:2.2061" />
+      <path
+         class="edge"
+         id="1137"
+         d="m 213.63555,179.965 c 0,0 18.10742,-99.52069 73.96893,-33.11318"
+         style="fill:none;stroke:#d75136;stroke-width:1.73805" />
+      <path
+         class="edge"
+         id="1143"
+         d="m 213.63555,179.965 c 0,0 -42.44424,120.41046 -3.80768,240.37699"
+         style="fill:none;stroke:#de8343;stroke-width:1.10457" />
+      <path
+         class="edge"
+         id="1147"
+         d="m 213.63555,179.965 c 0,0 -69.10597,88.19828 -36.34422,200.8"
+         style="fill:none;stroke:#d54934;stroke-width:1.82852" />
+      <path
+         class="edge"
+         id="1153"
+         d="m 213.63555,179.965 c 0,0 93.20443,125.56778 168.80385,260.29084"
+         style="fill:none;stroke:#db6b3d;stroke-width:1.41026" />
+      <path
+         class="edge"
+         id="1178"
+         d="m 287.60448,146.85182 c 0,0 -76.61522,128.5801 -77.77661,273.49017"
+         style="fill:none;stroke:#d54833;stroke-width:1.84506" />
+      <path
+         class="edge"
+         id="1182"
+         d="m 287.60448,146.85182 c 0,0 -95.86315,98.37009 -110.31315,233.91318"
+         style="fill:none;stroke:#d75036;stroke-width:1.73977" />
+      <path
+         class="edge"
+         id="1188"
+         d="m 287.60448,146.85182 c 0,0 76.46863,124.67618 94.83492,293.40402"
+         style="fill:none;stroke:#d9603a;stroke-width:1.54845" />
+      <path
+         class="edge"
+         id="1263"
+         d="m 209.82787,420.34199 c 0,0 -81.91151,39.42533 -32.53654,-39.57699"
+         style="fill:none;stroke:#d85c39;stroke-width:1.59187" />
+      <path
+         class="edge"
+         id="1269"
+         d="m 209.82787,420.34199 c 0,0 79.50531,78.00253 172.61153,19.91385"
+         style="fill:none;stroke:#d85b38;stroke-width:1.61261" />
+      <path
+         class="edge"
+         id="1303"
+         d="m 177.29133,380.765 c 0,0 92.09146,87.72192 205.14807,59.49084"
+         style="fill:none;stroke:#cf2329;stroke-width:2.3135" />
+      <g
+         class="gene-group"
+         id="6352"
+         cx="152.95200904549606"
+         cy="344.76951173988283"
+         transform="translate(152.95201,344.76951)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle3992"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-17.5"
+           y="-27"
+           width="35"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect3994" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text3996">CCL5</text>
+      </g>
+      <g
+         class="gene-group"
+         id="2207"
+         cx="323.2016074616294"
+         cy="172.12378543862775"
+         transform="translate(323.20161,172.12379)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle3999"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-26.9375"
+           y="-27"
+           width="53.875"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4001" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4003">FCER1G</text>
+      </g>
+      <g
+         class="gene-group"
+         id="3109"
+         cx="440.8884351370556"
+         cy="292.3743446523177"
+         transform="translate(440.88844,292.37434)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4006"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-33.585938"
+           y="-27"
+           width="67.171875"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4008" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4010">HLA-DMB</text>
+      </g>
+      <g
+         class="gene-group"
+         id="10437"
+         cx="387.56573422264745"
+         cy="181.8499426884549"
+         transform="translate(387.56573,181.84994)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4013"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-16.289062"
+           y="-27"
+           width="32.578125"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4015" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4017">IFI30</text>
+      </g>
+      <g
+         class="gene-group"
+         id="1508"
+         cx="209.82786621924595"
+         cy="420.34199297925966"
+         transform="translate(209.82787,420.34199)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4020"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-18.109375"
+           y="-27"
+           width="36.21875"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4022" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4024">CTSB</text>
+      </g>
+      <g
+         class="gene-group"
+         id="9332"
+         cx="253.3375629185346"
+         cy="461.8356430436953"
+         transform="translate(253.33756,461.83564)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4027"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-22.695312"
+           y="-27"
+           width="45.390625"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4029" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4031">CD163</text>
+      </g>
+      <g
+         class="gene-group"
+         id="1230"
+         cx="144.5928614283382"
+         cy="295.73899135037425"
+         transform="translate(144.59286,295.73899)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4034"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-18.367188"
+           y="-27"
+           width="36.734375"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4036" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4038">CCR1</text>
+      </g>
+      <g
+         class="gene-group"
+         id="7941"
+         cx="213.63554507284692"
+         cy="179.96499917230767"
+         transform="translate(213.63555,179.965)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4041"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-27.15625"
+           y="-27"
+           width="54.3125"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4043" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4045">PLA2G7</text>
+      </g>
+      <g
+         class="gene-group"
+         id="712"
+         cx="382.43939821020996"
+         cy="440.2558425139806"
+         transform="translate(382.4394,440.25584)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4048"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-19.5625"
+           y="-27"
+           width="39.699875"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4050" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4052">C1QA</text>
+      </g>
+      <g
+         class="gene-group"
+         id="g4061"
+         cx="177.29132730543148"
+         cy="380.76499590195476"
+         transform="translate(177.29133,380.765)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4055"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-23.171875"
+           y="-27"
+           width="46.34375"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4057" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4059">C3AR1</text>
+      </g>
+      <g
+         class="gene-group"
+         id="54"
+         cx="287.60448183623964"
+         cy="146.8518207482964"
+         transform="translate(287.60448,146.85182)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke-width:1"
+           id="circle4063"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-18.632812"
+           y="-27"
+           width="37.265625"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4065" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4067">ACP5</text>
+      </g>
+      <g
+         class="gene-group"
+         id="3122"
+         cx="405.191503356254"
+         cy="343.4644837474725"
+         transform="translate(405.1915,343.46448)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4070"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-32.617188"
+           y="-27"
+           width="65.809753"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4072" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4074">HLA-DRA</text>
+      </g>
+      <g
+         class="gene-group"
+         id="4318"
+         cx="435.9694782024609"
+         cy="238.88245594184994"
+         transform="translate(435.96948,238.88246)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4077"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-20.921875"
+           y="-27"
+           width="41.84375"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4079" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4081">MMP9</text>
+      </g>
+      <g
+         class="gene-group"
+         id="1520"
+         cx="331.7042439380815"
+         cy="460.25609811113526"
+         transform="translate(331.70424,460.2561)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4084"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-17.710938"
+           y="-27"
+           width="35.585892"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4086" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4088">CTSS</text>
+      </g>
+      <g
+         class="gene-group"
+         id="3002"
+         cx="148.9849480348403"
+         cy="235.46348231686912"
+         transform="translate(148.98495,235.46348)">
+        <circle
+           class="gene"
+           r="8"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4091"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-20.28125"
+           y="-27"
+           width="40.5625"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4093" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-13"
+           id="text4095">GZMB</text>
+      </g>
+      <g
+         class="gene-group"
+         id="6362"
+         cx="450.8673119752203"
+         cy="449.93940163834117"
+         transform="translate(450.86731,449.9394)">
+        <circle
+           class="gene gene-query"
+           r="15"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4098"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-21.695312"
+           y="-34"
+           width="43.390625"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4100" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-20"
+           id="text4102">CCL18</text>
+      </g>
+      <g
+         class="gene-group"
+         id="84885"
+         cx="148.29637106331938"
+         cy="150.7070766248322"
+         transform="translate(148.29637,150.70708)">
+        <circle
+           class="gene gene-query"
+           r="15"
+           style="stroke:#aaaaaa;stroke-width:1"
+           id="circle4105"
+           cx="0"
+           cy="0" />
+        <rect
+           rx="5"
+           ry="5"
+           x="-33.554688"
+           y="-34"
+           width="67.109375"
+           height="19"
+           style="opacity:0.5;fill:#ffffff"
+           id="rect4107" />
+        <text
+           class="gene-name"
+           text-anchor="middle"
+           y="-20"
+           id="text4109">ZDHHC12</text>
+      </g>
+    </g>
+  </g>
+</svg>
