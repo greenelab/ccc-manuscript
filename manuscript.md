@@ -5,7 +5,7 @@ keywords:
 - nonlinear relationships
 - gene expression
 lang: en-US
-date-meta: '2024-08-12'
+date-meta: '2024-09-06'
 author-meta:
 - Milton Pividori
 - Marylyn D. Ritchie
@@ -22,11 +22,11 @@ header-includes: |
   <meta name="citation_title" content="An efficient not-only-linear correlation coefficient based on clustering" />
   <meta property="og:title" content="An efficient not-only-linear correlation coefficient based on clustering" />
   <meta property="twitter:title" content="An efficient not-only-linear correlation coefficient based on clustering" />
-  <meta name="dc.date" content="2024-08-12" />
-  <meta name="citation_publication_date" content="2024-08-12" />
-  <meta property="article:published_time" content="2024-08-12" />
-  <meta name="dc.modified" content="2024-08-12T21:43:52+00:00" />
-  <meta property="article:modified_time" content="2024-08-12T21:43:52+00:00" />
+  <meta name="dc.date" content="2024-09-06" />
+  <meta name="citation_publication_date" content="2024-09-06" />
+  <meta property="article:published_time" content="2024-09-06" />
+  <meta name="dc.modified" content="2024-09-06T17:24:22+00:00" />
+  <meta property="article:modified_time" content="2024-09-06T17:24:22+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -57,9 +57,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/ccc-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/ccc-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/1b71ed008e4c7b962a64754ba2c9a013060ff779/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/1b71ed008e4c7b962a64754ba2c9a013060ff779/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/1b71ed008e4c7b962a64754ba2c9a013060ff779/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/ccc-manuscript/v/3cd901ec21ce786fd3d662aaab5bee6f562a7af8/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/3cd901ec21ce786fd3d662aaab5bee6f562a7af8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/ccc-manuscript/v/3cd901ec21ce786fd3d662aaab5bee6f562a7af8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,15 +77,15 @@ manubot-clear-requests-cache: false
 
 
 
-_A DOI-citable version of this manuscript is available at <https://doi.org/10.1101/2022.06.15.496326>_.
+_A DOI-citable version of this manuscript is available at <https://doi.org/10.1016/j.cels.2024.08.005>_.
 
 <!-- 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/ccc-manuscript/v/1b71ed008e4c7b962a64754ba2c9a013060ff779/))
+([permalink](https://greenelab.github.io/ccc-manuscript/v/3cd901ec21ce786fd3d662aaab5bee6f562a7af8/))
 was automatically generated
-from [greenelab/ccc-manuscript@1b71ed0](https://github.com/greenelab/ccc-manuscript/tree/1b71ed008e4c7b962a64754ba2c9a013060ff779)
-on August 12, 2024.
+from [greenelab/ccc-manuscript@3cd901e](https://github.com/greenelab/ccc-manuscript/tree/3cd901ec21ce786fd3d662aaab5bee6f562a7af8)
+on September 6, 2024.
 </em></small> -->
 
 
